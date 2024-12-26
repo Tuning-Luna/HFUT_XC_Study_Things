@@ -1,0 +1,41 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Exs216IncInterset - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\lenovo\LOCALS~1\Temp\RSP26A.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/Exs216IncInterset.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ  /c 
+"J:\数据结构C版\DsExs8\2LinearListExs\Exs216IncInterset\Exs216IncInterset.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\lenovo\LOCALS~1\Temp\RSP26A.tmp" 
+Creating temporary file "C:\DOCUME~1\lenovo\LOCALS~1\Temp\RSP26B.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/Exs216IncInterset.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ  /c 
+"J:\数据结构C版\DsExs8\2LinearListExs\Exs216IncInterset\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\lenovo\LOCALS~1\Temp\RSP26B.tmp" 
+Creating temporary file "C:\DOCUME~1\lenovo\LOCALS~1\Temp\RSP26C.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib  kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/Exs216IncInterset.pdb" /debug /machine:I386 /out:"Debug/Exs216IncInterset.exe" /pdbtype:sept 
+".\Debug\StdAfx.obj"
+".\Debug\Exs216IncInterset.obj"
+]
+Creating command line "link.exe @C:\DOCUME~1\lenovo\LOCALS~1\Temp\RSP26C.tmp"
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+Exs216IncInterset.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+Exs216IncInterset.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
