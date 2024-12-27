@@ -1,29 +1,43 @@
-# Update Log
+## 学习：
 
-## 2024.12.25
+[数据结构与算法可视化](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)
 
-上传：大一Java资料
+[菜鸟教程](https://www.runoob.com/)
 
+[洛谷](https://www.luogu.com.cn/)
 
+[力扣](https://leetcode.cn/)
 
----
+[力扣难度表](https://huxulm.github.io/lc-rating/zen)
 
+[Codeforces](https://codeforces.com/)
 
+[代码随想录](https://www.programmercarl.com/)
 
-## 2024.12.26
+[Hello 算法](https://www.hello-algo.com/)
 
-上传：大学物理，数据结构，电路与电子技术基础
+[C++ 参考手册 - cppreference.com](https://zh.cppreference.com/w/cpp)
 
+[Compiler Explorer](https://godbolt.org/)
 
-
-----
-
-
-
-## 2024.12.27
-
-上传：高等数学（有些文件因为体积过大无法上传），线性代数，工程图学，Python，英语，程序设计艺术，机器人技术，数字逻辑，离散数学
+[RegExr](https://regexr-cn.com/)
 
 
 
-<a src='[Data Structure Visualization](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)'>数据结构与算法可视化</a>
+
+
+## 交流：
+
+[C++中文交流](https://t.me/cpluspluszh)
+
+[前端交流](https://t.me/cpluspluszh)
+
+[Vue交流](https://t.me/MagicVue)
+
+[Python中文交流](https://t.me/pythonzh)
+
+[Java中文交流](https://t.me/Javaer)
+
+[JavaScript中文交流](https://t.me/javascriptzh)
+
+[Ubuntu中文交流](https://t.me/ubuntuzh)
