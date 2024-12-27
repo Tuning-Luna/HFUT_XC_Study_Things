@@ -1,0 +1,548 @@
+{\rtf1\adeflang1025\ansi\ansicpg936\uc2\adeff0\deff0\stshfdbch13\stshfloch0\stshfhich0\stshfbi31507\deflang1033\deflangfe2052\themelang1033\themelangfe2052\themelangcs0{\fonttbl{\f0\fbidi \froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman{\*\falt Times New Roman};}
+{\f1\fbidi \fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial{\*\falt Arial};}{\f5\fbidi \fmodern\fcharset0\fprq1{\*\panose 02070409020205020404}Courier{\*\falt Courier New};}
+{\f13\fbidi \fnil\fcharset134\fprq2{\*\panose 02010600030101010101}\'cb\'ce\'cc\'e5{\*\falt \'cb\'ce\'cc\'e5};}{\f34\fbidi \froman\fcharset0\fprq2{\*\panose 02040503050406030204}Cambria Math;}
+{\f44\fbidi \froman\fcharset0\fprq0{\*\panose 00000000000000000000}STSongStd-Light{\*\falt Cambria};}{\f250\fbidi \fnil\fcharset134\fprq2{\*\panose 02010600030101010101}@\'cb\'ce\'cc\'e5;}
+{\flomajor\f31500\fbidi \froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman{\*\falt Times New Roman};}{\fdbmajor\f31501\fbidi \fnil\fcharset134\fprq2{\*\panose 02010600030101010101}\'b5\'c8\'cf\'df Light;}
+{\fhimajor\f31502\fbidi \fnil\fcharset134\fprq2{\*\panose 02010600030101010101}\'b5\'c8\'cf\'df Light;}{\fbimajor\f31503\fbidi \froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman{\*\falt Times New Roman};}
+{\flominor\f31504\fbidi \froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman{\*\falt Times New Roman};}{\fdbminor\f31505\fbidi \fnil\fcharset134\fprq2{\*\panose 02010600030101010101}\'b5\'c8\'cf\'df{\*\falt DengXian};}
+{\fhiminor\f31506\fbidi \fnil\fcharset134\fprq2{\*\panose 02010600030101010101}\'b5\'c8\'cf\'df{\*\falt DengXian};}{\fbiminor\f31507\fbidi \froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman{\*\falt Times New Roman};}
+{\f1678\fbidi \froman\fcharset238\fprq2 Times New Roman CE{\*\falt Times New Roman};}{\f1679\fbidi \froman\fcharset204\fprq2 Times New Roman Cyr{\*\falt Times New Roman};}
+{\f1681\fbidi \froman\fcharset161\fprq2 Times New Roman Greek{\*\falt Times New Roman};}{\f1682\fbidi \froman\fcharset162\fprq2 Times New Roman Tur{\*\falt Times New Roman};}
+{\f1683\fbidi \froman\fcharset177\fprq2 Times New Roman (Hebrew){\*\falt Times New Roman};}{\f1684\fbidi \froman\fcharset178\fprq2 Times New Roman (Arabic){\*\falt Times New Roman};}
+{\f1685\fbidi \froman\fcharset186\fprq2 Times New Roman Baltic{\*\falt Times New Roman};}{\f1686\fbidi \froman\fcharset163\fprq2 Times New Roman (Vietnamese){\*\falt Times New Roman};}{\f1688\fbidi \fswiss\fcharset238\fprq2 Arial CE{\*\falt Arial};}
+{\f1689\fbidi \fswiss\fcharset204\fprq2 Arial Cyr{\*\falt Arial};}{\f1691\fbidi \fswiss\fcharset161\fprq2 Arial Greek{\*\falt Arial};}{\f1692\fbidi \fswiss\fcharset162\fprq2 Arial Tur{\*\falt Arial};}
+{\f1693\fbidi \fswiss\fcharset177\fprq2 Arial (Hebrew){\*\falt Arial};}{\f1694\fbidi \fswiss\fcharset178\fprq2 Arial (Arabic){\*\falt Arial};}{\f1695\fbidi \fswiss\fcharset186\fprq2 Arial Baltic{\*\falt Arial};}
+{\f1696\fbidi \fswiss\fcharset163\fprq2 Arial (Vietnamese){\*\falt Arial};}{\f1810\fbidi \fnil\fcharset0\fprq2 SimSun Western{\*\falt \'cb\'ce\'cc\'e5};}{\f2018\fbidi \froman\fcharset238\fprq2 Cambria Math CE;}
+{\f2019\fbidi \froman\fcharset204\fprq2 Cambria Math Cyr;}{\f2021\fbidi \froman\fcharset161\fprq2 Cambria Math Greek;}{\f2022\fbidi \froman\fcharset162\fprq2 Cambria Math Tur;}{\f2025\fbidi \froman\fcharset186\fprq2 Cambria Math Baltic;}
+{\f2026\fbidi \froman\fcharset163\fprq2 Cambria Math (Vietnamese);}{\f4180\fbidi \fnil\fcharset0\fprq2 @SimSun Western;}{\flomajor\f31508\fbidi \froman\fcharset238\fprq2 Times New Roman CE{\*\falt Times New Roman};}
+{\flomajor\f31509\fbidi \froman\fcharset204\fprq2 Times New Roman Cyr{\*\falt Times New Roman};}{\flomajor\f31511\fbidi \froman\fcharset161\fprq2 Times New Roman Greek{\*\falt Times New Roman};}
+{\flomajor\f31512\fbidi \froman\fcharset162\fprq2 Times New Roman Tur{\*\falt Times New Roman};}{\flomajor\f31513\fbidi \froman\fcharset177\fprq2 Times New Roman (Hebrew){\*\falt Times New Roman};}
+{\flomajor\f31514\fbidi \froman\fcharset178\fprq2 Times New Roman (Arabic){\*\falt Times New Roman};}{\flomajor\f31515\fbidi \froman\fcharset186\fprq2 Times New Roman Baltic{\*\falt Times New Roman};}
+{\flomajor\f31516\fbidi \froman\fcharset163\fprq2 Times New Roman (Vietnamese){\*\falt Times New Roman};}{\fdbmajor\f31520\fbidi \fnil\fcharset0\fprq2 DengXian Light Western;}{\fdbmajor\f31518\fbidi \fnil\fcharset238\fprq2 DengXian Light CE;}
+{\fdbmajor\f31519\fbidi \fnil\fcharset204\fprq2 DengXian Light Cyr;}{\fdbmajor\f31521\fbidi \fnil\fcharset161\fprq2 DengXian Light Greek;}{\fhimajor\f31530\fbidi \fnil\fcharset0\fprq2 DengXian Light Western;}
+{\fhimajor\f31528\fbidi \fnil\fcharset238\fprq2 DengXian Light CE;}{\fhimajor\f31529\fbidi \fnil\fcharset204\fprq2 DengXian Light Cyr;}{\fhimajor\f31531\fbidi \fnil\fcharset161\fprq2 DengXian Light Greek;}
+{\fbimajor\f31538\fbidi \froman\fcharset238\fprq2 Times New Roman CE{\*\falt Times New Roman};}{\fbimajor\f31539\fbidi \froman\fcharset204\fprq2 Times New Roman Cyr{\*\falt Times New Roman};}
+{\fbimajor\f31541\fbidi \froman\fcharset161\fprq2 Times New Roman Greek{\*\falt Times New Roman};}{\fbimajor\f31542\fbidi \froman\fcharset162\fprq2 Times New Roman Tur{\*\falt Times New Roman};}
+{\fbimajor\f31543\fbidi \froman\fcharset177\fprq2 Times New Roman (Hebrew){\*\falt Times New Roman};}{\fbimajor\f31544\fbidi \froman\fcharset178\fprq2 Times New Roman (Arabic){\*\falt Times New Roman};}
+{\fbimajor\f31545\fbidi \froman\fcharset186\fprq2 Times New Roman Baltic{\*\falt Times New Roman};}{\fbimajor\f31546\fbidi \froman\fcharset163\fprq2 Times New Roman (Vietnamese){\*\falt Times New Roman};}
+{\flominor\f31548\fbidi \froman\fcharset238\fprq2 Times New Roman CE{\*\falt Times New Roman};}{\flominor\f31549\fbidi \froman\fcharset204\fprq2 Times New Roman Cyr{\*\falt Times New Roman};}
+{\flominor\f31551\fbidi \froman\fcharset161\fprq2 Times New Roman Greek{\*\falt Times New Roman};}{\flominor\f31552\fbidi \froman\fcharset162\fprq2 Times New Roman Tur{\*\falt Times New Roman};}
+{\flominor\f31553\fbidi \froman\fcharset177\fprq2 Times New Roman (Hebrew){\*\falt Times New Roman};}{\flominor\f31554\fbidi \froman\fcharset178\fprq2 Times New Roman (Arabic){\*\falt Times New Roman};}
+{\flominor\f31555\fbidi \froman\fcharset186\fprq2 Times New Roman Baltic{\*\falt Times New Roman};}{\flominor\f31556\fbidi \froman\fcharset163\fprq2 Times New Roman (Vietnamese){\*\falt Times New Roman};}
+{\fdbminor\f31560\fbidi \fnil\fcharset0\fprq2 DengXian Western{\*\falt DengXian};}{\fdbminor\f31558\fbidi \fnil\fcharset238\fprq2 DengXian CE{\*\falt DengXian};}{\fdbminor\f31559\fbidi \fnil\fcharset204\fprq2 DengXian Cyr{\*\falt DengXian};}
+{\fdbminor\f31561\fbidi \fnil\fcharset161\fprq2 DengXian Greek{\*\falt DengXian};}{\fhiminor\f31570\fbidi \fnil\fcharset0\fprq2 DengXian Western{\*\falt DengXian};}{\fhiminor\f31568\fbidi \fnil\fcharset238\fprq2 DengXian CE{\*\falt DengXian};}
+{\fhiminor\f31569\fbidi \fnil\fcharset204\fprq2 DengXian Cyr{\*\falt DengXian};}{\fhiminor\f31571\fbidi \fnil\fcharset161\fprq2 DengXian Greek{\*\falt DengXian};}
+{\fbiminor\f31578\fbidi \froman\fcharset238\fprq2 Times New Roman CE{\*\falt Times New Roman};}{\fbiminor\f31579\fbidi \froman\fcharset204\fprq2 Times New Roman Cyr{\*\falt Times New Roman};}
+{\fbiminor\f31581\fbidi \froman\fcharset161\fprq2 Times New Roman Greek{\*\falt Times New Roman};}{\fbiminor\f31582\fbidi \froman\fcharset162\fprq2 Times New Roman Tur{\*\falt Times New Roman};}
+{\fbiminor\f31583\fbidi \froman\fcharset177\fprq2 Times New Roman (Hebrew){\*\falt Times New Roman};}{\fbiminor\f31584\fbidi \froman\fcharset178\fprq2 Times New Roman (Arabic){\*\falt Times New Roman};}
+{\fbiminor\f31585\fbidi \froman\fcharset186\fprq2 Times New Roman Baltic{\*\falt Times New Roman};}{\fbiminor\f31586\fbidi \froman\fcharset163\fprq2 Times New Roman (Vietnamese){\*\falt Times New Roman};}}{\colortbl;\red0\green0\blue0;
+\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;
+\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;\red0\green0\blue0;\red0\green0\blue0;}{\*\defchp \fs21\kerning2\dbch\af13 }{\*\defpap 
+\ql \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 }\noqfpromote {\stylesheet{\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs24\alang1025 \ltrch\fcs0 
+\fs24\cf1\lang1033\langfe2052\loch\f1\hich\af1\dbch\af13\cgrid\langnp1033\langfenp2052 \snext0 \sqformat Normal;}{\s1\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\outlinelevel0\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs24\alang1025 \ltrch\fcs0 
+\b\fs32\cf1\lang1033\langfe2052\loch\f1\hich\af1\dbch\af13\cgrid\langnp1033\langfenp2052 \sbasedon0 \snext1 \slink15 \sqformat heading 1;}{\s2\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\outlinelevel1\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs24\alang1025 
+\ltrch\fcs0 \b\i\fs28\cf1\lang1033\langfe2052\loch\f1\hich\af1\dbch\af13\cgrid\langnp1033\langfenp2052 \sbasedon0 \snext2 \slink16 \sqformat heading 2;}{\s3\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\outlinelevel2\rin0\lin0\itap0 \rtlch\fcs1 
+\af0\afs24\alang1025 \ltrch\fcs0 \b\fs26\cf1\lang1033\langfe2052\loch\f1\hich\af1\dbch\af13\cgrid\langnp1033\langfenp2052 \sbasedon0 \snext3 \slink17 \sqformat heading 3;}{\*\cs10 \additive \sunhideused Default Paragraph Font;}{\*
+\ts11\tsrowd\trftsWidthB3\trpaddl108\trpaddr108\trpaddfl3\trpaddft3\trpaddfb3\trpaddfr3\trcbpat1\trcfpat1\tblind0\tblindtype3\tsvertalt\tsbrdrt\tsbrdrl\tsbrdrb\tsbrdrr\tsbrdrdgl\tsbrdrdgr\tsbrdrh\tsbrdrv 
+\ql \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af31507\afs22\alang1025 \ltrch\fcs0 \fs21\lang1033\langfe2052\kerning2\loch\f0\hich\af0\dbch\af13\cgrid\langnp1033\langfenp2052 
+\snext11 \ssemihidden \sunhideused Normal Table;}{\*\cs15 \additive \rtlch\fcs1 \ab\af0\afs44 \ltrch\fcs0 \b\f1\fs44\cf1\kerning44 \sbasedon10 \slink1 \spriority9 \'b1\'ea\'cc\'e2 1 \'d7\'d6\'b7\'fb;}{\*\cs16 \additive \rtlch\fcs1 \ab\af31503\afs32 
+\ltrch\fcs0 \b\fs32\cf1\kerning0\loch\f31502\hich\af31502\dbch\af31501 \sbasedon10 \slink2 \ssemihidden \spriority9 \'b1\'ea\'cc\'e2 2 \'d7\'d6\'b7\'fb;}{\*\cs17 \additive \rtlch\fcs1 \ab\af0\afs32 \ltrch\fcs0 \b\f1\fs32\cf1\kerning0 
+\sbasedon10 \slink3 \ssemihidden \spriority9 \'b1\'ea\'cc\'e2 3 \'d7\'d6\'b7\'fb;}}{\*\rsidtbl \rsid1461470\rsid1463737}{\mmathPr\mmathFont34\mbrkBin0\mbrkBinSub0\msmallFrac0\mdispDef1\mlMargin0\mrMargin0\mdefJc1\mwrapIndent1440\mintLim0\mnaryLim1}{\info
+{\author Administrator}{\operator Lucy Zou}{\creatim\yr2024\mo4\dy21\hr20\min47}{\revtim\yr2024\mo5\dy6\hr11\min18}{\version2}{\edmins1}{\nofpages10}{\nofwords4168}{\nofchars23764}{\nofcharsws27877}{\vern93}}{\*\xmlnstbl {\xmlns1 http://schemas.microsoft.
+com/office/word/2003/wordml}}\paperw11907\paperh16840\margl720\margr720\margt720\margb720\gutter0\ltrsect 
+\ftnbj\aenddoc\trackmoves0\trackformatting1\donotembedsysfont0\relyonvml0\donotembedlingdata1\grfdocevents0\validatexml0\showplaceholdtext0\ignoremixedcontent0\saveinvalidxml0\showxmlerrors0\horzdoc\dghspace120\dgvspace120\dghorigin1701\dgvorigin1984
+\dghshow0\dgvshow3\jcompress\ksulang2052\viewkind1\viewscale70\snaptogridincell\allowfieldendsel\asianbrkrule\rsidroot1461470 {\*\fchars 
+!),.:\'3b?]\'7d\'a1\'a7\'a1\'a4\'a1\'a6\'a1\'a5\'a8\'44\'a1\'ac\'a1\'af\'a1\'b1\'a1\'ad\'a1\'c3\'a1\'a2\'a1\'a3\'a1\'a8\'a1\'a9\'a1\'b5\'a1\'b7\'a1\'b9\'a1\'bb\'a1\'bf\'a1\'b3\'a1\'bd\'a3\'a1\'a3\'a2\'a3\'a7\'a3\'a9\'a3\'ac\'a3\'ae\'a3\'ba\'a3\'bb\'a3\'bf\'a3\'dd\'a3\'e0\'a3\'fc\'a3\'fd\'a1\'ab\'a1\'e9
+}{\*\lchars ([\'7b\'a1\'a4\'a1\'ae\'a1\'b0\'a1\'b4\'a1\'b6\'a1\'b8\'a1\'ba\'a1\'be\'a1\'b2\'a1\'bc\'a3\'a8\'a3\'ae\'a3\'db\'a3\'fb\'a1\'ea\'a3\'a4}\fet0{\*\wgrffmtfilter 2450}\ilfomacatclnup0
+{\*\docvar {commondata}{eyJoZGlkIjoiNGU5YTk2NWU3OTRhNTU0YjZlNWE0ODExMjY4YzM0MTgifQ==}}{\*\ftnsep \ltrpar \pard\plain \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs24\alang1025 \ltrch\fcs0 
+\fs24\cf1\lang1033\langfe2052\loch\af1\hich\af1\dbch\af13\cgrid\langnp1033\langfenp2052 {\rtlch\fcs1 \af0 \ltrch\fcs0 \f0\cf0\insrsid1463737 \chftnsep 
+\par }}{\*\ftnsepc \ltrpar \pard\plain \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs24\alang1025 \ltrch\fcs0 \fs24\cf1\lang1033\langfe2052\loch\af1\hich\af1\dbch\af13\cgrid\langnp1033\langfenp2052 {\rtlch\fcs1 \af0 
+\ltrch\fcs0 \f0\cf0\insrsid1463737 \chftnsepc 
+\par }}{\*\aftnsep \ltrpar \pard\plain \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs24\alang1025 \ltrch\fcs0 \fs24\cf1\lang1033\langfe2052\loch\af1\hich\af1\dbch\af13\cgrid\langnp1033\langfenp2052 {\rtlch\fcs1 \af0 
+\ltrch\fcs0 \f0\cf0\insrsid1463737 \chftnsep 
+\par }}{\*\aftnsepc \ltrpar \pard\plain \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs24\alang1025 \ltrch\fcs0 \fs24\cf1\lang1033\langfe2052\loch\af1\hich\af1\dbch\af13\cgrid\langnp1033\langfenp2052 {\rtlch\fcs1 \af0 
+\ltrch\fcs0 \f0\cf0\insrsid1463737 \chftnsepc 
+\par }}\ltrpar \sectd \ltrsect\linex0\endnhere\sectdefaultcl\sftnbj {\*\pnseclvl1\pnucrm\pnstart1\pnindent720\pnhang {\pntxta \dbch .}}{\*\pnseclvl2\pnucltr\pnstart1\pnindent720\pnhang {\pntxta \dbch .}}{\*\pnseclvl3\pndec\pnstart1\pnindent720\pnhang 
+{\pntxta \dbch .}}{\*\pnseclvl4\pnlcltr\pnstart1\pnindent720\pnhang {\pntxta \dbch )}}{\*\pnseclvl5\pndec\pnstart1\pnindent720\pnhang {\pntxtb \dbch (}{\pntxta \dbch )}}{\*\pnseclvl6\pnlcltr\pnstart1\pnindent720\pnhang {\pntxtb \dbch (}{\pntxta \dbch )}}
+{\*\pnseclvl7\pnlcrm\pnstart1\pnindent720\pnhang {\pntxtb \dbch (}{\pntxta \dbch )}}{\*\pnseclvl8\pnlcltr\pnstart1\pnindent720\pnhang {\pntxtb \dbch (}{\pntxta \dbch )}}{\*\pnseclvl9\pnlcrm\pnstart1\pnindent720\pnhang {\pntxtb \dbch (}{\pntxta \dbch )}}
+\pard\plain \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs24\alang1025 \ltrch\fcs0 \fs24\cf1\lang1033\langfe2052\loch\af1\hich\af1\dbch\af13\cgrid\langnp1033\langfenp2052 {\rtlch\fcs1 \af0 \ltrch\fcs0 
+\insrsid1463737 
+\par }\pard \ltrpar\qc \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af13 \ltrch\fcs0 \b\f13\insrsid1463737 \loch\af13\hich\af13\dbch\f13 \'b4\'f3\'d1\'a7\'d3\'a2\'d3\'ef\'c1\'f9\'bc\'b6\'c4\'a3\'c4\'e2}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\b\f5\insrsid1463737 \hich\af5\dbch\af13\loch\f5 3}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\insrsid1463737 
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\insrsid1463737 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737\charrsid1461470 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\f44\fs28\cf0\insrsid1463737 Part }{\rtlch\fcs1 \af13 \ltrch\fcs0 \b\f13\fs28\cf0\insrsid1463737 \loch\af13\hich\af13\dbch\f13 \'a2\'f2}{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\f44\fs28\cf0\insrsid1463737  Listening Comprehension}
+{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737 
+\par 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\f44\fs28\cf0\insrsid1463737 Section A}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737 
+\par Directions:}{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\f44\fs28\cf0\insrsid1463737  }{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737 
+In this section, you will hear two long conversations. At the end of each conversation, you will hear three or four questions. Both the conversation and the questions will be spoken only once. After you hear a question, you must choose the best answer fro
+m the four choices marked A, B, C and D. Then mark the corresponding letter on Answer Sheet 1 with a single line through the centre.
+\par 2}{\rtlch\fcs1 \af13 \ltrch\fcs0 \f13\cf0\insrsid1463737 \loch\af13\hich\af13\dbch\f13 \'a1\'a2}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737  A. Computer science.
+\par  \~ \~B. Mathematics.
+\par  \~ \~C. Psychology counseling.
+\par  \~ \~D. Genetic research.
+\par 3}{\rtlch\fcs1 \af13 \ltrch\fcs0 \f13\cf0\insrsid1463737 \loch\af13\hich\af13\dbch\f13 \'a1\'a2}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737  A. She showed quite surprising originality.
+\par  \~ \~B. She was good at analyzing and reasoning.
+\par  \~ \~C. She based it on one of her course papers.
+\par  \~ \~D. She put first priority on her work experience.
+\par 4}{\rtlch\fcs1 \af13 \ltrch\fcs0 \f13\cf0\insrsid1463737 \loch\af13\hich\af13\dbch\f13 \'a1\'a2}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737  A. 25% for researching, 75% for writing.
+\par  \~ \~B. 50% for researching, 50% for writing.
+\par  \~ \~C. 75% for researching, 25% for writing.
+\par  \~ \~D. 90% for researching, 10% for writing.
+\par 5}{\rtlch\fcs1 \af13 \ltrch\fcs0 \f13\cf0\insrsid1463737 \loch\af13\hich\af13\dbch\f13 \'a1\'a2}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737  A. Satisfied. \~ \~ \~ \~ \~ B. Enthusiastic. \~ \~ \~ \~ 
+\par }\pard \ltrpar\ql \fi480\li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0\cufi200 {\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737 C. Disappointed. \~ \~ \~ \~D. Indifferent.
+\par }\pard \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 {\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737 6}{\rtlch\fcs1 \af13 \ltrch\fcs0 \f13\cf0\insrsid1463737 \loch\af13\hich\af13\dbch\f13 \'a1\'a2}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\f5\cf0\insrsid1463737  A. Close relationship with the manager. \~ \~ \~ \~
+\par  \~ }{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737 \hich\af5\dbch\af13\loch\f5  }{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737 B. Competence in the work. \~ \~ \~ \~ \~ \~ \~ \~ \~ \~ 
+\par  \~ \~C. Good educational background.
+\par  \~ \~D. Unusual flattering tricks.
+\par 7}{\rtlch\fcs1 \af13 \ltrch\fcs0 \f13\cf0\insrsid1463737 \loch\af13\hich\af13\dbch\f13 \'a1\'a2}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737  A. He is a director in the company.
+\par  \~ B. He is unqualified for his job.
+\par  \~ C. He is the manager's close friend.
+\par  \~ D. He is a relative of the man's.
+\par 8}{\rtlch\fcs1 \af13 \ltrch\fcs0 \f13\cf0\insrsid1463737 \loch\af13\hich\af13\dbch\f13 \'a1\'a2}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737  A. Stupid orders given by his manager. \~ \~ \~ \~
+\par  \~ B. The empty feeling of being useless. \~ \~ \~ \~ \~ 
+\par  \~ C. Orders given out by his wife.
+\par  \~ D. The insufficient pension.
+\par 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\f44\fs28\cf0\insrsid1463737 Section B}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737 
+\par Directions:}{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\f44\fs28\cf0\insrsid1463737  }{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737 
+In this section, you will hear two passages. At the end of each passage, you will hear three or four questions. Both the passage and the questions will be spoken only once. After you hear a question, you must choose the best answer from the four choices m
+arked A, B, C and D. Then mark the corresponding letter on Answer Sheet 1 with a single line through the centre.
+\par 9}{\rtlch\fcs1 \af13 \ltrch\fcs0 \f13\cf0\insrsid1463737 \loch\af13\hich\af13\dbch\f13 \'a1\'a2}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737 A. It has a personal style.
+\par  \~\~ B. It sounds very familiar to our ears.
+\par  \~\~ C. It is one whose style you cannot recognize.
+\par  \~\~ D. It does not belong to any composer.
+\par 10}{\rtlch\fcs1 \af13 \ltrch\fcs0 \f13\cf0\insrsid1463737 \loch\af13\hich\af13\dbch\f13 \'a1\'a2}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737 A. It combines different feelings together.
+\par  \~\~ B. It can express some very confusing feelings.
+\par  \~\~ C. It exaggerates some special feelings.
+\par  \~\~ D. It expresses feelings in an appropriate way.
+\par 11}{\rtlch\fcs1 \af13 \ltrch\fcs0 \f13\cf0\insrsid1463737 \loch\af13\hich\af13\dbch\f13 \'a1\'a2}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737 A. The newer the music is, the longer time it will last.
+\par  \~ \~B. It is easy for music to gain a permanent status.
+\par  \~ \~C. Good music always stands the test of time.
+\par  \~ \~D. Good music needn't be tested by time.
+\par 12}{\rtlch\fcs1 \af13 \ltrch\fcs0 \f13\cf0\insrsid1463737 \loch\af13\hich\af13\dbch\f13 \'a1\'a2}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737 A. Pop music's biggest test is the test of time.
+\par  \~ \~B. Pop music's tunes do not have very clear styles.
+\par  \~ \~C. Pop music may not express any important feeling at all.
+\par  \~ \~D. Pop music may exaggerate some feelings.
+\par 13}{\rtlch\fcs1 \af13 \ltrch\fcs0 \f13\cf0\insrsid1463737 \loch\af13\hich\af13\dbch\f13 \'a1\'a2}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737  A. Nelson Mandela founded the ANC's military wing.
+\par  \~ \~B. Nelson Mandela was convicted of conspiracy.
+\par  \~ \~C. The past history of Nelson Mandela.
+\par  \~ \~D. The developing history of South Africa.
+\par 14}{\rtlch\fcs1 \af13 \ltrch\fcs0 \f13\cf0\insrsid1463737 \loch\af13\hich\af13\dbch\f13 \'a1\'a2}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737  A. He bombed power plants.
+\par  \~ \~B. He was elected president of South Africa.
+\par  \~ \~C. He was convicted of conspiracy.
+\par  \~ \~D. He founded the ANC's military wing.
+\par 15}{\rtlch\fcs1 \af13 \ltrch\fcs0 \f13\cf0\insrsid1463737 \loch\af13\hich\af13\dbch\f13 \'a1\'a2}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737  A. She was anxious about the cold war.
+\par  \~ \~B. She was battling ANC's military wing.
+\par  \~ \~C. She was almost hurt in a bomb explosion.
+\par  \~ \~D. She classified the ANC as a terrorist organization.
+\par 16}{\rtlch\fcs1 \af13 \ltrch\fcs0 \f13\cf0\insrsid1463737 \loch\af13\hich\af13\dbch\f13 \'a1\'a2}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737  A. He declared war on western countries.
+\par  \~ \~B. He fought for equality in a peaceful way.
+\par  \~ \~C. He was feared by many South Africans.
+\par  \~ \~D. He was branded as a terrorist.
+\par 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\f44\fs28\cf0\insrsid1463737 Section C}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737 
+\par Directions:}{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\f44\fs28\cf0\insrsid1463737  }{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737 
+In this section, you will hear three recordings of lectures or talks followed by three or four questions. The recordings will be played only once. After you hear a question, you must choose the best answer from the four choices marked A, B, C and D. Then 
+mark the corresponding letter on answer Sheet 1 with a single line through the centre.
+\par 17}{\rtlch\fcs1 \af13 \ltrch\fcs0 \f13\cf0\insrsid1463737 \loch\af13\hich\af13\dbch\f13 \'a1\'a2}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737  A. He is an anthropologist at Emory University.
+\par  \~ \~B. He is a sociology professor in Yale University.
+\par  \~ \~C. He is an anthropologist who studies infant sleep.
+\par  \~ \~D. He is in charge of Human Relations Area Files.
+\par 18}{\rtlch\fcs1 \af13 \ltrch\fcs0 \f13\cf0\insrsid1463737 \loch\af13\hich\af13\dbch\f13 \'a1\'a2}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737  A. The practice is not common among human groups.
+\par  \~ \~B. The practice is as old as human species itself.
+\par  \~ \~C. Homo sapien morns and their newborns did not share a bed.
+\par  \~ \~D. The practice is a human tradition with a short history.
+\par 19}{\rtlch\fcs1 \af13 \ltrch\fcs0 \f13\cf0\insrsid1463737 \loch\af13\hich\af13\dbch\f13 \'a1\'a2}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737  A. Studies about infant sleep made by James McKenna.
+\par  \~ \~B. A study about Mayan morns in Guatemala.
+\par  \~ \~C. Researches about human sleep in Emory University.
+\par  \~ \~D. Yale University's Human Relations Area Files.
+\par 20}{\rtlch\fcs1 \af13 \ltrch\fcs0 \f13\cf0\insrsid1463737 \loch\af13\hich\af13\dbch\f13 \'a1\'a2}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737  A. Because the Catholic Church worried about accidental suffocation and strangulation.
+\par  \~ \~B. Because ancient people were wealthy enough to provide a good sleeping environment for infants.
+\par  \~ \~C. Because poor women may suffocate the baby whom they didn't have resources to care for.
+\par  \~ \~D. Because the Catholic Church wanted to make the infants more independent at a young age.
+\par 21}{\rtlch\fcs1 \af13 \ltrch\fcs0 \f13\cf0\insrsid1463737 \loch\af13\hich\af13\dbch\f13 \'a1\'a2}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737  A. It should be small enough.
+\par  \~ \~B. It should be easy to carry about.
+\par  \~ \~C. It should be round in shape.
+\par  \~ \~D. It should be paper notes.
+\par 22}{\rtlch\fcs1 \af13 \ltrch\fcs0 \f13\cf0\insrsid1463737 \loch\af13\hich\af13\dbch\f13 \'a1\'a2}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737  A. It is a kind of simple trading without money.
+\par  \~ \~B. It is an indirect exchange of goods.
+\par  \~ \~C. They often use coins and paper notes to buy things.
+\par  \~ \~D. They make tools and vessels to exchange for goods.
+\par 23}{\rtlch\fcs1 \af13 \ltrch\fcs0 \f13\cf0\insrsid1463737 \loch\af13\hich\af13\dbch\f13 \'a1\'a2}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737  A. They can be preserved for a long time.
+\par  \~ \~B. They are often absolute necessities in some countries.
+\par  \~ \~C. They can be easily collected in India and China.
+\par  \~ \~D. They can be traded on the beaches of the Maldive Islands.
+\par 24}{\rtlch\fcs1 \af13 \ltrch\fcs0 \f13\cf0\insrsid1463737 \loch\af13\hich\af13\dbch\f13 \'a1\'a2}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737  A. It is the oldest money in the world.
+\par  \~ \~B. It is a worldwide currency.
+\par  \~ \~C. It is made of iron or paper.
+\par  \~ \~D. It is of bronze, in flat, round pieces.
+\par 25}{\rtlch\fcs1 \af13 \ltrch\fcs0 \f13\cf0\insrsid1463737 \loch\af13\hich\af13\dbch\f13 \'a1\'a2}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737  A. After having his first baby.
+\par  \~ \~B. After his wife was pregnant.
+\par  \~ \~C. When he and his wife prepared to have their first child.
+\par  \~ \~D. After noticing his waistline growing.
+\par 26}{\rtlch\fcs1 \af13 \ltrch\fcs0 \f13\cf0\insrsid1463737 \loch\af13\hich\af13\dbch\f13 \'a1\'a2}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737  A. To help with the new baby.
+\par  \~ \~B. To battle an alcohol problem.
+\par  \~ \~C. To strengthen the bond between the three generations of the family.
+\par  \~ \~D. To regain his passion for life.
+\par 27}{\rtlch\fcs1 \af13 \ltrch\fcs0 \f13\cf0\insrsid1463737 \loch\af13\hich\af13\dbch\f13 \'a1\'a2}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737  A. His family members have undergone an amazing transformation.
+\par  \~ \~B. His father became more confident.
+\par  \~ \~C. Incredible results have been made after posting the updates.
+\par  \~ \~D. His father lost weight.
+\par 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\f44\fs28\cf0\insrsid1463737 Part }{\rtlch\fcs1 \af13 \ltrch\fcs0 \b\f13\fs28\cf0\insrsid1463737 \loch\af13\hich\af13\dbch\f13 \'a2\'f3}{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\f44\fs28\cf0\insrsid1463737  Reading Comprehension}{
+\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737 
+\par 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\f44\fs28\cf0\insrsid1463737 Section A}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737 
+\par Directions:}{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\f44\fs28\cf0\insrsid1463737  }{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737 
+In this section, there is a passage with ten blanks. You are required to select one word for each blank from a list of choices given in a word bank following the passage. Read the passage through carefully before making your choices. Each choice in the ba
+nk is identified by a letter. Please mark the corresponding letter for each item on Answer Sheet 2 with a single line through the centre. You may not use any of the words in the bank more than once.
+\par  \~ \~Look into the Eyes of a Stone Age Woman
+\par  \~ \~Researchers have recently achieved a significant breakthrough by putting a face to a person whose full identity remains a }{\rtlch\fcs1 \af0 \ltrch\fcs0 \f44\ul\cf0\insrsid1463737  \~28 \~}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737 
+. You can view online this virtually reconstructed face of a woman who lived about 5,700 years ago in what is now Malaysia.
+\par  \~ \~A team of archaeologists discovered the skeleton, which they }{\rtlch\fcs1 \af0 \ltrch\fcs0 \f44\ul\cf0\insrsid1463737  \~29 \~}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737 
+ the "Penang woman," during a 2017 dig at a Neolithic site located in Penang, in northwest Malaysia. Radiocarbon dating of shells found scattered around the woman's }{\rtlch\fcs1 \af0 \ltrch\fcs0 \f44\ul\cf0\insrsid1463737  \~30 \~}{\rtlch\fcs1 \af0 
+\ltrch\fcs0 \f5\cf0\insrsid1463737  revealed that she lived during New Stone Age, which spanned from 8,000 to 3,300 B.C. in the region.
+\par  \~ \~}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f44\ul\cf0\insrsid1463737  \~31 \~}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737 
+ CT scans of the body's "almost complete" skull, as well as 3D imagery of modern-day Malaysians, the researchers worked to create a }{\rtlch\fcs1 \af0 \ltrch\fcs0 \f44\ul\cf0\insrsid1463737  \~32 \~}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737 
+ approximation (}{\rtlch\fcs1 \af13 \ltrch\fcs0 \f13\cf0\insrsid1463737 \loch\af13\hich\af13\dbch\f13 \'bd\'fc\'cb\'c6\'d6\'b5}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737 
+) of the woman. The woman is believed to have lived until about 40 years old, an estimate based on dental wear and a cranial suture closure.
+\par  \~ \~After digitizing the skull, the researchers put a series of markers along the virtual surface of the skull, }{\rtlch\fcs1 \af0 \ltrch\fcs0 \f44\ul\cf0\insrsid1463737  \~33 \~}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737 
+ based on statistical studies carried out on compatible populations, such as modern-day Malaysians. In addition, they used virtual donors (3D reconstructed computed tomography) with a structure close to the skull to be approximated and }{\rtlch\fcs1 \af0 
+\ltrch\fcs0 \f44\ul\cf0\insrsid1463737  \~34 \~}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737 
+ the donor until it fit the skull. With all this cross-data, we have an idea of what the face might look like. That face includes a broad nose and full lips.
+\par  \~ \~This new information brings archaeologists one step }{\rtlch\fcs1 \af0 \ltrch\fcs0 \f44\ul\cf0\insrsid1463737  \~35 \~}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737 
+ to painting a better picture of the woman. Researchers also used what they called the "forensic facial approximation method," which involved measuring the skull and running those numbers through a database to find an individual in the collection with }{
+\rtlch\fcs1 \af0 \ltrch\fcs0 \f44\ul\cf0\insrsid1463737  \~36 \~}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737  facial characteristics.
+\par  \~ \~The total reconstruction process may take several months, and the final step is to finish the face, which includes }{\rtlch\fcs1 \af0 \ltrch\fcs0 \f44\ul\cf0\insrsid1463737  \~37 \~}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737 
+ colouring and styling the hair.
+\par  \~ \~A. adapted
+\par  \~ \~B. adding
+\par  \~ \~C. adopting
+\par  \~ \~D. closer
+\par  \~ \~E. confusion
+\par  \~ \~F. different
+\par  \~ \~G. entitled
+\par  \~ \~H. facial
+\par  \~ \~I. merely
+\par  \~ \~J. mostly
+\par  \~ \~K. mystery
+\par  \~ \~L. named
+\par  \~ \~M. remains
+\par  \~ \~N. similar
+\par  \~ \~O. using
+\par 28}{\rtlch\fcs1 \af13 \ltrch\fcs0 \f13\cf0\insrsid1463737 \loch\af13\hich\af13\dbch\f13 \'a1\'a2}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737 
+\par  
+\par 29}{\rtlch\fcs1 \af13 \ltrch\fcs0 \f13\cf0\insrsid1463737 \loch\af13\hich\af13\dbch\f13 \'a1\'a2}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737 
+\par  
+\par 30}{\rtlch\fcs1 \af13 \ltrch\fcs0 \f13\cf0\insrsid1463737 \loch\af13\hich\af13\dbch\f13 \'a1\'a2}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737 
+\par  
+\par 31}{\rtlch\fcs1 \af13 \ltrch\fcs0 \f13\cf0\insrsid1463737 \loch\af13\hich\af13\dbch\f13 \'a1\'a2}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737 
+\par  
+\par 32}{\rtlch\fcs1 \af13 \ltrch\fcs0 \f13\cf0\insrsid1463737 \loch\af13\hich\af13\dbch\f13 \'a1\'a2}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737 
+\par  
+\par 33}{\rtlch\fcs1 \af13 \ltrch\fcs0 \f13\cf0\insrsid1463737 \loch\af13\hich\af13\dbch\f13 \'a1\'a2}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737 
+\par  
+\par 34}{\rtlch\fcs1 \af13 \ltrch\fcs0 \f13\cf0\insrsid1463737 \loch\af13\hich\af13\dbch\f13 \'a1\'a2}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737 
+\par  
+\par 35}{\rtlch\fcs1 \af13 \ltrch\fcs0 \f13\cf0\insrsid1463737 \loch\af13\hich\af13\dbch\f13 \'a1\'a2}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737 
+\par  
+\par 36}{\rtlch\fcs1 \af13 \ltrch\fcs0 \f13\cf0\insrsid1463737 \loch\af13\hich\af13\dbch\f13 \'a1\'a2}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737 
+\par  
+\par 37}{\rtlch\fcs1 \af13 \ltrch\fcs0 \f13\cf0\insrsid1463737 \loch\af13\hich\af13\dbch\f13 \'a1\'a2}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737 
+\par  
+\par 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\f44\fs28\cf0\insrsid1463737 Section B}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737 
+\par Directions:}{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\f44\fs28\cf0\insrsid1463737  }{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737 
+In this section, you are going to read a passage with ten statements attached to it. Each statement contains information given in one of the paragraphs. Identify the paragraph from which the information is derived. You may choose a paragraph more than onc
+e. Each paragraph is marked with a letter. Answer the questions by marking the corresponding letter on Answer Sheet 2.
+\par Internet of Things Era Is Coming
+\par  \~ \~
+A. From meat thermometers monitored with a smart phone to Wi-Fi-equipped dog collars, devices and services in homes and businesses are increasingly being connected to the Internet, a long-awaited trend that is causing a surge of optimism in the tech secto
+r.
+\par  \~ \~
+B. Large and small companies are churning out a number of Internet-connected gadgets, a central theme as the Consumer Electronics Show opens this week in Las Vegas. Devices on the market or the drawing board include smart door locks, toothbrushes, wristwa
+tches, fitness trackers, smoke detectors, surveillance cameras, ovens, toys and robots.
+\par  \~ \~C. But the much-ballyhooed Internet of Things still is largely a collection of possibilities. Sales of the new-wave products are threatened by a number of stumbling blocks that could slow investment\emdash 
+from conflicting wireless-communications standards to debates about how much processing power should be built into gadgets.
+\par  \~ \~
+D. Some industry executives say privacy concerns may be even more serious, without a consensus on how to exploit all the data that could be generated by a flood of new sensors and Internet-connected video cameras. "Big data is worth absolutely nothing wit
+hout big judgment", says Joseph Bradley, director of what Cisco Systems Inc. calls its "Internet of Everything" consulting practice. Nonetheless, heavyweights like General Electric Co., Intel Corp. and Qualcomm Inc. are jockeying for position. "I've never
+ seen our industry go as fast as it is, or create as much value," says Marc Benioff, chief executive of Salesforce.com Inc. "It's a very magical time."
+\par  \~ \~
+E. Cisco estimates that the number of devices connected to the Internet will swell from about 10 billion today to 50 billion by 2020, as wireless links spread beyond smart phones and PCs to many other kinds of devices. The Silicon Valley giant's chief exe
+cutive, John Chambers, is expected to discuss the opportunities Tuesday in a keynote speech at CES.
+\par  \~ \~
+F. Gartner Inc. puts the number of connected devices at fewer than 30 billion, but sees $309 billion in additional revenue for product and service suppliers by 2020 and $1.9 trillion in total economic impact from cost savings, improved productivity and ot
+her factors.
+\par  \~ \~
+G. The vision of a world of smart gadgets emerged even before the Web. A.C. "Mike" Markkula, a co-founder of Apple Computer Inc., had a brainstorm in the mid-1980s about combining functions for networking and controlling devices on a single chip. Those "n
+eurons", as they came to be called, were expected to spread widely once their cost fell to around $1. But the company he founded, Echelon Corp., didn't hit that target and has had a bumpy history. "I keep kicking myself," he says, "I was 20 years too soon
+."
+\par  \~ \~
+H. Chip makers did steadily push down the cost of adding intelligence to everyday gadgets, often to less than $5. Another driver has been the onslaught of smart phones and tablets, which can serve as handy Web-connected remote controls for devices in the 
+home and workplace. Potential benefits range from fairly prosaic to profound. Consumers, for example, can now use smart phones to remotely check if they locked doors, left the lights on or turned down the thermostat. Retailers can help smart phone users f
+ind goods on store shelves, and wirelessly pitch sales promotions. Parking meters can communicate with smart phone users.
+\par  \~ \~
+I. Companies like Silver Spring Networks Inc. sell wireless meters to manage energy usage, while GE exploits data generated by sensors to monitor the health of jet engines and gas turbines. The opportunities have attracted a number of startups, some of wh
+ich have managed to raise substantial funding from venture capitalists. The best-known is Nest Labs Inc., a maker of Wi-Fi-equipped thermostats and smoke detectors led by former Apple Inc. executive Tony Fadell. Another example is August, which is develop
+ing smart door locks and has raised $10 million to date.
+\par  \~ \~J. Others are leaning heavily on crowd funding sites like Kickstarter and Indiegogo, as investors worry about the potential costs of hatching hardware startups\emdash 
+and the likelihood that entrenched companies will adapt their existing products to dominate Internet-of-Things opportunities. "The body count is quite high of startups that have made hardware," says Jason Johnson, August's CEO and founder of the Internet 
+of Things Consortium.
+\par  \~ \~
+K. For those reasons, some startups are developing new services to help manage connected devices, while existing companies are modifying business models to exploit the data likely to flow from them. Insurance companies, for example, can respond to sensors
+ and wireless connections in cars to charge drivers by the mile and speed they drive, instead of by where they live. "The value of the devices will be secondary to the services they enable," says Thomas Lee, a Stanford University professor of electrical e
+ngineering and co-founder of Ayla Networks Inc., an online service hoping to help turn ordinary products into cloud-connected devices.
+\par  \~ \~
+L. So far, however, smart-home products seem mainly to be attracting technology enthusiasts. Only 1% to 2% of American consumers surveyed by Forrester Research in mid-2013 were using five widely touted home-automation offerings. Some 28% of respondents sa
+id they were interested in controlling appliances with a smartphone, but 53% weren't. Other hurdles face companies tackling the Internet of Things, including a fragmented assortment of wireless communications technologies. In home automation, for example,
+ device makers face options that include Insteon, Wi-Fi, Bluetooth, Zigby, Z-Wave and earlier proprietary technologies.
+\par  \~ \~M. "It's not that things aren't getting connected\emdash 
+they are getting connected badly," says Rob Chandhok, president of Qualcomm's interactive platforms unit. Qualcomm is trying to rally hardware makers around a technology called AllJoyn to help devices discover each other and collaborate. Meanwhile, startu
+ps trying to sell their own control devices are going through contortions; Revolv Inc., for example, is marketing a hub that can communicate using seven different radio technologies.
+\par  \~ \~N. Mike Soucie, Revolv's co-founder and marketing head, says agreements on key communications technologies may be five to 10 years away. Any standards that do emerge are likely to apply to a single market\emdash like home security or transportation
+\emdash rather than to many industries, predicts Gilad Meiri, chief executive of Neura Inc., a startup developing technology to help orchestrate connected devices.
+\par  \~ \~O. Assuming devices can communicate, manufacturers need conventions for telling them what to do and how to work together. Meanwhile, other basic questions remain\emdash 
+like just how much intelligence should everyday devices have? Companies like Intel and ARM Holdings PLC, which license technology to chip makers, stress the benefits brought by processors that can run sophisticated software and protocols that allow them t
+o connect directly to the Internet.
+\par  \~ \~
+P. But others believe such complex technology can reduce the reliability of home appliances and other devices, while raising the odds of bugs or security holes that could be exploited by attackers. They prefer simpler chips called microcontrollers, which 
+are harder to reprogram to do unintended things. "I want my refrigerator to be a thing; I don't want it to be a computer," says Shane Dyer, chief executive of Arrayent Inc., a startup marketing a Web-based service to manage microcontroller-powered devices
+.
+\par  \~ \~Q. Moreover, the data generated by connected devices could be used in ways consumers don't like and create liabilities for companies. Chris Bruce, chief executive of Sproutling\emdash a startup developing a smart phone-connected baby monitor\emdash 
+wonders if services that store data from connected devices might get subpoenas if something bad happens. There are at least as many questions about the fast-growing flood of data from Interact-connected security cameras.
+\par  \~ \~
+R. "It is more than a little creepy," says David Alan Grier, an associate professor of science and technology policy at George Washington University and 2013 president of the IEEE Computer Society. "There is going to have to be some clear thinking and som
+e clear understanding of what is going on."
+\par 38}{\rtlch\fcs1 \af13 \ltrch\fcs0 \f13\cf0\insrsid1463737 \loch\af13\hich\af13\dbch\f13 \'a1\'a2}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737  Nest Labs Inc. has produced Wi-Fi-equipped thermostats and smoke detectors.
+\par 39}{\rtlch\fcs1 \af13 \ltrch\fcs0 \f13\cf0\insrsid1463737 \loch\af13\hich\af13\dbch\f13 \'a1\'a2}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737 
+ According to Cisco, with the exploitation of wireless links, the amount of Internet-connected devices will increase 40 billion by 2020.
+\par 40}{\rtlch\fcs1 \af13 \ltrch\fcs0 \f13\cf0\insrsid1463737 \loch\af13\hich\af13\dbch\f13 \'a1\'a2}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737 
+ In order to make use of the data generated from connected devices, companies begin to revise business models.
+\par 41}{\rtlch\fcs1 \af13 \ltrch\fcs0 \f13\cf0\insrsid1463737 \loch\af13\hich\af13\dbch\f13 \'a1\'a2}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737  Someone prefers simpler chips called microcontrollers to the Interact of things technology.
+\par 42}{\rtlch\fcs1 \af13 \ltrch\fcs0 \f13\cf0\insrsid1463737 \loch\af13\hich\af13\dbch\f13 \'a1\'a2}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737 
+ A large amount of Internet-connected devices are presented in Consumer Electronics Show held in Las Vegas.
+\par 43}{\rtlch\fcs1 \af13 \ltrch\fcs0 \f13\cf0\insrsid1463737 \loch\af13\hich\af13\dbch\f13 \'a1\'a2}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737  Technology companies are optimistic about the future of the Internet-connected devices.
+\par 44}{\rtlch\fcs1 \af13 \ltrch\fcs0 \f13\cf0\insrsid1463737 \loch\af13\hich\af13\dbch\f13 \'a1\'a2}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737 
+ The detrusion of smart phones and tablets makes the cost of intelligence to everyday devices become less.
+\par 45}{\rtlch\fcs1 \af13 \ltrch\fcs0 \f13\cf0\insrsid1463737 \loch\af13\hich\af13\dbch\f13 \'a1\'a2}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737  Various sensors and Internet-connected video cameras arouse people's worry about their privacy.
+\par 46}{\rtlch\fcs1 \af13 \ltrch\fcs0 \f13\cf0\insrsid1463737 \loch\af13\hich\af13\dbch\f13 \'a1\'a2}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737 
+ On the basis of Forrester Research in 2013, more than half respondents are not interested in smart-home products.
+\par 47}{\rtlch\fcs1 \af13 \ltrch\fcs0 \f13\cf0\insrsid1463737 \loch\af13\hich\af13\dbch\f13 \'a1\'a2}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737  The data generated by Interact-connected security cameras poses many problems.
+\par 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\f44\fs28\cf0\insrsid1463737 Section C}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737 
+\par Directions:}{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\f44\fs28\cf0\insrsid1463737  }{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737 
+There are 2 passages in this section. Each passage is followed by some questions or unfinished statements. For each of them there are four choices marked A, B, C and D. You should decide on the best choice and mark the corresponding letter on Answer Sheet
+ 2 with a single line through the centre.
+\par 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\f44\fs28\cf0\insrsid1463737 Passage One}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737 
+\par Is 20th-century capitalism failing 21st-century society? Members of the global elite debated that unusual question at the annual World Economic Forum.
+\par  \~ It is encouraging that more than three years since the global financial crisis, a belated (}{\rtlch\fcs1 \af13 \ltrch\fcs0 \f13\cf0\insrsid1463737 \loch\af13\hich\af13\dbch\f13 \'b3\'d9\'b5\'bd\'b5\'c4}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\f5\cf0\insrsid1463737 )process of soul-searching has begun in search of the right lessons to learn from it.
+\par  \~ There is a great difference, however, between being willing to talk about an issue and being ready to act.
+\par  \~ It is a difference between those who still believe that all governments can do is get out of the way and those who believe there is a real role for governments in first reviving our economies, and then setting the right rules for future success.
+
+\par  \~ If we learned anything from the 1930s, it was that governments cannot shrug their shoulders and watch as their own people are being laid off.
+\par  \~ Nor should we forget the causes of the current growth and debt crisis as we seek to put our economies on a more sustainable footing.
+\par  \~
+ Both the United States and Britain suffered because their economies were overly reliant on the financial sector's artificial profits; living standards for the many worsened while the economic rewards went to the top 1 percent; a capitalist model encourag
+ed short-term decision-making oriented toward quarterly profits rather than long-term health; and interest groups like giant banks were deemed too big to fail or too powerful to challenge.
+\par  \~
+ We need to recognize that the trickle-down promise (benefits given to the rich will eventually be passed on to the poor) of conservative theorists has turned into a gravity-defying reality in which wealth has flowed upward disproportionately and, too oft
+en, undeservedly. To address the problem requires fresh thinking from governments about how people train for their working lives and what a living wage should be.
+\par  \~ Governments can set better\emdash not necessarily more\emdash rules to encourage productive businesses that make and sell real products and services. We need rules that discourage the predatory (}{\rtlch\fcs1 \af13 \ltrch\fcs0 \f13\cf0\insrsid1463737 
+\loch\af13\hich\af13\dbch\f13 \'c2\'d3\'b6\'e1\'b5\'c4}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737 
+) behavior of those seeking the fast buck through hostile takeovers and asset-stripping that do not have the interests of the shareholders, the employees or the economy at heart.
+\par  \~
+ And governments must remember they are elected to serve the people, not the powerful lobbies who can pay for access or influence. Too often the real enemies of market capitalism are some of the leading beneficiaries of the current model, which favors big
+ monopolies and consumer exploitation.
+\par  \~
+ I believe that changing the rules of capitalism will require a change in what citizens expect and ask of politics. The question is not so much whether 20th-century capitalism is failing 21st-century society but whether politics can rise to the challenge 
+of changing a flawed economic model.
+\par 48}{\rtlch\fcs1 \af13 \ltrch\fcs0 \f13\cf0\insrsid1463737 \loch\af13\hich\af13\dbch\f13 \'a1\'a2}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737 What important lesson could be drawn from the 1930s?______
+\par  \~ \~A. The government should play a role in reviving the economy.
+\par  \~ \~B. \~The government should provide subsidies for the unemployed.
+\par  \~ \~C. The government should not ignore the role of economists in the nation's economy.
+\par  \~ \~D. The government should not brush aside ideas from the World Economic Forum.
+\par 49}{\rtlch\fcs1 \af13 \ltrch\fcs0 \f13\cf0\insrsid1463737 \loch\af13\hich\af13\dbch\f13 \'a1\'a2}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737 
+What is one of the factors contributing to the recent financial crisis in the United States and Britain?______
+\par  \~ A. Their business giants' neglect of attending to long-term planning.
+\par  \~ B. Their governments' unnecessary intervention in economic affairs.
+\par  \~ C. Their governments failing to provide assistance for the poor and needy.
+\par  \~ D. Their economies relying heavily on the operations of the financial sector.
+\par 50}{\rtlch\fcs1 \af13 \ltrch\fcs0 \f13\cf0\insrsid1463737 \loch\af13\hich\af13\dbch\f13 \'a1\'a2}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737 What does the author say about the so-called trickle-down promise?______
+\par  \~ A. It defies conventional wisdom.
+\par  \~ B. It has failed to materialize.
+\par  \~ C. It will benefit both the rich and the poor once realized.
+\par  \~ D. It will prove fatal to capitalist economy once broken.
+\par 51}{\rtlch\fcs1 \af13 \ltrch\fcs0 \f13\cf0\insrsid1463737 \loch\af13\hich\af13\dbch\f13 \'a1\'a2}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737 
+What rules does the author say governments should set to guarantee sustainable economic development?______
+\par  \~ A. Rules that help businesses to expand fast but in a healthy way.
+\par  \~ B. Rules that discourage businesses from making quick money.
+\par  \~ C. Rules that encourage businesses to make and sell real products and services.
+\par  \~ D. Rules that ensure the increase of shareholders' dividends and employees' pay.
+\par 52}{\rtlch\fcs1 \af13 \ltrch\fcs0 \f13\cf0\insrsid1463737 \loch\af13\hich\af13\dbch\f13 \'a1\'a2}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737 What should the government do about the current economy according to the author?______ \~ 
+\par  \~ A. Eliminate the real enemies of market capitalism.
+\par  \~ B. Undertake to repair the flaws in the economic model.
+\par  \~ C. Prevent the lobbies from exerting too much influence.
+\par  \~ D. Diminish the role politics plays in national economy.
+\par 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\f44\fs28\cf0\insrsid1463737 Passage Two}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737 
+\par Imagining being asked to spend twelve or so years of your life in a society which consisted only of members of own sex, how would you react? Unless there was something definitely wrong with you, you wouldn't be too happy about it, to say the least. It is 
+all the more surprising therefore that so many parents in the world choose to impose such abnormal conditions on their children conditions which they themselves wouldn't put up with for one minute!
+\par  \~ \~
+Any discussion of this topic is bound to question the aims of education. Stuffing children's heads full of knowledge is far from being foremost among them. One of the chief aims of educations is to equip future citizens with all they require to take their
+ place in adult society. Now adult society is made up of men and women, so how can a segregated school possibly offer the right sort of preparation for it? Anyone entering adult society after years of segregation can only be in for a shock.
+\par  \~ \~
+A co-educational school offers children nothing less than a true version of society in miniature. Boys and girls are given the opportunity to get to know each other, to learn to live to gather from their earliest years. They are put in a position where th
+ey can compare themselves with each other in terms of academic ability, athletic achievement and many of the extra-curricular activities which are part of school life. What a practical advantage it is (to give just a small example) to be able to put on a 
+sc
+hool play in which the male parts will be taken by boys and the female parts by girls! What nonsense co-education makes of the argument that boys are cleverer than girl or vice-versa. When segregated, boys and girls are made to feel that they are a race a
+part. Rivalry between the sexes is fostered.
+\par  \~ \~In a coeducational school, everything falls into its proper place. But perhaps the greatest contribution of co-education is the healthy attitude to life it encourages. Boys don't grow up believing that women are mysterious creatures\emdash 
+airy goddesses, more like book-illustrations to a fairy-tale, than human beings. Girls don't grow up imagining that men are romantic heroes. Years of living together at school dispel illusions of this kind. There are no goddesses with freckles, pigtails, 
+piercing voices and inky fingers. There are no romantic heroes with knobbly knees, dirty fingernails and unkempt hair. The awkward stage of adolescence brings into sharp focus some of the physical and emotional problems involved in growing up. These can b
+et
+ter be overcome in a co-educational environment. When the time comes for the pupils to leave school, they are fully prepared to enter society as well-adjusted adults. They have already had years of experience in coping with many of the problems that face 
+men and women.
+\par 5}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737 \hich\af5\dbch\af13\loch\f5 3}{\rtlch\fcs1 \af13 \ltrch\fcs0 \f13\cf0\insrsid1463737 \loch\af13\hich\af13\dbch\f13 \'a1\'a2}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737 
+ According to the passage, what is one of the chief aims of educations?
+\par  \~ \~A. It is for students to acquire knowledge.
+\par  \~ \~B. It is to equip future citizens with scientific technology.
+\par  \~ \~ C. It is to equip future citizens with what is required in getting a position in society.
+\par  \~ \~D. It is for students to get academic achievements.
+\par 5}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737 \hich\af5\dbch\af13\loch\f5 4}{\rtlch\fcs1 \af13 \ltrch\fcs0 \f13\cf0\insrsid1463737 \loch\af13\hich\af13\dbch\f13 \'a1\'a2}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737 
+ What does co-education offer to children?
+\par  \~ \~A. A society.
+\par  \~ \~B. A true small model of society.
+\par  \~ \~C. A real life.
+\par  \~ \~D. True version of social condition.
+\par 5}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737 \hich\af5\dbch\af13\loch\f5 5}{\rtlch\fcs1 \af13 \ltrch\fcs0 \f13\cf0\insrsid1463737 \loch\af13\hich\af13\dbch\f13 \'a1\'a2}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737 
+ Which of the following is tree about co-education or segregated education?
+\par  \~ \~A. One practical advantage of co-education is that boys and girls take on the role of male and female respectively.
+\par  \~ \~B. Boys and girls receiving co-education are not equally clever.
+\par  \~ \~C. Segregated education is not easy to foster hostility between genders.
+\par  \~ \~D. Co-education makes boy curious at girls.
+\par 5}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737 \hich\af5\dbch\af13\loch\f5 6}{\rtlch\fcs1 \af13 \ltrch\fcs0 \f13\cf0\insrsid1463737 \loch\af13\hich\af13\dbch\f13 \'a1\'a2}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737 
+ Why do boys and girls in co-education have no illusion about each other?
+\par  \~ \~A. They live together and know each other too well.
+\par  \~ \~B. Years of living together at school dismiss such illusion.
+\par  \~ \~C. Co-education encourages them to have a healthy attitude toward life.
+\par  \~ \~D. They are familiar with each other's problems.
+\par 5}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737 \hich\af5\dbch\af13\loch\f5 7}{\rtlch\fcs1 \af13 \ltrch\fcs0 \f13\cf0\insrsid1463737 \loch\af13\hich\af13\dbch\f13 \'a1\'a2}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737 
+ What is the main idea of this passage?
+\par  \~ \~A. Only co-education can be in harmony with society.
+\par  \~ \~B. People are in great need of co-education.
+\par  \~ \~C. Any form of education other than co-education is simply unthinkable.
+\par  \~ \~D. Co-education has many features.}{\rtlch\fcs1 \af0 \ltrch\fcs0 \f5\cf0\insrsid1463737 
+\par }{\*\themedata 504b030414000600080000002100e9de0fbfff0000001c020000130000005b436f6e74656e745f54797065735d2e786d6cac91cb4ec3301045f748fc83e52d4a
+9cb2400825e982c78ec7a27cc0c8992416c9d8b2a755fbf74cd25442a820166c2cd933f79e3be372bd1f07b5c3989ca74aaff2422b24eb1b475da5df374fd9ad
+5689811a183c61a50f98f4babebc2837878049899a52a57be670674cb23d8e90721f90a4d2fa3802cb35762680fd800ecd7551dc18eb899138e3c943d7e503b6
+b01d583deee5f99824e290b4ba3f364eac4a430883b3c092d4eca8f946c916422ecab927f52ea42b89a1cd59c254f919b0e85e6535d135a8de20f20b8c12c3b0
+0c895fcf6720192de6bf3b9e89ecdbd6596cbcdd8eb28e7c365ecc4ec1ff1460f53fe813d3cc7f5b7f020000ffff0300504b030414000600080000002100a5d6
+a7e7c0000000360100000b0000005f72656c732f2e72656c73848fcf6ac3300c87ef85bd83d17d51d2c31825762fa590432fa37d00e1287f68221bdb1bebdb4f
+c7060abb0884a4eff7a93dfeae8bf9e194e720169aaa06c3e2433fcb68e1763dbf7f82c985a4a725085b787086a37bdbb55fbc50d1a33ccd311ba548b6309512
+0f88d94fbc52ae4264d1c910d24a45db3462247fa791715fd71f989e19e0364cd3f51652d73760ae8fa8c9ffb3c330cc9e4fc17faf2ce545046e37944c69e462
+a1a82fe353bd90a865aad41ed0b5b8f9d6fd010000ffff0300504b0304140006000800000021006b799616830000008a0000001c0000007468656d652f746865
+6d652f7468656d654d616e616765722e786d6c0ccc4d0ac3201040e17da17790d93763bb284562b2cbaebbf600439c1a41c7a0d29fdbd7e5e38337cedf14d59b
+4b0d592c9c070d8a65cd2e88b7f07c2ca71ba8da481cc52c6ce1c715e6e97818c9b48d13df49c873517d23d59085adb5dd20d6b52bd521ef2cdd5eb9246a3d8b
+4757e8d3f729e245eb2b260a0238fd010000ffff0300504b0304140006000800000021003a05cc19a2070000ce200000160000007468656d652f7468656d652f
+7468656d65312e786d6cec59dd8b1b47127f3fc8ff30ccbbacaf197d2c96833ebdb1776d63c93ef2d82bb534eded9916ddad5d8b6008ce5308040249c84302e1
+5eee21840b5ce04ceee1fe97f36193cbfd1157dd339ae9965af1eee20373eceeb2687a7e55fdebaaeaaa52f7cdf79fc6d43bc35c109674fcea8d8aefe164ca66
+245974fc479351a9e57b42a26486284b70c75f63e1bf7febbd3fdc440732c231f6403e1107a8e347522e0fca65318561246eb0254ee0dd9cf1184978e48bf28c
+a373d01bd372ad526994634412df4b500c6aefcfe7648abd7fbdf8fbaf7ffae69f1f7f067ffeadcd1c430a132552a88129e5633503b6043576765a5508b1167d
+cabd33443b3e4c3763e713fc54fa1e4542c28b8e5fd13f7ef9d6cd323ac884a8dc236bc88df44f269709cc4e6b7a4ebe38c9270d8230687473fd1a40e52e6ed8
+1c36868d5c9f06a0e914569a72b175366bfd20c31aa0f4a343f7a039a8572dbca1bfbec3b91baa5f0baf41a9fe60073f1af5c18a165e83527cb8830f7beddec0
+d6af4129beb1836f56ba83a069e9d7a08892e474075d091bf5fe66b53964cee8a113de0e8351b396292f50100d7974a929e62c91fb622d464f181f0140012992
+24f1e47a89e7680ac1fcfac74f5ffff20fef882c2288bb254a9880d14aad32aad4e1bffa0df427ed5074809121ac680111b133a4e87862cac95276fc3ba0d537
+20af5ebc78f9fce797cffff6f2934f5e3eff4b36b75665c91da26461cafdf6e72ffef3ddc7debffffafd6f5f7e954ebd8d1726de5a9a533dacb8b0c4abaf7f7a
+fdf34fafbef9fcd71fbe7468ef727462c22724c6c2bb87cfbd872c86053a26c027fc721293081153a29b2c044a909ac5a17f28230b7d6f8d2872e07ad8b6e363
+0e99c605bcbd7a62111e477c258943e3dd28b680c78cd11ee34e2bdc557319669eac92857b72be32710f113a73cddd4789e5e5e16a092996b854f6236cd17c40
+5122d10227587aea1d3bc5d8b1ba0f09b1ec7a4ca69c093697de87c4eb21e234c9849c58d154081d9218fcb27611047f5bb6397eecf51875ad7a80cf6c24ec0d
+441de427985a66bc8d5612c52e95131453d3e04748462e92e3359f9ab8a190e0e905a6cc1bceb0102e99fb1cd66b38fd2e82e4e674fb315dc736924b72ead279
+841833910376da8f50bc7461c724894cec07e2144214790f9874c18f99bd43d433f801257bddfd9860cbdd6fce068f20c39a948a00516f56dce1cbdb9859f13b
+5ed339c2ae54d3e5b19562bb9c38a3a3b75a58a17d843145e76886b1f7e80307831e5b5a362f48df8920ab1c625760dd4176acaae7040bece9de66374f1e1161
+85ec182fd81e3ec7ebadc4b346498cf83ecdf7c0eba6cd87271c36a3639df7e9f4d404de23d00942bc388d725f800e23b8f76a7d1021ab80a967e18ed735b7fc
+77913d06fbf28945e302fb1264f0a56520b19b32bf6b9b09a2d60445c04c10f18e5ce916442cf71722aab86ab195536e6e6fdac20dd01c593d4f4c923735405b
+ad4ff8bf6b7da0c178f5ed778e187c3bed8e5bb195ab2ed9e8eccb25875bedcd3edc7653d3677c46defd9e668056c9030c656437615db734d72d8dff7fdfd2ec
+dbcfd78dccbe76e3ba91f1a1c1b86e64b2a395b7d3c814bd0bb435eabc233de6d1873ef1de339f39a1742cd7141f097dec23e0ebcc6c04834a4e1f7be2fc0c70
+19c14755e660020bb7e048cb789cc93f12198d23b484c3a1aaaf942c44a67a21bc25137066a4879dba159eaee263364b8f3aab5575ac9956568164315e09f371
+38a69229bad12c8eef72f59aed421fb36e0828d9cb903026b349d41d249a9b4165247da80b467390d02b7b2b2cda0e162da57ee3aa1d16402df70a7cdff6e05b
+7ac70f03100121388e83de7ca6fc94ba7ae35dedccb7e9e97dc6b422001aec4d04149e6e2bae7b97a7569786da053c6d9130c2cd26a12da31b3c11c1b7e02c3a
+d5e845685cd6d7edc2a5163d650a3d1f845641a3d9fa3d1657f535c86de7069a98998226de79c76fd4430899295a76fc391c19c3c77809b123d4572e441770fd
+32953cddf057c92c4b2ee400892835b84e3a69368889c4dca324eef86af9b91b68a27388e656ad41427867c9b521adbc6be4c0e9b693f17c8ea7d274bb31a22c
+9d3e42864f7385f3ad16bf3a5849b215b87b1ccdcebd13bae20f118458d8ac2a03ce8880ab836a6acd1981abb03c9115f1b75598b2b46bde45e9184ac7115d46
+28ab2866324fe13a95e774f4536e03e3295b3318d4304956084f16aac09a46b5aa695e35520e7babee9b8594e58ca459d44c2baba8aae9ce62d60c9b32b065cb
+ab157983d5c6c490d3cc0a9fa6eeed94dbdee4baad3e21af1260f0dc7e8eaa7b818260502b26b3a829c6bb6958e5ec6cd4ae1d9b05be81da458a8491f51b1bb5
+5b76cb6b84733a18bc52e507b9eda885a1f9a6afd496d657e7e6b5363b7902c963005dee8a4aa15d0997d61c414334d63d499a36608b3c95d9d6804fde8a938e
+ff5125ec06fd5ad82f555ae1b014d4834aa91576eba56e18d6abc3b05a19f46acfa0b0c828ae86e9b5fd08ee2fe83abbbcd7e33b17f8f1e68ae6c694c565a62f
+e8cb9ab8bec0afd65c17f8137535ef7b0492ce478ddaa85d6ff71aa576bd3b2a05835eabd4ee377aa541a3df1c8c06fdb0d51e3df3bd330d0ebaf57ed018b64a
+8d6abf5f0a1a1545bfd52e35835aad1b34bbad61d07d96b531b0f2347d64b600f36a5eb7fe0b0000ffff0300504b0304140006000800000021000dd1909fb600
+00001b010000270000007468656d652f7468656d652f5f72656c732f7468656d654d616e616765722e786d6c2e72656c73848f4d0ac2301484f78277086f6fd3
+ba109126dd88d0add40384e4350d363f2451eced0dae2c082e8761be9969bb979dc9136332de3168aa1a083ae995719ac16db8ec8e4052164e89d93b64b06082
+8e6f37ed1567914b284d262452282e3198720e274a939cd08a54f980ae38a38f56e422a3a641c8bbd048f7757da0f19b017cc524bd62107bd5001996509affb3
+fd381a89672f1f165dfe514173d9850528a2c6cce0239baa4c04ca5bbabac4df000000ffff0300504b01022d0014000600080000002100e9de0fbfff0000001c
+0200001300000000000000000000000000000000005b436f6e74656e745f54797065735d2e786d6c504b01022d0014000600080000002100a5d6a7e7c0000000
+360100000b00000000000000000000000000300100005f72656c732f2e72656c73504b01022d00140006000800000021006b799616830000008a0000001c0000
+0000000000000000000000190200007468656d652f7468656d652f7468656d654d616e616765722e786d6c504b01022d00140006000800000021003a05cc19a2
+070000ce2000001600000000000000000000000000d60200007468656d652f7468656d652f7468656d65312e786d6c504b01022d00140006000800000021000d
+d1909fb60000001b0100002700000000000000000000000000ac0a00007468656d652f7468656d652f5f72656c732f7468656d654d616e616765722e786d6c2e72656c73504b050600000000050005005d010000a70b00000000}
+{\*\colorschememapping 3c3f786d6c2076657273696f6e3d22312e302220656e636f64696e673d225554462d3822207374616e64616c6f6e653d22796573223f3e0d0a3c613a636c724d
+617020786d6c6e733a613d22687474703a2f2f736368656d61732e6f70656e786d6c666f726d6174732e6f72672f64726177696e676d6c2f323030362f6d6169
+6e22206267313d226c743122207478313d22646b3122206267323d226c743222207478323d22646b322220616363656e74313d22616363656e74312220616363
+656e74323d22616363656e74322220616363656e74333d22616363656e74332220616363656e74343d22616363656e74342220616363656e74353d22616363656e74352220616363656e74363d22616363656e74362220686c696e6b3d22686c696e6b2220666f6c486c696e6b3d22666f6c486c696e6b222f3e}
+{\*\latentstyles\lsdstimax376\lsdlockeddef0\lsdsemihiddendef0\lsdunhideuseddef0\lsdqformatdef1\lsdprioritydef99{\lsdlockedexcept \lsdsemihidden1 \lsdunhideused1 \lsdlocked0 heading 4;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 heading 5;
+\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 heading 6;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 heading 7;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 heading 8;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 heading 9;
+\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 caption;\lsdunhideused1 \lsdqformat0 \lsdlocked0 Default Paragraph Font;\lsdqformat0 \lsdlocked0 HTML Top of Form;\lsdqformat0 \lsdlocked0 HTML Bottom of Form;
+\lsdsemihidden1 \lsdunhideused1 \lsdqformat0 \lsdlocked0 No List;\lsdqformat0 \lsdlocked0 Outline List 1;\lsdqformat0 \lsdlocked0 Outline List 2;\lsdqformat0 \lsdlocked0 Outline List 3;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Table 3D effects 3;
+\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Table Contemporary;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Table Elegant;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Table Professional;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Table Subtle 1;
+\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Table Subtle 2;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Table Web 1;\lsdsemihidden1 \lsdunhideused1 \lsdqformat0 \lsdlocked0 Placeholder Text;\lsdqformat0 \lsdlocked0 Revision;
+\lsdpriority19 \lsdlocked0 Subtle Emphasis;\lsdpriority21 \lsdlocked0 Intense Emphasis;\lsdpriority31 \lsdlocked0 Subtle Reference;\lsdpriority32 \lsdlocked0 Intense Reference;\lsdpriority33 \lsdlocked0 Book Title;
+\lsdsemihidden1 \lsdunhideused1 \lsdqformat0 \lsdpriority37 \lsdlocked0 Bibliography;\lsdsemihidden1 \lsdunhideused1 \lsdpriority39 \lsdlocked0 TOC Heading;\lsdqformat0 \lsdpriority41 \lsdlocked0 Plain Table 1;
+\lsdqformat0 \lsdpriority42 \lsdlocked0 Plain Table 2;\lsdqformat0 \lsdpriority43 \lsdlocked0 Plain Table 3;\lsdqformat0 \lsdpriority44 \lsdlocked0 Plain Table 4;\lsdqformat0 \lsdpriority45 \lsdlocked0 Plain Table 5;
+\lsdqformat0 \lsdpriority40 \lsdlocked0 Grid Table Light;\lsdqformat0 \lsdpriority46 \lsdlocked0 Grid Table 1 Light;\lsdqformat0 \lsdpriority47 \lsdlocked0 Grid Table 2;\lsdqformat0 \lsdpriority48 \lsdlocked0 Grid Table 3;
+\lsdqformat0 \lsdpriority49 \lsdlocked0 Grid Table 4;\lsdqformat0 \lsdpriority50 \lsdlocked0 Grid Table 5 Dark;\lsdqformat0 \lsdpriority51 \lsdlocked0 Grid Table 6 Colorful;\lsdqformat0 \lsdpriority52 \lsdlocked0 Grid Table 7 Colorful;
+\lsdqformat0 \lsdpriority46 \lsdlocked0 Grid Table 1 Light Accent 1;\lsdqformat0 \lsdpriority47 \lsdlocked0 Grid Table 2 Accent 1;\lsdqformat0 \lsdpriority48 \lsdlocked0 Grid Table 3 Accent 1;\lsdqformat0 \lsdpriority49 \lsdlocked0 Grid Table 4 Accent 1;
+\lsdqformat0 \lsdpriority50 \lsdlocked0 Grid Table 5 Dark Accent 1;\lsdqformat0 \lsdpriority51 \lsdlocked0 Grid Table 6 Colorful Accent 1;\lsdqformat0 \lsdpriority52 \lsdlocked0 Grid Table 7 Colorful Accent 1;
+\lsdqformat0 \lsdpriority46 \lsdlocked0 Grid Table 1 Light Accent 2;\lsdqformat0 \lsdpriority47 \lsdlocked0 Grid Table 2 Accent 2;\lsdqformat0 \lsdpriority48 \lsdlocked0 Grid Table 3 Accent 2;\lsdqformat0 \lsdpriority49 \lsdlocked0 Grid Table 4 Accent 2;
+\lsdqformat0 \lsdpriority50 \lsdlocked0 Grid Table 5 Dark Accent 2;\lsdqformat0 \lsdpriority51 \lsdlocked0 Grid Table 6 Colorful Accent 2;\lsdqformat0 \lsdpriority52 \lsdlocked0 Grid Table 7 Colorful Accent 2;
+\lsdqformat0 \lsdpriority46 \lsdlocked0 Grid Table 1 Light Accent 3;\lsdqformat0 \lsdpriority47 \lsdlocked0 Grid Table 2 Accent 3;\lsdqformat0 \lsdpriority48 \lsdlocked0 Grid Table 3 Accent 3;\lsdqformat0 \lsdpriority49 \lsdlocked0 Grid Table 4 Accent 3;
+\lsdqformat0 \lsdpriority50 \lsdlocked0 Grid Table 5 Dark Accent 3;\lsdqformat0 \lsdpriority51 \lsdlocked0 Grid Table 6 Colorful Accent 3;\lsdqformat0 \lsdpriority52 \lsdlocked0 Grid Table 7 Colorful Accent 3;
+\lsdqformat0 \lsdpriority46 \lsdlocked0 Grid Table 1 Light Accent 4;\lsdqformat0 \lsdpriority47 \lsdlocked0 Grid Table 2 Accent 4;\lsdqformat0 \lsdpriority48 \lsdlocked0 Grid Table 3 Accent 4;\lsdqformat0 \lsdpriority49 \lsdlocked0 Grid Table 4 Accent 4;
+\lsdqformat0 \lsdpriority50 \lsdlocked0 Grid Table 5 Dark Accent 4;\lsdqformat0 \lsdpriority51 \lsdlocked0 Grid Table 6 Colorful Accent 4;\lsdqformat0 \lsdpriority52 \lsdlocked0 Grid Table 7 Colorful Accent 4;
+\lsdqformat0 \lsdpriority46 \lsdlocked0 Grid Table 1 Light Accent 5;\lsdqformat0 \lsdpriority47 \lsdlocked0 Grid Table 2 Accent 5;\lsdqformat0 \lsdpriority48 \lsdlocked0 Grid Table 3 Accent 5;\lsdqformat0 \lsdpriority49 \lsdlocked0 Grid Table 4 Accent 5;
+\lsdqformat0 \lsdpriority50 \lsdlocked0 Grid Table 5 Dark Accent 5;\lsdqformat0 \lsdpriority51 \lsdlocked0 Grid Table 6 Colorful Accent 5;\lsdqformat0 \lsdpriority52 \lsdlocked0 Grid Table 7 Colorful Accent 5;
+\lsdqformat0 \lsdpriority46 \lsdlocked0 Grid Table 1 Light Accent 6;\lsdqformat0 \lsdpriority47 \lsdlocked0 Grid Table 2 Accent 6;\lsdqformat0 \lsdpriority48 \lsdlocked0 Grid Table 3 Accent 6;\lsdqformat0 \lsdpriority49 \lsdlocked0 Grid Table 4 Accent 6;
+\lsdqformat0 \lsdpriority50 \lsdlocked0 Grid Table 5 Dark Accent 6;\lsdqformat0 \lsdpriority51 \lsdlocked0 Grid Table 6 Colorful Accent 6;\lsdqformat0 \lsdpriority52 \lsdlocked0 Grid Table 7 Colorful Accent 6;
+\lsdqformat0 \lsdpriority46 \lsdlocked0 List Table 1 Light;\lsdqformat0 \lsdpriority47 \lsdlocked0 List Table 2;\lsdqformat0 \lsdpriority48 \lsdlocked0 List Table 3;\lsdqformat0 \lsdpriority49 \lsdlocked0 List Table 4;
+\lsdqformat0 \lsdpriority50 \lsdlocked0 List Table 5 Dark;\lsdqformat0 \lsdpriority51 \lsdlocked0 List Table 6 Colorful;\lsdqformat0 \lsdpriority52 \lsdlocked0 List Table 7 Colorful;\lsdqformat0 \lsdpriority46 \lsdlocked0 List Table 1 Light Accent 1;
+\lsdqformat0 \lsdpriority47 \lsdlocked0 List Table 2 Accent 1;\lsdqformat0 \lsdpriority48 \lsdlocked0 List Table 3 Accent 1;\lsdqformat0 \lsdpriority49 \lsdlocked0 List Table 4 Accent 1;\lsdqformat0 \lsdpriority50 \lsdlocked0 List Table 5 Dark Accent 1;
+\lsdqformat0 \lsdpriority51 \lsdlocked0 List Table 6 Colorful Accent 1;\lsdqformat0 \lsdpriority52 \lsdlocked0 List Table 7 Colorful Accent 1;\lsdqformat0 \lsdpriority46 \lsdlocked0 List Table 1 Light Accent 2;
+\lsdqformat0 \lsdpriority47 \lsdlocked0 List Table 2 Accent 2;\lsdqformat0 \lsdpriority48 \lsdlocked0 List Table 3 Accent 2;\lsdqformat0 \lsdpriority49 \lsdlocked0 List Table 4 Accent 2;\lsdqformat0 \lsdpriority50 \lsdlocked0 List Table 5 Dark Accent 2;
+\lsdqformat0 \lsdpriority51 \lsdlocked0 List Table 6 Colorful Accent 2;\lsdqformat0 \lsdpriority52 \lsdlocked0 List Table 7 Colorful Accent 2;\lsdqformat0 \lsdpriority46 \lsdlocked0 List Table 1 Light Accent 3;
+\lsdqformat0 \lsdpriority47 \lsdlocked0 List Table 2 Accent 3;\lsdqformat0 \lsdpriority48 \lsdlocked0 List Table 3 Accent 3;\lsdqformat0 \lsdpriority49 \lsdlocked0 List Table 4 Accent 3;\lsdqformat0 \lsdpriority50 \lsdlocked0 List Table 5 Dark Accent 3;
+\lsdqformat0 \lsdpriority51 \lsdlocked0 List Table 6 Colorful Accent 3;\lsdqformat0 \lsdpriority52 \lsdlocked0 List Table 7 Colorful Accent 3;\lsdqformat0 \lsdpriority46 \lsdlocked0 List Table 1 Light Accent 4;
+\lsdqformat0 \lsdpriority47 \lsdlocked0 List Table 2 Accent 4;\lsdqformat0 \lsdpriority48 \lsdlocked0 List Table 3 Accent 4;\lsdqformat0 \lsdpriority49 \lsdlocked0 List Table 4 Accent 4;\lsdqformat0 \lsdpriority50 \lsdlocked0 List Table 5 Dark Accent 4;
+\lsdqformat0 \lsdpriority51 \lsdlocked0 List Table 6 Colorful Accent 4;\lsdqformat0 \lsdpriority52 \lsdlocked0 List Table 7 Colorful Accent 4;\lsdqformat0 \lsdpriority46 \lsdlocked0 List Table 1 Light Accent 5;
+\lsdqformat0 \lsdpriority47 \lsdlocked0 List Table 2 Accent 5;\lsdqformat0 \lsdpriority48 \lsdlocked0 List Table 3 Accent 5;\lsdqformat0 \lsdpriority49 \lsdlocked0 List Table 4 Accent 5;\lsdqformat0 \lsdpriority50 \lsdlocked0 List Table 5 Dark Accent 5;
+\lsdqformat0 \lsdpriority51 \lsdlocked0 List Table 6 Colorful Accent 5;\lsdqformat0 \lsdpriority52 \lsdlocked0 List Table 7 Colorful Accent 5;\lsdqformat0 \lsdpriority46 \lsdlocked0 List Table 1 Light Accent 6;
+\lsdqformat0 \lsdpriority47 \lsdlocked0 List Table 2 Accent 6;\lsdqformat0 \lsdpriority48 \lsdlocked0 List Table 3 Accent 6;\lsdqformat0 \lsdpriority49 \lsdlocked0 List Table 4 Accent 6;\lsdqformat0 \lsdpriority50 \lsdlocked0 List Table 5 Dark Accent 6;
+\lsdqformat0 \lsdpriority51 \lsdlocked0 List Table 6 Colorful Accent 6;\lsdqformat0 \lsdpriority52 \lsdlocked0 List Table 7 Colorful Accent 6;\lsdsemihidden1 \lsdunhideused1 \lsdqformat0 \lsdlocked0 Mention;
+\lsdsemihidden1 \lsdunhideused1 \lsdqformat0 \lsdlocked0 Smart Hyperlink;\lsdsemihidden1 \lsdunhideused1 \lsdqformat0 \lsdlocked0 Hashtag;\lsdsemihidden1 \lsdunhideused1 \lsdqformat0 \lsdlocked0 Unresolved Mention;
+\lsdsemihidden1 \lsdunhideused1 \lsdqformat0 \lsdlocked0 Smart Link;}}{\*\datastore 0105000002000000180000004d73786d6c322e534158584d4c5265616465722e362e3000000000000000000000060000
+d0cf11e0a1b11ae1000000000000000000000000000000003e000300feff090006000000000000000000000001000000010000000000000000100000feffffff00000000feffffff0000000000000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+fffffffffffffffffdfffffffeffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffff52006f006f007400200045006e00740072007900000000000000000000000000000000000000000000000000000000000000000000000000000000000000000016000500ffffffffffffffffffffffff0c6ad98892f1d411a65f0040963251e500000000000000000000000020c1
+3e19649fda01feffffff00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ffffffffffffffffffffffff00000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ffffffffffffffffffffffff0000000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ffffffffffffffffffffffff000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000105000000000000}}

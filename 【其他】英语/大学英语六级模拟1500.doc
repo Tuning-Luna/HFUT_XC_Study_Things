@@ -1,0 +1,629 @@
+{\rtf1\adeflang1025\ansi\ansicpg936\uc2\adeff1\deff0\stshfdbch31505\stshfloch31506\stshfhich31506\stshfbi0\deflang1033\deflangfe2052\themelang1033\themelangfe2052\themelangcs0{\fonttbl{\f0\fbidi \froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}{\f1\fbidi \fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f13\fbidi \fnil\fcharset134\fprq2{\*\panose 02010600030101010101}\'cb\'ce\'cc\'e5{\*\falt SimSun};}{\f34\fbidi \froman\fcharset0\fprq2{\*\panose 02040503050406030204}Cambria Math;}
+{\f36\fbidi \fnil\fcharset134\fprq2{\*\panose 02010600030101010101}\'b5\'c8\'cf\'df{\*\falt DengXian};}{\f44\fbidi \fnil\fcharset134\fprq2{\*\panose 02010600030101010101}@\'cb\'ce\'cc\'e5;}
+{\f45\fbidi \fnil\fcharset134\fprq2{\*\panose 02010600030101010101}@\'b5\'c8\'cf\'df;}{\flomajor\f31500\fbidi \froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}
+{\fdbmajor\f31501\fbidi \fnil\fcharset134\fprq2{\*\panose 02010600030101010101}\'b5\'c8\'cf\'df Light;}{\fhimajor\f31502\fbidi \fnil\fcharset134\fprq2{\*\panose 02010600030101010101}\'b5\'c8\'cf\'df Light;}
+{\fbimajor\f31503\fbidi \froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}{\flominor\f31504\fbidi \froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}
+{\fdbminor\f31505\fbidi \fnil\fcharset134\fprq2{\*\panose 02010600030101010101}\'b5\'c8\'cf\'df{\*\falt DengXian};}{\fhiminor\f31506\fbidi \fnil\fcharset134\fprq2{\*\panose 02010600030101010101}\'b5\'c8\'cf\'df{\*\falt DengXian};}
+{\fbiminor\f31507\fbidi \froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}{\f46\fbidi \froman\fcharset238\fprq2 Times New Roman CE;}{\f47\fbidi \froman\fcharset204\fprq2 Times New Roman Cyr;}
+{\f49\fbidi \froman\fcharset161\fprq2 Times New Roman Greek;}{\f50\fbidi \froman\fcharset162\fprq2 Times New Roman Tur;}{\f51\fbidi \froman\fcharset177\fprq2 Times New Roman (Hebrew);}{\f52\fbidi \froman\fcharset178\fprq2 Times New Roman (Arabic);}
+{\f53\fbidi \froman\fcharset186\fprq2 Times New Roman Baltic;}{\f54\fbidi \froman\fcharset163\fprq2 Times New Roman (Vietnamese);}{\f56\fbidi \fswiss\fcharset238\fprq2 Arial CE;}{\f57\fbidi \fswiss\fcharset204\fprq2 Arial Cyr;}
+{\f59\fbidi \fswiss\fcharset161\fprq2 Arial Greek;}{\f60\fbidi \fswiss\fcharset162\fprq2 Arial Tur;}{\f61\fbidi \fswiss\fcharset177\fprq2 Arial (Hebrew);}{\f62\fbidi \fswiss\fcharset178\fprq2 Arial (Arabic);}
+{\f63\fbidi \fswiss\fcharset186\fprq2 Arial Baltic;}{\f64\fbidi \fswiss\fcharset163\fprq2 Arial (Vietnamese);}{\f178\fbidi \fnil\fcharset0\fprq2 SimSun Western{\*\falt SimSun};}{\f386\fbidi \froman\fcharset238\fprq2 Cambria Math CE;}
+{\f387\fbidi \froman\fcharset204\fprq2 Cambria Math Cyr;}{\f389\fbidi \froman\fcharset161\fprq2 Cambria Math Greek;}{\f390\fbidi \froman\fcharset162\fprq2 Cambria Math Tur;}{\f393\fbidi \froman\fcharset186\fprq2 Cambria Math Baltic;}
+{\f394\fbidi \froman\fcharset163\fprq2 Cambria Math (Vietnamese);}{\f408\fbidi \fnil\fcharset0\fprq2 DengXian Western{\*\falt DengXian};}{\f406\fbidi \fnil\fcharset238\fprq2 DengXian CE{\*\falt DengXian};}
+{\f407\fbidi \fnil\fcharset204\fprq2 DengXian Cyr{\*\falt DengXian};}{\f409\fbidi \fnil\fcharset161\fprq2 DengXian Greek{\*\falt DengXian};}{\f488\fbidi \fnil\fcharset0\fprq2 @SimSun Western;}{\f498\fbidi \fnil\fcharset0\fprq2 @DengXian Western;}
+{\f496\fbidi \fnil\fcharset238\fprq2 @DengXian CE;}{\f497\fbidi \fnil\fcharset204\fprq2 @DengXian Cyr;}{\f499\fbidi \fnil\fcharset161\fprq2 @DengXian Greek;}{\flomajor\f31508\fbidi \froman\fcharset238\fprq2 Times New Roman CE;}
+{\flomajor\f31509\fbidi \froman\fcharset204\fprq2 Times New Roman Cyr;}{\flomajor\f31511\fbidi \froman\fcharset161\fprq2 Times New Roman Greek;}{\flomajor\f31512\fbidi \froman\fcharset162\fprq2 Times New Roman Tur;}
+{\flomajor\f31513\fbidi \froman\fcharset177\fprq2 Times New Roman (Hebrew);}{\flomajor\f31514\fbidi \froman\fcharset178\fprq2 Times New Roman (Arabic);}{\flomajor\f31515\fbidi \froman\fcharset186\fprq2 Times New Roman Baltic;}
+{\flomajor\f31516\fbidi \froman\fcharset163\fprq2 Times New Roman (Vietnamese);}{\fdbmajor\f31520\fbidi \fnil\fcharset0\fprq2 DengXian Light Western;}{\fdbmajor\f31518\fbidi \fnil\fcharset238\fprq2 DengXian Light CE;}
+{\fdbmajor\f31519\fbidi \fnil\fcharset204\fprq2 DengXian Light Cyr;}{\fdbmajor\f31521\fbidi \fnil\fcharset161\fprq2 DengXian Light Greek;}{\fhimajor\f31530\fbidi \fnil\fcharset0\fprq2 DengXian Light Western;}
+{\fhimajor\f31528\fbidi \fnil\fcharset238\fprq2 DengXian Light CE;}{\fhimajor\f31529\fbidi \fnil\fcharset204\fprq2 DengXian Light Cyr;}{\fhimajor\f31531\fbidi \fnil\fcharset161\fprq2 DengXian Light Greek;}
+{\fbimajor\f31538\fbidi \froman\fcharset238\fprq2 Times New Roman CE;}{\fbimajor\f31539\fbidi \froman\fcharset204\fprq2 Times New Roman Cyr;}{\fbimajor\f31541\fbidi \froman\fcharset161\fprq2 Times New Roman Greek;}
+{\fbimajor\f31542\fbidi \froman\fcharset162\fprq2 Times New Roman Tur;}{\fbimajor\f31543\fbidi \froman\fcharset177\fprq2 Times New Roman (Hebrew);}{\fbimajor\f31544\fbidi \froman\fcharset178\fprq2 Times New Roman (Arabic);}
+{\fbimajor\f31545\fbidi \froman\fcharset186\fprq2 Times New Roman Baltic;}{\fbimajor\f31546\fbidi \froman\fcharset163\fprq2 Times New Roman (Vietnamese);}{\flominor\f31548\fbidi \froman\fcharset238\fprq2 Times New Roman CE;}
+{\flominor\f31549\fbidi \froman\fcharset204\fprq2 Times New Roman Cyr;}{\flominor\f31551\fbidi \froman\fcharset161\fprq2 Times New Roman Greek;}{\flominor\f31552\fbidi \froman\fcharset162\fprq2 Times New Roman Tur;}
+{\flominor\f31553\fbidi \froman\fcharset177\fprq2 Times New Roman (Hebrew);}{\flominor\f31554\fbidi \froman\fcharset178\fprq2 Times New Roman (Arabic);}{\flominor\f31555\fbidi \froman\fcharset186\fprq2 Times New Roman Baltic;}
+{\flominor\f31556\fbidi \froman\fcharset163\fprq2 Times New Roman (Vietnamese);}{\fdbminor\f31560\fbidi \fnil\fcharset0\fprq2 DengXian Western{\*\falt DengXian};}{\fdbminor\f31558\fbidi \fnil\fcharset238\fprq2 DengXian CE{\*\falt DengXian};}
+{\fdbminor\f31559\fbidi \fnil\fcharset204\fprq2 DengXian Cyr{\*\falt DengXian};}{\fdbminor\f31561\fbidi \fnil\fcharset161\fprq2 DengXian Greek{\*\falt DengXian};}{\fhiminor\f31570\fbidi \fnil\fcharset0\fprq2 DengXian Western{\*\falt DengXian};}
+{\fhiminor\f31568\fbidi \fnil\fcharset238\fprq2 DengXian CE{\*\falt DengXian};}{\fhiminor\f31569\fbidi \fnil\fcharset204\fprq2 DengXian Cyr{\*\falt DengXian};}{\fhiminor\f31571\fbidi \fnil\fcharset161\fprq2 DengXian Greek{\*\falt DengXian};}
+{\fbiminor\f31578\fbidi \froman\fcharset238\fprq2 Times New Roman CE;}{\fbiminor\f31579\fbidi \froman\fcharset204\fprq2 Times New Roman Cyr;}{\fbiminor\f31581\fbidi \froman\fcharset161\fprq2 Times New Roman Greek;}
+{\fbiminor\f31582\fbidi \froman\fcharset162\fprq2 Times New Roman Tur;}{\fbiminor\f31583\fbidi \froman\fcharset177\fprq2 Times New Roman (Hebrew);}{\fbiminor\f31584\fbidi \froman\fcharset178\fprq2 Times New Roman (Arabic);}
+{\fbiminor\f31585\fbidi \froman\fcharset186\fprq2 Times New Roman Baltic;}{\fbiminor\f31586\fbidi \froman\fcharset163\fprq2 Times New Roman (Vietnamese);}}{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;
+\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;
+\red192\green192\blue192;\red0\green0\blue0;\red0\green0\blue0;}{\*\defchp \fs21\kerning2\loch\af31506\hich\af31506\dbch\af31505 }{\*\defpap \ql \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 }\noqfpromote {\stylesheet{
+\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0 \rtlch\fcs1 \af1\afs24\alang1025 \ltrch\fcs0 \fs24\cf1\lang1033\langfe2052\loch\f1\hich\af1\dbch\af31505\cgrid\langnp1033\langfenp2052 \snext0 \sqformat \spriority0 Normal;}{
+\s1\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\outlinelevel0\rin0\lin0\itap0 \rtlch\fcs1 \ab\af1\afs32\alang1025 \ltrch\fcs0 \b\fs32\cf1\lang1033\langfe2052\loch\f1\hich\af1\dbch\af31505\cgrid\langnp1033\langfenp2052 \sbasedon0 \snext0 \slink15 \sqformat 
+heading 1;}{\s2\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\outlinelevel1\rin0\lin0\itap0 \rtlch\fcs1 \ab\ai\af1\afs28\alang1025 \ltrch\fcs0 \b\i\fs28\cf1\lang1033\langfe2052\loch\f1\hich\af1\dbch\af31505\cgrid\langnp1033\langfenp2052 
+\sbasedon0 \snext0 \slink16 \sqformat heading 2;}{\s3\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\outlinelevel2\rin0\lin0\itap0 \rtlch\fcs1 \ab\af1\afs26\alang1025 \ltrch\fcs0 
+\b\fs26\cf1\lang1033\langfe2052\loch\f1\hich\af1\dbch\af31505\cgrid\langnp1033\langfenp2052 \sbasedon0 \snext0 \slink17 \sqformat heading 3;}{\*\cs10 \additive \ssemihidden \sunhideused \spriority1 Default Paragraph Font;}{\*
+\ts11\tsrowd\trftsWidthB3\trpaddl108\trpaddr108\trpaddfl3\trpaddft3\trpaddfb3\trpaddfr3\trcbpat1\trcfpat1\tblind0\tblindtype3\tsvertalt\tsbrdrt\tsbrdrl\tsbrdrb\tsbrdrr\tsbrdrdgl\tsbrdrdgr\tsbrdrh\tsbrdrv 
+\ql \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs21\alang1025 \ltrch\fcs0 \fs21\lang1033\langfe2052\kerning2\loch\f31506\hich\af31506\dbch\af31505\cgrid\langnp1033\langfenp2052 
+\snext11 \ssemihidden \sunhideused Normal Table;}{\*\cs15 \additive \rtlch\fcs1 \ab\af1\afs44 \ltrch\fcs0 \b\f1\fs44\cf1\kerning44 \sbasedon10 \slink1 \slocked \spriority9 \'b1\'ea\'cc\'e2 1 \'d7\'d6\'b7\'fb;}{\*\cs16 \additive \rtlch\fcs1 \ab\af0\afs32 
+\ltrch\fcs0 \b\fs32\cf1\kerning0\loch\f31502\hich\af31502\dbch\af31501 \sbasedon10 \slink2 \slocked \ssemihidden \spriority9 \'b1\'ea\'cc\'e2 2 \'d7\'d6\'b7\'fb;}{\*\cs17 \additive \rtlch\fcs1 \ab\af1\afs32 \ltrch\fcs0 \b\f1\fs32\cf1\kerning0 
+\sbasedon10 \slink3 \slocked \ssemihidden \spriority9 \'b1\'ea\'cc\'e2 3 \'d7\'d6\'b7\'fb;}{\s18\qc \li0\ri0\nowidctlpar\brdrb\brdrs\brdrw15\brsp20 \tqc\tx4153\tqr\tx8306\wrapdefault\faauto\nosnaplinegrid\rin0\lin0\itap0 \rtlch\fcs1 \af1\afs18\alang1025 
+\ltrch\fcs0 \fs18\cf1\lang1033\langfe2052\loch\f1\hich\af1\dbch\af31505\cgrid\langnp1033\langfenp2052 \sbasedon0 \snext18 \slink19 \sunhideused \styrsid1070339 header;}{\*\cs19 \additive \rtlch\fcs1 \af1\afs18 \ltrch\fcs0 \f1\fs18\cf1\kerning0 
+\sbasedon10 \slink18 \slocked \styrsid1070339 \'d2\'b3\'c3\'bc \'d7\'d6\'b7\'fb;}{\s20\ql \li0\ri0\nowidctlpar\tqc\tx4153\tqr\tx8306\wrapdefault\faauto\nosnaplinegrid\rin0\lin0\itap0 \rtlch\fcs1 \af1\afs18\alang1025 \ltrch\fcs0 
+\fs18\cf1\lang1033\langfe2052\loch\f1\hich\af1\dbch\af31505\cgrid\langnp1033\langfenp2052 \sbasedon0 \snext20 \slink21 \sunhideused \styrsid1070339 footer;}{\*\cs21 \additive \rtlch\fcs1 \af1\afs18 \ltrch\fcs0 \f1\fs18\cf1\kerning0 
+\sbasedon10 \slink20 \slocked \styrsid1070339 \'d2\'b3\'bd\'c5 \'d7\'d6\'b7\'fb;}}{\*\listtable}{\*\listoverridetable}{\*\rsidtbl \rsid808107\rsid1070339\rsid2499044\rsid2580619\rsid3954152\rsid5266696\rsid5992579\rsid6189392\rsid6366555\rsid6511690
+\rsid7159262\rsid8136490\rsid9635966\rsid10247534\rsid10250050\rsid10834003\rsid12989979\rsid14038044\rsid14356403\rsid15081640\rsid15801493}{\mmathPr\mmathFont34\mbrkBin0\mbrkBinSub0\msmallFrac0\mdispDef1\mlMargin0\mrMargin0\mdefJc1\mwrapIndent1440
+\mintLim0\mnaryLim1}{\info{\operator Lucy Zou}{\creatim\yr2024\mo3\dy16\hr11\min37}{\revtim\yr2024\mo3\dy24\hr18\min53}{\version10}{\edmins503}{\nofpages7}{\nofwords3806}{\nofchars21697}{\nofcharsws25453}{\vern91}}{\*\xmlnstbl {\xmlns1 http://schemas.micr
+osoft.com/office/word/2003/wordml}}\paperw11907\paperh16840\margl720\margr720\margt720\margb720\gutter0\ltrsect 
+\ftnbj\aenddoc\trackmoves0\trackformatting1\donotembedsysfont0\relyonvml0\donotembedlingdata1\grfdocevents0\validatexml0\showplaceholdtext0\ignoremixedcontent0\saveinvalidxml0\showxmlerrors0\horzdoc\dghspace120\dgvspace120\dghorigin1701\dgvorigin1984
+\dghshow0\dgvshow3\jcompress\viewkind1\viewscale70\rsidroot808107 \fet0{\*\wgrffmtfilter 2450}\ilfomacatclnup0{\*\ftnsep \ltrpar \pard\plain \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0\pararsid1070339 \rtlch\fcs1 
+\af1\afs24\alang1025 \ltrch\fcs0 \fs24\cf1\lang1033\langfe2052\loch\af1\hich\af1\dbch\af31505\cgrid\langnp1033\langfenp2052 {\rtlch\fcs1 \af1 \ltrch\fcs0 \insrsid9635966 \chftnsep 
+\par }}{\*\ftnsepc \ltrpar \pard\plain \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0\pararsid1070339 \rtlch\fcs1 \af1\afs24\alang1025 \ltrch\fcs0 \fs24\cf1\lang1033\langfe2052\loch\af1\hich\af1\dbch\af31505\cgrid\langnp1033\langfenp2052 {
+\rtlch\fcs1 \af1 \ltrch\fcs0 \insrsid9635966 \chftnsepc 
+\par }}{\*\aftnsep \ltrpar \pard\plain \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0\pararsid1070339 \rtlch\fcs1 \af1\afs24\alang1025 \ltrch\fcs0 \fs24\cf1\lang1033\langfe2052\loch\af1\hich\af1\dbch\af31505\cgrid\langnp1033\langfenp2052 {
+\rtlch\fcs1 \af1 \ltrch\fcs0 \insrsid9635966 \chftnsep 
+\par }}{\*\aftnsepc \ltrpar \pard\plain \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0\pararsid1070339 \rtlch\fcs1 \af1\afs24\alang1025 \ltrch\fcs0 \fs24\cf1\lang1033\langfe2052\loch\af1\hich\af1\dbch\af31505\cgrid\langnp1033\langfenp2052 {
+\rtlch\fcs1 \af1 \ltrch\fcs0 \insrsid9635966 \chftnsepc 
+\par }}\ltrpar \sectd \ltrsect\linex0\sectdefaultcl\sftnbj {\*\pnseclvl1\pnucrm\pnstart1\pnindent720\pnhang {\pntxta \dbch .}}{\*\pnseclvl2\pnucltr\pnstart1\pnindent720\pnhang {\pntxta \dbch .}}{\*\pnseclvl3\pndec\pnstart1\pnindent720\pnhang {\pntxta \dbch .}}
+{\*\pnseclvl4\pnlcltr\pnstart1\pnindent720\pnhang {\pntxta \dbch )}}{\*\pnseclvl5\pndec\pnstart1\pnindent720\pnhang {\pntxtb \dbch (}{\pntxta \dbch )}}{\*\pnseclvl6\pnlcltr\pnstart1\pnindent720\pnhang {\pntxtb \dbch (}{\pntxta \dbch )}}{\*\pnseclvl7
+\pnlcrm\pnstart1\pnindent720\pnhang {\pntxtb \dbch (}{\pntxta \dbch )}}{\*\pnseclvl8\pnlcltr\pnstart1\pnindent720\pnhang {\pntxtb \dbch (}{\pntxta \dbch )}}{\*\pnseclvl9\pnlcrm\pnstart1\pnindent720\pnhang {\pntxtb \dbch (}{\pntxta \dbch )}}
+\pard\plain \ltrpar\qj \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0\pararsid1070339 \rtlch\fcs1 \af1\afs24\alang1025 \ltrch\fcs0 \fs24\cf1\lang1033\langfe2052\loch\af1\hich\af1\dbch\af31505\cgrid\langnp1033\langfenp2052 {\rtlch\fcs1 \af0\afs21 
+\ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 
+\par }\pard \ltrpar\qc \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0\pararsid2499044 {\rtlch\fcs1 \ab\af0\afs28 \ltrch\fcs0 \b\f0\fs28\cf0\insrsid2580619\charrsid2499044 \loch\af0\hich\af0\dbch\f31505 \'b4\'f3\'d1\'a7\'d3\'a2\'d3\'ef\'c1\'f9\'bc\'b6
+\'c4\'a3\'c4\'e2}{\rtlch\fcs1 \ab\af0\afs28 \ltrch\fcs0 \b\f0\fs28\cf0\insrsid2580619\charrsid2499044 \hich\af0\dbch\af31505\loch\f0 1500}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \f0\fs28\cf0\insrsid2580619\charrsid2499044 
+\par }\pard \ltrpar\qj \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0\pararsid1070339 {\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 
+\par }{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid8136490 
+\par }{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 
+\par }{\rtlch\fcs1 \ab\af0\afs21 \ltrch\fcs0 \b\f0\fs21\cf0\insrsid2580619\charrsid808107 \hich\af0\dbch\af31505\loch\f0 Part }{\rtlch\fcs1 \ab\af0\afs21 \ltrch\fcs0 \b\fs21\cf0\loch\af0\hich\af0\dbch\af13\insrsid2580619\charrsid808107 
+\loch\af0\dbch\af13\hich\f0 \uc1\u8545\'3f}{\rtlch\fcs1 \ab\af0\afs21 \ltrch\fcs0 \b\f0\fs21\cf0\insrsid2580619\charrsid808107 \hich\af0\dbch\af31505\loch\f0  Listening Comprehension}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 
+\f0\fs21\cf0\insrsid2580619\charrsid808107 
+\par 
+\par }{\rtlch\fcs1 \ab\af0\afs21 \ltrch\fcs0 \b\f0\fs21\cf0\insrsid2580619\charrsid808107 \hich\af0\dbch\af31505\loch\f0 Section A}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 
+\par \hich\af0\dbch\af31505\loch\f0 Directions:}{\rtlch\fcs1 \ab\af0\afs21 \ltrch\fcs0 \b\f0\fs21\cf0\insrsid2580619\charrsid808107 \hich\af0\dbch\af31505\loch\f0  }{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 
+\hich\af0\dbch\af31505\loch\f0 
+In this section, you will hear two long conversations. At the end of each conversation, you will hear three or four questions. Both the conversation and the questions will be spoken only once. After you hear a question, you must choose the best answer fro
+\hich\af0\dbch\af31505\loch\f0 m the four choices marked A, B, C and D. Then mark the corresponding letter on Answer Sheet 1 with a single line through the centre.
+\par \hich\af0\dbch\af31505\loch\f0 2}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \loch\af0\hich\af0\dbch\f31505 \'a1\'a2}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 
+\hich\af0\dbch\af31505\loch\f0 A. She attended one of their meetings.
+\par \hich\af0\dbch\af31505\loch\f0  \~\~ B. Her roommate is a member.
+\par \hich\af0\dbch\af31505\loch\f0  \~\~ C. She read about them in the newspaper.
+\par \hich\af0\dbch\af31505\loch\f0  \~\~ D\hich\af0\dbch\af31505\loch\f0 . She saw them protesting.
+\par \hich\af0\dbch\af31505\loch\f0  \~\~
+\par \hich\af0\dbch\af31505\loch\f0 3}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \loch\af0\hich\af0\dbch\f31505 \'a1\'a2}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 
+\hich\af0\dbch\af31505\loch\f0 A. Secure more student parking spaces.
+\par \hich\af0\dbch\af31505\loch\f0  \~\~ B. Preserve open spaces on campus.
+\par \hich\af0\dbch\af31505\loch\f0  \~\~ C. Get more funding for their group.
+\par \hich\af0\dbch\af31505\loch\f0  \~\~ D. Schedule a meeting with college administrators.
+\par \hich\af0\dbch\af31505\loch\f0  \~\~
+\par \hich\af0\dbch\af31505\loch\f0 4}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \loch\af0\hich\af0\dbch\f31505 \'a1\'a2}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 
+\hich\af0\dbch\af31505\loch\f0 A. Help the man plan a student rally.
+\par \hich\af0\dbch\af31505\loch\f0  \~\~ B. Use the student parking lot.
+\par \hich\af0\dbch\af31505\loch\f0  \~\~ C. Make a donation to support the group.
+\par \hich\af0\dbch\af31505\loch\f0  \~\~ D. Sign a petition.
+\par \hich\af0\dbch\af31505\loch\f0  \~\~
+\par \hich\af0\dbch\af31505\loch\f0 5}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \loch\af0\hich\af0\dbch\f31505 \'a1\'a2}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 
+\hich\af0\dbch\af31505\loch\f0 A. She is interested in the student action coalition.
+\par \hich\af0\dbch\af31505\loch\f0  \~\~ B. She will definitely come to the next meeting.
+\par \hich\af0\dbch\af31505\loch\f0  \~\~ C. She will have a picnic with her frie\hich\af0\dbch\af31505\loch\f0 nd.
+\par \hich\af0\dbch\af31505\loch\f0  \~\~ D. She hates to get together with others.
+\par \hich\af0\dbch\af31505\loch\f0  \~\~
+\par \hich\af0\dbch\af31505\loch\f0 6}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \loch\af0\hich\af0\dbch\f31505 \'a1\'a2}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 
+\hich\af0\dbch\af31505\loch\f0  A. Outdoor billboards can be traditional or digital ones.
+\par \hich\af0\dbch\af31505\loch\f0  \~ B. Outdoor advertising has more advantages than disadvantages.
+\par \hich\af0\dbch\af31505\loch\f0  \~ C. Outdoor advertising needs more mediums than other advertising.
+\par \hich\af0\dbch\af31505\loch\f0  \~ D. Advertising in heavy-traffic areas gets little attention.
+\par \hich\af0\dbch\af31505\loch\f0 7}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \loch\af0\hich\af0\dbch\f31505 \'a1\'a2}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 
+\hich\af0\dbch\af31505\loch\f0  A. It is cheaper than other types of advertising.
+\par \hich\af0\dbch\af31505\loch\f0  \~ B. It can get more attention than other forms of advertising.
+\par \hich\af0\dbch\af31505\loch\f0  \~\hich\af0\dbch\af31505\loch\f0  C. It will greatly improve the sales of the products.
+\par \hich\af0\dbch\af31505\loch\f0  \~ D. It can be used to attract many new customers.
+\par \hich\af0\dbch\af31505\loch\f0 8}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \loch\af0\hich\af0\dbch\f31505 \'a1\'a2}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 
+\hich\af0\dbch\af31505\loch\f0  A. Doubtful. \~ \~ \~ \~ B. Indifferent. \~ \~ \~ \~ \~ \~ C. Supportive. \~ \~ \~ \~ \~ \~ D. Reserved.
+\par 
+\par }{\rtlch\fcs1 \ab\af0\afs21 \ltrch\fcs0 \b\f0\fs21\cf0\insrsid2580619\charrsid808107 \hich\af0\dbch\af31505\loch\f0 Section B}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 
+\par \hich\af0\dbch\af31505\loch\f0 Directions:}{\rtlch\fcs1 \ab\af0\afs21 \ltrch\fcs0 \b\f0\fs21\cf0\insrsid2580619\charrsid808107 \hich\af0\dbch\af31505\loch\f0  }{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 
+\hich\af0\dbch\af31505\loch\f0 
+In this section, you will hear two passages. At the end of each passage, you will hear three or four questions. Both the passage and the questions will be spoken only once. After you hear a question, you must choose the best answer from the four choices m
+\hich\af0\dbch\af31505\loch\f0 arked A, B, C and D. Then mark the \hich\af0\dbch\af31505\loch\f0 corresponding letter on Answer Sheet 1 with a single line through the centre.
+\par \hich\af0\dbch\af31505\loch\f0 9}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \loch\af0\hich\af0\dbch\f31505 \'a1\'a2}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 
+\hich\af0\dbch\af31505\loch\f0  A. Young people tended to do what they like.
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~B. Companies preferred male workers to female.
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~C. Young men got better pay than young women.
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~D. Good looking people earned more than bright ones}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid3954152 .}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 
+\par \hich\af0\dbch\af31505\loch\f0 10}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \loch\af0\hich\af0\dbch\f31505 \'a1\'a2}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 
+\hich\af0\dbch\af31505\loch\f0  A. The self-assured ones. \~ \~ \~ \~ \~ \~ \~ \~B. The high-income ones.
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~C. The average ones. \~ \~ \~ \~ \~ \~ \~ \~ \~ \~ D. The popular ones.
+\par \hich\af0\dbch\af31505\loch\f0 11}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \loch\af0\hich\af0\dbch\f31505 \'a1\'a2}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 
+\hich\af0\dbch\af31505\loch\f0  A. Brighter people got better pay.
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~B. Pay scales were not fair at all.
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~C. Males \hich\af0\dbch\af31505\loch\f0 were brighter than females.
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~D. Pays depended on one's age.
+\par \hich\af0\dbch\af31505\loch\f0 12}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \loch\af0\hich\af0\dbch\f31505 \'a1\'a2}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 
+\hich\af0\dbch\af31505\loch\f0  A. He has to be 40 percent smarter.
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~B. He has to work for longer time.
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~C. He needs to have a better education.
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~D. He should have something special.
+\par \hich\af0\dbch\af31505\loch\f0 13}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \loch\af0\hich\af0\dbch\f31505 \'a1\'a2}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 
+\hich\af0\dbch\af31505\loch\f0 A. Ask questions frequently.
+\par \hich\af0\dbch\af31505\loch\f0  \~\~ B. Speak very loudly.
+\par \hich\af0\dbch\af31505\loch\f0  \~\~ C. Limit the speech to 15 minutes.
+\par \hich\af0\dbch\af31505\loch\f0  \~\~ D. Vary tone, volume, and speed of speech.
+\par \hich\af0\dbch\af31505\loch\f0 14}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \loch\af0\hich\af0\dbch\f31505 \'a1\'a2}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 
+\hich\af0\dbch\af31505\loch\f0 A. Depend on microphones.
+\par \hich\af0\dbch\af31505\loch\f0  \~\~ B. Avoid shouting.
+\par \hich\af0\dbch\af31505\loch\f0  \~\~ C. Choose small rooms.
+\par \hich\af0\dbch\af31505\loch\f0  \~\~ D. Keep volume stable.
+\par \hich\af0\dbch\af31505\loch\f0 15}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \loch\af0\hich\af0\dbch\f31505 \'a1\'a2}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 
+\hich\af0\dbch\af31505\loch\f0 A. Make a pause.
+\par \hich\af0\dbch\af31505\loch\f0  \~\~\hich\af0\dbch\af31505\loch\f0  B. Lower register.
+\par \hich\af0\dbch\af31505\loch\f0  \~\~ C. Vary pitch.
+\par \hich\af0\dbch\af31505\loch\f0  \~\~ D. Slower pace.
+\par \hich\af0\dbch\af31505\loch\f0 16}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \loch\af0\hich\af0\dbch\f31505 \'a1\'a2}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 
+\hich\af0\dbch\af31505\loch\f0 A. To practice speaking slowly.
+\par \hich\af0\dbch\af31505\loch\f0  \~\~ B. To learn to adjust their tones.
+\par \hich\af0\dbch\af31505\loch\f0  \~\~ C. To evaluate their own voices.
+\par \hich\af0\dbch\af31505\loch\f0  \~\~ D. To record their voices for the speaker to evaluate.
+\par 
+\par }{\rtlch\fcs1 \ab\af0\afs21 \ltrch\fcs0 \b\f0\fs21\cf0\insrsid2580619\charrsid808107 \hich\af0\dbch\af31505\loch\f0 Section C}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 
+\par \hich\af0\dbch\af31505\loch\f0 Directions:}{\rtlch\fcs1 \ab\af0\afs21 \ltrch\fcs0 \b\f0\fs21\cf0\insrsid2580619\charrsid808107 \hich\af0\dbch\af31505\loch\f0  }{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 
+\hich\af0\dbch\af31505\loch\f0 
+In this section, you will hear three recordings of lectures or talks followed by three or four questions. The recordings will be played only once. After you hear a question, you must choose the best answer from the four choices marked A, B, C and D. Then 
+\hich\af0\dbch\af31505\loch\f0 mark \hich\af0\dbch\af31505\loch\f0 the corresponding letter on answer Sheet 1 with a single line through the centre.
+\par \hich\af0\dbch\af31505\loch\f0 17}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \loch\af0\hich\af0\dbch\f31505 \'a1\'a2}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 
+\hich\af0\dbch\af31505\loch\f0 A. They are just too lazy.
+\par \hich\af0\dbch\af31505\loch\f0  \~\~ B. They don't get external help.
+\par \hich\af0\dbch\af31505\loch\f0  \~\~ C. There are too many residents.
+\par \hich\af0\dbch\af31505\loch\f0  \~\~ D. They don't care about it.
+\par \hich\af0\dbch\af31505\loch\f0 18}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \loch\af0\hich\af0\dbch\f31505 \'a1\'a2}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 
+\hich\af0\dbch\af31505\loch\f0 A. They sit or lie for a long time.
+\par \hich\af0\dbch\af31505\loch\f0  \~\~ B. They suffer from malnutrition.
+\par \hich\af0\dbch\af31505\loch\f0  \~\~ C. Their immune system is declining.
+\par \hich\af0\dbch\af31505\loch\f0  \~\~ D. They don't take enough medicine.
+\par \hich\af0\dbch\af31505\loch\f0 19}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \loch\af0\hich\af0\dbch\f31505 \'a1\'a2}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 
+\hich\af0\dbch\af31505\loch\f0 A. It is the most serious type of neglect.
+\par \hich\af0\dbch\af31505\loch\f0  \~\~ B. It is easier to identify than physical neglect.
+\par \hich\af0\dbch\af31505\loch\f0  \~\~ C. It can be as damaging as physical neglect.
+\par \hich\af0\dbch\af31505\loch\f0  \~\~ D. It results from infrequent visits from family.
+\par \hich\af0\dbch\af31505\loch\f0 20}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \loch\af0\hich\af0\dbch\f31505 \'a1\'a2}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 
+\hich\af0\dbch\af31505\loch\f0 A. Electronic cigarettes don't deliver nicotine.
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~B. Teens tend to use only one form of tobacco.
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~C. The more nicotine you get, the more diffic\hich\af0\dbch\af31505\loch\f0 ult it is to quit.
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~D. Nicotine only comes from cigarettes and small cigars.
+\par \hich\af0\dbch\af31505\loch\f0 21}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \loch\af0\hich\af0\dbch\f31505 \'a1\'a2}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 
+\hich\af0\dbch\af31505\loch\f0 A. Gum and nicotine patches.
+\par \hich\af0\dbch\af31505\loch\f0  \~\~ B. Electronic cigarettes and gum.
+\par \hich\af0\dbch\af31505\loch\f0  \~\~ C. A nicotine patch and gum.
+\par \hich\af0\dbch\af31505\loch\f0  \~\~ D. A nicotine patch and advice.
+\par \hich\af0\dbch\af31505\loch\f0 22}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \loch\af0\hich\af0\dbch\f31505 \'a1\'a2}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 
+\hich\af0\dbch\af31505\loch\f0 A. Their nicotine cravings were reduced.
+\par \hich\af0\dbch\af31505\loch\f0  \~\~ B. Their expectation of life was improved.
+\par \hich\af0\dbch\af31505\loch\f0  \~\~ C. They worked much harder.
+\par \hich\af0\dbch\af31505\loch\f0  \~\~ D. They were still bothered by smoking.
+\par \hich\af0\dbch\af31505\loch\f0 23}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \loch\af0\hich\af0\dbch\f31505 \'a1\'a2}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 
+\hich\af0\dbch\af31505\loch\f0  A. Because they are unsatisfied with their work.
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~B. Because they need to take care of their children.
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~C. Because they are in companies with loose management.
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~D. Because they don't take their work seriously.
+\par \hich\af0\dbch\af31505\loch\f0 24}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \loch\af0\hich\af0\dbch\f31505 \'a1\'a2}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 
+\hich\af0\dbch\af31505\loch\f0  A. Male colleagues in their 30s. \~ \~ \~ 
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~B. Managers of the company. \~ \~ \~ \~ \~ \~ \~ 
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~C. Younger colleagues in their\hich\af0\dbch\af31505\loch\f0  20s.
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~D. Older colleagues in their 50s.
+\par \hich\af0\dbch\af31505\loch\f0 25}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \loch\af0\hich\af0\dbch\f31505 \'a1\'a2}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 
+\hich\af0\dbch\af31505\loch\f0  A. Fairness and equality were not paid due attention to.
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~B. Employees without children could have their voice better heard.
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~C. Managers had a good knowledge of the relevant laws.
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~D. Women could be in an unfavorable position in career development.
+\par 
+\par }{\rtlch\fcs1 \ab\af0\afs21 \ltrch\fcs0 \b\f0\fs21\cf0\insrsid2580619\charrsid808107 \hich\af0\dbch\af31505\loch\f0 Part }{\rtlch\fcs1 \ab\af0\afs21 \ltrch\fcs0 \b\fs21\cf0\loch\af0\hich\af0\dbch\af13\insrsid2580619\charrsid808107 
+\loch\af0\dbch\af13\hich\f0 \uc1\u8546\'3f}{\rtlch\fcs1 \ab\af0\afs21 \ltrch\fcs0 \b\f0\fs21\cf0\insrsid2580619\charrsid808107 \hich\af0\dbch\af31505\loch\f0  Reading Comprehension}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 
+\f0\fs21\cf0\insrsid2580619\charrsid808107 
+\par 
+\par }{\rtlch\fcs1 \ab\af0\afs21 \ltrch\fcs0 \b\f0\fs21\cf0\insrsid2580619\charrsid808107 \hich\af0\dbch\af31505\loch\f0 Section A}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 
+\par \hich\af0\dbch\af31505\loch\f0 Directions:}{\rtlch\fcs1 \ab\af0\afs21 \ltrch\fcs0 \b\f0\fs21\cf0\insrsid2580619\charrsid808107 \hich\af0\dbch\af31505\loch\f0  }{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 
+\hich\af0\dbch\af31505\loch\f0 
+In this section, there is a passage with ten blanks. You are required to select one word for each blank from a list of choices given in a word bank following the passage. Read the passage through carefully before making your choices. Each choice in the ba
+\hich\af0\dbch\af31505\loch\f0 nk is identified by a letter. Please mark the corresponding letter for each item on Answer Sheet 2 with a single line through the centre. You may not use any of the words in the bank more than once.
+\par \hich\af0\dbch\af31505\loch\f0 For authors \hich\af0\dbch\af31505\loch\f0 of self-help guides, no human problem is too great or too small. Want to become fitter, richer or happier in 2017? There are books for it\hich\f0 \emdash }{\rtlch\fcs1 \af0\afs21 
+\ltrch\fcs0 \f0\fs21\ul\cf0\insrsid2580619\charrsid808107 \hich\af0\dbch\af31505\loch\f0  \~26 \~}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \hich\af0\dbch\af31505\loch\f0 
+ upon shelves of them. Hoping for increased efficiency, decisiveness and creativity in the months ahead? There are titles for that, too.
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~As we settle down to our New Year's }{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\ul\cf0\insrsid2580619\charrsid808107 \hich\af0\dbch\af31505\loch\f0  \~27 \~}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 
+\f0\fs21\cf0\insrsid2580619\charrsid808107 \hich\af0\dbch\af31505\loch\f0 
+, well turn in droves to self-help books, hoping to find our own best selves in their pages. But a book needn't lecture to leave its imprint. The truth is that all good literature chang\hich\af0\dbch\af31505\loch\f0 
+es us, and a growing body of research suggests you might do better browsing through fiction for support in }{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\ul\cf0\insrsid2580619\charrsid808107 \hich\af0\dbch\af31505\loch\f0  \~28 \~}{\rtlch\fcs1 \af0\afs21 
+\ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \hich\af0\dbch\af31505\loch\f0  life's challenges. Think of it less as self-help than "shelf help".
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~Reading has been proven to sharpen }{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\ul\cf0\insrsid2580619\charrsid808107 \hich\af0\dbch\af31505\loch\f0  \~29 \~}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 
+\f0\fs21\cf0\insrsid2580619\charrsid808107 \hich\af0\dbch\af31505\loch\f0  thinking, enabling us to better discern patterns\hich\f0 \emdash \loch\f0 
+a handy tool when it comes to the often baffling behaviour of ourselves and others. But fiction in particular can make you more socially able. Last year, the Journal of Applied Social Psychology published \hich\af0\dbch\af31505\loch\f0 
+a paper showing how reading Ha\hich\af0\dbch\af31505\loch\f0 rry Potter made young people in the U. K. and Italy more }{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\ul\cf0\insrsid2580619\charrsid808107 \hich\af0\dbch\af31505\loch\f0  \~30 \~}{\rtlch\fcs1 
+\af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \hich\af0\dbch\af31505\loch\f0  disposed towards stigmatised (}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \loch\af0\hich\af0\dbch\f31505 \'ca\'b9\'c3\'c9
+\'c9\'cf\'ce\'db\'c3\'fb\'b5\'c4}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \hich\af0\dbch\af31505\loch\f0 ) minorities such as }{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\ul\cf0\insrsid2580619\charrsid808107 
+\hich\af0\dbch\af31505\loch\f0  \~31 \~}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \hich\af0\dbch\af31505\loch\f0 
+. And in 2013, psychologists at the New School for Social Research found that literary fiction enhanced peopled ability to }{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\ul\cf0\insrsid2580619\charrsid808107 \hich\af0\dbch\af31505\loch\f0  \~32 \~}{
+\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \hich\af0\dbch\af31505\loch\f0  and read others, emotions.
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~We think of novels as places in which to lose ourselves, but when we }{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\ul\cf0\insrsid2580619\charrsid808107 \hich\af0\dbch\af31505\loch\f0  \~33 \~}{\rtlch\fcs1 \af0\afs21 
+\ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \hich\af0\dbch\af31505\loch\f0 , we take with us inspiration from our favourite characters. A 2012 study by researchers at Ohio State University found that this process could actua
+\hich\af0\dbch\af31505\loch\f0 lly change a reader's behavior. In one experiment, participants strongly identifying with a }{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\ul\cf0\insrsid2580619\charrsid808107 \hich\af0\dbch\af31505\loch\f0  \~34 \~}{
+\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \hich\af0\dbch\af31505\loch\f0  character who overcame obstacles to vote proved significantly more likely to vote in a real election.
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~They may not promise transformation in seven easy steps, but gripping novels can inform and motivate, short stories\hich\af0\dbch\af31505\loch\f0 
+ can console and trigger self-reflection, and poetry has been shown to engage parts of the brain linked to memory. Sometimes an author helps by simply taking your mind off a problem, }{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 
+\f0\fs21\ul\cf0\insrsid2580619\charrsid808107 \hich\af0\dbch\af31505\loch\f0  \~35 \~}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \hich\af0\dbch\af31505\loch\f0 
+ you so fully in another's world and outlook that you transcend yourself, returning recharged and determined.
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~A. accepting
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~B. analytical
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~C. battling
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~D. books
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~E. concretely
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~F. critical
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~G. emerge
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~H. express
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~I. fictional
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~J. immersing
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~K. positively
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~L. refugees
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~M. register
+\par \hich\af0\dbch\af31505\loch\f0  \~\hich\af0\dbch\af31505\loch\f0  \~N. resolutions
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~O. shelves
+\par }{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619 
+\par }{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid5992579 \hich\af0\dbch\af31505\loch\f0 26.______
+\par \hich\af0\dbch\af31505\loch\f0 27.______  
+\par \hich\af0\dbch\af31505\loch\f0 28.______ 
+\par \hich\af0\dbch\af31505\loch\f0 29.______ 
+\par \hich\af0\dbch\af31505\loch\f0 30.______ 
+\par \hich\af0\dbch\af31505\loch\f0 31.______ 
+\par \hich\af0\dbch\af31505\loch\f0 32.______ 
+\par \hich\af0\dbch\af31505\loch\f0 33.______ 
+\par \hich\af0\dbch\af31505\loch\f0 34. ______ 
+\par \hich\af0\dbch\af31505\loch\f0 35.______
+\par }{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid5992579\charrsid5992579 
+\par }{\rtlch\fcs1 \ab\af0\afs21 \ltrch\fcs0 \b\f0\fs21\cf0\insrsid2580619\charrsid808107 \hich\af0\dbch\af31505\loch\f0 Section B}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 
+\par \hich\af0\dbch\af31505\loch\f0 Directions:}{\rtlch\fcs1 \ab\af0\afs21 \ltrch\fcs0 \b\f0\fs21\cf0\insrsid2580619\charrsid808107 \hich\af0\dbch\af31505\loch\f0  }{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 
+\hich\af0\dbch\af31505\loch\f0 
+In this section, you are going to read a passage with ten statements attached to it. Each statement contains information given in one of the paragraphs. Identify the paragraph from which the information is derived. You may choose a paragraph more than onc
+\hich\af0\dbch\af31505\loch\f0 e. Each paragraph is marked with a letter. Answer the questions by marking the corresponding letter on Answer Sheet 2.
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~The Uses of Difficulty
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~The brain likes a challenge - and putting a few obstacles in its way may well. boost its creativity.
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~A.\hich\af0\dbch\af31505\loch\f0 
+ Jack White, the former frontman of the White Stripes and an influential figure among fellow musicians, likes to make things difficult for himself. He uses cheap guitars that won't stay in shape or in tune. When performing, he positions his instruments in
+\hich\af0\dbch\af31505\loch\f0 
+ a way that is deliberately inconvenient, so that switching from guitar to organ mid-song involves a mad dash across the stage. Why? Because he's on the run from what he describes as a disease that preys on every artist: "ease of use". When making music g
+\hich\af0\dbch\af31505\loch\f0 et\hich\af0\dbch\af31505\loch\f0 s too easy, says White, it becomes harder to make it sing.
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~
+B. It's an odd thought. Why would anyone make their work more difficult than it already :is? Yet we know that difficulty can pay unexpected dividends. In 1966, soon after the Beatles had finished work on "Rubber Soul", Paul McCartney looked into the p
+\hich\af0\dbch\af31505\loch\f0 ossibility of going to America to record their next album. The equipment in American studios was more advanced than anything in Britain. which had led the Beatles' great rivals, the Rolling Stones, 
+\hich\af0\dbch\af31505\loch\f0 to make their latest album, "Aftermath", in Los Angeles. McCartney found that EMI's (}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \loch\af0\hich\af0\dbch\f31505 \'b0\'d9\'b4\'fa\'b3\'aa
+\'c6\'ac}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \hich\af0\dbch\af31505\loch\f0 
+) contractual clauses made it prohibitively expensive to follow suit, and the Beatles had to make do with the primitive technology of Abbey Road.
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~
+C. Lucky for us. Over the next two years they made their most groundbreaking work, trolling the recording studio into a magical instrument of its own. Precisely because they were working with old-fashioned machines, George Martin and his team of engin
+\hich\af0\dbch\af31505\loch\f0 eers were forced to ap\hich\af0\dbch\af31505\loch\f0 
+ply every ounce of their creativity to solve the problems posed to them by Lennon and McCartney. Songs like "Tomorrow Never Knows", "Strawberry Fields Forever", and "A Day in the Life" featured revolutionary sound effects that dazzled and mystified Martin
+\hich\af0\dbch\af31505\loch\f0 's American counterparts.
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~
+D. Sometimes it's only when a difficulty is removed that we realise what it was doing for us. For more than two decades, starting in the 1960s, the poet Ted Hughes sat on the judging panel of an annual poetry competition for Br
+\hich\af0\dbch\af31505\loch\f0 
+itish schoolchildren. During the 1980s he noticed an increasing number of long poems among the submissions, with some running to 70 or 80 pages. These poems were verbally inventive and fluent, but also "strangely boring". After making inquiries Hughes dis
+\hich\af0\dbch\af31505\loch\f0 covered that they were being composed on computers, then just finding their way into British homes.
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~E. You might have thought any tool which enables a writer to get words on to the page would be an advantage. But there may be a cost to such facility. In\hich\af0\dbch\af31505\loch\f0 
+ an interview with the Paris Review Hughes speculated that when a person puts pen to paper, "you meet the terrible resistance of what happened your first year at it, when you couldn't write at all". As the brain attempts to force the unsteady hand to do i
+\hich\af0\dbch\af31505\loch\f0 ts bidding, the tension between the two results in a more compressed, psychologically denser expression. Remove that resistance and you are more likely to produce a 70-page ramble (}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 
+\f0\fs21\cf0\insrsid2580619\charrsid808107 \loch\af0\hich\af0\dbch\f31505 \'b2\'bb\'d7\'c5\'b1\'df\'bc\'ca\'b5\'c4\'b3\'a4\'c6\'aa\'b4\'f3\'c2\'db}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 
+\hich\af0\dbch\af31505\loch\f0 ).
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~F. Our brains respond better to difficulty than we imagine. \hich\af0\dbch\af31505\loch\f0 
+In schools, teachers and pupils alike often assume that if a concept has been easy to learn, then the lesson has been successful. But numerous studies have now found that when classroom material is made harder to absorb, pupils retain more of it over the 
+\hich\af0\dbch\af31505\loch\f0 long term, and understand it on a deeper level.
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~G. As a poet, Ted Hughes had an acute sensitivity to the way in which constraints on self-expression, like the disciplines of metre and rhyme (}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 
+\f0\fs21\cf0\insrsid2580619\charrsid808107 \loch\af0\hich\af0\dbch\f31505 \'d4\'cf\'c2\'c9}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \hich\af0\dbch\af31505\loch\f0 
+), spur creative thought. What applies to poets and musician\hich\af0\dbch\af31505\loch\f0 s also applies to our daily lives. We tend to equate (}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 
+\loch\af0\hich\af0\dbch\f31505 \'b5\'c8\'cd\'ac}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \hich\af0\dbch\af31505\loch\f0 
+) happiness with freedom, but, as the psychotherapist and writer Adam Phillips has observed, without obstacles to our desires it's harder to know what we want, or where we're heading. He tells the story of a patient, a first-time mother who complained tha
+\hich\af0\dbch\af31505\loch\f0 t her young son was always clinging to her, wrapping himself around her legs wherever she went. She never had a moment to herself, she said, because her son was "always in the way". When Phillips asked
+\hich\af0\dbch\af31505\loch\f0  her where she would go if he wasn't in the way, she replied cheerfully, "Oh, I wouldn't know where I was!"
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~
+[H] Take another common obstacle: lack of money. People often assume that more money will make them happier. But economists who study the relationship between money and happiness have consistently found that, above a certain income, the two do not rel
+\hich\af0\dbch\af31505\loch\f0 iably correlate. Despite the ease with which the rich can acquire almost anything they desire, they are just as likely to be unhappy as the middle cl\hich\af0\dbch\af31505\loch\f0 
+asses. In this regard at least, F. Scott Fitzgerald was wrong.
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~[I] \~
+Indeed, ease of acquisition is the problem. The novelist Edward St Aubyn has a narrator remark of the very rich that, "not having to consider affordability, their desires rambled on like unstoppable bores, relentless (}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 
+\f0\fs21\cf0\insrsid2580619\charrsid808107 \loch\af0\hich\af0\dbch\f31505 \'b3\'d6\'d0\'f8\'b2\'bb\'b6\'cf\'b5\'c4}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \hich\af0\dbch\af31505\loch\f0 ) and whimsical (}{
+\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \loch\af0\hich\af0\dbch\f31505 \'b7\'b4\'b8\'b4\'ce\'de\'b3\'a3\'b5\'c4}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 
+\hich\af0\dbch\af31505\loch\f0 ) at the same time. " When Boston College, a private research university, wanted a better feel for its potential donors, it asked the psychologist Robert Kenny to investigate the mindset of the s
+\hich\af0\dbch\af31505\loch\f0 
+uper-rich. He surveyed 165 households, most of which had a net worth of $25m or more. He found that many of his subjects were confused by the infinite options their money presented them with. They found it hard to know what to want, creating a kind of exi
+\hich\af0\dbch\af31505\loch\f0 stential bafflement. One of them put it like this: "You know, Bob, you can just buy so much stuff, and when you get to the point where you can just buy so much stuff, now what are you going to do?"
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~[J] The internet makes information billionaires out of \hich\af0\dbch\af31505\loch\f0 
+all of us, and the architects of our online experiences are catching on to the need to make things creatively difficult. Twitter's huge success is rooted in the simple but profound insight that in a medium with infinite space for self- expression, the mos
+\hich\af0\dbch\af31505\loch\f0 
+t interesting thing we can do is restrict ourselves to 140 characters. The music service This Is My Jam helps people navigate the tens of millions of tracks now available instantly via Spotify and iTunes. Users pick their favourite song of the week to sha
+\hich\af0\dbch\af31505\loch\f0 re\hich\af0\dbch\af31505\loch\f0 
+ with others. They only get to choose one. The service was only launched this year, but by the end of September 650,000 jams had been chosen. Its co-founder Matt Ogle explains its raison d'ecirctre (}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 
+\f0\fs21\cf0\insrsid2580619\charrsid808107 \loch\af0\hich\af0\dbch\f31505 \'b4\'e6\'d4\'da\'b5\'c4\'c0\'ed\'d3\'c9}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \hich\af0\dbch\af31505\loch\f0 
+) like this: "In an age of endless choice, we were missing a way to say: 'This. This is the one you should listen to'. "
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~[K] Today's world offers more opportunity than ever to follow the advice of the Walker Brothers and make it easy on ourselves. Compared with a hundred years ago, our lives are less ti\hich\af0\dbch\af31505\loch\f0 
+ghtly bound by social norms and physical constraints. Technology has cut out much of life's donkeywork, and we have more freedoms than ever: we can wear what we like and communicate with hundreds of friends at once at the crick of a mouse. Obstacles are e
+\hich\af0\dbch\af31505\loch\f0 verywhere disappearing. Few of us wish to turn the clock back, but perhaps we need to remind ourselves how useful the right obstacles can be. Sometimes, the best route to fulfilment is the path of more resistance.
+\par \hich\af0\dbch\af31505\loch\f0 36}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \loch\af0\hich\af0\dbch\f31505 \'a1\'a2}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 
+\hich\af0\dbch\af31505\loch\f0  The rigorous requirements placed on the\hich\af0\dbch\af31505\loch\f0  writing of poetry stimulate the poet's creativity.
+\par \hich\af0\dbch\af31505\loch\f0 37}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \loch\af0\hich\af0\dbch\f31505 \'a1\'a2}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 
+\hich\af0\dbch\af31505\loch\f0  With creativity, even old-fashioned instruments may produce spectacular sound effects.
+\par \hich\af0\dbch\af31505\loch\f0 38}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \loch\af0\hich\af0\dbch\f31505 \'a1\'a2}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 
+\hich\af0\dbch\af31505\loch\f0  More money does not necessarily bring greater happiness.
+\par \hich\af0\dbch\af31505\loch\f0 39}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \loch\af0\hich\af0\dbch\f31505 \'a1\'a2}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 
+\hich\af0\dbch\af31505\loch\f0  It is a false assumption that lessons should be made easier to learn.
+\par \hich\af0\dbch\af31505\loch\f0 40}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \loch\af0\hich\af0\dbch\f31505 \'a1\'a2}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 
+\hich\af0\dbch\af31505\loch\f0  Obstacles deliberately placed in the creation of music contribute to its success.
+\par \hich\af0\dbch\af31505\loch\f0 41}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \loch\af0\hich\af0\dbch\f31505 \'a1\'a2}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 
+\hich\af0\dbch\af31505\loch\f0  Those who enjoy total freedom may not find themselves happy.
+\par \hich\af0\dbch\af31505\loch\f0 42}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \loch\af0\hich\af0\dbch\f31505 \'a1\'a2}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 
+\hich\af0\dbch\af31505\loch\f0  Ted Hughes discovered many long poems submitted for poetry competition were com\hich\af0\dbch\af31505\loch\f0 posed on computers.
+\par \hich\af0\dbch\af31505\loch\f0 43}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \loch\af0\hich\af0\dbch\f31505 \'a1\'a2}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 
+\hich\af0\dbch\af31505\loch\f0  Maybe we need to bear in mind that the right obstacles help lead us to greater achievements.
+\par \hich\af0\dbch\af31505\loch\f0 44}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \loch\af0\hich\af0\dbch\f31505 \'a1\'a2}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 
+\hich\af0\dbch\af31505\loch\f0  An investigation found that many of the super-rich were baffled by the infinite choices their money made available.
+\par \hich\af0\dbch\af31505\loch\f0 45}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \loch\af0\hich\af0\dbch\f31505 \'a1\'a2}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 
+\hich\af0\dbch\af31505\loch\f0  One free social networking website turned out to be successful because it limited each posting to one hundred and forty characters.
+\par }{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619 
+\par }{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid5992579 \hich\af0\dbch\af31505\loch\f0 36._____ 
+\par \hich\af0\dbch\af31505\loch\f0 37.____}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid10834003 \hich\af0\dbch\af31505\loch\f0 _}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid5992579 \hich\af0\dbch\af31505\loch\f0  
+\par \hich\af0\dbch\af31505\loch\f0 38._____ 
+\par \hich\af0\dbch\af31505\loch\f0 39._____ 
+\par \hich\af0\dbch\af31505\loch\f0 40._____ 
+\par \hich\af0\dbch\af31505\loch\f0 41._____
+\par \hich\af0\dbch\af31505\loch\f0 42._____ 
+\par \hich\af0\dbch\af31505\loch\f0 43._____ 
+\par \hich\af0\dbch\af31505\loch\f0 44._____ 
+\par \hich\af0\dbch\af31505\loch\f0 45._____
+\par }{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid5992579\charrsid808107 
+\par }{\rtlch\fcs1 \ab\af0\afs21 \ltrch\fcs0 \b\f0\fs21\cf0\insrsid2580619\charrsid808107 \hich\af0\dbch\af31505\loch\f0 Section C}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 
+\par \hich\af0\dbch\af31505\loch\f0 Directions:}{\rtlch\fcs1 \ab\af0\afs21 \ltrch\fcs0 \b\f0\fs21\cf0\insrsid2580619\charrsid808107 \hich\af0\dbch\af31505\loch\f0  }{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 
+\hich\af0\dbch\af31505\loch\f0 
+There are 2 passages in this section. Each passage is followed by some questions or unfinished statements. For each of them there are four choices marked A, B, C and D. You should decide on the best choice and mark the corresponding letter on Answer Sheet
+\hich\af0\dbch\af31505\loch\f0  2 with a single line through the centre.
+\par 
+\par }{\rtlch\fcs1 \ab\af0\afs21 \ltrch\fcs0 \b\f0\fs21\cf0\insrsid2580619\charrsid808107 \hich\af0\dbch\af31505\loch\f0 Passage One}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 
+\par \hich\af0\dbch\af31505\loch\f0 For most of us, work is the central, dominating fact of life. We spend more than half our conscious hours at work, preparing for work, traveling to and from work. What we do there largely determines our
+\hich\af0\dbch\af31505\loch\f0 
+ standard of living and to a considerable extent the status we are accorded by our fellow citizens as well. It is sometimes said that because leisure has become more important the indignities and injustices of work can be pushed into a comer, that because
+\hich\af0\dbch\af31505\loch\f0  most work is pretty intolerable, the people who do it should compensate for its boredom, frustrations and humiliations (}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 
+\loch\af0\hich\af0\dbch\f31505 \'d0\'df\'b3\'dc}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \hich\af0\dbch\af31505\loch\f0 ) by concentrating their hopes on the other parts of their lives.
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~I reject that as a counsel of despair. For the foreseeable futur\hich\af0\dbch\af31505\loch\f0 
+e the material and psychological rewards which work can provide, and the conditions in which work is done, will continue to play a vital part in determining the satisfaction that life can offer. Yet only small minority can control the pace at which they w
+\hich\af0\dbch\af31505\loch\f0 ork or the conditions in which their work is done; only for a small minority does work offer scope for creativity, imagination, or initiative.
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~Inequality (}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \loch\af0\hich\af0\dbch\f31505 \'b2\'bb\'c6\'bd\'b5\'c8}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 
+\f0\fs21\cf0\insrsid2580619\charrsid808107 \hich\af0\dbch\af31505\loch\f0 ) at work and in work is still one of the cruelest and most glaring forms of inequality in our \hich\af0\dbch\af31505\loch\f0 
+society. We cannot hope to solve the more obvious problems of industrial life, many of which arise directly or indirectly from the frustrations created by inequality at work, unless we tackle it head-on (}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 
+\f0\fs21\cf0\insrsid2580619\charrsid808107 \loch\af0\hich\af0\dbch\f31505 \'d3\'ad\'c3\'e6\'b5\'d8}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \hich\af0\dbch\af31505\loch\f0 
+). Still less can we hope to create a decent and humane society.
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~
+The most glaring inequality is that between managers and the rest. For most managers, work is an opportunity and a challenge. Their jobs engage their interest and allow them develop their abilities. They are constantly learning; they ar
+\hich\af0\dbch\af31505\loch\f0 e able to exercise responsibility; they have a considerable degree of control over their own\hich\f0 \emdash \loch\f0 and others'\hich\f0 \emdash \loch\f0 
+working lives. Most important of all, they have opportunity to initiate. By contrast, for most manual workers, and for a growing number of white-colla\hich\af0\dbch\af31505\loch\f0 
+r workers, work is a boring, dull even painful experience. They spend all their working lives in conditions which would be regarded as intolerable for themselves\hich\f0 \emdash \loch\f0 
+by those who make the decisions which let such conditions continue. The majority has little c\hich\af0\dbch\af31505\loch\f0 on\hich\af0\dbch\af31505\loch\f0 
+trol over their work; it provides them with no opportunity for personal development. Often production is so designed that workers are simply part of the technology. In offices, many jobs are so routine that workers justifiably feel themselves to be mere c
+\hich\af0\dbch\af31505\loch\f0 ogs in the bureaucratic (}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \loch\af0\hich\af0\dbch\f31505 \'b9\'d9\'c1\'c5\'b5\'c4}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 
+\f0\fs21\cf0\insrsid2580619\charrsid808107 \hich\af0\dbch\af31505\loch\f0 ) machine. As a direct consequence of their work experience, many workers feel alienated from their work and their firm, whether it is in public or in private ownership.
+\par \hich\af0\dbch\af31505\loch\f0 46}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \loch\af0\hich\af0\dbch\f31505 \'a1\'a2}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 
+\hich\af0\dbch\af31505\loch\f0  The importance of work lies in the fact that ______.
+\par \hich\af0\dbch\af31505\loch\f0  \~\hich\af0\dbch\af31505\loch\f0  \~A. it becomes a measurement of people's living standard
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~B. the pay from work satisfies our need for materials
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~C. it is a typical life style in an industrial society
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~D. it is the only way for others to judge our social status
+\par \hich\af0\dbch\af31505\loch\f0 47}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \loch\af0\hich\af0\dbch\f31505 \'a1\'a2}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 
+\hich\af0\dbch\af31505\loch\f0  How does the author think of the value of work? }{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid6189392 \hich\af0\dbch\af31505\loch\f0 ______}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 
+\f0\fs21\cf0\insrsid2580619\charrsid808107 
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~A. The psychological reward is less important than before.
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~B. The material reward is greater than that of psychological one.
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~C. It is no longer important to people's life.
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~D. It's still of great imp\hich\af0\dbch\af31505\loch\f0 ortance to people's life.
+\par \hich\af0\dbch\af31505\loch\f0 48}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \loch\af0\hich\af0\dbch\f31505 \'a1\'a2}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 
+\hich\af0\dbch\af31505\loch\f0  According to the passage, only a small number of people ______.
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~A. dominate all the important positions of a company or an organization
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~\hich\af0\dbch\af31505\loch\f0 B. allocate the psychological reward to most employees in a company
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~C. have access to a higher position and a satisfying salary in a company
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~D. have the right to enjoy the creative and other positive aspects of work
+\par \hich\af0\dbch\af31505\loch\f0 49}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \loch\af0\hich\af0\dbch\f31505 \'a1\'a2}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 
+\hich\af0\dbch\af31505\loch\f0  It can be inferred that to solve problems in an industrial society, we ______.
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~A. should create more working opportunities for the poor
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~B. have to eliminate the unequal aspects in work
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~C. had better cancel all managing positions in a company
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~D. should turn to individu\hich\af0\dbch\af31505\loch\f0 al employment and work at home
+\par \hich\af0\dbch\af31505\loch\f0 50}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \loch\af0\hich\af0\dbch\f31505 \'a1\'a2}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 
+\hich\af0\dbch\af31505\loch\f0  Compared with a manager, workers ______.
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~A. don't have any right to criticize the management
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~B. lack the equal chances of satisfaction from the work
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~C. do too much routine work without any reward
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~D. can make a better living in a governmental organization
+\par 
+\par }{\rtlch\fcs1 \ab\af0\afs21 \ltrch\fcs0 \b\f0\fs21\cf0\insrsid2580619\charrsid808107 \hich\af0\dbch\af31505\loch\f0 Passage Two}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 
+\par }\pard \ltrpar\qj \fi420\li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0\cufi200\pararsid6189392 {\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \hich\af0\dbch\af31505\loch\f0 
+Video games have become increasingly popular in both arcades and the average American home. People of all ages and from all walks of life are enjoying hours of entertainment by feeding their ti\hich\af0\dbch\af31505\loch\f0 
+me and quarters into these flashing, beeping machines. Many skeptics as well as prospective arcade owners have asked what it is that gives Pac Man, Centipede, and a multitude of other popular games their magnetic appeal to millions of players. As a video 
+\hich\af0\dbch\af31505\loch\f0 player myself, I believe there are many answers to that question but three are outstanding.
+\par }\pard \ltrpar\qj \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0\pararsid1070339 {\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \hich\af0\dbch\af31505\loch\f0  \~ \~
+Before a full-scale attack is launched against young video players for "throwing away" their quarters, one should first consider the rising costs of more traditi\hich\af0\dbch\af31505\loch\f0 
+onal forms of entertainment. For instance, eighteen holes of miniature golf or ten frames of bowling will cost the player at least two dollars, and one movie costs four bucks. For just two dollars, a video player can get at least eight games, and the bett
+\hich\af0\dbch\af31505\loch\f0 er he gets, the longer he can play. Compare that record with the game of miniature golf, where the better one becomes, the shorter amount of time he gets to play.
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~Not only are the games less expensive than other forms of entertainment, but they are also\hich\af0\dbch\af31505\loch\f0 
+ more in tune with the important issues of the day. Even those people who have never been interested in science are beginning to appreciate how much science influences our lives today. Video games, which are the products of advanced technology and uncontr
+\hich\af0\dbch\af31505\loch\f0 
+olled imagination, have brought today's youth closer than ever to the exciting world of science by games. In fact, there are even cartridges which teach garners how to program computers. It is exciting to be involved with the most up-to-date ideas of the 
+\hich\af0\dbch\af31505\loch\f0 da\hich\af0\dbch\af31505\loch\f0 y, and video games help provide people with the opportunity to be involved.
+\par }\pard \ltrpar\qj \fi310\li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0\pararsid6189392 {\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \hich\af0\dbch\af31505\loch\f0 
+Besides the fact that they help people to get involved in technology, video games also provide an out-let for the emotions and the ego. If a man gets frustrated with his boss, for example, he can go to the arcade after work to destroy enemy cruisers rathe
+\hich\af0\dbch\af31505\loch\f0 r than drown his anxieties in liquor. Also, for those who feel they are not capable of excelling at anything, the games provide challenges which are easily mastered with patience an\hich\af0\dbch\af31505\loch\f0 
+d practice. It gives a person a good feeling to know that he has broken his own record or that of someone else.}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619 
+\par }{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid6189392\charrsid808107 
+\par }\pard \ltrpar\qj \li0\ri0\nowidctlpar\wrapdefault\faauto\rin0\lin0\itap0\pararsid1070339 {\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \hich\af0\dbch\af31505\loch\f0 51}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 
+\f0\fs21\cf0\insrsid2580619\charrsid808107 \loch\af0\hich\af0\dbch\f31505 \'a1\'a2}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \hich\af0\dbch\af31505\loch\f0  It can be inferred that Pac Man and Centipede are ______.
+
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~ A. traditional video games \~ \~ \~ \~ \~ \~ \~ \~
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~ B. home video games \~ \~ \~ \~ \~ \~ \~ \~ \~ \~ \~ 
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~ \~ C. popular game machines
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~ \~D. prevalent video games
+\par \hich\af0\dbch\af31505\loch\f0 52}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \loch\af0\hich\af0\dbch\f31505 \'a1\'a2}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 
+\hich\af0\dbch\af31505\loch\f0  What can we learn about miniature golf from the second paragraph? ______
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~\hich\af0\dbch\af31505\loch\f0  A. The more advanced the game is, the longer time the player can play.
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~ B. The more advanced the game is, the more holes the player can play.
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~ C. The better the player plays, the shorter time the game lasts.
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~ D. The better the player plays, the less he pays for the game.
+\par \hich\af0\dbch\af31505\loch\f0 53}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \loch\af0\hich\af0\dbch\f31505 \'a1\'a2}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 
+\hich\af0\dbch\af31505\loch\f0  It is implied in the third paragraph that video games are appealing because ______.
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~ A. they expand the garners' horizon of imagination
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~ B. they help the players to keep up with the scientific world
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~ C. they are\hich\af0\dbch\af31505\loch\f0  the most convenient way of learning about science
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~ D. they teach the players to write computer programs by themselves
+\par \hich\af0\dbch\af31505\loch\f0 54}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \loch\af0\hich\af0\dbch\f31505 \'a1\'a2}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 
+\hich\af0\dbch\af31505\loch\f0  The last paragraph points out that playing video games can help people ______.
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~ A. fulfill themselves \~ \~ \~ \~ \~ \~ \~ \~ \~ \~ \~ \~
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~ B. relieve psychological hardship \~ \~ \~ \~ \~ \~
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~ C. develop patience
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~ D. confront any challenges in life
+\par \hich\af0\dbch\af31505\loch\f0 55}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 \loch\af0\hich\af0\dbch\f31505 \'a1\'a2}{\rtlch\fcs1 \af0\afs21 \ltrch\fcs0 \f0\fs21\cf0\insrsid2580619\charrsid808107 
+\hich\af0\dbch\af31505\loch\f0  What is the author's purpose of writing the passage? ______
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~ A. To justify the advantages of video games.
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~ B. To promote the po\hich\af0\dbch\af31505\loch\f0 pularity of video games.
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~ C. To contrast video games and traditional entertainment.
+\par \hich\af0\dbch\af31505\loch\f0  \~ \~ D. To list interesting facts in the research of video games.
+\par }{\*\themedata 504b030414000600080000002100e9de0fbfff0000001c020000130000005b436f6e74656e745f54797065735d2e786d6cac91cb4ec3301045f748fc83e52d4a
+9cb2400825e982c78ec7a27cc0c8992416c9d8b2a755fbf74cd25442a820166c2cd933f79e3be372bd1f07b5c3989ca74aaff2422b24eb1b475da5df374fd9ad
+5689811a183c61a50f98f4babebc2837878049899a52a57be670674cb23d8e90721f90a4d2fa3802cb35762680fd800ecd7551dc18eb899138e3c943d7e503b6
+b01d583deee5f99824e290b4ba3f364eac4a430883b3c092d4eca8f946c916422ecab927f52ea42b89a1cd59c254f919b0e85e6535d135a8de20f20b8c12c3b0
+0c895fcf6720192de6bf3b9e89ecdbd6596cbcdd8eb28e7c365ecc4ec1ff1460f53fe813d3cc7f5b7f020000ffff0300504b030414000600080000002100a5d6
+a7e7c0000000360100000b0000005f72656c732f2e72656c73848fcf6ac3300c87ef85bd83d17d51d2c31825762fa590432fa37d00e1287f68221bdb1bebdb4f
+c7060abb0884a4eff7a93dfeae8bf9e194e720169aaa06c3e2433fcb68e1763dbf7f82c985a4a725085b787086a37bdbb55fbc50d1a33ccd311ba548b6309512
+0f88d94fbc52ae4264d1c910d24a45db3462247fa791715fd71f989e19e0364cd3f51652d73760ae8fa8c9ffb3c330cc9e4fc17faf2ce545046e37944c69e462
+a1a82fe353bd90a865aad41ed0b5b8f9d6fd010000ffff0300504b0304140006000800000021006b799616830000008a0000001c0000007468656d652f746865
+6d652f7468656d654d616e616765722e786d6c0ccc4d0ac3201040e17da17790d93763bb284562b2cbaebbf600439c1a41c7a0d29fdbd7e5e38337cedf14d59b
+4b0d592c9c070d8a65cd2e88b7f07c2ca71ba8da481cc52c6ce1c715e6e97818c9b48d13df49c873517d23d59085adb5dd20d6b52bd521ef2cdd5eb9246a3d8b
+4757e8d3f729e245eb2b260a0238fd010000ffff0300504b0304140006000800000021003a05cc19a2070000ce200000160000007468656d652f7468656d652f
+7468656d65312e786d6cec59dd8b1b47127f3fc8ff30ccbbacaf197d2c96833ebdb1776d63c93ef2d82bb534eded9916ddad5d8b6008ce5308040249c84302e1
+5eee21840b5ce04ceee1fe97f36193cbfd1157dd339ae9965af1eee20373eceeb2687a7e55fdebaaeaaa52f7cdf79fc6d43bc35c109674fcea8d8aefe164ca66
+245974fc479351a9e57b42a26486284b70c75f63e1bf7febbd3fdc440732c231f6403e1107a8e347522e0fca65318561246eb0254ee0dd9cf1184978e48bf28c
+a373d01bd372ad526994634412df4b500c6aefcfe7648abd7fbdf8fbaf7ffae69f1f7f067ffeadcd1c430a132552a88129e5633503b6043576765a5508b1167d
+cabd33443b3e4c3763e713fc54fa1e4542c28b8e5fd13f7ef9d6cd323ac884a8dc236bc88df44f269709cc4e6b7a4ebe38c9270d8230687473fd1a40e52e6ed8
+1c36868d5c9f06a0e914569a72b175366bfd20c31aa0f4a343f7a039a8572dbca1bfbec3b91baa5f0baf41a9fe60073f1af5c18a165e83527cb8830f7beddec0
+d6af4129beb1836f56ba83a069e9d7a08892e474075d091bf5fe66b53964cee8a113de0e8351b396292f50100d7974a929e62c91fb622d464f181f0140012992
+24f1e47a89e7680ac1fcfac74f5ffff20fef882c2288bb254a9880d14aad32aad4e1bffa0df427ed5074809121ac680111b133a4e87862cac95276fc3ba0d537
+20af5ebc78f9fce797cffff6f2934f5e3eff4b36b75665c91da26461cafdf6e72ffef3ddc7debffffafd6f5f7e954ebd8d1726de5a9a533dacb8b0c4abaf7f7a
+fdf34fafbef9fcd71fbe7468ef727462c22724c6c2bb87cfbd872c86053a26c027fc721293081153a29b2c044a909ac5a17f28230b7d6f8d2872e07ad8b6e363
+0e99c605bcbd7a62111e477c258943e3dd28b680c78cd11ee34e2bdc557319669eac92857b72be32710f113a73cddd4789e5e5e16a092996b854f6236cd17c40
+5122d10227587aea1d3bc5d8b1ba0f09b1ec7a4ca69c093697de87c4eb21e234c9849c58d154081d9218fcb27611047f5bb6397eecf51875ad7a80cf6c24ec0d
+441de427985a66bc8d5612c52e95131453d3e04748462e92e3359f9ab8a190e0e905a6cc1bceb0102e99fb1cd66b38fd2e82e4e674fb315dc736924b72ead279
+841833910376da8f50bc7461c724894cec07e2144214790f9874c18f99bd43d433f801257bddfd9860cbdd6fce068f20c39a948a00516f56dce1cbdb9859f13b
+5ed339c2ae54d3e5b19562bb9c38a3a3b75a58a17d843145e76886b1f7e80307831e5b5a362f48df8920ab1c625760dd4176acaae7040bece9de66374f1e1161
+85ec182fd81e3ec7ebadc4b346498cf83ecdf7c0eba6cd87271c36a3639df7e9f4d404de23d00942bc388d725f800e23b8f76a7d1021ab80a967e18ed735b7fc
+77913d06fbf28945e302fb1264f0a56520b19b32bf6b9b09a2d60445c04c10f18e5ce916442cf71722aab86ab195536e6e6fdac20dd01c593d4f4c923735405b
+ad4ff8bf6b7da0c178f5ed778e187c3bed8e5bb195ab2ed9e8eccb25875bedcd3edc7653d3677c46defd9e668056c9030c656437615db734d72d8dff7fdfd2ec
+dbcfd78dccbe76e3ba91f1a1c1b86e64b2a395b7d3c814bd0bb435eabc233de6d1873ef1de339f39a1742cd7141f097dec23e0ebcc6c04834a4e1f7be2fc0c70
+19c14755e660020bb7e048cb789cc93f12198d23b484c3a1aaaf942c44a67a21bc25137066a4879dba159eaee263364b8f3aab5575ac9956568164315e09f371
+38a69229bad12c8eef72f59aed421fb36e0828d9cb903026b349d41d249a9b4165247da80b467390d02b7b2b2cda0e162da57ee3aa1d16402df70a7cdff6e05b
+7ac70f03100121388e83de7ca6fc94ba7ae35dedccb7e9e97dc6b422001aec4d04149e6e2bae7b97a7569786da053c6d9130c2cd26a12da31b3c11c1b7e02c3a
+d5e845685cd6d7edc2a5163d650a3d1f845641a3d9fa3d1657f535c86de7069a98998226de79c76fd4430899295a76fc391c19c3c77809b123d4572e441770fd
+32953cddf057c92c4b2ee400892835b84e3a69368889c4dca324eef86af9b91b68a27388e656ad41427867c9b521adbc6be4c0e9b693f17c8ea7d274bb31a22c
+9d3e42864f7385f3ad16bf3a5849b215b87b1ccdcebd13bae20f118458d8ac2a03ce8880ab836a6acd1981abb03c9115f1b75598b2b46bde45e9184ac7115d46
+28ab2866324fe13a95e774f4536e03e3295b3318d4304956084f16aac09a46b5aa695e35520e7babee9b8594e58ca459d44c2baba8aae9ce62d60c9b32b065cb
+ab157983d5c6c490d3cc0a9fa6eeed94dbdee4baad3e21af1260f0dc7e8eaa7b818260502b26b3a829c6bb6958e5ec6cd4ae1d9b05be81da458a8491f51b1bb5
+5b76cb6b84733a18bc52e507b9eda885a1f9a6afd496d657e7e6b5363b7902c963005dee8a4aa15d0997d61c414334d63d499a36608b3c95d9d6804fde8a938e
+ff5125ec06fd5ad82f555ae1b014d4834aa91576eba56e18d6abc3b05a19f46acfa0b0c828ae86e9b5fd08ee2fe83abbbcd7e33b17f8f1e68ae6c694c565a62f
+e8cb9ab8bec0afd65c17f8137535ef7b0492ce478ddaa85d6ff71aa576bd3b2a05835eabd4ee377aa541a3df1c8c06fdb0d51e3df3bd330d0ebaf57ed018b64a
+8d6abf5f0a1a1545bfd52e35835aad1b34bbad61d07d96b531b0f2347d64b600f36a5eb7fe0b0000ffff0300504b0304140006000800000021000dd1909fb600
+00001b010000270000007468656d652f7468656d652f5f72656c732f7468656d654d616e616765722e786d6c2e72656c73848f4d0ac2301484f78277086f6fd3
+ba109126dd88d0add40384e4350d363f2451eced0dae2c082e8761be9969bb979dc9136332de3168aa1a083ae995719ac16db8ec8e4052164e89d93b64b06082
+8e6f37ed1567914b284d262452282e3198720e274a939cd08a54f980ae38a38f56e422a3a641c8bbd048f7757da0f19b017cc524bd62107bd5001996509affb3
+fd381a89672f1f165dfe514173d9850528a2c6cce0239baa4c04ca5bbabac4df000000ffff0300504b01022d0014000600080000002100e9de0fbfff0000001c
+0200001300000000000000000000000000000000005b436f6e74656e745f54797065735d2e786d6c504b01022d0014000600080000002100a5d6a7e7c0000000
+360100000b00000000000000000000000000300100005f72656c732f2e72656c73504b01022d00140006000800000021006b799616830000008a0000001c0000
+0000000000000000000000190200007468656d652f7468656d652f7468656d654d616e616765722e786d6c504b01022d00140006000800000021003a05cc19a2
+070000ce2000001600000000000000000000000000d60200007468656d652f7468656d652f7468656d65312e786d6c504b01022d00140006000800000021000d
+d1909fb60000001b0100002700000000000000000000000000ac0a00007468656d652f7468656d652f5f72656c732f7468656d654d616e616765722e786d6c2e72656c73504b050600000000050005005d010000a70b00000000}
+{\*\colorschememapping 3c3f786d6c2076657273696f6e3d22312e302220656e636f64696e673d225554462d3822207374616e64616c6f6e653d22796573223f3e0d0a3c613a636c724d
+617020786d6c6e733a613d22687474703a2f2f736368656d61732e6f70656e786d6c666f726d6174732e6f72672f64726177696e676d6c2f323030362f6d6169
+6e22206267313d226c743122207478313d22646b3122206267323d226c743222207478323d22646b322220616363656e74313d22616363656e74312220616363
+656e74323d22616363656e74322220616363656e74333d22616363656e74332220616363656e74343d22616363656e74342220616363656e74353d22616363656e74352220616363656e74363d22616363656e74362220686c696e6b3d22686c696e6b2220666f6c486c696e6b3d22666f6c486c696e6b222f3e}
+{\*\latentstyles\lsdstimax376\lsdlockeddef0\lsdsemihiddendef0\lsdunhideuseddef0\lsdqformatdef0\lsdprioritydef99{\lsdlockedexcept \lsdqformat1 \lsdpriority0 \lsdlocked0 Normal;\lsdqformat1 \lsdlocked0 heading 1;\lsdqformat1 \lsdlocked0 heading 2;
+\lsdqformat1 \lsdlocked0 heading 3;\lsdsemihidden1 \lsdunhideused1 \lsdqformat1 \lsdpriority9 \lsdlocked0 heading 4;\lsdsemihidden1 \lsdunhideused1 \lsdqformat1 \lsdpriority9 \lsdlocked0 heading 5;
+\lsdsemihidden1 \lsdunhideused1 \lsdqformat1 \lsdpriority9 \lsdlocked0 heading 6;\lsdsemihidden1 \lsdunhideused1 \lsdqformat1 \lsdpriority9 \lsdlocked0 heading 7;\lsdsemihidden1 \lsdunhideused1 \lsdqformat1 \lsdpriority9 \lsdlocked0 heading 8;
+\lsdsemihidden1 \lsdunhideused1 \lsdqformat1 \lsdpriority9 \lsdlocked0 heading 9;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 index 1;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 index 2;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 index 3;
+\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 index 4;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 index 5;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 index 6;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 index 7;
+\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 index 8;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 index 9;\lsdsemihidden1 \lsdunhideused1 \lsdpriority39 \lsdlocked0 toc 1;\lsdsemihidden1 \lsdunhideused1 \lsdpriority39 \lsdlocked0 toc 2;
+\lsdsemihidden1 \lsdunhideused1 \lsdpriority39 \lsdlocked0 toc 3;\lsdsemihidden1 \lsdunhideused1 \lsdpriority39 \lsdlocked0 toc 4;\lsdsemihidden1 \lsdunhideused1 \lsdpriority39 \lsdlocked0 toc 5;
+\lsdsemihidden1 \lsdunhideused1 \lsdpriority39 \lsdlocked0 toc 6;\lsdsemihidden1 \lsdunhideused1 \lsdpriority39 \lsdlocked0 toc 7;\lsdsemihidden1 \lsdunhideused1 \lsdpriority39 \lsdlocked0 toc 8;
+\lsdsemihidden1 \lsdunhideused1 \lsdpriority39 \lsdlocked0 toc 9;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Normal Indent;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 footnote text;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 annotation text;
+\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 header;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 footer;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 index heading;\lsdsemihidden1 \lsdunhideused1 \lsdqformat1 \lsdpriority35 \lsdlocked0 caption;
+\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 table of figures;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 envelope address;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 envelope return;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 footnote reference;
+\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 annotation reference;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 line number;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 page number;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 endnote reference;
+\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 endnote text;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 table of authorities;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 macro;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 toa heading;
+\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 List;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 List Bullet;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 List Number;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 List 2;
+\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 List 3;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 List 4;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 List 5;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 List Bullet 2;
+\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 List Bullet 3;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 List Bullet 4;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 List Bullet 5;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 List Number 2;
+\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 List Number 3;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 List Number 4;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 List Number 5;\lsdqformat1 \lsdpriority10 \lsdlocked0 Title;
+\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Closing;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Signature;\lsdsemihidden1 \lsdunhideused1 \lsdpriority1 \lsdlocked0 Default Paragraph Font;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Body Text;
+\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Body Text Indent;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 List Continue;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 List Continue 2;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 List Continue 3;
+\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 List Continue 4;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 List Continue 5;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Message Header;\lsdqformat1 \lsdpriority11 \lsdlocked0 Subtitle;
+\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Salutation;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Date;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Body Text First Indent;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Body Text First Indent 2;
+\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Note Heading;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Body Text 2;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Body Text 3;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Body Text Indent 2;
+\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Body Text Indent 3;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Block Text;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Hyperlink;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 FollowedHyperlink;
+\lsdqformat1 \lsdpriority22 \lsdlocked0 Strong;\lsdqformat1 \lsdpriority20 \lsdlocked0 Emphasis;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Document Map;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Plain Text;
+\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 E-mail Signature;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 HTML Top of Form;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 HTML Bottom of Form;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Normal (Web);
+\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 HTML Acronym;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 HTML Address;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 HTML Cite;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 HTML Code;
+\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 HTML Definition;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 HTML Keyboard;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 HTML Preformatted;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 HTML Sample;
+\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 HTML Typewriter;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 HTML Variable;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 annotation subject;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 No List;
+\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Outline List 1;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Outline List 2;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Outline List 3;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Balloon Text;
+\lsdpriority39 \lsdlocked0 Table Grid;\lsdsemihidden1 \lsdlocked0 Placeholder Text;\lsdqformat1 \lsdpriority1 \lsdlocked0 No Spacing;\lsdpriority60 \lsdlocked0 Light Shading;\lsdpriority61 \lsdlocked0 Light List;\lsdpriority62 \lsdlocked0 Light Grid;
+\lsdpriority63 \lsdlocked0 Medium Shading 1;\lsdpriority64 \lsdlocked0 Medium Shading 2;\lsdpriority65 \lsdlocked0 Medium List 1;\lsdpriority66 \lsdlocked0 Medium List 2;\lsdpriority67 \lsdlocked0 Medium Grid 1;\lsdpriority68 \lsdlocked0 Medium Grid 2;
+\lsdpriority69 \lsdlocked0 Medium Grid 3;\lsdpriority70 \lsdlocked0 Dark List;\lsdpriority71 \lsdlocked0 Colorful Shading;\lsdpriority72 \lsdlocked0 Colorful List;\lsdpriority73 \lsdlocked0 Colorful Grid;\lsdpriority60 \lsdlocked0 Light Shading Accent 1;
+\lsdpriority61 \lsdlocked0 Light List Accent 1;\lsdpriority62 \lsdlocked0 Light Grid Accent 1;\lsdpriority63 \lsdlocked0 Medium Shading 1 Accent 1;\lsdpriority64 \lsdlocked0 Medium Shading 2 Accent 1;\lsdpriority65 \lsdlocked0 Medium List 1 Accent 1;
+\lsdsemihidden1 \lsdlocked0 Revision;\lsdqformat1 \lsdpriority34 \lsdlocked0 List Paragraph;\lsdqformat1 \lsdpriority29 \lsdlocked0 Quote;\lsdqformat1 \lsdpriority30 \lsdlocked0 Intense Quote;\lsdpriority66 \lsdlocked0 Medium List 2 Accent 1;
+\lsdpriority67 \lsdlocked0 Medium Grid 1 Accent 1;\lsdpriority68 \lsdlocked0 Medium Grid 2 Accent 1;\lsdpriority69 \lsdlocked0 Medium Grid 3 Accent 1;\lsdpriority70 \lsdlocked0 Dark List Accent 1;\lsdpriority71 \lsdlocked0 Colorful Shading Accent 1;
+\lsdpriority72 \lsdlocked0 Colorful List Accent 1;\lsdpriority73 \lsdlocked0 Colorful Grid Accent 1;\lsdpriority60 \lsdlocked0 Light Shading Accent 2;\lsdpriority61 \lsdlocked0 Light List Accent 2;\lsdpriority62 \lsdlocked0 Light Grid Accent 2;
+\lsdpriority63 \lsdlocked0 Medium Shading 1 Accent 2;\lsdpriority64 \lsdlocked0 Medium Shading 2 Accent 2;\lsdpriority65 \lsdlocked0 Medium List 1 Accent 2;\lsdpriority66 \lsdlocked0 Medium List 2 Accent 2;
+\lsdpriority67 \lsdlocked0 Medium Grid 1 Accent 2;\lsdpriority68 \lsdlocked0 Medium Grid 2 Accent 2;\lsdpriority69 \lsdlocked0 Medium Grid 3 Accent 2;\lsdpriority70 \lsdlocked0 Dark List Accent 2;\lsdpriority71 \lsdlocked0 Colorful Shading Accent 2;
+\lsdpriority72 \lsdlocked0 Colorful List Accent 2;\lsdpriority73 \lsdlocked0 Colorful Grid Accent 2;\lsdpriority60 \lsdlocked0 Light Shading Accent 3;\lsdpriority61 \lsdlocked0 Light List Accent 3;\lsdpriority62 \lsdlocked0 Light Grid Accent 3;
+\lsdpriority63 \lsdlocked0 Medium Shading 1 Accent 3;\lsdpriority64 \lsdlocked0 Medium Shading 2 Accent 3;\lsdpriority65 \lsdlocked0 Medium List 1 Accent 3;\lsdpriority66 \lsdlocked0 Medium List 2 Accent 3;
+\lsdpriority67 \lsdlocked0 Medium Grid 1 Accent 3;\lsdpriority68 \lsdlocked0 Medium Grid 2 Accent 3;\lsdpriority69 \lsdlocked0 Medium Grid 3 Accent 3;\lsdpriority70 \lsdlocked0 Dark List Accent 3;\lsdpriority71 \lsdlocked0 Colorful Shading Accent 3;
+\lsdpriority72 \lsdlocked0 Colorful List Accent 3;\lsdpriority73 \lsdlocked0 Colorful Grid Accent 3;\lsdpriority60 \lsdlocked0 Light Shading Accent 4;\lsdpriority61 \lsdlocked0 Light List Accent 4;\lsdpriority62 \lsdlocked0 Light Grid Accent 4;
+\lsdpriority63 \lsdlocked0 Medium Shading 1 Accent 4;\lsdpriority64 \lsdlocked0 Medium Shading 2 Accent 4;\lsdpriority65 \lsdlocked0 Medium List 1 Accent 4;\lsdpriority66 \lsdlocked0 Medium List 2 Accent 4;
+\lsdpriority67 \lsdlocked0 Medium Grid 1 Accent 4;\lsdpriority68 \lsdlocked0 Medium Grid 2 Accent 4;\lsdpriority69 \lsdlocked0 Medium Grid 3 Accent 4;\lsdpriority70 \lsdlocked0 Dark List Accent 4;\lsdpriority71 \lsdlocked0 Colorful Shading Accent 4;
+\lsdpriority72 \lsdlocked0 Colorful List Accent 4;\lsdpriority73 \lsdlocked0 Colorful Grid Accent 4;\lsdpriority60 \lsdlocked0 Light Shading Accent 5;\lsdpriority61 \lsdlocked0 Light List Accent 5;\lsdpriority62 \lsdlocked0 Light Grid Accent 5;
+\lsdpriority63 \lsdlocked0 Medium Shading 1 Accent 5;\lsdpriority64 \lsdlocked0 Medium Shading 2 Accent 5;\lsdpriority65 \lsdlocked0 Medium List 1 Accent 5;\lsdpriority66 \lsdlocked0 Medium List 2 Accent 5;
+\lsdpriority67 \lsdlocked0 Medium Grid 1 Accent 5;\lsdpriority68 \lsdlocked0 Medium Grid 2 Accent 5;\lsdpriority69 \lsdlocked0 Medium Grid 3 Accent 5;\lsdpriority70 \lsdlocked0 Dark List Accent 5;\lsdpriority71 \lsdlocked0 Colorful Shading Accent 5;
+\lsdpriority72 \lsdlocked0 Colorful List Accent 5;\lsdpriority73 \lsdlocked0 Colorful Grid Accent 5;\lsdpriority60 \lsdlocked0 Light Shading Accent 6;\lsdpriority61 \lsdlocked0 Light List Accent 6;\lsdpriority62 \lsdlocked0 Light Grid Accent 6;
+\lsdpriority63 \lsdlocked0 Medium Shading 1 Accent 6;\lsdpriority64 \lsdlocked0 Medium Shading 2 Accent 6;\lsdpriority65 \lsdlocked0 Medium List 1 Accent 6;\lsdpriority66 \lsdlocked0 Medium List 2 Accent 6;
+\lsdpriority67 \lsdlocked0 Medium Grid 1 Accent 6;\lsdpriority68 \lsdlocked0 Medium Grid 2 Accent 6;\lsdpriority69 \lsdlocked0 Medium Grid 3 Accent 6;\lsdpriority70 \lsdlocked0 Dark List Accent 6;\lsdpriority71 \lsdlocked0 Colorful Shading Accent 6;
+\lsdpriority72 \lsdlocked0 Colorful List Accent 6;\lsdpriority73 \lsdlocked0 Colorful Grid Accent 6;\lsdqformat1 \lsdpriority19 \lsdlocked0 Subtle Emphasis;\lsdqformat1 \lsdpriority21 \lsdlocked0 Intense Emphasis;
+\lsdqformat1 \lsdpriority31 \lsdlocked0 Subtle Reference;\lsdqformat1 \lsdpriority32 \lsdlocked0 Intense Reference;\lsdqformat1 \lsdpriority33 \lsdlocked0 Book Title;\lsdsemihidden1 \lsdunhideused1 \lsdpriority37 \lsdlocked0 Bibliography;
+\lsdsemihidden1 \lsdunhideused1 \lsdqformat1 \lsdpriority39 \lsdlocked0 TOC Heading;\lsdpriority41 \lsdlocked0 Plain Table 1;\lsdpriority42 \lsdlocked0 Plain Table 2;\lsdpriority43 \lsdlocked0 Plain Table 3;\lsdpriority44 \lsdlocked0 Plain Table 4;
+\lsdpriority45 \lsdlocked0 Plain Table 5;\lsdpriority40 \lsdlocked0 Grid Table Light;\lsdpriority46 \lsdlocked0 Grid Table 1 Light;\lsdpriority47 \lsdlocked0 Grid Table 2;\lsdpriority48 \lsdlocked0 Grid Table 3;\lsdpriority49 \lsdlocked0 Grid Table 4;
+\lsdpriority50 \lsdlocked0 Grid Table 5 Dark;\lsdpriority51 \lsdlocked0 Grid Table 6 Colorful;\lsdpriority52 \lsdlocked0 Grid Table 7 Colorful;\lsdpriority46 \lsdlocked0 Grid Table 1 Light Accent 1;\lsdpriority47 \lsdlocked0 Grid Table 2 Accent 1;
+\lsdpriority48 \lsdlocked0 Grid Table 3 Accent 1;\lsdpriority49 \lsdlocked0 Grid Table 4 Accent 1;\lsdpriority50 \lsdlocked0 Grid Table 5 Dark Accent 1;\lsdpriority51 \lsdlocked0 Grid Table 6 Colorful Accent 1;
+\lsdpriority52 \lsdlocked0 Grid Table 7 Colorful Accent 1;\lsdpriority46 \lsdlocked0 Grid Table 1 Light Accent 2;\lsdpriority47 \lsdlocked0 Grid Table 2 Accent 2;\lsdpriority48 \lsdlocked0 Grid Table 3 Accent 2;
+\lsdpriority49 \lsdlocked0 Grid Table 4 Accent 2;\lsdpriority50 \lsdlocked0 Grid Table 5 Dark Accent 2;\lsdpriority51 \lsdlocked0 Grid Table 6 Colorful Accent 2;\lsdpriority52 \lsdlocked0 Grid Table 7 Colorful Accent 2;
+\lsdpriority46 \lsdlocked0 Grid Table 1 Light Accent 3;\lsdpriority47 \lsdlocked0 Grid Table 2 Accent 3;\lsdpriority48 \lsdlocked0 Grid Table 3 Accent 3;\lsdpriority49 \lsdlocked0 Grid Table 4 Accent 3;
+\lsdpriority50 \lsdlocked0 Grid Table 5 Dark Accent 3;\lsdpriority51 \lsdlocked0 Grid Table 6 Colorful Accent 3;\lsdpriority52 \lsdlocked0 Grid Table 7 Colorful Accent 3;\lsdpriority46 \lsdlocked0 Grid Table 1 Light Accent 4;
+\lsdpriority47 \lsdlocked0 Grid Table 2 Accent 4;\lsdpriority48 \lsdlocked0 Grid Table 3 Accent 4;\lsdpriority49 \lsdlocked0 Grid Table 4 Accent 4;\lsdpriority50 \lsdlocked0 Grid Table 5 Dark Accent 4;
+\lsdpriority51 \lsdlocked0 Grid Table 6 Colorful Accent 4;\lsdpriority52 \lsdlocked0 Grid Table 7 Colorful Accent 4;\lsdpriority46 \lsdlocked0 Grid Table 1 Light Accent 5;\lsdpriority47 \lsdlocked0 Grid Table 2 Accent 5;
+\lsdpriority48 \lsdlocked0 Grid Table 3 Accent 5;\lsdpriority49 \lsdlocked0 Grid Table 4 Accent 5;\lsdpriority50 \lsdlocked0 Grid Table 5 Dark Accent 5;\lsdpriority51 \lsdlocked0 Grid Table 6 Colorful Accent 5;
+\lsdpriority52 \lsdlocked0 Grid Table 7 Colorful Accent 5;\lsdpriority46 \lsdlocked0 Grid Table 1 Light Accent 6;\lsdpriority47 \lsdlocked0 Grid Table 2 Accent 6;\lsdpriority48 \lsdlocked0 Grid Table 3 Accent 6;
+\lsdpriority49 \lsdlocked0 Grid Table 4 Accent 6;\lsdpriority50 \lsdlocked0 Grid Table 5 Dark Accent 6;\lsdpriority51 \lsdlocked0 Grid Table 6 Colorful Accent 6;\lsdpriority52 \lsdlocked0 Grid Table 7 Colorful Accent 6;
+\lsdpriority46 \lsdlocked0 List Table 1 Light;\lsdpriority47 \lsdlocked0 List Table 2;\lsdpriority48 \lsdlocked0 List Table 3;\lsdpriority49 \lsdlocked0 List Table 4;\lsdpriority50 \lsdlocked0 List Table 5 Dark;
+\lsdpriority51 \lsdlocked0 List Table 6 Colorful;\lsdpriority52 \lsdlocked0 List Table 7 Colorful;\lsdpriority46 \lsdlocked0 List Table 1 Light Accent 1;\lsdpriority47 \lsdlocked0 List Table 2 Accent 1;\lsdpriority48 \lsdlocked0 List Table 3 Accent 1;
+\lsdpriority49 \lsdlocked0 List Table 4 Accent 1;\lsdpriority50 \lsdlocked0 List Table 5 Dark Accent 1;\lsdpriority51 \lsdlocked0 List Table 6 Colorful Accent 1;\lsdpriority52 \lsdlocked0 List Table 7 Colorful Accent 1;
+\lsdpriority46 \lsdlocked0 List Table 1 Light Accent 2;\lsdpriority47 \lsdlocked0 List Table 2 Accent 2;\lsdpriority48 \lsdlocked0 List Table 3 Accent 2;\lsdpriority49 \lsdlocked0 List Table 4 Accent 2;
+\lsdpriority50 \lsdlocked0 List Table 5 Dark Accent 2;\lsdpriority51 \lsdlocked0 List Table 6 Colorful Accent 2;\lsdpriority52 \lsdlocked0 List Table 7 Colorful Accent 2;\lsdpriority46 \lsdlocked0 List Table 1 Light Accent 3;
+\lsdpriority47 \lsdlocked0 List Table 2 Accent 3;\lsdpriority48 \lsdlocked0 List Table 3 Accent 3;\lsdpriority49 \lsdlocked0 List Table 4 Accent 3;\lsdpriority50 \lsdlocked0 List Table 5 Dark Accent 3;
+\lsdpriority51 \lsdlocked0 List Table 6 Colorful Accent 3;\lsdpriority52 \lsdlocked0 List Table 7 Colorful Accent 3;\lsdpriority46 \lsdlocked0 List Table 1 Light Accent 4;\lsdpriority47 \lsdlocked0 List Table 2 Accent 4;
+\lsdpriority48 \lsdlocked0 List Table 3 Accent 4;\lsdpriority49 \lsdlocked0 List Table 4 Accent 4;\lsdpriority50 \lsdlocked0 List Table 5 Dark Accent 4;\lsdpriority51 \lsdlocked0 List Table 6 Colorful Accent 4;
+\lsdpriority52 \lsdlocked0 List Table 7 Colorful Accent 4;\lsdpriority46 \lsdlocked0 List Table 1 Light Accent 5;\lsdpriority47 \lsdlocked0 List Table 2 Accent 5;\lsdpriority48 \lsdlocked0 List Table 3 Accent 5;
+\lsdpriority49 \lsdlocked0 List Table 4 Accent 5;\lsdpriority50 \lsdlocked0 List Table 5 Dark Accent 5;\lsdpriority51 \lsdlocked0 List Table 6 Colorful Accent 5;\lsdpriority52 \lsdlocked0 List Table 7 Colorful Accent 5;
+\lsdpriority46 \lsdlocked0 List Table 1 Light Accent 6;\lsdpriority47 \lsdlocked0 List Table 2 Accent 6;\lsdpriority48 \lsdlocked0 List Table 3 Accent 6;\lsdpriority49 \lsdlocked0 List Table 4 Accent 6;
+\lsdpriority50 \lsdlocked0 List Table 5 Dark Accent 6;\lsdpriority51 \lsdlocked0 List Table 6 Colorful Accent 6;\lsdpriority52 \lsdlocked0 List Table 7 Colorful Accent 6;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Mention;
+\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Smart Hyperlink;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Hashtag;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Unresolved Mention;\lsdsemihidden1 \lsdunhideused1 \lsdlocked0 Smart Link;}}{\*\datastore 01050000
+02000000180000004d73786d6c322e534158584d4c5265616465722e362e3000000000000000000000060000
+d0cf11e0a1b11ae1000000000000000000000000000000003e000300feff090006000000000000000000000001000000010000000000000000100000feffffff00000000feffffff0000000000000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+fffffffffffffffffdfffffffeffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+ffffffffffffffffffffffffffffffff52006f006f007400200045006e00740072007900000000000000000000000000000000000000000000000000000000000000000000000000000000000000000016000500ffffffffffffffffffffffff0c6ad98892f1d411a65f0040963251e5000000000000000000000000f0dc
+0d83d97dda01feffffff00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ffffffffffffffffffffffff00000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ffffffffffffffffffffffff0000000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ffffffffffffffffffffffff000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000105000000000000}}
