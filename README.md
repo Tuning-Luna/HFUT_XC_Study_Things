@@ -48,5 +48,3 @@
 ![](https://xc.hfut.edu.cn/_upload/article/images/71/7b/1219d3104a0fb29429bae77ec9c9/03c550ee-d815-4649-81fc-2b4f9c9da1c7.jpeg)
 
 ![](https://xc.hfut.edu.cn/_upload/article/images/f6/f8/875163004c49b8d871cfeb8724b8/097b6aad-cd6f-41b4-b225-19e10baa59f8.jpg)
-
-![](https://pic4.zhimg.com/v2-d0097b8b372ad51b6e459fccffe8e8e3_r.jpg)
