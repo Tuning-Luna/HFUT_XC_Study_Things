@@ -1,0 +1,314 @@
+#include "stdio.h"
+
+#define GPKCON0 (*((volatile unsigned long *)0x7F008800))
+#define GPKDATA (*((volatile unsigned long *)0x7F008808))
+#define GPNCON (*((volatile unsigned long *)0x7F008830))
+#define GPNDAT (*((volatile unsigned long *)0x7F008834))
+#define EINT0CON0 (*((volatile unsigned long *)0x7F008900))
+#define EINT0MASK (*((volatile unsigned long *)0x7F008920))
+#define EINT0PEND (*((volatile unsigned long *)0x7F008924))
+#define PRIORITY (*((volatile unsigned long *)0x7F008280))
+#define SERVICE (*((volatile unsigned long *)0x7F008284))
+#define SERVICEPEND (*((volatile unsigned long *)0x7F008288))
+#define VIC0IRQSTATUS (*((volatile unsigned long *)0x71200000))
+#define VIC0FIQSTATUS (*((volatile unsigned long *)0x71200004))
+#define VIC0RAWINTR (*((volatile unsigned long *)0x71200008))
+#define VIC0INTSELECT (*((volatile unsigned long *)0x7120000c))
+#define VIC0INTENABLE (*((volatile unsigned long *)0x71200010))
+#define VIC0INTENCLEAR (*((volatile unsigned long *)0x71200014))
+#define VIC0PROTECTION (*((volatile unsigned long *)0x71200020))
+#define VIC0SWPRIORITYMASK (*((volatile unsigned long *)0x71200024))
+#define VIC0PRIORITYDAISY (*((volatile unsigned long *)0x71200028))
+#define VIC0ADDRESS (*((volatile unsigned long *)0x71200f00))
+
+#define PWMTIMER_BASE (0x7F006000)
+#define TCFG0 (*((volatile unsigned long *)(PWMTIMER_BASE + 0x00)))
+#define TCFG1 (*((volatile unsigned long *)(PWMTIMER_BASE + 0x04)))
+#define TCON (*((volatile unsigned long *)(PWMTIMER_BASE + 0x08)))
+#define TCNTB0 (*((volatile unsigned long *)(PWMTIMER_BASE + 0x0C)))
+#define TCMPB0 (*((volatile unsigned long *)(PWMTIMER_BASE + 0x10)))
+#define TCNTO0 (*((volatile unsigned long *)(PWMTIMER_BASE + 0x14)))
+#define TINT_CSTAT (*((volatile unsigned long *)(PWMTIMER_BASE + 0x44)))
+
+typedef void (isr)(void);
+extern void asm_timer_irq();
+extern void asm_k1_irq();
+
+volatile int INDIVIDUAL, TEN, HUNDERED;
+volatile int mode;
+
+void dely_ms(volatile int  time){
+	volatile int i,j;
+	for(i=0;i<time;i++){
+		for(j=0;j<0x7ff;j++){}
+	}
+}
+
+// 初始化timer
+void timer_init(unsigned long utimer, unsigned long uprescaler, unsigned long udivider, unsigned long utcntb, unsigned long utcmpb) {
+    unsigned long temp0;
+
+    // 定时器的输入时钟 = PCLK / ( {prescaler value + 1} ) / {divider value} = PCLK/(65+1)/16=62500hz
+
+    // 设置预分频系数为66
+    temp0 = TCFG0;
+    temp0 = (temp0 & (~(0xff00ff))) | (uprescaler << 0);
+    TCFG0 = temp0;
+
+    // 16分频
+    temp0 = TCFG1;
+    temp0 = (temp0 & (~(0xf << 4 * utimer)) & (~(1 << 20))) | (udivider << 4 * utimer);
+    TCFG1 = temp0;
+
+    // 1s = 62500hz
+    TCNTB0 = utcntb;
+    TCMPB0 = utcmpb;
+
+    // 手动更新
+    TCON |= 1 << 1;
+
+    // 清手动更新位
+    TCON &= ~(1 << 1);
+
+    // 自动加载和启动timer0
+    TCON |= (1 << 0) | (1 << 3);
+
+    // 使能timer0中断
+    temp0 = TINT_CSTAT;
+    temp0 = (temp0 & (~(1 << utimer))) | (1 << utimer);
+    TINT_CSTAT = temp0;
+}
+
+void irq_init(void) {
+    /* 配置GPN0~4引脚为中断功能 */
+    GPNCON &= ~(0xff);
+    GPNCON |= 0xaa; // 10101010
+
+    /* 设置中断触发方式 */
+    EINT0CON0 &= ~(0xff);
+    EINT0CON0 |= 0x33;
+
+    /* 禁止屏蔽中断 */
+    EINT0MASK &= ~(0x0f);
+
+    // Select INT_EINT0 mode as irq
+    VIC0INTSELECT = 0;
+
+    /* 在中断控制器里使能这些中断 */
+    VIC0INTENABLE |= (0x3); /* bit0: eint0~3, bit1: eint4~11 */
+
+    isr **isr_array_0 = (isr **)(0x71200100);
+    isr_array_0[0] = (isr *)asm_k1_irq;
+
+    /* 在中断控制器里使能timer0中断 */
+    VIC0INTENABLE |= (1 << 23);
+
+    // VIC0INTSELECT =0;
+    isr **isr_array_1 = (isr **)(0x7120015C);
+    isr_array_1[0] = (isr *)asm_timer_irq;
+
+    /* 将GPK4-GPK7配置为输出口 */
+    GPKCON0 = 0x11110000;
+
+    /* 熄灭四个LED灯 */
+    GPKDATA = 0xf0;
+}
+
+//按键中断处理程序
+void do_irq_1(void)
+{
+	//按下K1
+	if(EINT0PEND & (1<<0)){
+		INDIVIDUAL++;
+
+		GPKDATA = 0b11101111;
+		dely_ms(500);
+		GPKDATA = 0xff;
+	}
+	//按下K2
+	else if(EINT0PEND & (1<<1)){
+		dely_ms(500);
+
+		//同时按下K1
+		if(EINT0PEND & (1<<0)){
+			HUNDERED++;
+			GPKDATA = 0b10111111;
+			dely_ms(500);
+			GPKDATA = 0xff;
+		}
+		//只按K2
+		else{
+			TEN++;
+			GPKDATA = 0b11011111;
+			dely_ms(500);
+			GPKDATA = 0xff;
+		}
+	}
+	//按下K3
+	else if(EINT0PEND & (1<<2)){
+		dely_ms(500);
+		//同时按下K4
+		if(EINT0PEND & (1<<3)){
+			INDIVIDUAL = 0;
+			TEN = 0;
+			HUNDERED = 0;
+
+			mode = 1;//全闪烁3次
+
+			timer_init(0,65,4,31250,0);//0.5
+		}
+		//只按K3
+		else{
+			mode = 2;//闪烁个数
+
+			timer_init(0,65,4,62500,0);//1
+		}
+	}
+
+	//按下K4
+	else if(EINT0PEND & (1<<3)){
+		int t = HUNDERED*100+TEN*10+INDIVIDUAL;
+		if(t%2==0){
+			t/=2;
+			int k,f=1,i=0;
+			if(t%2){
+				mode = 3;//正走马灯
+				timer_init(0,65,4,62500,0);//1
+			}
+			else{
+				mode = 4;//逆走马灯
+				timer_init(0,65,4,62500*2,0);//2
+			}
+		}
+		else{
+			mode = 5;//个位数
+			timer_init(0,65,4,62500,0);//1
+		}
+	}
+
+	/* 清中断 */
+	EINT0PEND   = 0x3f;
+	VIC0ADDRESS = 0;
+}
+
+//时钟中断处理程序
+void do_irq_2(void) {
+	int t=0;
+
+    //按下K3和K4，清零闪烁
+    if(mode == 1) {
+        t = 3;
+		while(t--){
+			GPKDATA = 0x00;
+			dely_ms(500);
+			GPKDATA = 0xff;
+			dely_ms(500);
+		}
+		mode = 0;
+    }
+	//按下K3,闪烁每位
+    if(mode == 2) {
+    	t = INDIVIDUAL;
+		while(t--){
+			GPKDATA = 0b11101111;
+			dely_ms(1000);
+			GPKDATA = 0xff;
+			dely_ms(1000);
+		}
+		t = TEN;
+		while(t--){
+			GPKDATA = 0b11011111;
+			dely_ms(1000);
+			GPKDATA = 0xff;
+			dely_ms(1000);
+		}
+		t = HUNDERED;
+		while(t--){
+			GPKDATA = 0b10111111;
+			dely_ms(1000);
+			GPKDATA = 0xff;
+			dely_ms(1000);
+		}
+		mode = 0;
+    }
+
+	//按下K4正跑马灯
+    if(mode == 3) {
+		int k=0,f=1,i;
+		while(f){
+			for(i=0;i<3;i++)
+				if(EINT0PEND & (1<<i))
+					f=0;
+			if(!f)break;
+
+			while(k<3){
+				GPKDATA &= ~(1<<(k+4));
+				dely_ms(1000);
+				GPKDATA = 0xff;
+				k++;//321
+			}
+
+			for(i=0;i<3;i++)
+				if(EINT0PEND & (1<<i))
+					f=0;
+			if(!f)break;
+
+			while(k){
+				GPKDATA &= ~(1<<(k+4));
+				dely_ms(1000);
+				GPKDATA = 0xff;
+				k--;//012
+			}
+		}
+		mode = 0;
+    }
+
+	//按下K4逆跑马灯
+	if(mode == 4){
+		int k=3,f=1,i;
+		while(f){
+			for(i=0;i<3;i++)
+				if(EINT0PEND & (1<<i))
+					f=0;
+			if(!f)break;
+
+			while(k){
+				GPKDATA &= ~(1<<(k+4));
+				dely_ms(2000);
+				GPKDATA = 0xff;
+				k--;//321
+			}
+
+			for(i=0;i<3;i++)
+				if(EINT0PEND & (1<<i))
+					f=0;
+			if(!f)break;
+
+			while(k<3){
+				GPKDATA &= ~(1<<(k+4));
+				dely_ms(2000);
+				GPKDATA = 0xff;
+				k++;//012
+			}
+		}
+		mode = 0;
+	}
+
+	//按下K4，个位闪烁
+	if(mode == 5){
+		t=INDIVIDUAL;
+		while(t--){
+			GPKDATA = 0b11101111;
+			dely_ms(1000);
+			GPKDATA = 0xff;
+			dely_ms(1000);
+		}
+		mode = 0;
+	}
+
+    unsigned long uTmp;
+    // 清timer0的中断状态寄存器
+    uTmp = TINT_CSTAT;
+    TINT_CSTAT = uTmp;
+    VIC0ADDRESS = 0x0;
+}

@@ -1,0 +1,61 @@
+.global _start
+_start :
+	//把外设的基地址告诉cPu
+	ldr r0, =	0x70000000
+	orr r0,r0,#0x13
+	mcr p15,0 , r0,c15,c2,4
+        //关看门狗
+	ldr r0,=0x7E004000
+	mov r1,#0
+	str r1,[r0]
+    //设置GPKCON0
+	ldr r1, =0x7F008800
+	ldr r0, =0x11110000
+	str r0,[r1]
+	mov r2, #0x1000
+led_blink :
+    //低电平0时灯亮，高电平1时灯灭，LED_1~LED_4对应GPK_4~GPK_7
+
+	
+	ldr r1, =0x7F008808
+	mov r0,#0xe0      //设置为1110 0000，1l
+	str r0,[r1]		
+	bl delay
+
+	ldr r1, =0x7F008808
+	mov r0,#0xd0       //设置为1101 0000，2 l
+	str r0,[r1]
+	bl delay
+
+	ldr r1,=0x7F008808
+	mov r0,#0xb0        //设置为1011 0000, 3l
+	str r0,[r1]
+	bl delay
+	
+	ldr r1, =0x7F008808
+	mov r0,#0x70      //设置为0111 0000，4l
+	str r0,[r1]		
+	bl delay
+	
+	ldr r1,=0x7F008808
+	mov r0,#0xb0        //设置为1011 0000, 3l
+	str r0,[r1]
+	bl delay
+
+	ldr r1, =0x7F008808
+	mov r0,#0xd0       //设置为1101 0000，2 l
+	str r0,[r1]
+	bl delay
+
+	sub r2, r2,#1
+	cmp r2,#0
+	bne led_blink
+halt:
+	b halt
+delay:
+	mov r0,#0x1000000
+delay_loop :
+	cmp r0,#0
+	sub r0, r0,#1
+	bne delay_loop
+	mov pc, lr
