@@ -1,14 +1,9 @@
-## 关于
+<h1 align="center" style="font-size:40px;">关于</h1>
 
-存放合肥工业大学宣城校区（HFUT-XC）计算机科学与技术（CS）大一到大四的学习资料
-
-----
+此仓库存放合肥工业大学宣城校区（HFUT-XC）计算机科学与技术（CS）大一到大四的学习资料
 
 
-
-
-
-## 目录
+<h1 align="center" style="font-size:30px;">目录</h1>
 
 ### 大一：
 
@@ -49,10 +44,14 @@
 
 更新中......
 
----
+
+
+![](./readme_images/img1.jpeg)
 
 
 
-![](https://xc.hfut.edu.cn/_upload/article/images/71/7b/1219d3104a0fb29429bae77ec9c9/03c550ee-d815-4649-81fc-2b4f9c9da1c7.jpeg)
+![](./assets/img2.jpg)
 
-![](https://xc.hfut.edu.cn/_upload/article/images/f6/f8/875163004c49b8d871cfeb8724b8/097b6aad-cd6f-41b4-b225-19e10baa59f8.jpg)
+
+
+![](./assets/img3.png)
