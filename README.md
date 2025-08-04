@@ -50,8 +50,8 @@
 
 
 
-![](./assets/img2.jpg)
+![](./readme_images/img2.jpg)
 
 
 
-![](./assets/img3.png)
+![](./readme_images/img3.png)
