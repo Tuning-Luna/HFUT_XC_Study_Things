@@ -1,13 +1,61 @@
-<h1 align="center" style="font-size:40px;">关于</h1>
+<h1 align="center" id="home">HFUT-XC CS 学习资料仓库</h1>
 
-此仓库存放合肥工业大学宣城校区（HFUT-XC）计算机科学与技术（CS）大一到大四的学习资料
+[toc]
 
 
-<h1 align="center" style="font-size:30px;">目录</h1>
 
-<h2 align="center">大一</h2>
 
-<div align="center">
+
+# 写在前面
+
+本仓库计划存放合肥工业大学宣城校区（HFUT-XC）计算机科学与技术（CS）大一到大四的学习资料
+
+# 食用方法
+
+## 全部下载
+
+截止2025.8.7，仓库总大小为 **7.33 GB** ，其中资料约占 **3.92 GB**，确保有足够的内存
+
+### 方法1
+
+点击 Code / Download ZIP 进行全部下载
+
+![image-20250807095119115](./assets/image-20250807095119115.png)
+
+
+
+### 方法2
+
+确保电脑上有[git](https://git-scm.com/downloads)环境，打开cmd，运行
+
+````bash
+git clone https://github.com/Tuning-Luna/HFUT_XC_Study_Things.git
+````
+
+克隆整个仓库
+
+
+
+## 部分下载
+
+### 方法1
+
+进入需要下载的文件，选择Download raw file 即可
+
+![image-20250807100520627](./assets/image-20250807100520627.png)
+
+
+
+### 方法2
+
+使用[GitZip for GitHub](https://chromewebstore.google.com/detail/gitzip-for-github/ffabmkklhbepgcgfonabamgnfafbdlkn?hl=en-US&utm_source=ext_sidebar) 插件，安装插件并配置好后，文件夹和文件前面会多出复选框，选择需要的勾上并下载即可
+
+
+
+# 资料目录
+
+## 大一
+
 
 | 课程名称           | 包含内容                                       |
 | ------------------ | ---------------------------------------------- |
@@ -18,14 +66,12 @@
 | 电路与电子技术基础 | 教材，PPT，实验                                |
 | 大学物理           | 教材，PPT，作业习题以及解答，历年真题，习题册  |
 
-</div>
 
 
 
 
-<h2 align="center">大二</h2>
+## 大二
 
-<div align="center">
 
 |      课程名称      |                 包含内容                  |
 | :----------------: | :---------------------------------------: |
@@ -45,19 +91,18 @@
 |      机器学习      |        PPT，大作业，学习资料，作业        |
 |   计算机组成原理   |         PPT，真题，复习资料，实验         |
 
-</div>
-
 
 <a  href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&duration=10000&pause=1000&width=435&lines=%E6%9C%AA%E5%AE%8C%E5%BE%85%E7%BB%AD......" alt="Typing SVG" /></a>
 
 
 
-![](./readme_images/img1.jpeg)
+![](./assets/img1.jpeg)
 
 
 
-![](./readme_images/img2.jpg)
+![](./assets/img2.jpg)
 
 
 
-![](./readme_images/img3.png)
+![](./assets/img3.png)
+
