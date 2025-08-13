@@ -7,7 +7,7 @@ cd /d %~dp0
 md docs 2>nul
 python gen-md.py
 copy /y README.md .\docs\index.md
-if exist asset xcopy asset .\docs\asset /E /I /Y
+if exist assets xcopy assets .\docs\assets /E /I /Y
 
 rem 本地部署到 gh-pages（需要本地已登录 git）
 mkdocs gh-deploy
