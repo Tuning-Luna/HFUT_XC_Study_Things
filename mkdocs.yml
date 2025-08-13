@@ -3,3 +3,10 @@ site_description: 这是合肥工业大学宣城校区计算机科学与技术�
 site_author: Tuning-Luna
 theme: readthedocs
 repo_url: https://github.com/Tuning-Luna/HFUT_XC_Study_Things
+
+extra:
+  meta:
+    - name: keywords
+      content: "HFUT, 合肥工业大学, 宣城校区, 计算机科学与技术, 教材, 课件, PPT, PDF"
+    - name: description
+      content: "合肥工业大学宣城校区计算机科学与技术资料汇总，包括课程 PPT、实验资料、讲义和代码示例。"
