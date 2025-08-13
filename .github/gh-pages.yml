@@ -1,0 +1,50 @@
+name: Update gh-pages
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0     # gh-deploy/ghp-import 有时需要完整历史
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install -U pip
+          pip install mkdocs
+
+      - name: Generate docs
+        run: |
+          mkdir -p docs
+          python gen-md.py
+          cp README.md ./docs/index.md
+
+      - name: Configure git identity
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Deploy to gh-pages
+        env:
+          # checkout@v4 默认已持久化 token 到 origin，通常无需显式传
+          # 留空即可，由 mkdocs/ghp-import 直接 git push 到 origin
+          GIT_AUTHOR_NAME: github-actions[bot]
+          GIT_COMMITTER_NAME: github-actions[bot]
+        run: |
+          mkdocs gh-deploy --force --clean --remote-name origin --remote-branch gh-pages
+
+      - name: Cleanup (CI workspace only)
+        run: rm -rf site docs
