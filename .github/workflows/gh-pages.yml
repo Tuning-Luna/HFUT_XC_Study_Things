@@ -47,5 +47,6 @@ jobs:
         run: |
           mkdocs gh-deploy --force --clean --remote-name origin --remote-branch gh-pages
 
-      - name: Cleanup (CI workspace only)
-        run: rm -rf site docs
+      #  清理中间产物
+      # - name: Cleanup (CI workspace only)
+      #   run: rm -rf site docs
