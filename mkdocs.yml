@@ -1,10 +1,18 @@
 site_name: HFUT-XC计算机科学与技术资料汇总
 site_description: 这是合肥工业大学宣城校区计算机科学与技术资料汇总的网站
 site_author: Tuning-Luna
-theme: material
+
 repo_url: https://github.com/Tuning-Luna/HFUT_XC_Study_Things
 edit_uri: ""
 
+theme:
+  name: material
+  logo: assets/hfut.png     # 左上角网站 logo
+  favicon: assets/hfut.png   # 浏览器标签页图标
+
+
+
+# 附加信息
 extra:
   meta:
     - name: keywords

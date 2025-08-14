@@ -1,7 +1,7 @@
 # encoding: utf-8
 import os
 
-EXCLUDE_DIRS = {'.git', 'docs', '.vscode', '.circleci', 'site', '.github'}
+EXCLUDE_DIRS = {'.git', 'docs', '.vscode', '.circleci', 'site', '.github','assets','test-gh-pages'}
 README_MD = {'README.md', 'readme.md', 'index.md'}
 
 BIN_URL_PREFIX = 'https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main'
