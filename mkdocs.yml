@@ -9,6 +9,22 @@ theme:
   name: material
   logo: assets/hfut.png     # 左上角网站 logo
   favicon: assets/hfut.png   # 浏览器标签页图标
+  palette:
+    - scheme: default
+      primary: 'indigo'
+      accent: 'indigo'
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate
+      primary: 'indigo'
+      accent: 'indigo'
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+  features:
+    - palette.toggle   # 显示切换按钮
+    - palette.auto     # 自动跟随系统深浅色模式
 
 
 

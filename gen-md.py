@@ -1,9 +1,13 @@
 # encoding: utf-8
 import os
 
+# 排除目录
 EXCLUDE_DIRS = {'.git', 'docs', '.vscode', '.circleci', 'site', '.github','assets','test-gh-pages'}
-README_MD = {'README.md', 'readme.md', 'index.md'}
 
+# README 文件名集合
+README_MD = {'README.md', 'readme.md', 'index.md','README.MD'}
+
+# 二进制文件的 URL 前缀
 BIN_URL_PREFIX = 'https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main'
 
 def list_files(course: str):

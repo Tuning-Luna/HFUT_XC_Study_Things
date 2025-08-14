@@ -1,5 +1,6 @@
-<h1 align="center" id="home">HFUT-XC CS 学习资料仓库</h1>
+# HFUT-XC CS 学习资料仓库
 
+- [HFUT-XC CS 学习资料仓库](#hfut-xc-cs-学习资料仓库)
 - [写在前面](#写在前面)
 - [食用方法](#食用方法)
   - [全部下载](#全部下载)
