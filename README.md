@@ -1,25 +1,22 @@
 # HFUT-XC CS 学习资料仓库
 
-- [HFUT-XC CS 学习资料仓库](#hfut-xc-cs-学习资料仓库)
-- [写在前面](#写在前面)
-- [食用方法](#食用方法)
-  - [全部下载](#全部下载)
-  - [部分下载](#部分下载)
-- [资料目录](#资料目录)
-  - [大一](#大一)
-  - [大二](#大二)
-
 # 写在前面
 
 本仓库计划存放合肥工业大学宣城校区（HFUT-XC）计算机科学与技术（CS）大一到大四的学习资料，有问题欢迎提`issues`
 
 # 食用方法
 
+## 在线网站
+
+这是资料的[在线网站地址](https://tuning-luna.github.io/HFUT_XC_Study_Things/)，[此网站](https://tuning-luna.github.io/HFUT_XC_Study_Things/)和[本仓库](https://github.com/Tuning-Luna/HFUT_XC_Study_Things)的资料**完全同步**，使用网站找到想要的资料可以直接下载
+
+![image-20250814125515276](./assets/image-20250814125515276.png)
+
 ## 全部下载
 
 注：截止2025.8.7，仓库总大小为 **7.33 GB** ，其中资料约占 **3.92 GB**，确保有足够的内存下载
 
-点击 Code / Download ZIP 进行全部下载
+点击 Code -> Download ZIP 进行全部下载
 
 ![image-20250807095119115](./assets/image-20250807095119115.png)
 
@@ -34,6 +31,12 @@ git clone https://github.com/Tuning-Luna/HFUT_XC_Study_Things.git
 ````
 
 克隆整个仓库
+
+
+
+还可以使用**Fork**，复制一份作为你的仓库：
+
+![image-20250814125203980](./assets/image-20250814125203980.png)
 
 
 
