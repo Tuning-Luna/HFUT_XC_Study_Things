@@ -1,6 +1,7 @@
 @echo off
 chcp 65001 >nul
 
+REM 这是一个本地版的workflow，不需要gihub workflow进行构建，只需要在本地执行以下命令即可，效果和github workflow相同，但是不会在github workflow 上被使用
 D:
 cd /d %~dp0
 
