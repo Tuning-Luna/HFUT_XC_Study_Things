@@ -8,7 +8,9 @@
 
 ## 在线网站
 
-这是资料的[在线网站地址](https://tuning-luna.github.io/HFUT_XC_Study_Things/)，[此网站](https://tuning-luna.github.io/HFUT_XC_Study_Things/)和[本仓库](https://github.com/Tuning-Luna/HFUT_XC_Study_Things)的资料**完全同步**，使用网站找到想要的资料可以直接下载
+这是资料的在线网站地址：https://tuning-luna.github.io/HFUT_XC_Study_Things/
+
+[此网站](https://tuning-luna.github.io/HFUT_XC_Study_Things/)和[本仓库](https://github.com/Tuning-Luna/HFUT_XC_Study_Things)的资料**完全同步**，使用网站找到想要的资料可以直接下载
 
 ![image-20250814125515276](./assets/image-20250814125515276.png)
 
