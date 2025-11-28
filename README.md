@@ -96,6 +96,16 @@ git clone https://github.com/Tuning-Luna/HFUT_XC_Study_Things.git
 |   计算机组成原理   |         PPT，真题，复习资料，实验         |
 
 
+
+## 其他
+
+| 课程名称 |                         包含内容                         |
+| -------- | :------------------------------------------------------: |
+| 英语     |                 雨课堂，CET-4/CET-6整体                  |
+| 网课水课 | 近代史，马原，毛概，思想道德，劳动教育，形式与政策等题库 |
+
+
+
 <a  href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&duration=10000&pause=1000&width=435&lines=%E6%9C%AA%E5%AE%8C%E5%BE%85%E7%BB%AD......" alt="Typing SVG" /></a>
 
 
