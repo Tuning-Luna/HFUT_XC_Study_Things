@@ -69,6 +69,7 @@ git clone https://github.com/Tuning-Luna/HFUT_XC_Study_Things.git
 | Java               | 实验，课后习题（有些资料因为体积原因无法上传） |
 | 电路与电子技术基础 | 教材，PPT，实验                                |
 | 大学物理           | 教材，PPT，作业习题以及解答，历年真题，习题册  |
+| 程序设计基础       | PPT，实验，作业答案，期末大作业，课设          |
 
 
 

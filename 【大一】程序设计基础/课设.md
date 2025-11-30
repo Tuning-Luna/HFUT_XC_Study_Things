@@ -1,0 +1,1178 @@
+# 一. 需求和规格说明
+
+双端队列(deque)容器内部数据表示为分段数组，并提供相应的索引数组来维护多个分段数组。 双端队列(deque)容器的基本功能要求： 
+
+## （1）容器的通用功能：
+
+- 用默认构造函数构造空容器
+
+-  支持关系运算符：==、!=、<、<=、>、>= 
+
+- begin()、end()：获得容器首、尾迭代器 
+
+- clear()：将容器清空
+
+-  empty()：判断容器是否为空
+
+-  size()：得到容器元素个数 
+
+
+s1.swap(s2)：将s1和s2两容器内容交换 
+
+## （2）相关数据类型（S表示deque容器类型）:
+
+-  S::iterator：指向容器元素的迭代器类型 
+
+-  S::const_iterator：常迭代器类型 
+
+
+## （3）可逆容器功能:
+
+- rbegin() ：指向容器尾的逆向迭代器
+- rend()： 指向容器首的逆向迭代器 
+
+## （4）随机访问容器功能 ：
+
+- s[n]：获得容器s的第n个元素 
+
+## （5）顺序容器的接口功能赋值 assign
+
+-   插入函数 insert， push_front， push_back
+
+-   删除函数 erase，clear，pop_front ，pop_back
+
+-   其他顺序容器访问函数 front，back
+
+-   改变大小resize
+
+# 二. 设计
+
+## 1）设计思想
+
+**首先了解一下deque容器：**
+
+deque则是一种**双向开口的连续线性空间，**又称**双端动态数组**。所谓的双向开口，意思是可以在头尾两端分别做元素的插入和删除操作。
+
+![image-20231230143711923](C:\Users\1\AppData\Roaming\Typora\typora-user-images\image-20231230143711923.png)
+
+
+
+deque**没有容量**的概念，因为它是动态的以分段连续空间组合而成，随时可以增加一段新的空间并链接起来。deque支持随机访问来遍历整个容器
+
+![image-20231230143810144](C:\Users\1\AppData\Roaming\Typora\typora-user-images\image-20231230143810144.png)
+
+
+
+deque的示意图如上，所以在头部和尾部都有空间，都支持插入和删除
+
+
+
+**下面是设计思想：**
+
+### 1.框架的实现
+
+STL里面的容器可以视为是一个数组，但是元素的类型不知道，引入**类模板**来实现，这个类模板需要一个**待定类型的数组**和**记录此数组大小的数字组成**,并且为了维护数据，将其设为**私有**属性。然后在类里面实现**成员函数**和**相关运算符的重载**
+
+如下：
+
+```c++
+#include <iostream>
+#include <cassert>
+using namespace std;
+#define MAX 100//deque最大长度
+
+template <typename T>
+class Deque
+{
+private:
+	//deque属性
+	T _val[MAX];             //内部数组
+	int _size;               //元素个数
+public:
+	Deque() = default;//default 默认构造函数
+	//重载
+	bool operator==(const Deque& other); // ==运算符重载
+	bool operator!=(const Deque& other); // !=运算符重载
+	bool operator<(const Deque& other);  // <运算符重载
+	bool operator<=(const Deque& other); // <=运算符重载
+	bool operator>(const Deque& other);  // >运算符重载
+	bool operator>=(const Deque& other); // >=运算符重载
+	T& operator[](int index);            // 下标运算符重载
+
+	//deque容器功能
+	T& front();                          // 返回首元素
+	T& back();                           // 返回尾元素
+	void push_front(const T& value);     // 在队列前端插入元素
+	void push_back(const T& value);      // 在队列后端插入元素
+	void pop_front();                    // 删除首元素
+	void pop_back();                     // 删除尾元素
+	void assign(int n, const T& value);  // 赋值
+	void insert(int pos, const T& value);// 插入元素（下标）
+	void insert(Deque<T>::iterator it, const T& value);
+	                                     //插入元素（迭代器）
+    void resize(int num);                 //改变容器大小
+	void erase(int pos);                 // 删除元素（下标）
+	void erase(Deque<T>::iterator it);   // 删除元素（迭代器）
+	void clear();                        // 清空容器
+	bool empty() const;                  // 判断容器是否为空
+	int size() const;                    // 获取容器的元素个数
+	void swap(Deque& other);             // 交换两个容器
+};
+
+```
+
+### 2.迭代器的实现
+
+然后是迭代器部分，我把他理解为指针,`iterator`就是指针,`const_iterator`就是指常量指针，可以在类`Deque`里面再创建类`iterator`和类`const_iterator`  用来达到需求，而在这两个类中只需封装一个指针即可，关于这两个类的成员函数，需要重载常用的指针的用法，比如 * ，自增 ，自建 ，-> ，==，!= 等，用于更好的使用“迭代器"
+
+```c++
+#include <iostream>
+#include <cassert>
+using namespace std;
+#define MAX 100//deque最大长度
+
+template <typename T>
+class Deque
+{
+private:
+	//deque属性
+	T _val[MAX];             //内部数组
+	int _size = 0;           //元素个数
+
+public:
+	Deque() = default;
+	//迭代器类
+	class iterator
+	{
+	private:
+		T* _ptr;
+	public:
+		iterator(T* ptr) : _ptr(ptr) {} //有参构造函数，但是初始值只有调用时才知道值
+		iterator& operator++() { _ptr++; return *this; }
+		iterator operator++(int) { iterator temp = *this; ++(*this); return temp; }
+		iterator& operator--() { _ptr--; return *this; }
+		iterator operator--(int) { iterator temp = *this; --(*this); return temp; }
+		T& operator*() const { return *_ptr; }
+		T* operator->() const { return _ptr; }
+		bool operator==(const iterator& other) const { return _ptr == other._ptr; }
+		bool operator!=(const iterator& other) const { return !(*this == other); }
+	};
+	class const_iterator
+	{
+	private:
+		const T* _ptr;
+	public:
+		const_iterator(const T* ptr) : _ptr(ptr) {}//有参构造函数，但是初始值只有调用时才知道值
+		const_iterator& operator++() { _ptr++; return *this; }
+		const_iterator operator++(int) { const_iterator temp = *this; ++(*this); return temp; }
+		const_iterator& operator--() { _ptr--; return *this; }
+		const_iterator operator--(int) { const_iterator temp = *this; --(*this); return temp; }
+		const T& operator*() const { return *_ptr; }
+		const T* operator->() const { return _ptr; }
+		bool operator==(const const_iterator& other) const { return _ptr == other._ptr; }
+		bool operator!=(const const_iterator& other) const { return !(*this == other); }
+	};
+    
+	//迭代器相关功能
+	iterator begin() { return iterator(&_val[0]); }
+	iterator end() { return iterator(&_val[_size]); }
+	iterator rbegin() { return iterator(&_val[_size - 1]); }
+	iterator rend() { return iterator(&_val[0] - 1); }
+	const_iterator begin() const { return const_iterator(&_val[0]); }
+	const_iterator end() const { return const_iterator(&_val[_size]); }
+	const_iterator rbegin() const { return const_iterator(&_val[_size - 1]); }
+	const_iterator rend()const { return const_iterator(&_val[0] - 1); }
+};
+```
+
+
+
+### 3.抛异常（assert）的实现
+
+有些函数，比如头删，尾删，或者用下标访问元素等，需要判断deque的_size是否满足条件，不满足条件就无法操作，由于是在debug阶段，所以使用**assert**，遇到不满足条件时进行报错并终止运行。但是在release版本不能使用。
+
+如下：
+
+````c++
+#include <cassert>  //包含cassert头文件
+//重载[]
+template <typename T>
+T& Deque<T>::operator[](int _idx)
+{
+	assert(_idx < this->_size); //下标必须小于size
+	return _val[_idx];
+}
+
+//front()返回头元素
+template <typename T>
+T& Deque<T>::front()
+{
+	assert(this->_size > 0);//size必须大于0
+	return _val[0];
+}
+
+//back()返回尾元素
+template <typename T>
+T& Deque<T>::back()
+{
+	assert(this->_size > 0);//size必须大于0
+	return _val[this->_size - 1];
+}
+
+//assign()赋值
+template <typename T>
+void Deque<T>::assign(int n, const T& value)
+{
+	assert(n <= this->_size);
+	//要插入的个数必须不大于size
+	this->_size = n;
+	for (int i = 0; i < this->_size; i++)
+	{
+		this->_val[i] = value;
+	}
+}
+
+//insert(pos value) 插入
+template <typename T>
+void Deque<T>::insert(int pos, const T& value)
+{
+	assert(this->_size < MAX);//size小于最大值
+	assert(pos < MAX);//位置小于最大下标
+	for (int i = _size; i > pos; i--)
+	{
+		_val[i] = _val[i - 1];
+	}
+	_val[pos] = value;
+	_size++;
+}
+
+//insert(iterator , value) 插入--重载
+template <typename T>
+void Deque<T>::insert(Deque<T>::iterator it, const T& value)
+{
+	assert(this->_size < MAX);
+	
+	int _count = 0;
+	while (it != this->begin())//得到位置
+	{
+		_count++;
+		it--;
+	}
+
+	for (int i = this->_size; i > _count; i--)
+	{
+		this->_val[i] = this->_val[i - 1];
+	}
+	this->_val[_count] = value;
+	this->_size++;
+}
+
+//push_front() 头插
+template <typename T>
+void Deque<T>::push_front(const T& value)
+{
+	assert(this->_size < MAX);
+	//
+	//元素依次向后移动，空出第一位
+	for (int i = this->_size; i > 0; i--)
+	{
+		this->_val[i] = this->_val[i - 1];
+	}
+	this->_val[0] = value;
+	this->_size++;
+}
+
+//push_back() 尾插
+template <typename T>
+void Deque<T>::push_back(const T& value)
+{
+	assert(this->_size < MAX);
+	_val[this->_size++] = value;
+}
+
+//pop_front() 头删
+template <typename T>
+void Deque<T>::pop_front()
+{
+	assert(this->_size != 0);
+	for (int i = 0; i < this->_size - 1; i++)
+	{
+		this->_val[i] = this->_val[i + 1];
+	}
+	this->_size--;
+}
+
+//pop_back() 尾删
+template <typename T>
+void Deque<T>::pop_back()
+{
+	assert(this->_size != 0);
+	this->_size--;
+}
+
+//erase(iterator) 删除
+template <typename T>
+void Deque<T>::erase(Deque<T>::iterator it)
+{
+	assert(this->_size != 0);
+	int _count = 0;
+	while (it != this->begin())//得到位置
+	{
+		_count++;
+		it--;
+	}
+	for (int i = _count; i < this->_size; i++)
+	{
+		this->_val[i] = this->_val[i + 1];
+	}
+	this->_size--;
+}
+````
+
+### 4.初始化类模板`Deque`的实现
+
+
+
+关于Deuqe类里面的构造函数，`_size`属性可以直接设置为0，因为他的变量类型是知道的，就是`int`或者`size_t`  。但是`_val`数组里面的元素变量类型未知（如果确定是int，那么可以用0初始化，如果是char ，那么可以用'\0'初始化，所以不能确定用说明初始化），那就不选择初始化，让系统自动的分配值
+
+````c++
+template <typename T>
+class Deque
+{
+private:
+	//deque属性
+	T _val[MAX];             //内部数组
+	int _size;              //元素个数
+
+public:
+	Deque()
+		{
+			_size = 0;
+		}
+};
+````
+
+
+
+## 2) 设计表示
+
+### Deuqe里面的函数:
+
+| 返回值 | 函数名称                                       | 功能             |
+| ------ | ---------------------------------------------- | ---------------- |
+| T&     | front();                                       | 返回头元素       |
+| T&     | back();                                        | 返回尾元素       |
+| void   | push_front(const T& value);                    | 头插             |
+| void   | push_back(const T& value);                     | 尾插             |
+| void   | pop_front();                                   | 头删             |
+| void   | pop_back();                                    | 尾删             |
+| void   | assign(int n, const T& value);                 | 赋值             |
+| void   | insert(int pos, const T& value);               | 按位置插入       |
+| void   | insert(Deque<T>::iterator it, const T& value); | 按迭代器插入     |
+| void   | erase(int pos);                                | 按位置删除       |
+| void   | erase(Deque<T>::iterator it);                  | 按迭代器删除     |
+| void   | clear();                                       | 清空             |
+| bool   | empty() const;                                 | 是否为空         |
+| int    | size() const;                                  | 返回容器大小     |
+| void   | swap(Deque& other);                            | 交换容器         |
+| void   | resize(int num)                                | 重新指定容器大小 |
+
+### 迭代器相关功能：
+
+| 返回值         | 函数名称 | 功能               |
+| -------------- | -------- | ------------------ |
+| iterator       | begin()  | 返回头指针         |
+| iterator       | end()    | 返回尾指针         |
+| iterator       | rbegin() | 返回逆向头指针     |
+| iterator       | rend()   | 返回逆向尾指针     |
+| const_iterator | begin()  | 返回常量头指针     |
+| const_iterator | end()    | 返回常量尾指针     |
+| const_iterator | rbegin() | 返回逆向常量头指针 |
+| const_iterator | rend()   | 返回逆向常量头指针 |
+
+### Deque重载：
+
+| 返回值 | 函数名称    | 功能    |
+| ------ | ----------- | ------- |
+| bool   | operator==  | 重载==  |
+| bool   | operator!=  | 重载!=  |
+| bool   | operator<   | 重载<   |
+| bool   | operator<=  | 重载<=  |
+| bool   | operator>   | 重载>   |
+| bool   | operator>=  | 重载>=  |
+| T&     | operator[ ] | 重载[ ] |
+
+### iterator类里面的重载函数(const_iterator同理，不再赘述)：
+
+| 返回值    | 函数名称        | 功能             |
+| --------- | --------------- | ---------------- |
+| iterator& | operator++()    | 重载前置递增     |
+| iterator  | operator++(int) | 重载后置递增     |
+| iterator& | operator--()    | 重载前置递减     |
+| iterator  | operator--(int) | 重载后置递减     |
+| T&        | operator*()     | 重载取地址运算符 |
+| T*        | operator->()    | 重载箭头运算符   |
+| bool      | operator==()    | 重载==           |
+| bool      | operator!=()    | 重载!=           |
+
+## 3） 用户手册
+
+按照使用**STL**中的`deque`容器的方法使用即可
+
+## 4）调试及测试
+
+- 注：本项目调试为int类型
+
+### Test_1 ：
+
+本测试主要测试 **头插，尾插，头删，尾删，返回头元素，返回尾元素**等
+
+````c++
+Deque<int> d1;
+d1.push_back(1);
+d1.push_back(2);
+cout << "尾插1,2后：" << endl;
+myPrint(d1);
+
+d1.push_front(100);
+d1.push_front(200);
+cout << "头100,200插后：" << endl;
+myPrint(d1);
+
+d1.pop_back();
+cout << "尾删一个元素后：" << endl;
+myPrint(d1);
+
+d1.pop_front();
+cout << "头删一个元素后：" << endl;
+myPrint(d1);
+
+cout << "首元素：" << endl;
+cout << d1.front() << endl;
+
+cout << "尾元素：" << endl;
+cout << d1.back() << endl;
+````
+
+*myPrint是一个可以打印大小和遍历容器的函数，具体实现如下：*
+
+````c++
+template <typename T>
+void myPrint(Deque<T>& d)
+{
+	cout << "容器大小：" << d.size() << endl;
+	cout << "容器数据：";
+	for (auto it = d.begin(); it != d.end(); it++)
+	{
+		cout << *it << " ";
+	}
+	cout << endl;
+	cout << "----------------------------" << endl;
+}
+````
+
+结果：
+
+````c++
+尾插1,2后：
+容器大小：2
+容器数据：1 2
+----------------------------
+头100,200插后：
+容器大小：4
+容器数据：200 100 1 2
+----------------------------
+尾删一个元素后：
+容器大小：3
+容器数据：200 100 1
+----------------------------
+头删一个元素后：
+容器大小：2
+容器数据：100 1
+----------------------------
+首元素：
+100
+尾元素：
+1
+````
+
+### Test_2:
+
+本测试主要测试 **赋值，删除，插入及其重载版本** 和 少量的**迭代器内容**
+
+````c++
+Deque<int> d1;
+d1.push_back(1);
+d1.push_back(2);
+d1.push_back(3);
+d1.push_back(4);
+d1.push_back(5);
+cout << "assign赋值(6,200)前：" << endl;
+myPrint(d1);
+
+d1.assign(6, 200);
+cout << "assign赋值(6,200)后：" << endl;
+myPrint(d1);
+
+d1.insert(1, 100);
+cout << "insert插入(1, 100)后：" << endl;
+myPrint(d1);
+
+Deque<int>::iterator it = d1.begin();
+it++;
+d1.insert(it, 300);
+cout << "insert插入(it, 300)后：(it为头部迭代器+1)" << endl;
+myPrint(d1);
+
+d1.erase(0);
+d1.erase(0);
+cout << "两次删除erase(0)后：" << endl;
+myPrint(d1);
+
+it = d1.rbegin();
+d1.erase(it);
+cout << "删除erase(it)后：（it为rbegin()）" << endl;
+myPrint(d1);
+````
+
+结果如下：
+
+````c++
+assign赋值(6,200)前：
+容器大小：5
+容器数据：1 2 3 4 5
+----------------------------
+assign赋值(6,200)后：
+容器大小：6
+容器数据：200 200 200 200 200 200
+----------------------------
+insert插入(1, 100)后：
+容器大小：7
+容器数据：200 100 200 200 200 200 200
+----------------------------
+insert插入(it, 300)后：(it为头部迭代器+1)
+容器大小：8
+容器数据：200 300 100 200 200 200 200 200
+----------------------------
+两次删除erase(0)后：
+容器大小：6
+容器数据：100 200 200 200 200 200
+----------------------------
+删除erase(it)后：（it为rbegin()）
+容器大小：5
+容器数据：100 200 200 200 200
+----------------------------
+````
+
+### Test_3:
+
+本测试主要测试 empty size clear swap 等函数功能
+
+````c++
+Deque<int> d1;
+d1.push_back(1);
+d1.push_back(2);
+d1.push_back(3);
+d1.push_back(4);
+d1.push_back(5);
+cout << "d1容器大小：" << d1.size() << endl;
+d1.clear();
+cout << "-------------" << endl;
+cout << "清空d1容器后：" << endl;
+if (d1.empty())cout << "d1容器为空" << endl;
+cout << "d1容器大小：" << d1.size() << endl;
+cout << "------------" << endl;
+
+cout << "d1尾插五个元素（1-5）:" << endl;
+d1.push_back(1);
+d1.push_back(2);
+d1.push_back(3);
+d1.push_back(4);
+d1.push_back(5);
+
+Deque<int> d2;
+d2.push_back(10);
+d2.push_back(20);
+d2.push_back(30);
+d2.push_back(40);
+d2.push_back(50);
+d2.push_back(60);
+
+cout << "交换前：" << endl;
+cout << "d1：" << endl;
+myPrint(d1);
+cout << "d2：" << endl;
+myPrint(d2);
+
+d1.swap(d2);
+
+cout << "交换后：" << endl;
+cout << "d1：" << endl;
+myPrint(d1);
+cout << "d2：" << endl;
+myPrint(d2);
+````
+
+运行结果：
+
+````c++
+d1容器大小：5
+-------------
+清空d1容器后：
+d1容器为空
+d1容器大小：0
+------------
+d1尾插五个元素（1-5）:
+交换前：
+d1：
+容器大小：5
+容器数据：1 2 3 4 5
+----------------------------
+d2：
+容器大小：6
+容器数据：10 20 30 40 50 60
+----------------------------
+交换后：
+d1：
+容器大小：6
+容器数据：10 20 30 40 50 60
+----------------------------
+d2：
+容器大小：5
+容器数据：1 2 3 4 5
+----------------------------
+````
+
+### Test_4：
+
+本测试测试deque的重载函数
+
+````c++
+Deque<int> d1;
+d1.push_back(1);
+d1.push_back(2);
+d1.push_back(3);
+d1.push_back(4);
+d1.push_back(5);
+
+Deque<int> d2;
+d2.push_back(1);
+d2.push_back(2);
+d2.push_back(3);
+d2.push_back(4);
+d2.push_back(6);
+
+if (d1 > d2)cout << "d1大于d2" << endl;
+else if (d1 == d2)cout << "d1等于d2" << endl;
+else cout << "d1小于d2" << endl;
+
+//利用下标随机访问函数
+d2[4] = 5;
+
+if (d1 > d2)cout << "d1大于d2" << endl;
+else if (d1 == d2)cout << "d1等于d2" << endl;
+else cout << "d1小于d2" << endl;
+
+d2.push_back(100);
+
+if (d1 > d2)cout << "d1大于d2" << endl;
+else if (d1 == d2)cout << "d1等于d2" << endl;
+else cout << "d1小于d2" << endl;
+````
+
+运行结果：
+
+````c++
+d1大于d2
+d1等于d2
+d1小于d2
+````
+
+**注意：比较运算符的重载因人而异，只需符合自己的重载方式即可**
+
+### Test_5：
+
+本测试主要测试**迭代器执行遍历操作以及iterator类里面重载的[ ]**
+
+````c++
+Deque<int> d1;
+d1.push_back(1);
+d1.push_back(2);
+d1.push_back(3);
+d1.push_back(4);
+d1.push_back(5);
+
+for (auto it = d1.begin(); it != d1.end(); ++it)
+{
+	cout << *it << " ";//通过*访问
+}
+cout << endl;
+cout << "-------------" << endl;
+for (auto it = d1.rbegin(); it != d1.rend(); --it)
+{
+	cout << *it << " ";//用逆向迭代器 逆向访问
+}
+````
+
+运行结果：
+
+````c++
+1 2 3 4 5
+-------------
+5 4 3 2 1
+````
+
+### Test_6：
+
+本测试主要测试**断言功能**是否正常运行
+
+````c++
+Deque<int>d1;
+for (int i = 0; i < 101; i++)
+{
+	d1.push_back(i);
+}
+````
+
+这时相关尾插的代码：
+
+````c++
+template <typename T>
+void Deque<T>::push_back(const T& value)
+{
+	assert(this->_size < MAX);
+	_val[this->_size++] = value;
+}
+````
+
+运行结果：
+
+![image-20231230204246174](C:\Users\1\AppData\Roaming\Typora\typora-user-images\image-20231230204246174.png)
+
+可以看到abort()函数被调用，说明执行被终止，**因为我在for循环里企图插入101个数，但是大小的MAX==100**，所以expression为假，出现上述提示框，其他的测试同理，这里不再测试
+
+
+
+
+
+### 经验和体会：
+
+刚开始写的时候遇到了不少问题，比如如何能实现通过Deque命名空间的形式调用iterator 使得其很想一个真正的iterator，后来才想到了类中类的方式，显然继承和多态不是最优解。
+
+即使这样，也不能真正的实现iterator，毕竟它的底层肯定不会是单单一个指针，不过对于遍历和移动是没问题的。
+
+这次的题对于练习数据结构以及初步了解STL具有很大的好处
+
+## 5)实现注释
+
+### myPrint() 模板函数
+
+在完成基本要求的基础上还实现了一个打印Deque类的函数模板
+
+````c++
+template <typename T>
+void myPrint(Deque<T>& d)
+{
+	cout << "容器大小：" << d.size() << endl;
+	cout << "容器数据：";
+	for (auto it = d.begin(); it != d.end(); it++)
+	{
+		cout << *it << " ";
+	}
+	cout << endl;
+	cout << "----------------------------" << endl;
+}
+````
+
+或者用这种方式：
+
+````c++
+template <typename T>
+void myPrint(Deque<T>& d)
+{
+	cout << "容器大小：" << d.size() << endl;
+	cout << "容器数据：";
+	for (typename Deque<T>::iterator it = d.begin(); it != d.end(); it++)
+	{
+		cout << *it << " ";
+	}
+	cout << endl;
+	cout << "----------------------------" << endl;
+}
+````
+
+无论Deque是说明类型的容器，都能完成打印size和遍历容器的操作
+
+`auto `为自动类型推导，可以根据表达式的右值推断出左值的类型
+
+# 附录
+
+## 源代码
+
+````c++
+#include <iostream>
+#include <cassert>
+using namespace std;
+#define MAX 100//deque最大长度
+
+template <typename T>
+class Deque
+{
+private:
+	//deque属性
+	T _val[MAX];             //内部数组
+	int _size;              //元素个数
+
+public:
+	Deque()
+	{
+		_size = 0;
+	}
+	//迭代器类
+	class iterator
+	{
+	private:
+		T* _ptr;
+	public:
+		iterator(T* ptr) : _ptr(ptr) {} //有参构造函数，但是初始值只有调用时才知道值
+		iterator& operator++() { _ptr++; return *this; }
+		iterator operator++(int) { iterator temp = *this; ++(*this); return temp; }
+		iterator& operator--() { _ptr--; return *this; }
+		iterator operator--(int) { iterator temp = *this; --(*this); return temp; }
+		T& operator*() const { return *_ptr; }
+		T* operator->() const { return _ptr; }
+		bool operator==(const iterator& other) const { return _ptr == other._ptr; }
+		bool operator!=(const iterator& other) const { return !(*this == other); }
+	};
+	class const_iterator
+	{
+	private:
+		const T* _ptr;
+	public:
+		const_iterator(const T* ptr) : _ptr(ptr) {}//有参构造函数，但是初始值只有调用时才知道值
+		const_iterator& operator++() { _ptr++; return *this; }
+		const_iterator operator++(int) { const_iterator temp = *this; ++(*this); return temp; }
+		const_iterator& operator--() { _ptr--; return *this; }
+		const_iterator operator--(int) { const_iterator temp = *this; --(*this); return temp; }
+		const T& operator*() const { return *_ptr; }
+		const T* operator->() const { return _ptr; }
+		bool operator==(const const_iterator& other) const { return _ptr == other._ptr; }
+		bool operator!=(const const_iterator& other) const { return !(*this == other); }
+	};
+
+	//重载
+	bool operator==(const Deque& other); // ==运算符重载
+	bool operator!=(const Deque& other); // !=运算符重载
+	bool operator<(const Deque& other);  // <运算符重载
+	bool operator<=(const Deque& other); // <=运算符重载
+	bool operator>(const Deque& other);  // >运算符重载
+	bool operator>=(const Deque& other); // >=运算符重载
+	T& operator[](int index);            // 下标运算符重载
+
+	//deque容器功能
+	T& front();                          // 返回首元素
+	T& back();                           // 返回尾元素
+	void push_front(const T& value);     // 在队列前端插入元素
+	void push_back(const T& value);      // 在队列后端插入元素
+	void pop_front();                    // 删除首元素
+	void pop_back();                     // 删除尾元素
+	void assign(int n, const T& value);  // 赋值
+	void insert(int pos, const T& value);// 插入元素（下标）
+	void insert(Deque<T>::iterator it, const T& value);
+	                                     //插入元素（迭代器）
+	void resize(int num);                //改变容器大小
+	void erase(int pos);                 // 删除元素（下标）
+	void erase(Deque<T>::iterator it);   // 删除元素（迭代器）
+	void clear();                        // 清空容器
+	bool empty() const;                  // 判断容器是否为空
+	int size() const;                    // 获取容器的元素个数
+	void swap(Deque& other);             // 交换两个容器
+
+	//迭代器相关功能
+	iterator begin() { return iterator(&_val[0]); }
+	iterator end() { return iterator(&_val[_size]); }
+	iterator rbegin() { return iterator(&_val[_size - 1]); }
+	iterator rend() { return iterator(&_val[0] - 1); }
+	const_iterator begin() const { return const_iterator(&_val[0]); }
+	const_iterator end() const { return const_iterator(&_val[_size]); }
+	const_iterator rbegin() const { return const_iterator(&_val[_size - 1]); }
+	const_iterator rend()const { return const_iterator(&_val[0] - 1); }
+};
+
+//重载==
+template <typename T>
+bool Deque<T>::operator==(const Deque& temp)
+{
+	//先判断大小，大小不相等直接false
+	if (_size != temp._size)
+	{
+		return false;
+	}
+
+	//依次遍历
+	//只要找到一个不一样就返回false
+	for (int i = 0; i < _size; i++)
+	{
+		if (_val[i] != temp._val[i])
+		{
+			return false;
+		}
+	}
+	return true;
+}
+
+//重载!= (利用重载==）
+template <typename T>
+bool Deque<T>::operator!=(const Deque& temp)
+{
+	return !(*this == temp);//利用重载的 == 重载 !=
+}
+
+//重载< 
+template <typename T>
+bool Deque<T>::operator<(const Deque& temp)
+{
+	if (this->_size != temp._size)return this->_size < temp._size;
+	for (int i = 0; i < this->_size; i++)
+	{
+		if (this->_val[i] >= temp._val[i])return false;
+	}
+	return true;
+}
+
+//重载<=（利用重载<）
+template <typename T>
+bool Deque<T>::operator<=(const Deque& temp)
+{
+	return ((*this < temp) || (*this == temp));
+}
+
+//重载>(利用重载<=)
+template <typename T>
+bool Deque<T>::operator>(const Deque& temp)
+{
+	return !(*this <= temp);
+}
+
+//重载>=(利用重载<）
+template <typename T>
+bool Deque<T>::operator>=(const Deque& temp)
+{
+	return !(*this < temp);
+}
+
+//重载[]
+template <typename T>
+T& Deque<T>::operator[](int _idx)
+{
+	assert(_idx < this->_size);
+	return _val[_idx];
+}
+
+//front()返回头元素
+template <typename T>
+T& Deque<T>::front()
+{
+	assert(this->_size > 0);
+	return _val[0];
+}
+
+//back()返回尾元素
+template <typename T>
+T& Deque<T>::back()
+{
+	assert(this->_size > 0);
+	return _val[this->_size - 1];
+}
+
+//assign()赋值
+template <typename T>
+void Deque<T>::assign(int n, const T& value)
+{
+	assert(n <= this->_size);
+
+	this->_size = n;
+	for (int i = 0; i < this->_size; i++)
+	{
+		this->_val[i] = value;
+	}
+}
+
+//insert(pos value) 插入
+template <typename T>
+void Deque<T>::insert(int pos, const T& value)
+{
+	assert(this->_size < MAX);
+	assert(pos < MAX);
+	for (int i = _size; i > pos; i--)
+	{
+		_val[i] = _val[i - 1];
+	}
+	_val[pos] = value;
+	_size++;
+}
+
+//insert(iterator , value) 插入--重载
+template <typename T>
+void Deque<T>::insert(Deque<T>::iterator it, const T& value)
+{
+	assert(this->_size < MAX);
+
+	int _count = 0;
+	while (it != this->begin())//得到位置
+	{
+		_count++;
+		it--;
+	}
+
+	for (int i = this->_size; i > _count; i--)
+	{
+		this->_val[i] = this->_val[i - 1];
+	}
+	this->_val[_count] = value;
+	this->_size++;
+}
+
+//push_front() 头插
+template <typename T>
+void Deque<T>::push_front(const T& value)
+{
+	assert(this->_size < MAX);
+
+	//元素依次向后移动，空出第一位
+	for (int i = this->_size; i > 0; i--)
+	{
+		this->_val[i] = this->_val[i - 1];
+	}
+	this->_val[0] = value;
+	this->_size++;
+}
+
+//push_back() 尾插
+template <typename T>
+void Deque<T>::push_back(const T& value)
+{
+	assert(this->_size < MAX);
+	_val[this->_size] = value;
+	++this->_size;
+}
+
+//pop_front() 头删
+template <typename T>
+void Deque<T>::pop_front()
+{
+	assert(this->_size != 0);
+	for (int i = 0; i < this->_size - 1; i++)
+	{
+		this->_val[i] = this->_val[i + 1];
+	}
+	this->_size--;
+}
+
+//pop_back() 尾删
+template <typename T>
+void Deque<T>::pop_back()
+{
+	assert(this->_size != 0);
+	this->_size--;
+}
+
+//erase(iterator) 删除
+template <typename T>
+void Deque<T>::erase(Deque<T>::iterator it)
+{
+	assert(this->_size != 0);
+	int _count = 0;
+	while (it != this->begin())//得到位置
+	{
+		_count++;
+		it--;
+	}
+	for (int i = _count; i < this->_size; i++)
+	{
+		this->_val[i] = this->_val[i + 1];
+	}
+	this->_size--;
+}
+
+//erase(pos) 删除--重载版本
+template <typename T>
+void Deque<T>::erase(int pos)
+{
+	assert(this->_size != 0);
+	for (int i = pos; i < this->_size; i++)
+	{
+		this->_val[i] = this->_val[i + 1];
+	}
+	this->_size--;
+}
+
+//clear() 清空容器
+template <typename T>
+void Deque<T>::clear()
+{
+	this->_size = 0;
+}
+
+//empty()判断是否为空
+template <typename T>
+bool Deque<T>::empty() const
+{
+	return _size == 0;
+}
+
+//size()得到容器大小
+template <typename T>
+int Deque<T>::size() const
+{
+	return _size;
+}
+
+//swap() 交换容器
+template <typename T>
+void Deque<T>::swap(Deque& target)
+{
+	//创建一个T数组和size
+	T _temp_val[MAX] = { 0 };
+	int _temp_size;
+
+	// 保存当前容器的元素和元素个数
+	for (int i = 0; i < this->_size; i++)
+	{
+		_temp_val[i] = this->_val[i];
+	}
+	_temp_size = this->_size;
+
+	// 将当前容器替换为 temp 容器的元素和元素个数
+	for (int i = 0; i < target._size; i++)
+	{
+		this->_val[i] = target._val[i];
+	}
+	_size = target._size;
+
+	// 将 temp 容器替换为之前保存的当前容器的元素和元素个数
+	for (int i = 0; i < _temp_size; i++)
+	{
+		target._val[i] = _temp_val[i];
+	}
+	target._size = _temp_size;
+}
+
+//resize() 改变大小
+template<typename T>
+void Deque<T>::resize(int num)
+{
+	assert(num >= 0 && num <= 100);
+	if (this->_size < num)
+	{
+		for (int i = this->_size; i != num; ++i)
+		{
+			this->_val[i] = 0;
+		}
+	}
+	this->_size = num;
+}
+
+
+````
+
