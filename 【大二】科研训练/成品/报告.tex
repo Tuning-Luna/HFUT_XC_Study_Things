@@ -1,0 +1,96 @@
+\documentclass[UTF8]{ctexart}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{booktabs}
+\usepackage{CJKutf8}
+\usepackage[T1]{fontenc}
+\usepackage{times}
+\usepackage{natbib}
+\usepackage{tocloft}
+\usepackage{setspace}
+
+\title{基于机器学习的个性化推荐系统}
+\author{王竞翔 \\
+    \small 合肥工业大学计算机与信息学院，合肥 230601}
+\date{2025年6月30日}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+本文提出了一种基于机器学习的个性化电影推荐系统，采用基于用户的协同过滤算法，通过余弦相似度计算用户间的相似性，结合电影类型偏好和时间衰减因子实现多维度推荐策略。系统通过数据预处理、用户行为分析和可视化技术，解决了推荐系统中的冷启动和数据稀疏问题，提升了推荐的个性化和时效性。实验结果表明，该系统能够根据用户偏好生成多样化推荐，并通过直方图、热力图等可视化方式直观展示推荐效果和用户相似性。系统采用模块化设计，优化了计算效率，适用于大规模用户数据场景。
+
+关键词：协同过滤；个性化推荐；余弦相似度；数据可视化
+\end{abstract}
+
+\begin{center}
+    \textbf{English Title: Personalized Recommendation System Based on Machine Learning} \\
+    \small Jingxiang Wang \\
+    \small School of Computer and Information, Hefei University of Technology, Hefei 230601, China
+\end{center}
+
+\begin{abstract}
+This paper proposes a personalized movie recommendation system based on machine learning, utilizing a user-based collaborative filtering algorithm. The system calculates user similarity using cosine similarity and integrates movie genre preferences and time decay factors to implement a multi-dimensional recommendation strategy. Through data preprocessing, user behavior analysis, and visualization techniques, the system addresses challenges such as cold start and data sparsity, enhancing the personalization and timeliness of recommendations. Experimental results demonstrate that the system can generate diverse recommendations based on user preferences, with visualization tools like histograms and heatmaps effectively presenting recommendation outcomes and user similarities. The modular design optimizes computational efficiency, making it suitable for large-scale user data scenarios.
+
+\textbf{Key words}: Collaborative filtering; Personalized recommendation; Cosine similarity; Data visualization
+\end{abstract}
+
+\section{引言}
+随着互联网和大数据技术的发展，推荐系统在电子商务、视频流媒体和社交平台等领域得到了广泛应用。个性化推荐系统通过分析用户行为数据，为用户提供定制化的内容推荐，能够显著提升用户体验和平台粘性。本文基于协同过滤算法，结合用户评分、电影类型偏好和时间因素，提出了一种多维度的个性化电影推荐系统，旨在解决冷启动、数据稀疏和推荐多样性等问题。
+
+\section{研究现状}
+推荐系统是机器学习和数据挖掘领域的重要研究方向。当前，推荐系统面临的主要挑战包括冷启动、数据稀疏、可扩展性和推荐多样性。针对这些问题，研究者提出了多种解决方案，如基于内容的推荐、协同过滤、矩阵分解技术和深度学习模型等。近年来，混合推荐方法和实时推荐系统逐渐成为研究热点。本文基于用户协同过滤方法，结合电影类型偏好和时间衰减因子，提出了一种多维度推荐策略，并通过可视化分析提升用户体验。
+
+\section{相关理论与技术}
+推荐系统的核心理论包括协同过滤、矩阵分解和深度学习等。本文采用基于用户的协同过滤方法，通过余弦相似度计算用户间的相似性，预测用户对未评分电影的偏好。余弦相似度的公式如下：
+\begin{equation}
+\text{cos}(\theta) = \frac{\mathbf{A} \cdot \mathbf{B}}{\|\mathbf{A}\| \|\mathbf{B}\|}
+\end{equation}
+其中，$\mathbf{A}$ 和 $\mathbf{B}$ 为用户评分向量，$\cdot$ 表示点积，$\|\cdot\|$ 表示向量范数。该方法对稀疏数据具有鲁棒性，适合处理大规模用户评分数据。此外，数据可视化技术（如matplotlib和seaborn）用于直观展示用户评分分布、电影类型分布和推荐结果。
+
+\section{本文方法}
+\subsection{整体结构简介}
+本系统采用模块化设计，分为数据加载、数据预处理、模型训练、推荐生成和可视化分析五个模块。主程序通过 \texttt{main.py} 文件协调各模块工作，流程清晰且易于维护。系统架构如图~\ref{fig:structure}所示。
+
+\begin{figure}[h]
+    \centering
+    \caption{系统架构图}
+    \label{fig:structure}
+    % 占位说明：此处为系统架构图，实际实现需插入对应图像
+
+    \begin{figure}[h] % h: here, t: top, b: bottom, p: page of floats
+      \centering
+      \includegraphics[width=0.6\textwidth]{example-image} % 图片路径，不含扩展名
+      \caption{示例图片的标题}
+      \label{fig:example}
+    \end{figure}
+\end{figure}
+
+\subsection{数据预处理模块}
+数据预处理模块通过 \texttt{initData()} 函数实现，主要包括三方面工作：(1) 将电影类型从字符串转换为列表，便于后续筛选；(2) 使用 \texttt{pivot} 函数将评分数据整理为用户-电影矩阵，缺失值填充为0；(3) 将时间戳转换为标准日期格式，引入时间衰减因子以提升推荐时效性。
+
+\subsection{推荐模型模块}
+推荐模型基于用户协同过滤算法，通过 \texttt{getUserRecommend()} 函数实现。算法步骤包括：(1) 使用余弦相似度计算用户相似性矩阵；(2) 选取与目标用户最相似的5个用户；(3) 基于相似用户评分预测目标用户未评分电影的评分，公式如下：
+\begin{equation}
+\hat{r}_{u,i} = \frac{\sum_{v \in N(u)} \text{sim}(u,v) \cdot r_{v,i}}{\sum_{v \in N(u)} |\text{sim}(u,v)|}
+\end{equation}
+其中，$\hat{r}_{u,i}$ 为用户 $u$ 对电影 $i$ 的预测评分，$N(u)$ 为相似用户集合，$\text{sim}(u,v)$ 为用户 $u$ 和 $v$ 的相似度，$r_{v,i}$ 为用户 $v$ 对电影 $i$ 的评分。此外，加入电影类型偏好权重和时间衰减因子，提升推荐的个性化和时效性。
+
+\subsection{可视化分析模块}
+可视化模块通过四个函数实现：\texttt{visualize\_rating\_distribution()} 绘制评分分布直方图，\texttt{visualize\_genre\_distribution()} 展示电影类型分布条形图，\texttt{visualize\_recommendations()} 对比推荐电影评分折线图，\texttt{visualize\_user\_similarity()} 绘制用户相似度热力图。这些可视化结果帮助用户直观理解推荐效果和数据特性。
+
+\section{实验与分析}
+\subsection{实验数据与实验设计}
+实验使用电影推荐数据集，包括 \texttt{ratings.csv}、\texttt{movies.csv}、\texttt{tags.csv} 和 \texttt{links.csv} 四个文件，分别记录用户评分、电影信息、用户标签和外部链接。实验设计以用户ID为1作为测试案例，验证系统在不同电影类型和时间范围下的推荐效果。
+
+\subsection{推荐效果分析}
+实验结果表明，系统能够根据用户输入的电影类型和时间范围生成个性化推荐列表。以用户ID为1为例，系统成功推荐了5部电影，并通过预测评分排序展示了推荐结果的合理性。可视化分析显示，评分分布直方图反映了用户偏好集中度，热力图揭示了用户相似性结构，折线图对比了推荐电影的评分差异。这些结果验证了系统的准确性和多样性。
+
+\section{结束语}
+本文提出了一种基于协同过滤的个性化电影推荐系统，通过余弦相似度、电影类型偏好和时间衰减因子实现了多维度推荐策略。系统采用模块化设计，结合数据可视化技术，显著提升了推荐的个性化和用户体验。未来工作可进一步引入深度学习模型，优化冷启动问题，并扩展到其他推荐场景，如音乐或商品推荐。
+
+\end{document}

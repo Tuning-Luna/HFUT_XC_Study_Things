@@ -95,6 +95,7 @@ git clone https://github.com/Tuning-Luna/HFUT_XC_Study_Things.git
 |      编译原理      |      PPT，真题，复习资料，实验，课设      |
 |      机器学习      |        PPT，大作业，学习资料，作业        |
 |   计算机组成原理   |         PPT，真题，复习资料，实验         |
+|      科研训练      |             成品，报告，论文              |
 
 
 
