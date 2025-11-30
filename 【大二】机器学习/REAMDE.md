@@ -8,3 +8,6 @@
 
 
 
+## 课设
+
+已开源，在仓库：https://github.com/Tuning-Luna/MachineLearningWork
