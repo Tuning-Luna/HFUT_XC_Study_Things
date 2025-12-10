@@ -14,8 +14,14 @@
 
 本人课设已开源，做了一个deque容器，在这个仓库：https://github.com/Tuning-Luna/MyDeque
 
+以及其他可以作为此课设的项目：
+
+- 课堂答题系统： https://github.com/Tuning-Luna/Classroom_Testing_System 
+- 自己实现stack（栈）： https://github.com/Tuning-Luna/My_Stack
+- 自己实现list（链表）：https://github.com/Tuning-Luna/My_List
+
 
 
 ## 考试
 
-不难，多去做模拟题，把几个关键的点搞清楚即可
+不难，多去机房做模拟题，把几个关键的点搞清楚即可
