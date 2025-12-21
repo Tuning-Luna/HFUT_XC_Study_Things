@@ -64,17 +64,21 @@
 
 这是资料的在线网站地址：https://tuning-luna.github.io/HFUT_XC_Study_Things/
 
-[在线网站](https://tuning-luna.github.io/HFUT_XC_Study_Things/)和[本仓库](https://github.com/Tuning-Luna/HFUT_XC_Study_Things)的资料**完全同步**，也可以使用网站找到想要的资料可以直接下载
+这时Github仓库地址：https://github.com/Tuning-Luna/HFUT_XC_Study_Things
+
+仓库和网站的资料**完全同步**，故可以使用网站找到想要的资料可以直接下载
 
 ![image-20250814125515276](./assets/image-20250814125515276.png)
 
 ## 全部下载
 
-注：截止 2025.8.7，仓库总大小为 **7.33 GB** ，其中资料约占 **3.92 GB**，确保有足够的内存下载
+注：截止 2025.12.21，仓库总大小为 **11.99 GB** ，确保有足够的内存下载
 
 点击 Code -> Download ZIP 进行全部下载
 
 ![image-20250807095119115](./assets/image-20250807095119115.png)
+
+
 
 或者克隆整个仓库：
 
@@ -86,7 +90,9 @@ git clone https://github.com/Tuning-Luna/HFUT_XC_Study_Things.git
 
 克隆整个仓库
 
-还可以使用**Fork**，复制一份作为你的仓库：
+
+
+还可以使用**Fork**，复制一份作为你的仓库，在你的仓库中进行查看：
 
 ![image-20250814125203980](./assets/image-20250814125203980.png)
 
@@ -96,9 +102,17 @@ git clone https://github.com/Tuning-Luna/HFUT_XC_Study_Things.git
 
 ![image-20250807100520627](./assets/image-20250807100520627.png)
 
-或者使用插件：
+
+
+或者使用Chrome插件：
 
 使用[GitZip for GitHub](https://chromewebstore.google.com/detail/gitzip-for-github/ffabmkklhbepgcgfonabamgnfafbdlkn?hl=en-US&utm_source=ext_sidebar) 插件，安装插件并配置好后，文件夹和文件前面会多出复选框，选择需要的勾上并下载即可
+
+
+
+----
+
+# Images
 
 
 
@@ -107,3 +121,5 @@ git clone https://github.com/Tuning-Luna/HFUT_XC_Study_Things.git
 ![](./assets/img2.jpg)
 
 ![](./assets/img3.png)
+
+![](./assets/img4.jpg)
