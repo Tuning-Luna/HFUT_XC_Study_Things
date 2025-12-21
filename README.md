@@ -62,9 +62,10 @@
 
 ## 在线网站
 
-这是资料的在线网站地址：https://tuning-luna.github.io/HFUT_XC_Study_Things/
+- 本资料的在线网站：https://tuning-luna.github.io/HFUT_XC_Study_Things
 
-这时Github仓库地址：https://github.com/Tuning-Luna/HFUT_XC_Study_Things
+- 本仓库Github地址：https://github.com/Tuning-Luna/HFUT_XC_Study_Things
+
 
 仓库和网站的资料**完全同步**，故可以使用网站找到想要的资料可以直接下载
 
