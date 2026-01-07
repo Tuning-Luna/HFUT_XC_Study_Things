@@ -1,0 +1,109 @@
+1.	.data
+2.	after: .asciiz "After sort the array is:\n"
+3.	before: .asciiz "Before sort the array is:\n"
+4.	CONTROL: .word 0x10000
+5.	DATA: .word 0x10008
+6.	SP: .word 0x7ffffffc
+7.	flag: .word 0
+8.	array: .word 8,6,3,7,1,0,9,4,5,2
+9.	 
+10.	.text
+11.	main:
+12.	daddi r29,r0,SP         #r29--$sp
+13.	ld r16,CONTROL(r0)
+14.	ld r17,DATA(r0)
+15.	daddi r8,r0,4           #set string output
+16.	daddi r9,r0,before      #prompt line
+17.	sd r9,(r17)
+18.	sd r8,(r16)             #print
+19.	 
+20.	daddi r8,r0,2           #set signed Integer output
+21.	daddi r1,r0,0           #i<-0 
+22.	Loop:
+23.	ld r9,array(r1)         #get a[i]
+24.	sd r9,(r17)
+25.	sd r8,(r16)             #print a[i]
+26.	daddi r1,r1,8           #i++
+27.	daddi r2,r1,-80
+28.	beq r2,r0,Exit          #if i=10, exit
+29.	j Loop
+30.	Exit:
+31.	 
+32.	daddi r4,r0,array       #parameter1 address of a[]
+33.	daddi r5,r0,10          #parameter2 n
+34.	jal bubblesort
+35.	 
+36.	daddi r8,r0,4           #set string output
+37.	daddi r9,r0,after       #prompt line
+38.	sd r9,(r17)
+39.	sd r8,(r16)             #print
+40.	 
+41.	daddi r8,r0,2           #set signed Integer output
+42.	daddi r1,r0,0           #i<-0 
+43.	Loop3:
+44.	ld r9,array(r1)         #get a[i]
+45.	sd r9,(r17)
+46.	sd r8,(r16)             #print a[i]
+47.	daddi r1,r1,8           #i++
+48.	daddi r2,r1,-80
+49.	beq r2,r0,Exit3         #if i=10, exit
+50.	j Loop3
+51.	Exit3:
+52.	 
+53.	halt
+54.	 
+55.	 
+56.	 
+57.	bubblesort:
+58.	daddi r29,r29,-24       #make room on stack
+59.	sd $ra,16(r29)
+60.	sd r16,8(r29)
+61.	sd r17,0(r29)
+62.	 
+63.	dadd r22,r4,r0          #get a[]
+64.	daddi r23,r5,0          #get n
+65.	 
+66.	and r18,r18,r0          #i=0
+67.	fori:
+68.	slt r10,r18,r23         #if i<n, r10=1
+69.	beq r10,r0,exiti        #if i>n, jump exiti
+70.	 
+71.	daddi r19,r18,-1        #j<-i-1
+72.	forj:
+73.	slti r10,r19,0          #if j<0, r10=1
+74.	bne r10,r0,exitj        #if j<0, jump exitj
+75.	dsll r11,r19,3          #j*8
+76.	dadd r12,r11,r22        #a+j*8
+77.	ld r13,0(r12)           #a[j]
+78.	ld r14,8(r12)           #a[j+1]
+79.	slt r10,r14,r13
+80.	beq r10,r0,exitj        #if a[j+1]>a[j] jump exitj
+81.	 
+82.	dadd r4,r0,r22          #parameter1 address of a[]
+83.	daddi r5,r19,0          #parameter2 j
+84.	jal swap
+85.	 
+86.	daddi r19,r19,-1        #j--
+87.	j forj
+88.	exitj:
+89.	daddi r18,r18,1
+90.	j fori
+91.	 
+92.	exiti:
+93.	ld r17,0(r29)
+94.	ld r16,8(r29)
+95.	ld $ra,16(r29)          
+96.	daddi r29,r29,24        #restore stack pointer
+97.	jr $ra
+98.	 
+99.	 
+100.	swap:
+101.	 
+102.	dsll r8,r5,3            #r8=k*8
+103.	dadd r8,r4,r8           #r8=a+(k*8)
+104.	ld r9,0(r8)             #r9=a[k]
+105.	ld r10,8(r8)            #r10=a[k+1]
+106.	sd r10,0(r8)            #a[k]=r10
+107.	sd r9,8(r8)             #a[k+1]=r9
+108.	 
+109.	jr $ra

@@ -1,0 +1,155 @@
+
+
+.data
+A:  .asciiz   "please enter two numbers: \n"
+B:   .asciiz  "warning:result over flow! \n"       ; 定义终端要输出的字符串
+C:   .asciiz   "result:(n"
+NUM1:  .word   0         ; 存储输入的字符与输出的结果
+NUM2:   .word  0
+result:   .word    0
+adres:   .word   0x03f8
+control:   .word32  0x10000      ;   控制单元地址
+data:   .word32    0x10008
+stack:   .word32   0x100      ;  堆栈起始位置
+
+
+.text
+main:   
+ld    $sp, stack($zero)          ;  sp=0x100
+jal     print1       ;  输出please enter。。。     ;  字符串的函数
+daddi   $v0,$zero,0
+jal  readint       ;   读取输入字符的函数
+daddi    $v0, $zero,0
+jal    chengfa          ;  乘法运算的函数
+daddi   $v0,$zero,0
+jal    print2        ; 输出result:\n的函数
+daddi    $v0,$zero,0
+jal    printint         ; 输出结果的函数
+daddi     $v0,$zero,0
+halt
+
+print1:                    ;   输出起始字符串的函数
+daddi  $v0,$zero,0    
+daddi   $sp,$sp,-8      ;sp=sp-8
+sw   $ra,0($sp)         ;   store ra
+lwu   $t2,data($zero)    ;t2=&data
+lwu   $t3,control($zero)    ;t3=&control
+daddi   $v0,$zero,4    ;v0=4
+daddi   $t1,$zero,A    ;t1="string start"
+sd   $t1,0($t2） ; data="string start"
+sd    $v0,0($t3)     ; control=4
+lw    $ra,0($sp) 
+daddi    $sp,$sp,8
+jr $ra
+
+
+
+readint:                          ;   读取输入数字的函数
+daddi   $v0,$zero,0                
+daddi   $sp,$sp,-8      ;sp=sp-8
+sw   $ra,0($sp)          ;store ra
+daddi   $t0,$zero, 8    ;t0=8
+lwu   $t2,data($zero)   ;t2=&data
+lwu   $t3,control($zero)   ;t3=&control
+sd   $t0，0($t3)       ; control=8
+lw    $t2,($t2)       ; t2=t2 value
+sw    $t2,NUM1($zero)  
+sw   $t2,($a0)       ;  a0=add[0]
+lwu    $t2,data($zero)    ; t2=&data
+lwu   $t3,control($zero)    ;t3=&control
+sd   $t0，0($t3）    ; control=8
+lw  $t2,($t2)      ;t2=t2 value
+sw    $t2,NUM2($zero)
+sw    $t2,($a1)        ; a1=add[1]
+lw   $ra,0($sp)
+daddi   $sp,$sp,8
+jr $ra
+
+
+print2:                      ;   输出结果字符串的函数
+daddi   $v0,$zero,0
+daddi    $sp,$sp,-8      ;sp=sp-8
+sw   $ra,0($sp)            ; store ra
+lwu    $t2,data($zero)     ;t2=&data
+lwu   $t3,control($zero)    ;t3=&control
+daddi    $v0,$zero,4       ;v0=4
+daddi    $t1,$zero,C     ;tl="result"
+sd   $t1,0($t2)             ; data="result"
+sd    $v0,0($t3）         ; control=4
+lw    $ra,0($sp)   
+daddi   $sp,$sp,8
+jr   $ra
+
+
+
+
+
+chengfa:               ; 乘法器函数
+daddi   $v0,$zero,0
+daddi   $sp,$sp,-8        ;sp=sp-8
+sw   $ra,0($sp)          ; store ra
+daddi   $t3, $zero,0     ;t3=0
+lw   $s0,NUM1($zero)    ;s0=NUM1
+lw   $s1, NUM2($zero)   ;s1=NUM2
+
+
+loop2:
+daddi   $t4，$t3,-32       ;t4=t3-32
+beq    $t4,$zero,exitt      ;if t4=0 jump to exitt
+beq   $t2,$sl,1                 ;t2=sl and 1
+andi   $t2,$zero,loop1     ;t2=0 jump to loopl
+daddi    $t0,$t0,0
+dadd    $v0,$v0,$s0       ;v0=v0+s0;
+daddi     $t0,$t0,0
+
+
+
+loop1:
+daddi   $v0,$v0,0
+dsll    $s0,$s0,1     ;s0 left move 1
+dsrl    $s1,$s1,1    ;s1 right move 1
+daddi    $t3,$t3,1   ;t3++
+j    loop2
+exitt:
+sw   $v0,result($zero)
+lw    $ra,0($sp)
+daddi    $sp,$sp,8
+jr $ra
+
+
+printint:                               ; 打印输出结果函数
+daddi  $v0,$zero,0
+daddi   $sp,$sp,-8              ;sp=sp-8
+sw  $ra, 0($sp)                   ; store ra
+lwu  $t2,data($zero)            ;t2=&data
+lwu    $t3,control($zero)       ;t3=&control
+daddi   $t4,$zero,1              ;t4=1
+lwu   $a0,result($zero)
+sd    $a0，0($t2）              ; data="result"
+sd    $t4,0($t3)                   ;control=1
+lw    $ra,0($sp)
+daddi    $sp,$sp,8
+jr    $ra
+
+
+findifex:                          ; 溢出检测函数
+daddi   $s1,$zero,0
+daddi   $sp,$sp,-8             ;sp=sp-8
+sw   $ra,0($sp)                  ;store ra
+daddi  $s0,$zero,0
+lwu   $t0,check($zero)       ;t0=0x7fffffff
+lwu   $v0,result($zero)        ;v0=result
+dsrl    $s0,$v0,16                 ;s0=v0 right move 32
+beq    $s0,$zero,exit1          ;s0=0,jump to exitl
+lwu    $t2,data($zero)          ;t2=&data
+lwu   $t3,control($zero)       ;t3=&control
+daddi   $t4,$zero,4              ;t4=4
+daddi   $a0,$zero,B              ; a0="warning:result over flow!(n"
+sd   $a0,0($t2)                     ;data="warning:result over flow!(n"
+sd    $t4,0($t3)                     ;control=4
+exit1:
+lw   $ra,0($sp)
+daddi    $sp,$sp,8
+jr $ra
+
+
