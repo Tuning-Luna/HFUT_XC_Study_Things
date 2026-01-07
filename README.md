@@ -56,6 +56,18 @@
 |  计算机组成原理  |         PPT，真题，复习资料，实验         |
 |     科研训练     |             成品，报告，论文              |
 
+
+
+## 大三
+
+|    课程名称    | 包含内容  |
+| :------------: | :-------: |
+| 人工智能经济学 | PPT，作业 |
+
+
+
+
+
 <a  href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&duration=10000&pause=1000&width=435&lines=%E6%9C%AA%E5%AE%8C%E5%BE%85%E7%BB%AD......" alt="Typing SVG" /></a>
 
 
