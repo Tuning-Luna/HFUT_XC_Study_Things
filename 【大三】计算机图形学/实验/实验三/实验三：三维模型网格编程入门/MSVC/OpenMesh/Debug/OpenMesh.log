@@ -1,0 +1,29 @@
+﻿  BinaryHelper.cc
+  IOManager.cc
+  OMFormat.cc
+E:\电子资料\大三上\计算机图形学\实验\实验三\实验三：三维模型网格编程入门\src\OpenMesh\Core\IO\SR_binary_spec.hh(181,1): warning C4267: “初始化”: 从“size_t”转换到“OpenMesh::IO::binary<std::string>::length_t”，可能丢失数据
+  BaseReader.cc
+  OBJReader.cc
+  OFFReader.cc
+  OMReader.cc
+E:\电子资料\大三上\计算机图形学\实验\实验三\实验三：三维模型网格编程入门\src\OpenMesh\Core\IO\SR_binary_spec.hh(181,1): warning C4267: “初始化”: 从“size_t”转换到“OpenMesh::IO::binary<std::string>::length_t”，可能丢失数据
+  STLReader.cc
+  BaseWriter.cc
+  OBJWriter.cc
+  OFFWriter.cc
+  OMWriter.cc
+E:\电子资料\大三上\计算机图形学\实验\实验三\实验三：三维模型网格编程入门\src\OpenMesh\Core\IO\SR_binary_spec.hh(181,1): warning C4267: “初始化”: 从“size_t”转换到“OpenMesh::IO::binary<std::string>::length_t”，可能丢失数据
+  STLWriter.cc
+  BaseKernel.cc
+  TriMeshT.cc
+  omstream.cc
+  BaseProperty.cc
+  Endian.cc
+  getopt.cc
+  Progress.cc
+  正在生成代码...
+  正在编译...
+  StripifierT.cc
+  Timer.cc
+  正在生成代码...
+  OpenMesh.vcxproj -> E:\电子资料\大三上\计算机图形学\实验\实验三\实验三：三维模型网格编程入门\MSVC\Debug\OpenMesh.lib

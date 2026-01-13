@@ -1,0 +1,71 @@
+
+Content:
+
+(A) Notes about .NET compiler!
+(B) Notes about the OpenMesh solution file
+(C) Notes about QT
+(D) Tutorials
+
+------------------------------------------------------------------------------
+
+(A) Some notes about the .NET compiler!
+
+1. In order to compile and link OpenMesh successfully one needs following 
+   settings (Dialog Property Pages -> Configuration Properties):
+
+-> C/C++ -> Language
+a. Enable Run-Time Type Info (Option /GR)
+b. Force Conformance In For Loop Scope (Option /Zc:forScope)
+         
+-> C/C++ -> Preprocessor -> Preprocessor Definitions
+c. Add define _USE_MATH_DEFINES
+
+
+2. Optional (recommended) settings
+
+-> C/C++ -> Precompiled Headers
+a. Disable usage of precompiled headers
+
+
+------------------------------------------------------------------------------
+
+(B) Notes about the OpenMesh solution file
+
+The solution contains the two major projects
+
+> Core    - The OpenMesh base library, with I/O subsystem
+> Tools   - Algorithms for Polygonal/Triangle Meshes
+
+Additionally there are projects for (some of) the (some of) the applications in Apps/.
+If you have problems building the solution you might encounter error regarding
+QT. Please have a look below "(C) QT".
+
+Besides the build modesl Debug and Release you find "Debug STLport" and 
+"Release STLport". See (E) STLport
+
+------------------------------------------------------------------------------
+
+(C) Notes about QT
+
+The applications QtViewer, Subdivider and VDPMSynthesizer need QT for the GUI.
+If you don't have QT you need to install it or simply remove the
+projects from the solution.
+
+If you have installed QT make sure that the environment variable QTDIR exists.
+Furthermore make sure, that 
+
+1. the environment variables QTDIR, TMAKEPATH are available for all users 
+  working with QT 
+2. $QTDIR/bin is part of the PATH environment variable.
+
+If you add this variables in the system section for environment variables 
+(you need administrator privileges) then you need to reboot your system (W2K).
+
+
+------------------------------------------------------------------------------
+
+(D) Tutorials
+
+For the tutorial programs a separate solution is located in 
+subdirectory 'Tutorials'
+

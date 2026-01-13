@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.35731.53
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Polygon_Conversion", "Polygon_Conversion.vcxproj", "{8B45AC08-0802-4C5E-B967-40CB9168FA05}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8B45AC08-0802-4C5E-B967-40CB9168FA05}.Debug|x86.ActiveCfg = Debug|Win32
+		{8B45AC08-0802-4C5E-B967-40CB9168FA05}.Debug|x86.Build.0 = Debug|Win32
+		{8B45AC08-0802-4C5E-B967-40CB9168FA05}.Release|x86.ActiveCfg = Release|Win32
+		{8B45AC08-0802-4C5E-B967-40CB9168FA05}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B75E3640-9BC4-40C3-B770-90B14D9FE60C}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{90CEDDB6-32C4-49BD-AAC5-CE03E533BFDD}</ProjectGuid>
+    <RootNamespace>OpenMesh</RootNamespace>
+    <Keyword>ManagedCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CLRSupport>OldSyntax</CLRSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CLRSupport>
+    </CLRSupport>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>16.0.32002.118</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\src;..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_USE_MATH_DEFINES;WIN32;_LIB;_DEBUG;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\src;..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_USE_MATH_DEFINES;WIN32;_LIB;NDEBUG;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\OpenMesh\Core\Io\BinaryHelper.cc" />
+    <ClCompile Include="..\..\src\OpenMesh\Core\Io\IOManager.cc" />
+    <ClCompile Include="..\..\src\OpenMesh\Core\Io\OMFormat.cc" />
+    <ClCompile Include="..\..\src\OpenMesh\Core\Io\reader\BaseReader.cc" />
+    <ClCompile Include="..\..\src\OpenMesh\Core\Io\reader\OBJReader.cc" />
+    <ClCompile Include="..\..\src\OpenMesh\Core\Io\reader\OFFReader.cc" />
+    <ClCompile Include="..\..\src\OpenMesh\Core\Io\reader\OMReader.cc" />
+    <ClCompile Include="..\..\src\OpenMesh\Core\Io\reader\STLReader.cc" />
+    <ClCompile Include="..\..\src\OpenMesh\Core\Io\writer\BaseWriter.cc" />
+    <ClCompile Include="..\..\src\OpenMesh\Core\Io\writer\OBJWriter.cc" />
+    <ClCompile Include="..\..\src\OpenMesh\Core\Io\writer\OFFWriter.cc" />
+    <ClCompile Include="..\..\src\OpenMesh\Core\Io\writer\OMWriter.cc" />
+    <ClCompile Include="..\..\src\OpenMesh\Core\Io\writer\STLWriter.cc" />
+    <ClCompile Include="..\..\src\OpenMesh\Core\Mesh\Kernels\Common\BaseKernel.cc" />
+    <ClCompile Include="..\..\src\OpenMesh\Core\Mesh\TriMeshT.cc" />
+    <ClCompile Include="..\..\src\OpenMesh\Core\System\omstream.cc" />
+    <ClCompile Include="..\..\src\OpenMesh\Core\Utils\BaseProperty.cc" />
+    <ClCompile Include="..\..\src\OpenMesh\Core\Utils\Endian.cc" />
+    <ClCompile Include="..\..\src\OpenMesh\Tools\Utils\getopt.cc" />
+    <ClCompile Include="..\..\src\OpenMesh\Tools\Utils\Progress.cc" />
+    <ClCompile Include="..\..\src\OpenMesh\Tools\Utils\StripifierT.cc" />
+    <ClCompile Include="..\..\src\OpenMesh\Tools\Utils\Timer.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\OpenMesh\Core\Attributes\Attributes.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Core\Attributes\Status.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Core\Io\BinaryHelper.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Core\Io\exporter\BaseExporter.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Core\Io\exporter\ExporterT.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Core\Io\importer\BaseImporter.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Core\Io\importer\ImporterT.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Core\Io\IOInstances.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Core\Io\IOManager.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Core\Io\MeshIO.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Core\Io\OFFFormat.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Core\Io\OMFormat.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Core\Io\Options.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Core\Io\reader\BaseReader.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Core\Io\reader\OBJReader.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Core\Io\reader\OFFReader.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Core\Io\reader\OMReader.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Core\Io\reader\STLReader.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Core\Io\SR_binary.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Core\Io\SR_binary_spec.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Core\Io\SR_rbo.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Core\Io\SR_store.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Core\Io\SR_types.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Core\Io\StoreRestore.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Core\Io\writer\BaseWriter.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Core\Io\writer\OBJWriter.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Core\Io\writer\OFFWriter.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Core\Io\writer\OMWriter.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Core\Io\writer\STLWriter.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Core\Math\LoopSchemeMaskT.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Core\Math\MathDefs.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Core\Math\VectorT.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Core\Math\VectorT_inc.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Core\Mesh\BaseMesh.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Core\Mesh\Iterators\CirculatorsT.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Core\Mesh\Iterators\IteratorsT.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Core\Mesh\Kernels\ArrayKernel\ArrayItems.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Core\Mesh\Kernels\ArrayKernel\ArrayKernelT.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Core\Mesh\Kernels\Common\AttribKernelT.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Core\Mesh\Kernels\Common\BaseKernel.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Core\Mesh\Kernels\Common\FinalMeshItemsT.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Core\Mesh\Kernels\Common\Handles.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Core\Mesh\PolyMeshT.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Core\Mesh\PolyMeshT_assign.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Core\Mesh\Traits.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Core\Mesh\TriMeshT.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Core\Mesh\Types\PolyMesh_ArrayKernelT.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Core\Mesh\Types\TriMesh_ArrayKernelT.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Core\System\compiler.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Core\System\config.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Core\System\mostream.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Core\System\omstream.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Core\Utils\AutoPropertyHandleT.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Core\Utils\color_cast.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Core\Utils\Endian.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Core\Utils\GenProg.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Core\Utils\Noncopyable.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Core\Utils\Property.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Core\Utils\SingletonT.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Core\Utils\vector_cast.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Core\Utils\vector_traits.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Tools\Decimater\CollapseInfoT.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Tools\Decimater\DecimaterT.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Tools\Decimater\ModBaseT.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Tools\Decimater\ModIndependentSetsT.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Tools\Decimater\ModNormalFlippingT.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Tools\Decimater\ModProgMeshT.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Tools\Decimater\ModQuadricT.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Tools\Decimater\ModRoundnessT.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Tools\Geometry\QuadricT.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Tools\Smoother\JacobiLaplaceSmootherT.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Tools\Smoother\LaplaceSmootherT.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Tools\Smoother\SmootherT.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Tools\Smoother\smooth_mesh.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Tools\Utils\GLConstAsString.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Tools\Utils\HeapT.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Tools\Utils\MeshCheckerT.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Tools\Utils\Progress.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Tools\Utils\StripifierT.hh" />
+    <ClInclude Include="..\..\src\OpenMesh\Tools\Utils\Timer.hh" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

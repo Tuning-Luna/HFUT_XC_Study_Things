@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="7.10"
+	Name="ProgViewer"
+	ProjectGUID="{1961F8B0-D6FC-4616-B3B5-BF63385357A5}"
+	Keyword="Win32Proj">
+	<Platforms>
+		<Platform
+			Name="Win32"/>
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="Debug"
+			IntermediateDirectory="Debug"
+			ConfigurationType="1"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions="/GR"
+				Optimization="0"
+				AdditionalIncludeDirectories="$(QTDIR)/include;../../../.."
+				PreprocessorDefinitions="WIN32;_DEBUG;_CONSOLE;_USE_MATH_DEFINES;QT_DLL;QT_THREAD_SUPPORT"
+				MinimalRebuild="TRUE"
+				BasicRuntimeChecks="3"
+				RuntimeLibrary="3"
+				ForceConformanceInForLoopScope="TRUE"
+				UsePrecompiledHeader="0"
+				WarningLevel="3"
+				Detect64BitPortabilityProblems="FALSE"
+				DebugInformationFormat="4"/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="OpenMeshCored.lib OpenMeshToolsd.lib qt-mtedu333.lib"
+				OutputFile="$(OutDir)/ProgViewer.exe"
+				LinkIncremental="2"
+				SuppressStartupBanner="TRUE"
+				AdditionalLibraryDirectories="$(QTDIR)/lib;&quot;../Core/$(OutDir)&quot;;&quot;../Tools/$(Outdir)&quot;"
+				GenerateDebugInformation="TRUE"
+				ProgramDatabaseFile="$(OutDir)/ProgViewer.pdb"
+				SubSystem="1"
+				TargetMachine="1"/>
+			<Tool
+				Name="VCMIDLTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"/>
+			<Tool
+				Name="VCWebDeploymentTool"/>
+			<Tool
+				Name="VCManagedWrapperGeneratorTool"/>
+			<Tool
+				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="Release"
+			IntermediateDirectory="Release"
+			ConfigurationType="1"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions="/GR"
+				Optimization="2"
+				InlineFunctionExpansion="1"
+				OmitFramePointers="TRUE"
+				AdditionalIncludeDirectories="&quot;$(QTDIR)/include&quot;;../../../.."
+				PreprocessorDefinitions="WIN32;NDEBUG;_CONSOLE;_USE_MATH_DEFINES;QT_DLL;QT_THREAD_SUPPORT"
+				StringPooling="TRUE"
+				RuntimeLibrary="2"
+				EnableFunctionLevelLinking="TRUE"
+				ForceConformanceInForLoopScope="TRUE"
+				UsePrecompiledHeader="0"
+				WarningLevel="3"
+				Detect64BitPortabilityProblems="FALSE"
+				DebugInformationFormat="3"/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="OpenMeshCore.lib OpenMeshTools.lib qt-mtedu333.lib"
+				OutputFile="$(OutDir)/ProgViewer.exe"
+				LinkIncremental="1"
+				SuppressStartupBanner="TRUE"
+				AdditionalLibraryDirectories="$(QTDIR)/lib;&quot;../Core/$(OutDir)&quot;;&quot;../Tools/$(Outdir)&quot;"
+				GenerateDebugInformation="TRUE"
+				SubSystem="1"
+				OptimizeReferences="2"
+				EnableCOMDATFolding="2"
+				TargetMachine="1"/>
+			<Tool
+				Name="VCMIDLTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"/>
+			<Tool
+				Name="VCWebDeploymentTool"/>
+			<Tool
+				Name="VCManagedWrapperGeneratorTool"/>
+			<Tool
+				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+		</Configuration>
+		<Configuration
+			Name="Debug STLport|Win32"
+			OutputDirectory="Debug STLport"
+			IntermediateDirectory="Debug STLport"
+			ConfigurationType="1"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions="/GR"
+				Optimization="0"
+				AdditionalIncludeDirectories="&quot;$(STLPortDir)\stlport&quot;;&quot;$(QTDIR)/include&quot;;../../../.."
+				PreprocessorDefinitions="WIN32;_DEBUG;_CONSOLE;_USE_MATH_DEFINES;QT_DLL;QT_THREAD_SUPPORT"
+				MinimalRebuild="TRUE"
+				BasicRuntimeChecks="3"
+				RuntimeLibrary="3"
+				ForceConformanceInForLoopScope="TRUE"
+				UsePrecompiledHeader="0"
+				WarningLevel="3"
+				Detect64BitPortabilityProblems="FALSE"
+				DebugInformationFormat="4"/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="Core.lib Tools.lib qt-mt230nc.lib qutil.lib"
+				OutputFile="$(OutDir)/ProgViewer.exe"
+				LinkIncremental="2"
+				SuppressStartupBanner="TRUE"
+				AdditionalLibraryDirectories="&quot;$(STLPortDir)\lib&quot;;$(QTDIR)/lib;&quot;../Core/$(OutDir)&quot;;&quot;../Tools/$(Outdir)&quot;"
+				GenerateDebugInformation="TRUE"
+				ProgramDatabaseFile="$(OutDir)/ProgViewer.pdb"
+				SubSystem="1"
+				TargetMachine="1"/>
+			<Tool
+				Name="VCMIDLTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"/>
+			<Tool
+				Name="VCWebDeploymentTool"/>
+			<Tool
+				Name="VCManagedWrapperGeneratorTool"/>
+			<Tool
+				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+		</Configuration>
+		<Configuration
+			Name="Release STLport|Win32"
+			OutputDirectory="Release STLport"
+			IntermediateDirectory="Release STLport"
+			ConfigurationType="1"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions="/GR"
+				Optimization="2"
+				InlineFunctionExpansion="1"
+				OmitFramePointers="TRUE"
+				AdditionalIncludeDirectories="&quot;$(STLPortDir)\stlport&quot;;&quot;$(QTDIR)/include&quot;;../../../.."
+				PreprocessorDefinitions="WIN32;NDEBUG;_CONSOLE;_USE_MATH_DEFINES;QT_DLL;QT_THREAD_SUPPORT"
+				StringPooling="TRUE"
+				RuntimeLibrary="2"
+				EnableFunctionLevelLinking="TRUE"
+				ForceConformanceInForLoopScope="TRUE"
+				UsePrecompiledHeader="0"
+				WarningLevel="3"
+				Detect64BitPortabilityProblems="FALSE"
+				DebugInformationFormat="3"/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="Core.lib Tools.lib qt-mt230nc.lib qutil.lib"
+				OutputFile="$(OutDir)/ProgViewer.exe"
+				LinkIncremental="1"
+				SuppressStartupBanner="TRUE"
+				AdditionalLibraryDirectories="&quot;$(STLPortDir)\lib&quot;;$(QTDIR)/lib;&quot;../Core/$(OutDir)&quot;;&quot;../Tools/$(Outdir)&quot;"
+				GenerateDebugInformation="TRUE"
+				SubSystem="1"
+				OptimizeReferences="2"
+				EnableCOMDATFolding="2"
+				TargetMachine="1"/>
+			<Tool
+				Name="VCMIDLTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"/>
+			<Tool
+				Name="VCWebDeploymentTool"/>
+			<Tool
+				Name="VCManagedWrapperGeneratorTool"/>
+			<Tool
+				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+		</Configuration>
+	</Configurations>
+	<References>
+	</References>
+	<Files>
+		<Filter
+			Name="Source Files"
+			Filter="cpp;c;cxx;def;odl;idl;hpj;bat;asm">
+			<File
+				RelativePath="..\..\..\Apps\QtViewer\MeshViewerWidgetT.cc"
+				FileType="0">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="TRUE">
+					<Tool
+						Name="VCCLCompilerTool"
+						AdditionalOptions=""/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release STLport|Win32"
+					ExcludedFromBuild="TRUE">
+					<Tool
+						Name="VCCLCompilerTool"
+						AdditionalOptions=""/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="..\..\..\Apps\ProgViewer\progviewer.cc"
+				FileType="0">
+			</File>
+			<File
+				RelativePath="..\..\..\Apps\ProgViewer\ProgViewerWidget.cc"
+				FileType="0">
+			</File>
+			<File
+				RelativePath="..\..\..\Apps\QtViewer\QGLViewerWidget.cc"
+				FileType="0">
+			</File>
+		</Filter>
+		<Filter
+			Name="Header Files"
+			Filter="h;hpp;hxx;hm;inl;inc">
+			<File
+				RelativePath="..\..\..\Apps\ProgViewer\ProgViewerWidget.hh"
+				FileType="2">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)"
+						CommandLine="$(QTDIR)\bin\moc $(InputPath) -o $(InputName).moc.cc
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;"
+						Outputs="$(InputName).moc.cc"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)"
+						CommandLine="$(QTDIR)\bin\moc $(InputPath) -o $(InputName).moc.cc
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;"
+						Outputs="$(InputName).moc.cc"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug STLport|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)"
+						CommandLine="$(QTDIR)\bin\moc $(InputPath) -o $(InputName).moc.cc
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;"
+						Outputs="$(InputName).moc.cc"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release STLport|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing $(InputFileName)"
+						CommandLine="$(QTDIR)\bin\moc $(InputPath) -o $(InputName).moc.cc
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;"
+						Outputs="$(InputName).moc.cc"/>
+				</FileConfiguration>
+			</File>
+		</Filter>
+		<Filter
+			Name="Moc&apos;ed Files"
+			Filter="">
+			<File
+				RelativePath="ProgViewerWidget.moc.cc">
+			</File>
+			<File
+				RelativePath="..\QtViewer\QGLViewerWidget.moc.cc">
+			</File>
+		</Filter>
+		<File
+			RelativePath="ReadMe.txt">
+		</File>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

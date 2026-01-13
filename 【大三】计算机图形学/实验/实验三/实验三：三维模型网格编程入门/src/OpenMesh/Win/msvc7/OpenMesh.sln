@@ -1,0 +1,103 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Core", "Core\Core.vcproj", "{E2B7DFEB-E628-4A7B-888F-616F98139E63}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Tools", "Tools\Tools.vcproj", "{064E0D59-D5B6-4A15-8C09-992C745130AA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E2B7DFEB-E628-4A7B-888F-616F98139E63} = {E2B7DFEB-E628-4A7B-888F-616F98139E63}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Smoothing", "Smoothing\Smoothing.vcproj", "{473FE41E-56F8-4069-902D-CF1EDAE10839}"
+	ProjectSection(ProjectDependencies) = postProject
+		{064E0D59-D5B6-4A15-8C09-992C745130AA} = {064E0D59-D5B6-4A15-8C09-992C745130AA}
+		{E2B7DFEB-E628-4A7B-888F-616F98139E63} = {E2B7DFEB-E628-4A7B-888F-616F98139E63}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "decimater", "decimater\decimater.vcproj", "{473FE41E-56F8-4069-902D-CF1EDAE10839}"
+	ProjectSection(ProjectDependencies) = postProject
+		{064E0D59-D5B6-4A15-8C09-992C745130AA} = {064E0D59-D5B6-4A15-8C09-992C745130AA}
+		{E2B7DFEB-E628-4A7B-888F-616F98139E63} = {E2B7DFEB-E628-4A7B-888F-616F98139E63}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mconvert", "mconvert\mconvert.vcproj", "{707E3317-A561-47D8-B321-7DB09A49376A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{064E0D59-D5B6-4A15-8C09-992C745130AA} = {064E0D59-D5B6-4A15-8C09-992C745130AA}
+		{E2B7DFEB-E628-4A7B-888F-616F98139E63} = {E2B7DFEB-E628-4A7B-888F-616F98139E63}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "QtViewer", "QtViewer\QtViewer.vcproj", "{C267492C-60A8-4A0D-A6E5-C9CDF51822F4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{064E0D59-D5B6-4A15-8C09-992C745130AA} = {064E0D59-D5B6-4A15-8C09-992C745130AA}
+		{E2B7DFEB-E628-4A7B-888F-616F98139E63} = {E2B7DFEB-E628-4A7B-888F-616F98139E63}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ProgViewer", "ProgViewer\ProgViewer.vcproj", "{1961F8B0-D6FC-4616-B3B5-BF63385357A5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C267492C-60A8-4A0D-A6E5-C9CDF51822F4} = {C267492C-60A8-4A0D-A6E5-C9CDF51822F4}
+		{064E0D59-D5B6-4A15-8C09-992C745130AA} = {064E0D59-D5B6-4A15-8C09-992C745130AA}
+		{E2B7DFEB-E628-4A7B-888F-616F98139E63} = {E2B7DFEB-E628-4A7B-888F-616F98139E63}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VDPMAnalyzer", "VDPMAnalyzer\VDPMAnalyzer.vcproj", "{32BA9125-46C6-4988-9200-7E9D94D64CCB}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VDPMSynthesizer", "VDPMSynthesizer\VDPMSynthesizer.vcproj", "{AF5B566C-D25C-485D-8336-493A98FB0639}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C267492C-60A8-4A0D-A6E5-C9CDF51822F4} = {C267492C-60A8-4A0D-A6E5-C9CDF51822F4}
+		{064E0D59-D5B6-4A15-8C09-992C745130AA} = {064E0D59-D5B6-4A15-8C09-992C745130AA}
+		{E2B7DFEB-E628-4A7B-888F-616F98139E63} = {E2B7DFEB-E628-4A7B-888F-616F98139E63}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{E2B7DFEB-E628-4A7B-888F-616F98139E63}.Debug.ActiveCfg = Debug|Win32
+		{E2B7DFEB-E628-4A7B-888F-616F98139E63}.Debug.Build.0 = Debug|Win32
+		{E2B7DFEB-E628-4A7B-888F-616F98139E63}.Release.ActiveCfg = Release|Win32
+		{E2B7DFEB-E628-4A7B-888F-616F98139E63}.Release.Build.0 = Release|Win32
+		{064E0D59-D5B6-4A15-8C09-992C745130AA}.Debug.ActiveCfg = Debug|Win32
+		{064E0D59-D5B6-4A15-8C09-992C745130AA}.Debug.Build.0 = Debug|Win32
+		{064E0D59-D5B6-4A15-8C09-992C745130AA}.Release.ActiveCfg = Release|Win32
+		{064E0D59-D5B6-4A15-8C09-992C745130AA}.Release.Build.0 = Release|Win32
+		{473FE41E-56F8-4069-902D-CF1EDAE10839}.Debug.ActiveCfg = Debug|Win32
+		{473FE41E-56F8-4069-902D-CF1EDAE10839}.Debug.Build.0 = Debug|Win32
+		{473FE41E-56F8-4069-902D-CF1EDAE10839}.Release.ActiveCfg = Release|Win32
+		{473FE41E-56F8-4069-902D-CF1EDAE10839}.Release.Build.0 = Release|Win32
+		{473FE41E-56F8-4069-902D-CF1EDAE10839}.Debug.ActiveCfg = Debug|Win32
+		{473FE41E-56F8-4069-902D-CF1EDAE10839}.Debug.Build.0 = Debug|Win32
+		{473FE41E-56F8-4069-902D-CF1EDAE10839}.Release.ActiveCfg = Release|Win32
+		{473FE41E-56F8-4069-902D-CF1EDAE10839}.Release.Build.0 = Release|Win32
+		{707E3317-A561-47D8-B321-7DB09A49376A}.Debug.ActiveCfg = Debug|Win32
+		{707E3317-A561-47D8-B321-7DB09A49376A}.Debug.Build.0 = Debug|Win32
+		{707E3317-A561-47D8-B321-7DB09A49376A}.Release.ActiveCfg = Release|Win32
+		{707E3317-A561-47D8-B321-7DB09A49376A}.Release.Build.0 = Release|Win32
+		{C267492C-60A8-4A0D-A6E5-C9CDF51822F4}.Debug.ActiveCfg = Debug|Win32
+		{C267492C-60A8-4A0D-A6E5-C9CDF51822F4}.Debug.Build.0 = Debug|Win32
+		{C267492C-60A8-4A0D-A6E5-C9CDF51822F4}.Release.ActiveCfg = Release|Win32
+		{C267492C-60A8-4A0D-A6E5-C9CDF51822F4}.Release.Build.0 = Release|Win32
+		{1961F8B0-D6FC-4616-B3B5-BF63385357A5}.Debug.ActiveCfg = Debug|Win32
+		{1961F8B0-D6FC-4616-B3B5-BF63385357A5}.Debug.Build.0 = Debug|Win32
+		{1961F8B0-D6FC-4616-B3B5-BF63385357A5}.Release.ActiveCfg = Release|Win32
+		{1961F8B0-D6FC-4616-B3B5-BF63385357A5}.Release.Build.0 = Release|Win32
+		{32BA9125-46C6-4988-9200-7E9D94D64CCB}.Debug.ActiveCfg = Debug|Win32
+		{32BA9125-46C6-4988-9200-7E9D94D64CCB}.Debug.Build.0 = Debug|Win32
+		{32BA9125-46C6-4988-9200-7E9D94D64CCB}.Release.ActiveCfg = Release|Win32
+		{32BA9125-46C6-4988-9200-7E9D94D64CCB}.Release.Build.0 = Release|Win32
+		{AF5B566C-D25C-485D-8336-493A98FB0639}.Debug.ActiveCfg = Debug|Win32
+		{AF5B566C-D25C-485D-8336-493A98FB0639}.Debug.Build.0 = Debug|Win32
+		{AF5B566C-D25C-485D-8336-493A98FB0639}.Release.ActiveCfg = Release|Win32
+		{AF5B566C-D25C-485D-8336-493A98FB0639}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionItems) = postSolution
+		README = README
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
