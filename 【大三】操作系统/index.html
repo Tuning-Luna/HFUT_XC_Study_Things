@@ -1,0 +1,1715 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="这是合肥工业大学宣城校区计算机科学与技术资料汇总的网站">
+      
+      
+        <meta name="author" content="Tuning-Luna">
+      
+      
+      
+        <link rel="prev" href="../%E3%80%90%E5%A4%A7%E4%B8%89%E3%80%91%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%BB%8F%E6%B5%8E%E5%AD%A6/">
+      
+      
+        <link rel="next" href="../%E3%80%90%E5%A4%A7%E4%B8%89%E3%80%91%E6%95%B0%E5%AD%97%E5%AA%92%E4%BD%93%E6%8A%80%E6%9C%AF/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/hfut.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>【大三】操作系统 - HFUT-XC计算机科学与技术资料汇总</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="HFUT-XC计算机科学与技术资料汇总" class="md-header__button md-logo" aria-label="HFUT-XC计算机科学与技术资料汇总" data-md-component="logo">
+      
+  <img src="../assets/hfut.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            HFUT-XC计算机科学与技术资料汇总
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              【大三】操作系统
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="HFUT-XC计算机科学与技术资料汇总" class="md-nav__button md-logo" aria-label="HFUT-XC计算机科学与技术资料汇总" data-md-component="logo">
+      
+  <img src="../assets/hfut.png" alt="logo">
+
+    </a>
+    HFUT-XC计算机科学与技术资料汇总
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    写在前面
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%90%E5%85%AC%E5%85%B1%E8%AF%BE%E3%80%91%E6%80%9D%E6%94%BF%E6%95%99%E6%9D%90/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    【公共课】思政教材
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%90%E5%85%AC%E5%85%B1%E8%AF%BE%E3%80%91%E8%8B%B1%E8%AF%AD/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    【公共课】英语
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%90%E5%85%AC%E5%85%B1%E8%AF%BE%E3%80%91%E9%A2%98%E5%BA%93%E5%8F%8A%E7%AD%94%E6%A1%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    【公共课】题库及答案
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%90%E5%A4%A7%E4%B8%80%E3%80%91Java/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    【大一】Java
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%90%E5%A4%A7%E4%B8%80%E3%80%91%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    【大一】大学物理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%90%E5%A4%A7%E4%B8%80%E3%80%91%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    【大一】数据结构
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%90%E5%A4%A7%E4%B8%80%E3%80%91%E7%94%B5%E8%B7%AF%E4%B8%8E%E7%94%B5%E5%AD%90%E6%8A%80%E6%9C%AF%E5%9F%BA%E7%A1%80/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    【大一】电路与电子技术基础
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%90%E5%A4%A7%E4%B8%80%E3%80%91%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%9F%BA%E7%A1%80/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    【大一】程序设计基础
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%90%E5%A4%A7%E4%B8%80%E3%80%91%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    【大一】线性代数
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%90%E5%A4%A7%E4%B8%80%E3%80%91%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    【大一】高等数学
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%90%E5%A4%A7%E4%B8%89%E3%80%91%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%8E%9F%E7%90%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    【大三】人工智能原理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%90%E5%A4%A7%E4%B8%89%E3%80%91%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%BB%8F%E6%B5%8E%E5%AD%A6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    【大三】人工智能经济学
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    【大三】操作系统
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    【大三】操作系统
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        概述
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        实验
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        课设
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        考试
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        文件列表
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%90%E5%A4%A7%E4%B8%89%E3%80%91%E6%95%B0%E5%AD%97%E5%AA%92%E4%BD%93%E6%8A%80%E6%9C%AF/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    【大三】数字媒体技术
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%90%E5%A4%A7%E4%B8%89%E3%80%91%E7%A1%AC%E4%BB%B6%E7%BB%BC%E5%90%88%E8%AE%BE%E8%AE%A1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    单周期 MIPS32 CPU 课程设计
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%90%E5%A4%A7%E4%B8%89%E3%80%91%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    【大三】计算机体系结构
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%90%E5%A4%A7%E4%B8%89%E3%80%91%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9B%BE%E5%BD%A2%E5%AD%A6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    【大三】计算机图形学
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%90%E5%A4%A7%E4%BA%8C%E3%80%91EDA%E5%AE%9E%E8%AE%AD%E5%AD%A6%E4%B9%A0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    【大二】EDA实训学习
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%90%E5%A4%A7%E4%BA%8C%E3%80%91Python/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    【大二】Python
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%90%E5%A4%A7%E4%BA%8C%E3%80%91%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%E5%AE%9E%E9%AA%8C/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    【大二】大学物理实验
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%90%E5%A4%A7%E4%BA%8C%E3%80%91%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E7%BB%9F%E5%8E%9F%E7%90%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    【大二】嵌入式系统原理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%90%E5%A4%A7%E4%BA%8C%E3%80%91%E6%95%B0%E5%AD%97%E9%80%BB%E8%BE%91/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    【大二】数字逻辑
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%90%E5%A4%A7%E4%BA%8C%E3%80%91%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%8A%80%E6%9C%AF/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    【大二】机器人技术
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%90%E5%A4%A7%E4%BA%8C%E3%80%91%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    【大二】机器学习
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%90%E5%A4%A7%E4%BA%8C%E3%80%91%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    【大二】概率论与数理统计
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%90%E5%A4%A7%E4%BA%8C%E3%80%91%E6%B1%87%E7%BC%96/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    【大二】汇编
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%90%E5%A4%A7%E4%BA%8C%E3%80%91%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    【大二】离散数学
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%90%E5%A4%A7%E4%BA%8C%E3%80%91%E7%A7%91%E7%A0%94%E8%AE%AD%E7%BB%83/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    【大二】科研训练
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%90%E5%A4%A7%E4%BA%8C%E3%80%91%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E8%89%BA%E6%9C%AF/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    【大二】程序设计艺术
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%90%E5%A4%A7%E4%BA%8C%E3%80%91%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    【大二】编译原理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%90%E5%A4%A7%E4%BA%8C%E3%80%91%E8%AE%A1%E7%AE%97%E6%96%B9%E6%B3%95/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    【大二】计算方法
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%90%E5%A4%A7%E4%BA%8C%E3%80%91%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    【大二】计算机组成原理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_34" >
+        
+          
+          <label class="md-nav__link" for="__nav_34" id="__nav_34_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Assets
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_34_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_34">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Assets
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assets/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Index
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        概述
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        实验
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        课设
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        考试
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        文件列表
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>【大三】操作系统</h1>
+
+<p>老师：田卫东老师，罗月童老师</p>
+<h2 id="_1">概述</h2>
+<p>老师查签到查的比较严，还有课堂测试</p>
+<h2 id="_2">实验</h2>
+<p>只能在机房完成，有个在线账号，每个人都分配一个<code>git</code>账号，通过定制的<code>vscode</code>进行代码编辑，通过<code>git</code>提交作业，有实验指导书，按照指导书一步一步来肯定能完成实验，就是比较麻烦</p>
+<h2 id="_3">课设</h2>
+<p>抢题，由简单的也有难的。我选的简单的很快就验收完了。</p>
+<h2 id="_4">考试</h2>
+<p>纸质，闭卷。几乎都是往年真题。一定要看往年真题！！！</p>
+<h2 id="_5">文件列表</h2>
+<ul>
+<li>【大三】操作系统<ul>
+<li>PPT(按章)<ul>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/PPT(按章)/第4章 存储管理.pdf">第4章 存储管理.pdf</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/PPT(按章)/3-2处理机进程死锁(操作系统).pdf">3-2处理机进程死锁(操作系统).pdf</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/PPT(按章)/第5章 设备管理.pdf">第5章 设备管理.pdf</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/PPT(按章)/第1章 操作系统引论.pdf">第1章 操作系统引论.pdf</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/PPT(按章)/第7章 操作系统接口.pdf">第7章 操作系统接口.pdf</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/PPT(按章)/3-1处理机进程调度(操作系统).pdf">3-1处理机进程调度(操作系统).pdf</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/PPT(按章)/2-进程管理.pdf">2-进程管理.pdf</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/PPT(按章)/1-引论.pdf">1-引论.pdf</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/PPT(按章)/第6章 文件管理.pdf">第6章 文件管理.pdf</a></li>
+</ul>
+</li>
+<li>试卷<ul>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/试卷/2022年合肥工业大学(宣城校区)计算机科学与技术专业《操作系统》科目期末试卷A(有答案).docx">2022年合肥工业大学(宣城校区)计算机科学与技术专业《操作系统》科目期末试卷A(有答案).docx</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/试卷/合肥工业大学操作系统精品课程试题资料.PDF">合肥工业大学操作系统精品课程试题资料.PDF</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/试卷/2022年合肥工业大学计算机科学与技术专业《操作系统》科目期末试卷B(有答案).docx">2022年合肥工业大学计算机科学与技术专业《操作系统》科目期末试卷B(有答案).docx</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/试卷/22-23.pdf">22-23.pdf</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/试卷/14-15操作系统.pdf">14-15操作系统.pdf</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/试卷/21-22.pdf">21-22.pdf</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/试卷/合工大操作系统2023a卷.pdf">合工大操作系统2023a卷.pdf</a></li>
+</ul>
+</li>
+<li>PPT(按课)<ul>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/PPT(按课)/4-存储-虚拟存储器-页面调度实例.pdf">4-存储-虚拟存储器-页面调度实例.pdf</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/PPT(按课)/2-进程管理-基本概念-补充.pdf">2-进程管理-基本概念-补充.pdf</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/PPT(按课)/4-存储-连续分配.pdf">4-存储-连续分配.pdf</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/PPT(按课)/4-存储-分页分段.pdf">4-存储-分页分段.pdf</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/PPT(按课)/2-进程管理-基本概念-同步-方案.pdf">2-进程管理-基本概念-同步-方案.pdf</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/PPT(按课)/6-文件系统-1.pdf">6-文件系统-1.pdf</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/PPT(按课)/5-设备管理2-1.pdf">5-设备管理2-1.pdf</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/PPT(按课)/3-进程管理-死锁2-银行家算法实例.pdf">3-进程管理-死锁2-银行家算法实例.pdf</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/PPT(按课)/3-进程管理-死锁2.pdf">3-进程管理-死锁2.pdf</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/PPT(按课)/7-操作系统接口-1.pdf">7-操作系统接口-1.pdf</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/PPT(按课)/2-进程管理-基本概念-通信和线程.pdf">2-进程管理-基本概念-通信和线程.pdf</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/PPT(按课)/2-进程管理-基本概念-同步-经典问题.pdf">2-进程管理-基本概念-同步-经典问题.pdf</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/PPT(按课)/2-进程管理-基本概念22-3.pdf">2-进程管理-基本概念22-3.pdf</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/PPT(按课)/3-进程管理-调度31.pdf">3-进程管理-调度31.pdf</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/PPT(按课)/1-引论.pdf">1-引论.pdf</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/PPT(按课)/6-文件系统-示例.pdf">6-文件系统-示例.pdf</a></li>
+</ul>
+</li>
+<li>课堂测试<ul>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/课堂测试/操作系统课堂测试.docx">操作系统课堂测试.docx</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/课堂测试/E1A70F0D4A9F94055F43B5FD444631D5.jpg">E1A70F0D4A9F94055F43B5FD444631D5.jpg</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/课堂测试/27597559DD183176C241C42C6EBD8BB4.jpg">27597559DD183176C241C42C6EBD8BB4.jpg</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/课堂测试/E1CE713CDE34D0F8BCF81742D9257D11.jpg">E1CE713CDE34D0F8BCF81742D9257D11.jpg</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/课堂测试/52C7F21624A16E83E58F5277B69581DE.jpg">52C7F21624A16E83E58F5277B69581DE.jpg</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/课堂测试/D2F07FE25C727D4961BE0A0AFD0BC1D7.jpg">D2F07FE25C727D4961BE0A0AFD0BC1D7.jpg</a></li>
+</ul>
+</li>
+<li>实验<ul>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/实验/Linux内核实验教程.pdf">Linux内核实验教程.pdf</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/实验/实验前必看.pdf">实验前必看.pdf</a></li>
+<li>他人报告2<ul>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/实验/他人报告2/操作系统实验4.doc">操作系统实验4.doc</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/实验/他人报告2/操作系统实验3.doc">操作系统实验3.doc</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/实验/他人报告2/操作系统实验报告-标准格式.doc">操作系统实验报告-标准格式.doc</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/实验/他人报告2/操作系统实验2.doc">操作系统实验2.doc</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/实验/他人报告2/操作系统实验13.doc">操作系统实验13.doc</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/实验/他人报告2/操作系统实验6.doc">操作系统实验6.doc</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/实验/他人报告2/操作系统实验5.doc">操作系统实验5.doc</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/实验/他人报告2/操作系统实验8.doc">操作系统实验8.doc</a></li>
+</ul>
+</li>
+<li>本人报告<ul>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/实验/本人报告/9.doc">9.doc</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/实验/本人报告/8.doc">8.doc</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/实验/本人报告/模板.doc">模板.doc</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/实验/本人报告/2.doc">2.doc</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/实验/本人报告/5.doc">5.doc</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/实验/本人报告/6.doc">6.doc</a></li>
+</ul>
+</li>
+<li>他人报告1<ul>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/实验/他人报告1/操作系统实验4.pdf">操作系统实验4.pdf</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/实验/他人报告1/操作系统实验6.pdf">操作系统实验6.pdf</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/实验/他人报告1/操作系统实验2.pdf">操作系统实验2.pdf</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/实验/他人报告1/操作系统实验8.docx">操作系统实验8.docx</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/实验/他人报告1/操作系统实验8.pdf">操作系统实验8.pdf</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/实验/他人报告1/操作系统实验13.docx">操作系统实验13.docx</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/实验/他人报告1/操作系统实验13.pdf">操作系统实验13.pdf</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/实验/他人报告1/操作系统实验1.docx">操作系统实验1.docx</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/实验/他人报告1/操作系统实验3.docx">操作系统实验3.docx</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/实验/他人报告1/操作系统实验2.docx">操作系统实验2.docx</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/实验/他人报告1/操作系统实验4.docx">操作系统实验4.docx</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/实验/他人报告1/操作系统实验5.docx">操作系统实验5.docx</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/实验/他人报告1/操作系统实验5.pdf">操作系统实验5.pdf</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/实验/他人报告1/操作系统实验3.pdf">操作系统实验3.pdf</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/实验/他人报告1/操作系统实验1.pdf">操作系统实验1.pdf</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/实验/他人报告1/操作系统实验6.docx">操作系统实验6.docx</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>课设<ul>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/课设/os.c">os.c</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/课设/xxxxxxx.doc">xxxxxxx.doc</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/课设/problem.md">problem.md</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/课设/说明.txt">说明.txt</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/课设/操作系统课程设计报告-标准格式.doc">操作系统课程设计报告-标准格式.doc</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/课设/操作系统课程设计指导书+题目.pdf">操作系统课程设计指导书+题目.pdf</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/课设/os.exe">os.exe</a></li>
+</ul>
+</li>
+<li>作业<ul>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/作业/第二章.docx">第二章.docx</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/作业/第六章.docx">第六章.docx</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/作业/第四章.docx">第四章.docx</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/作业/第三章.docx">第三章.docx</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/作业/第八章.docx">第八章.docx</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/作业/第五章.docx">第五章.docx</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/作业/作业报告PPT操作指南.pdf">作业报告PPT操作指南.pdf</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/作业/拓展作业提交操作指南.pdf">拓展作业提交操作指南.pdf</a></li>
+</ul>
+</li>
+<li>复习资料<ul>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/操作系统 第六章 文件管理.pdf">操作系统 第六章 文件管理.pdf</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/操作系统 第七章 操作系统接口.pdf">操作系统 第七章 操作系统接口.pdf</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/操作系统选择填空简答主要知识点.pdf">操作系统选择填空简答主要知识点.pdf</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/操作系统 第二章 进程管理.pdf">操作系统 第二章 进程管理.pdf</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/操作系统 第五章 设备管理.pdf">操作系统 第五章 设备管理.pdf</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/操作系统 第一章 操作系统引论.pdf">操作系统 第一章 操作系统引论.pdf</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/操作系统 第四章 存储管理.pdf">操作系统 第四章 存储管理.pdf</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/操作系统原理课件.pptx">操作系统原理课件.pptx</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/操作系统笔记.pdf">操作系统笔记.pdf</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/操作系统 第三章 处理机调度与死锁.pdf">操作系统 第三章 处理机调度与死锁.pdf</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记 2022年10月21日.pdf">笔记 2022年10月21日.pdf</a></li>
+<li>笔记<ul>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/位示图法.png">位示图法.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/混合索引.png">混合索引.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/DMA控制器.png">DMA控制器.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/静态链接.png">静态链接.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/索引顺序文件.png">索引顺序文件.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/分段管理地址转换过程.png">分段管理地址转换过程.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/循环缓冲区.png">循环缓冲区.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/成组链接法.png">成组链接法.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/死锁检测.png">死锁检测.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/线程.png">线程.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/多生产者-多消费者问题.png">多生产者-多消费者问题.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/信号量实现前驱关系结构图.png">信号量实现前驱关系结构图.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/银行家算法.png">银行家算法.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/运行时动态链接.png">运行时动态链接.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/程序直接控制方式流程图.png">程序直接控制方式流程图.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/OS引导开机.png">OS引导开机.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/请求分页管理地址转换.png">请求分页管理地址转换.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/TCB.png">TCB.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/页表项.png">页表项.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/空闲盘区链.png">空闲盘区链.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/快慢表查询时间.png">快慢表查询时间.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/动态重定位.png">动态重定位.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/AAA笔记.md">AAA笔记.md</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/空闲盘块链.png">空闲盘块链.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/先进先出置换算法2.png">先进先出置换算法2.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/隐式链接.png">隐式链接.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/单缓冲区示例.png">单缓冲区示例.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/共享打印机.png">共享打印机.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/静态重定位.png">静态重定位.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/两类虚拟机区别.png">两类虚拟机区别.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/设备控制表.png">设备控制表.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/多层索引.png">多层索引.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/通道控制程序.png">通道控制程序.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/信号量实现前驱关系代码.png">信号量实现前驱关系代码.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/绝对装入.png">绝对装入.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/分页分段优缺点.png">分页分段优缺点.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/装入时动态链接.png">装入时动态链接.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/驻留集.png">驻留集.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/通道控制表.png">通道控制表.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/顺序文件.png">顺序文件.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/最近最久未使用置换算法.png">最近最久未使用置换算法.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/系统设备表.png">系统设备表.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/工作集.png">工作集.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/动态分区分配算法.png">动态分区分配算法.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/显式链接.png">显式链接.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/DMA方式.png">DMA方式.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/SPOOLing技术.png">SPOOLing技术.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/三种调度算法比较1.png">三种调度算法比较1.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/五状态模型.png">五状态模型.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/符号链的共享方式.png">符号链的共享方式.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/多级队列调度算法.png">多级队列调度算法.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/索引文件.png">索引文件.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/控制器控制表.png">控制器控制表.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/连续分配.png">连续分配.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/可变长记录.png">可变长记录.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/四种IO控制比较.png">四种IO控制比较.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/双缓冲区示例1.png">双缓冲区示例1.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/逻辑地址到物理地址转换.png">逻辑地址到物理地址转换.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/银行家算法1.png">银行家算法1.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/链接方案.png">链接方案.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/磁盘分配.png">磁盘分配.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/程序直接控制.png">程序直接控制.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/分段存储管理.png">分段存储管理.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/调入页面时间.png">调入页面时间.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/吸烟者问题.png">吸烟者问题.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/生产者-消费者前驱关系结构图.png">生产者-消费者前驱关系结构图.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/覆盖技术.png">覆盖技术.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/双缓冲区示例2.png">双缓冲区示例2.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/死锁、饥饿、死循环区别.png">死锁、饥饿、死循环区别.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/最短剩余时间优先算法.png">最短剩余时间优先算法.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/三种调度算法比较2.png">三种调度算法比较2.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/七状态模型.png">七状态模型.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/先进先出置换算法.png">先进先出置换算法.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/银行家算法2.png">银行家算法2.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/段页式地址转换.png">段页式地址转换.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/缓冲池.png">缓冲池.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/中断驱动方式IO.png">中断驱动方式IO.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/成组链接法回收.png">成组链接法回收.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/IO控制器组成.png">IO控制器组成.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/快表地址转换.png">快表地址转换.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/地址变换机构.png">地址变换机构.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/线程状态转换.png">线程状态转换.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/索引结点.png">索引结点.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/调入内存地点.png">调入内存地点.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/最佳置换算法.png">最佳置换算法.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/空闲表法.png">空闲表法.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/段页式示例.png">段页式示例.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/置换策略.png">置换策略.png</a></li>
+<li><a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/raw/main/【大三】操作系统/复习资料/笔记/二级页表.png">二级页表.png</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["palette.toggle", "palette.auto"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
