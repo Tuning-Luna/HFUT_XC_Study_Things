@@ -5,8 +5,6 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/Tuning-Luna/HFUT_XC_Study_Things)
 ![GitHub license](https://img.shields.io/github/license/Tuning-Luna/HFUT_XC_Study_Things)
 
-
-
 🎓 合肥工业大学宣城校区 计算机科学与技术（CS）本科四年完整学习资料整理
 
 📚 覆盖：实验 / 课设 / 作业 / 真题 / PPT / 笔记 / 项目代码  
@@ -21,11 +19,35 @@
 
 ## 公共课
 
-|  课程名称  |                        包含内容                         |
-| :--------: | :-----------------------------------------------------: |
-|    英语    |             雨课堂，CET-4/CET-6 近几年真题              |
-|  思政教材  | ZG 近代史，马原，毛概，习概，思想道德，形式与政策等教材 |
-| 题库及答案 |     思想道德与法制，形势与政策，劳动教育等题库+答案     |
+<details>
+<summary>📘 英语</summary>
+
+- 雨课堂资料
+- CET-4 近几年真题
+- CET-6 近几年真题
+
+</details>
+
+<details>
+<summary>📕 思政教材</summary>
+
+- 中国近代史（ZG 近代史）
+- 马克思主义基本原理（马原）
+- 毛泽东思想和中国特色社会主义理论体系概论（毛概）
+- 习近平新时代中国特色社会主义思想概论（习概）
+- 思想道德与法治
+- 形势与政策
+
+</details>
+
+<details>
+<summary>📗 题库及答案</summary>
+
+- 思想道德与法治题库 + 答案
+- 形势与政策题库 + 答案
+- 劳动教育题库 + 答案
+
+</details>
 
 ## 大一
 
@@ -117,8 +139,6 @@ git clone https://github.com/Tuning-Luna/HFUT_XC_Study_Things.git
 或者使用 Chrome 插件：
 
 使用[GitZip for GitHub](https://chromewebstore.google.com/detail/gitzip-for-github/ffabmkklhbepgcgfonabamgnfafbdlkn?hl=en-US&utm_source=ext_sidebar) 插件，安装插件并配置好后，文件夹和文件前面会多出复选框，选择需要的勾上并下载即可
-
-
 
 # Images
 
