@@ -1,28 +1,31 @@
 # 写在前面
 
-本仓库计划存放本人合肥工业大学宣城校区计算机科学与技术（CS）大一到大四的学习资料，包括本人自己完成的实验,课设,作业以及本人收集到的PPT,笔记等其他学习资料。
+![GitHub repo size](https://img.shields.io/github/repo-size/Tuning-Luna/HFUT_XC_Study_Things)
+![GitHub stars](https://img.shields.io/github/stars/Tuning-Luna/HFUT_XC_Study_Things)
+![GitHub last commit](https://img.shields.io/github/last-commit/Tuning-Luna/HFUT_XC_Study_Things)
+![GitHub license](https://img.shields.io/github/license/Tuning-Luna/HFUT_XC_Study_Things)
 
 
+
+🎓 合肥工业大学宣城校区 计算机科学与技术（CS）本科四年完整学习资料整理
+
+📚 覆盖：实验 / 课设 / 作业 / 真题 / PPT / 笔记 / 项目代码  
+🗂 时间跨度：大一 → 大四  
+🧑‍💻 持续更新中
 
 > 如果你是相关资料的作者，且不希望内容出现在本仓库中，请通过提交`Issue`的方式联系我删除
 
-
-
-
-
->如果本仓库对你有用，请给个 `Star`⭐
-
-
+> 如果本仓库对你有用，请给个 `Star`⭐
 
 # 资料目录
 
 ## 公共课
 
-|  课程名称  |                        包含内容                        |
-| :--------: | :----------------------------------------------------: |
-|    英语    |             雨课堂，CET-4/CET-6 近几年真题             |
-|  思政教材  | ZG近代史，马原，毛概，习概，思想道德，形式与政策等教材 |
-| 题库及答案 |    思想道德与法制，形势与政策，劳动教育等题库+答案     |
+|  课程名称  |                        包含内容                         |
+| :--------: | :-----------------------------------------------------: |
+|    英语    |             雨课堂，CET-4/CET-6 近几年真题              |
+|  思政教材  | ZG 近代史，马原，毛概，习概，思想道德，形式与政策等教材 |
+| 题库及答案 |     思想道德与法制，形势与政策，劳动教育等题库+答案     |
 
 ## 大一
 
@@ -35,8 +38,6 @@
 | 电路与电子技术基础 |                教材，PPT，实验                 |
 |      大学物理      | 教材，PPT，作业习题以及解答，历年真题，习题册  |
 |    程序设计基础    |     PPT，实验，作业答案，期末大作业，课设      |
-
-
 
 ## 大二
 
@@ -58,8 +59,6 @@
 |  计算机组成原理  |         PPT，真题，复习资料，实验         |
 |     科研训练     |             成品，报告，论文              |
 
-
-
 ## 大三
 
 |    课程名称    |               包含内容                |
@@ -69,17 +68,11 @@
 |  人工智能原理  |      课设，期末大作业，实验报告       |
 |  数字媒体技术  |      期末大作业，实验，调研报告       |
 |  计算机图形学  |         PPT，实验，作业，拓展         |
-|  硬件综合设计  |   完整成品，报告，验收PPT，学习资料   |
+|  硬件综合设计  |  完整成品，报告，验收 PPT，学习资料   |
 |    操作系统    | PPT，复习资料，课设，实验，作业，真题 |
 |   计算机网络   |    PPT，笔记，期末真题，实验，课设    |
 
-
-
-
-
 <a  href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&duration=10000&pause=1000&width=435&lines=%E6%9C%AA%E5%AE%8C%E5%BE%85%E7%BB%AD......" alt="Typing SVG" /></a>
-
-
 
 # 食用方法
 
@@ -87,8 +80,7 @@
 
 - 本资料的在线网站：https://tuning-luna.github.io/HFUT_XC_Study_Things
 
-- 本仓库Github地址：https://github.com/Tuning-Luna/HFUT_XC_Study_Things
-
+- 本仓库 Github 地址：https://github.com/Tuning-Luna/HFUT_XC_Study_Things
 
 仓库和网站的资料**完全同步**，故可以使用网站找到想要的资料可以直接下载
 
@@ -102,8 +94,6 @@
 
 ![image-20250807095119115](./assets/image-20250807095119115.png)
 
-
-
 或者克隆整个仓库：
 
 确保电脑上有[git](https://git-scm.com/downloads)环境，打开 cmd，运行
@@ -113,8 +103,6 @@ git clone https://github.com/Tuning-Luna/HFUT_XC_Study_Things.git
 ```
 
 克隆整个仓库
-
-
 
 还可以使用**Fork**，复制一份作为你的仓库，在你的仓库中进行查看：
 
@@ -126,19 +114,13 @@ git clone https://github.com/Tuning-Luna/HFUT_XC_Study_Things.git
 
 ![image-20250807100520627](./assets/image-20250807100520627.png)
 
-
-
-或者使用Chrome插件：
+或者使用 Chrome 插件：
 
 使用[GitZip for GitHub](https://chromewebstore.google.com/detail/gitzip-for-github/ffabmkklhbepgcgfonabamgnfafbdlkn?hl=en-US&utm_source=ext_sidebar) 插件，安装插件并配置好后，文件夹和文件前面会多出复选框，选择需要的勾上并下载即可
 
 
 
-----
-
 # Images
-
-
 
 ![](./assets/img1.jpeg)
 
