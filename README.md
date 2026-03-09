@@ -4,8 +4,10 @@
 ![GitHub stars](https://img.shields.io/github/stars/Tuning-Luna/HFUT_XC_Study_Things)
 ![GitHub last commit](https://img.shields.io/github/last-commit/Tuning-Luna/HFUT_XC_Study_Things)
 ![GitHub license](https://img.shields.io/github/license/Tuning-Luna/HFUT_XC_Study_Things)
-
-
+![GitHub top language](https://img.shields.io/github/languages/top/Tuning-Luna/HFUT_XC_Study_Things)
+![GitHub language count](https://img.shields.io/github/languages/count/Tuning-Luna/HFUT_XC_Study_Things)
+![GitHub code size](https://img.shields.io/github/languages/code-size/Tuning-Luna/HFUT_XC_Study_Things)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/Tuning-Luna/HFUT_XC_Study_Things)
 
 🎓 合肥工业大学宣城校区 计算机科学与技术（CS）本科四年完整学习资料整理
 
