@@ -8,19 +8,16 @@
 
 很简单，现在AI这么发达，问AI是最快的
 
-
-
 ## 课设
 
-本人课设已开源，做了一个deque容器，在这个仓库：https://github.com/Tuning-Luna/MyDeque
+本人课设已开源，做了一个deque容器，在这个仓库：https://github.com/Tuning-Luna/my-deque
 
 以及其他可以作为此课设的项目：
 
-- 课堂答题系统： https://github.com/Tuning-Luna/Classroom_Testing_System 
-- 自己实现stack（栈）： https://github.com/Tuning-Luna/My_Stack
-- 自己实现list（链表）：https://github.com/Tuning-Luna/My_List
-
-
+- 课堂答题系统： https://github.com/Tuning-Luna/classroom-quiz
+- 自己实现stack（栈）： https://github.com/Tuning-Luna/my-stack
+- 自己实现list（链表）：https://github.com/Tuning-Luna/my-list
+- 通讯录管理系统： https://github.com/Tuning-Luna/address-book-manage-system
 
 ## 考试
 

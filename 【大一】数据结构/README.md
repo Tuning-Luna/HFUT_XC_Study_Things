@@ -14,7 +14,12 @@
 
 老师最后一节课也会划重点，如果上课认真听了，有时候自己也能感受到一些重点，比如链表（双向链表，循环链表），队列（数组实现，链表实现，循环队列），数组的KMP算法，还有树（二叉树，红黑树等等），图（存储方式，BFS，DFS，还有更复杂的算法）
 
-
 ## 课设
 
 只要实验认真做了，课设没什么难的
+
+下面是可以参考的项目：
+
+- 自己实现的deque容器：https://github.com/Tuning-Luna/my-deque
+- 自己实现stack（栈）： https://github.com/Tuning-Luna/my-stack
+- 自己实现list（链表）：https://github.com/Tuning-Luna/my-list

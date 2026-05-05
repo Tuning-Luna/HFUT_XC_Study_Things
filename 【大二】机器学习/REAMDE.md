@@ -1,13 +1,9 @@
 老师：凤维杰老师。
 
-
-
 ## 概述
 
 没有考试，但是有课堂上的两次测试，老师也会经常点名，建议不要缺勤
 
-
-
 ## 课设
 
-已开源，在仓库：https://github.com/Tuning-Luna/MachineLearningWork
+已开源：https://github.com/Tuning-Luna/movie-recommender
