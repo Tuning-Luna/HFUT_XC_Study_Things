@@ -6,6 +6,8 @@
 
 很麻烦，还有中途验收，需要签到两次。还要做PPT进行汇报。
 
+申优就比较麻烦，如果只为了及格，那可以找丁贤庆老师和阙夏老师，坦白说自己不会，混个及格分还是有的。
+
 如果想要运行我的项目，请确保电脑上有[Iverilog](https://bleyer.org/icarus/) 和 [GTKWave](https://gtkwave.sourceforge.net/) 环境，我的项目由于没有在 Vivado 里面创建，故无法下载到开发板上。
 
 
