@@ -1,13 +1,9 @@
-# 写在前面
+[![GitHub stars](https://img.shields.io/github/stars/Tuning-Luna/HFUT_XC_Study_Things?style=flat-square)](https://github.com/Tuning-Luna/HFUT_XC_Study_Things/stargazers)
+[![GitHub last commit](https://img.shields.io/github/last-commit/Tuning-Luna/HFUT_XC_Study_Things?style=flat-square)](https://github.com/Tuning-Luna/HFUT_XC_Study_Things/commits)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
+[![Repo size](https://img.shields.io/github/repo-size/Tuning-Luna/HFUT_XC_Study_Things?style=flat-square)](https://github.com/Tuning-Luna/HFUT_XC_Study_Things)
 
-![GitHub repo size](https://img.shields.io/github/repo-size/Tuning-Luna/HFUT_XC_Study_Things)
-![GitHub stars](https://img.shields.io/github/stars/Tuning-Luna/HFUT_XC_Study_Things)
-![GitHub last commit](https://img.shields.io/github/last-commit/Tuning-Luna/HFUT_XC_Study_Things)
-![GitHub license](https://img.shields.io/github/license/Tuning-Luna/HFUT_XC_Study_Things)
-![GitHub top language](https://img.shields.io/github/languages/top/Tuning-Luna/HFUT_XC_Study_Things)
-![GitHub language count](https://img.shields.io/github/languages/count/Tuning-Luna/HFUT_XC_Study_Things)
-![GitHub code size](https://img.shields.io/github/languages/code-size/Tuning-Luna/HFUT_XC_Study_Things)
-![GitHub commit activity](https://img.shields.io/github/commit-activity/m/Tuning-Luna/HFUT_XC_Study_Things)
+# 写在前面
 
 🎓 合肥工业大学宣城校区 计算机科学与技术（CS）本科四年完整学习资料整理
 
@@ -15,11 +11,7 @@
 🗂 时间跨度：大一 → 大四  
 🧑‍💻 持续更新中
 
-
-
 > 如果本仓库对你有用，请给个 `Star`⭐
-
-
 
 如果你也想整理**自己专业的课程资料仓库**，但不太清楚如何开始（例如仓库结构、资料整理方式、README 编写、GitHub 使用等），欢迎与我交流。
 
@@ -104,14 +96,11 @@ git clone https://github.com/Tuning-Luna/HFUT_XC_Study_Things.git
 
 使用[GitZip for GitHub](https://chromewebstore.google.com/detail/gitzip-for-github/ffabmkklhbepgcgfonabamgnfafbdlkn?hl=en-US&utm_source=ext_sidebar) 插件，安装插件并配置好后，文件夹和文件前面会多出复选框，选择需要的勾上并下载即可
 
-
-
 # 免责声明
 
 本仓库资料仅供学习交流使用，不得用于商业用途。
 若涉及侵权问题，请通过 Issue 联系我删除。
-
-
+本项目基于 [MIT License](LICENSE) 开源。
 
 # Images
 
@@ -124,5 +113,3 @@ git clone https://github.com/Tuning-Luna/HFUT_XC_Study_Things.git
   <img src="./assets/img3.png" width="45%">
   <img src="./assets/img4.jpg" width="45%">
 </p>
-
-
