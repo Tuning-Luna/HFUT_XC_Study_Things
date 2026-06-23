@@ -76,40 +76,57 @@
 
 <a  href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&duration=10000&pause=1000&width=435&lines=%E6%9C%AA%E5%AE%8C%E5%BE%85%E7%BB%AD......" alt="Typing SVG" /></a>
 
-# 食用方法
+# 使用方式
 
-## 在线网站
+## 方式一：在线浏览（推荐）
 
-本资料的在线网站：https://tuning-luna.github.io/HFUT_XC_Study_Things
+无需下载，直接访问在线网站查看全部资料：
 
-仓库和网站的资料**完全同步**，故可以使用网站找到想要的资料可以直接下载
+[**https://tuning-luna.github.io/HFUT_XC_Study_Things**](https://tuning-luna.github.io/HFUT_XC_Study_Things)
 
-## 克隆仓库
+仓库与网站内容**完全同步**，在线找到所需文件后直接下载即可。
 
-确保电脑上有[git](https://git-scm.com/downloads)环境，打开 cmd，运行
+## 方式二：完整克隆
+
+需要下载全部资料到本地时使用。
+
+**前置条件**：确保电脑已安装 [Git](https://git-scm.com/downloads)
 
 ```bash
 git clone https://github.com/Tuning-Luna/HFUT_XC_Study_Things.git
 ```
 
-## 部分下载
+## 方式三：按需下载（仅下载部分文件）
 
-使用[GitZip for GitHub](https://chromewebstore.google.com/detail/gitzip-for-github/ffabmkklhbepgcgfonabamgnfafbdlkn?hl=en-US&utm_source=ext_sidebar) 插件，安装插件并配置好后，文件夹和文件前面会多出复选框，选择需要的勾上并下载即可
+如果你只需要部分文件，推荐使用以下工具：
 
-# 免责声明
+### GitZip 插件（Chrome / Edge）
 
-本仓库资料仅供学习交流使用，不得用于商业用途。
-若涉及侵权问题，请通过 Issue 联系我删除。
-本项目基于 [MIT License](LICENSE) 开源。
+1. 安装 [GitZip for GitHub](https://chromewebstore.google.com/detail/gitzip-for-github/ffabmkklhbepgcgfonabamgnfafbdlkn)
+2. 安装后打开本仓库 GitHub 页面，文件/文件夹前会出现复选框
+3. 勾选你需要的文件，点击下载按钮即可
+
+### 其他替代方案
+
+- **DownGit**：访问 [https://minhaskamal.github.io/DownGit](https://minhaskamal.github.io/DownGit)，粘贴仓库中某个文件夹的链接即可单独下载
+- **GitHub RAW 直链**：单个小文件可直接点击 `Raw` 按钮保存
+
+# 许可与免责
+
+本仓库所有资料**允许自由使用、转载、分发**，但**严禁用于商业销售或任何形式的盈利行为**。
+
+若内容涉及侵权（如引用来源未标注等），请通过 Issue 告知，我将及时处理。
+
+本项目基于 [MIT License](LICENSE) 开源，在遵守上述限制的前提下，你可以自由使用本仓库的内容。
 
 # Images
 
 <p align="center">
-  <img src="./assets/img1.jpeg" width="45%">
-  <img src="./assets/img2.jpg" width="45%">
+  <img src="./assets/img1.webp" width="45%">
+  <img src="./assets/img2.webp" width="45%">
 </p>
 
 <p align="center">
-  <img src="./assets/img3.png" width="45%">
-  <img src="./assets/img4.jpg" width="45%">
+  <img src="./assets/img3.webp" width="45%">
+  <img src="./assets/img4.webp" width="45%">
 </p>
