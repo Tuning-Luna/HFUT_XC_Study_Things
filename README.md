@@ -117,7 +117,7 @@ git clone https://github.com/Tuning-Luna/HFUT_XC_Study_Things.git
 
 若内容涉及侵权（如引用来源未标注等），请通过 Issue 告知，我将及时处理。
 
-本项目基于 [MIT License](LICENSE) 开源，在遵守上述限制的前提下，你可以自由使用本仓库的内容。
+学生原创内容（笔记、代码、报告等）基于 [CC BY-NC-SA 4.0](LICENSE) 协议开源；第三方资料（教材、PPT 等）版权归原作者所有，仅作学习交流使用。
 
 # Images
 
