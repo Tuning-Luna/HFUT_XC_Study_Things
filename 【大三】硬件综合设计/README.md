@@ -4,7 +4,7 @@
 
 ## 概述：
 
-很麻烦，还有中途验收，需要签到两次。还要做PPT进行汇报。
+有中途验收，需要签到两次，还要做PPT进行汇报。
 
 如果想要运行我的项目，请确保电脑上有[Iverilog](https://bleyer.org/icarus/) 和 [GTKWave](https://gtkwave.sourceforge.net/) 环境，安装前者的时候会一并安装后者。我的项目由于没有在 Vivado 里面创建，**故无法下载到开发板上**。
 
