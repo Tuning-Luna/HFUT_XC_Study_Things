@@ -1,19 +1,53 @@
-[![GitHub stars](https://img.shields.io/github/stars/Tuning-Luna/HFUT_XC_Study_Things?style=flat-square)](https://github.com/Tuning-Luna/HFUT_XC_Study_Things/stargazers)
-[![GitHub last commit](https://img.shields.io/github/last-commit/Tuning-Luna/HFUT_XC_Study_Things?style=flat-square)](https://github.com/Tuning-Luna/HFUT_XC_Study_Things/commits)
-[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC_BY--NC--SA_4.0-orange.svg?style=flat-square)](LICENSE-ORIGINAL)
-[![Repo size](https://img.shields.io/github/repo-size/Tuning-Luna/HFUT_XC_Study_Things?style=flat-square)](https://github.com/Tuning-Luna/HFUT_XC_Study_Things)
+<h1 align="center">HFUT XC Study Things</h1>
+
+<p align="center">
+  🎓 合肥工业大学宣城校区 · 计算机科学与技术（CS）本科四年完整学习资料
+</p>
+
+<p align="center">
+  <a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/stargazers"><img src="https://img.shields.io/github/stars/Tuning-Luna/HFUT_XC_Study_Things?style=flat-square" alt="GitHub stars"></a>
+  <a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/commits"><img src="https://img.shields.io/github/last-commit/Tuning-Luna/HFUT_XC_Study_Things?style=flat-square" alt="GitHub last commit"></a>
+  <a href="LICENSE-ORIGINAL"><img src="https://img.shields.io/badge/License-CC_BY--NC--SA_4.0-orange.svg?style=flat-square" alt="License: CC BY-NC-SA 4.0"></a>
+  <a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things"><img src="https://img.shields.io/github/repo-size/Tuning-Luna/HFUT_XC_Study_Things?style=flat-square" alt="Repo size"></a>
+</p>
+
+<p align="center">
+  📚 实验 / 课设 / 作业 / 真题 / PPT / 笔记 / 项目代码<br>
+  🗂 大一 → 大四 &nbsp;|&nbsp; 🧑‍💻 持续更新中
+</p>
+
+# 目录
+
+- [目录](#目录)
+- [写在前面](#写在前面)
+- [资料目录](#资料目录)
+  - [公共课](#公共课)
+  - [大一](#大一)
+  - [大二](#大二)
+  - [大三](#大三)
+- [使用方式](#使用方式)
+  - [方式一：在线浏览（推荐）](#方式一在线浏览推荐)
+  - [方式二：完整克隆](#方式二完整克隆)
+  - [方式三：按需下载（仅下载部分文件）](#方式三按需下载仅下载部分文件)
+    - [GitZip 插件（Chrome / Edge）](#gitzip-插件chrome--edge)
+    - [其他替代方案](#其他替代方案)
+- [许可与免责](#许可与免责)
+  - [本仓库内容按来源区分以下协议：](#本仓库内容按来源区分以下协议)
+    - [原创内容](#原创内容)
+    - [第三方资料](#第三方资料)
+- [Images](#images)
+
+---
 
 # 写在前面
 
 🎓 合肥工业大学宣城校区 计算机科学与技术（CS）本科四年完整学习资料整理
 
-📚 覆盖：实验 / 课设 / 作业 / 真题 / PPT / 笔记 / 项目代码  
-🗂 时间跨度：大一 → 大四  
-🧑‍💻 持续更新中
+> [!TIP]
+> 如果本仓库对你有用，请点个 **Star** ⭐ 支持一下！
 
-> 如果本仓库对你有用，请给个 `Star`⭐
-
-如果你想整理**自己专业的课程资料仓库**，但不知如何下手（仓库结构、资料整理、README 编写、GitHub 使用等），欢迎在 GitHub 上联系我，很乐意提供帮助 ❤️
+> [!NOTE]
+> 如果你想整理**自己专业的课程资料仓库**，但不知如何下手（仓库结构、资料整理、README 编写、GitHub 使用等），欢迎在 GitHub 上联系我，很乐意提供帮助 ❤️
 
 # 资料目录
 
@@ -111,25 +145,29 @@ git clone https://github.com/Tuning-Luna/HFUT_XC_Study_Things.git
 
 ## 本仓库内容按来源区分以下协议：
 
-### 📝 学生原创内容（我写的）
+### 原创内容
 
 包括但不限于：**作业答案、实验报告、课程设计、笔记、项目代码、复习资料、真题解答**等由 Tuning-Luna 原创整理的内容。
 
-基于 ** [CC BY-NC-SA 4.0](LICENSE-ORIGINAL) **（署名—非商业性使用—相同方式共享）协议开源：
+基于 [CC BY-NC-SA 4.0](LICENSE-ORIGINAL) （署名—非商业性使用—相同方式共享）协议开源：
 
 - ✅ **允许**：自由使用、转载、分发、修改
 - ✅ **要求**：**署名**原作者（Tuning-Luna），**以相同协议**分享衍生作品
-- ❌ **禁止**：**商业销售**或任何形式的盈利行为
+- ❌ **禁止**：用于商业目的，包括直接销售或以盈利为主要目的的使用
 
-### 📚 第三方资料（非我原创的）
+### 第三方资料
 
-包括但不限于：**教材、PPT（非我整理）、试卷原题、第三方引用内容**等。
+包括但不限于：**教材、PPT、试卷原题、第三方引用内容，笔记，复习大纲**等。
 
-这些资料的版权归属原作者/出版社，**不附带任何开源协议**，仅作学习交流使用。如需转载或商业使用，请自行联系版权方。
+这些资料的版权归属原作者/出版社/原作者/学长学姐，**不附带任何开源协议**，仅供学习与研究用途，不授予任何复制、传播、修改或再分发权利。
 
 ---
 
-> **侵权处理**：若内容涉及侵权（如引用来源未标注等），请通过 Issue 告知，我将及时处理。
+> [!CAUTION]
+> 若内容涉及侵权（如引用来源未标注等），请通过 Issue 告知，我将及时处理。
+
+> [!WARNING]
+> 本仓库内容仅供学习与交流参考，不保证其准确性、完整性或适用性。因使用本仓库内容而产生的任何后果，作者不承担任何责任。
 
 # Images
 
