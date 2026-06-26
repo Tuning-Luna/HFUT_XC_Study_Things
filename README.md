@@ -1,6 +1,6 @@
 [![GitHub stars](https://img.shields.io/github/stars/Tuning-Luna/HFUT_XC_Study_Things?style=flat-square)](https://github.com/Tuning-Luna/HFUT_XC_Study_Things/stargazers)
 [![GitHub last commit](https://img.shields.io/github/last-commit/Tuning-Luna/HFUT_XC_Study_Things?style=flat-square)](https://github.com/Tuning-Luna/HFUT_XC_Study_Things/commits)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC_BY--NC--SA_4.0-orange.svg?style=flat-square)](LICENSE-ORIGINAL)
 [![Repo size](https://img.shields.io/github/repo-size/Tuning-Luna/HFUT_XC_Study_Things?style=flat-square)](https://github.com/Tuning-Luna/HFUT_XC_Study_Things)
 
 # 写在前面
@@ -109,11 +109,27 @@ git clone https://github.com/Tuning-Luna/HFUT_XC_Study_Things.git
 
 # 许可与免责
 
-本仓库所有资料**允许自由使用、转载、分发**，但**严禁用于商业销售或任何形式的盈利行为**。
+## 本仓库内容按来源区分以下协议：
 
-若内容涉及侵权（如引用来源未标注等），请通过 Issue 告知，我将及时处理。
+### 📝 学生原创内容（我写的）
 
-学生原创内容（笔记、代码、报告等）基于 [CC BY-NC-SA 4.0](LICENSE) 协议开源；第三方资料（教材、PPT 等）版权归原作者所有，仅作学习交流使用。
+包括但不限于：**作业答案、实验报告、课程设计、笔记、项目代码、复习资料、真题解答**等由 Tuning-Luna 原创整理的内容。
+
+基于 ** [CC BY-NC-SA 4.0](LICENSE-ORIGINAL) **（署名—非商业性使用—相同方式共享）协议开源：
+
+- ✅ **允许**：自由使用、转载、分发、修改
+- ✅ **要求**：**署名**原作者（Tuning-Luna），**以相同协议**分享衍生作品
+- ❌ **禁止**：**商业销售**或任何形式的盈利行为
+
+### 📚 第三方资料（非我原创的）
+
+包括但不限于：**教材、PPT（非我整理）、试卷原题、第三方引用内容**等。
+
+这些资料的版权归属原作者/出版社，**不附带任何开源协议**，仅作学习交流使用。如需转载或商业使用，请自行联系版权方。
+
+---
+
+> **侵权处理**：若内容涉及侵权（如引用来源未标注等），请通过 Issue 告知，我将及时处理。
 
 # Images
 
