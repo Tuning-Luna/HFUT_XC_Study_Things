@@ -1,37 +1,84 @@
-site_name: HFUT-XC计算机科学与技术资料汇总
-site_description: 这是合肥工业大学宣城校区计算机科学与技术资料汇总的网站
+site_name: HFUT-XC 计算机科学与技术资料汇总
+site_description: 合肥工业大学宣城校区计算机科学与技术课程资料汇总，涵盖大一至大三全部课程PPT、实验、真题、教材、笔记代码
 site_author: Tuning-Luna
+site_url: https://tuning-luna.github.io/HFUT_XC_Study_Things
+copyright: Copyright &copy; 2026 Tuning-Luna &mdash; 学生原创内容采用 CC BY-NC-SA 4.0 协议
 
 repo_url: https://github.com/Tuning-Luna/HFUT_XC_Study_Things
 edit_uri: ""
 
 theme:
   name: material
-  logo: assets/hfut.png     # 左上角网站 logo
-  favicon: assets/hfut.png   # 浏览器标签页图标
+  language: zh
+  logo: assets/hfut.png
+  favicon: assets/hfut.png
   palette:
     - scheme: default
-      primary: 'indigo'
-      accent: 'indigo'
+      primary: indigo
+      accent: indigo
       toggle:
-        icon: material/toggle-switch-off-outline
-        name: Switch to dark mode
+        icon: material/brightness-7
+        name: 切换至深色模式
     - scheme: slate
-      primary: 'indigo'
-      accent: 'indigo'
+      primary: black
+      accent: teal
       toggle:
-        icon: material/toggle-switch
-        name: Switch to light mode
+        icon: material/brightness-4
+        name: 切换至浅色模式
   features:
-    - palette.toggle   # 显示切换按钮
-    - palette.auto     # 自动跟随系统深浅色模式
+    - navigation.tabs
+    - navigation.top
+    - navigation.footer
+    - navigation.expand
+    - navigation.instant
+    - palette.toggle
 
+plugins:
+  - search:
+      lang: zh
 
+nav:
+  - 首页: index.md
+  - 公共课:
+    - 思政教材: 【公共课】思政教材.md
+    - 英语: 【公共课】英语.md
+    - 题库及答案: 【公共课】题库及答案.md
+  - 大一:
+    - 高等数学: 【大一】高等数学.md
+    - 线性代数: 【大一】线性代数.md
+    - 数据结构: 【大一】数据结构.md
+    - Java: 【大一】Java.md
+    - 电路与电子技术基础: 【大一】电路与电子技术基础.md
+    - 大学物理: 【大一】大学物理.md
+    - 程序设计基础: 【大一】程序设计基础.md
+  - 大二:
+    - Python: 【大二】Python.md
+    - 程序设计艺术: 【大二】程序设计艺术.md
+    - 机器人技术: 【大二】机器人技术.md
+    - 离散数学: 【大二】离散数学.md
+    - 数字逻辑: 【大二】数字逻辑.md
+    - 计算方法: 【大二】计算方法.md
+    - 概率论与数理统计: 【大二】概率论与数理统计.md
+    - 汇编: 【大二】汇编.md
+    - 大学物理实验: 【大二】大学物理实验.md
+    - 嵌入式系统原理: 【大二】嵌入式系统原理.md
+    - EDA实训学习: 【大二】EDA实训学习.md
+    - 编译原理: 【大二】编译原理.md
+    - 机器学习: 【大二】机器学习.md
+    - 计算机组成原理: 【大二】计算机组成原理.md
+    - 科研训练: 【大二】科研训练.md
+  - 大三:
+    - 人工智能经济学: 【大三】人工智能经济学.md
+    - 计算机体系结构: 【大三】计算机体系结构.md
+    - 人工智能原理: 【大三】人工智能原理.md
+    - 数字媒体技术: 【大三】数字媒体技术.md
+    - 计算机图形学: 【大三】计算机图形学.md
+    - 硬件综合设计: 【大三】硬件综合设计.md
+    - 操作系统: 【大三】操作系统.md
+    - 计算机网络: 【大三】计算机网络.md
 
-# 附加信息
 extra:
-  meta:
-    - name: keywords
-      content: "HFUT, 合肥工业大学, 宣城校区, 计算机科学与技术, 教材, 课件, PPT, PDF"
-    - name: description
-      content: "合肥工业大学宣城校区计算机科学与技术资料汇总，包括课程 PPT、实验资料、讲义和代码示例。"
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Tuning-Luna
+      name: Tuning-Luna on GitHub
