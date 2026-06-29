@@ -12,30 +12,49 @@ theme:
   language: zh
   logo: assets/hfut.png
   favicon: assets/hfut.png
+  font:
+    text: Noto Sans SC
+    code: JetBrains Mono
   palette:
     - scheme: default
       primary: indigo
       accent: indigo
+      media: "(prefers-color-scheme: light)"
       toggle:
         icon: material/brightness-7
         name: 切换至深色模式
     - scheme: slate
-      primary: black
+      primary: teal
       accent: teal
+      media: "(prefers-color-scheme: dark)"
       toggle:
         icon: material/brightness-4
         name: 切换至浅色模式
   features:
     - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.tracking
+    - navigation.path
     - navigation.top
     - navigation.footer
     - navigation.expand
     - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - toc.follow
+    - header.autohide
     - palette.toggle
 
 plugins:
   - search:
       lang: zh
+  - tags
+  - meta
+  - glightbox
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: date
+  - offline
 
 nav:
   - 首页: index.md

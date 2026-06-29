@@ -11,6 +11,9 @@ EXCLUDE_DIRS = {
     ".github",
     "assets",
     "test-gh-pages",
+    ".codegraph",
+    ".claude",
+    ".omo",
 }
 
 # README 文件名集合
@@ -25,7 +28,8 @@ def list_files(course: str):
     readme_path = ""
 
     for root, dirs, files in os.walk(course):
-        dirs[:] = [d for d in dirs if d not in EXCLUDE_DIRS]
+        dirs[:] = sorted(d for d in dirs if d not in EXCLUDE_DIRS)
+        files.sort()
 
         level = root.replace(course, "").count(os.sep)
 
@@ -48,6 +52,8 @@ def list_files(course: str):
 
 
 def generate_md(course: str, filelist_texts: str, readme_path: str):
+    os.makedirs("docs", exist_ok=True)
+
     final_texts = ["\n\n", filelist_texts]
     if readme_path:
         with open(readme_path, "r", encoding="utf-8") as file:
@@ -55,10 +61,17 @@ def generate_md(course: str, filelist_texts: str, readme_path: str):
     out_path = os.path.join("docs", f"{course}.md")
     with open(out_path, "w", encoding="utf-8") as file:
         file.writelines(final_texts)
+    print(f"  ✓ {course}")
 
 
 if __name__ == "__main__":
-    courses = [d for d in os.listdir(".") if os.path.isdir(d) and d not in EXCLUDE_DIRS]
+    courses = sorted(d for d in os.listdir(".") if os.path.isdir(d) and d not in EXCLUDE_DIRS)
+
+    if not courses:
+        print("没有发现课程目录（排除 EXCLUDE_DIRS 后）。请在仓库根目录运行脚本。")
+
+    print(f"发现 {len(courses)} 个课程目录，开始生成文档...")
     for course in courses:
         filelist_texts, readme_path = list_files(course)
         generate_md(course, filelist_texts, readme_path)
+    print("全部生成完成！")
