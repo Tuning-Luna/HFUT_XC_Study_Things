@@ -1,0 +1,1695 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>软件工程导论 — 题型通关指南（含看图解释题）</title>
+    <style>
+        :root {
+            --bg-primary: #f1f5f9;
+            --bg-card: #ffffff;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --primary-color: #0f766e;
+            --primary-hover: #115e59;
+            --accent-warning: #d97706;
+            --border-color: #cbd5e1;
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0f766e 0%, #115e59 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+            box-shadow: var(--shadow-md);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+
+        header p {
+            margin: 0.5rem 0 0 0;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            display: flex;
+            gap: 2rem;
+        }
+
+        /* 快捷导航 */
+        .type-nav {
+            width: 260px;
+            flex-shrink: 0;
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            height: fit-content;
+            position: sticky;
+            top: 2rem;
+            box-shadow: var(--shadow-md);
+        }
+
+        .type-nav h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .type-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .type-links li {
+            margin-bottom: 0.5rem;
+        }
+
+        .type-links a {
+            color: var(--text-main);
+            text-decoration: none;
+            display: block;
+            padding: 0.5rem;
+            border-radius: 0.25rem;
+            transition: all 0.2s;
+            font-size: 0.95rem;
+        }
+
+        .type-links a:hover {
+            background-color: #f1f5f9;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        /* 主体内容 */
+        .content-area {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+            max-width: calc(100% - 280px);
+        }
+
+        .section-card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 0.5rem;
+            padding: 2.5rem;
+            box-shadow: var(--shadow-md);
+            scroll-margin-top: 2rem;
+        }
+
+        .section-card h2 {
+            margin-top: 0;
+            font-size: 1.6rem;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 0.75rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .badge-nav {
+            font-size: 0.8rem;
+            background-color: #e0f2fe;
+            color: #0369a1;
+            padding: 0.2rem 0.6rem;
+            border-radius: 9999px;
+            font-weight: normal;
+        }
+
+        .tip-box {
+            background-color: #f0fdfa;
+            border-left: 4px solid var(--primary-color);
+            padding: 1rem;
+            border-radius: 0.25rem;
+            margin: 1.5rem 0;
+            font-size: 0.95rem;
+        }
+
+        .warning-box {
+            background-color: #fffbeb;
+            border-left: 4px solid var(--accent-warning);
+            padding: 1rem;
+            border-radius: 0.25rem;
+            margin: 1.5rem 0;
+            font-size: 0.95rem;
+        }
+
+        .question-item {
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px dashed var(--border-color);
+        }
+
+        .question-item:last-child {
+            border-bottom: none;
+        }
+
+        .question-title {
+            font-weight: bold;
+            font-size: 1.05rem;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .question-title .importance-tag,
+        .question-title .code-style {
+            margin-right: 0.5rem;
+        }
+
+        .question-title ol {
+            font-weight: normal;
+            margin: 0.6rem 0 0 2rem;
+        }
+
+        .importance-tag {
+            font-size: 0.75rem;
+            padding: 0.1rem 0.4rem;
+            border-radius: 0.25rem;
+            font-weight: bold;
+        }
+
+        .tag-high { background-color: #fee2e2; color: #991b1b; }
+        .tag-medium { background-color: #ffedd5; color: #9a3412; }
+        .tag-low { background-color: #e2e8f0; color: #475569; }
+
+        .answer-block {
+            background-color: #f8fafc;
+            border: 1px solid var(--border-color);
+            padding: 1rem;
+            border-radius: 0.375rem;
+            margin-top: 0.75rem;
+            font-size: 0.95rem;
+        }
+
+        .answer-label {
+            color: #dc2626;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 0.3rem;
+        }
+
+        .code-style {
+            font-family: Consolas, Monaco, monospace;
+            background-color: #f1f5f9;
+            padding: 0.1rem 0.3rem;
+            border-radius: 0.25rem;
+            color: #0f766e;
+            font-weight: bold;
+        }
+
+        .question-stem { margin: 0.7rem 0; font-weight: 600; white-space: normal; }
+        .question-options { margin-top: 0.6rem; margin-bottom: 0.8rem; }
+        .question-options li { margin-bottom: 0.35rem; }
+        .full-question .answer-block { margin-top: 0.8rem; }
+        @media (max-width: 992px) {
+            .container {
+                flex-direction: column;
+            }
+            .type-nav {
+                width: 100%;
+                position: static;
+            }
+            .content-area {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>软件工程导论 — 期末题型通关指南</h1>
+        <p>按判断、选择、填空、名词解释、简答与看图解释题组织；完整补入2026随堂测试、课堂测试2与合工大软件工程试卷 </p>
+    </header>
+
+    <div class="container">
+        <!-- 题型快捷导航 -->
+        <nav class="type-nav">
+            <h3>题型导航</h3>
+            <ul class="type-links">
+                <li><a href="#type1">一、判断题通关库 (高频陷阱)</a></li>
+                <li><a href="#type2">二、选择题通关库 (完整原题)</a></li>
+                <li><a href="#type3">三、填空题通关库 (完整题干)</a></li>
+                <li><a href="#type4">四、名词解释通关库 (高分背诵)</a></li>
+                <li><a href="#type5">五、简答题满分模板 (本章小结)</a></li>
+                <li><a href="#type6">六、看图解释题 (原作图/设计转化)</a></li>
+            </ul>
+        </nav>
+
+        <!-- 主内容 -->
+        <main class="content-area">
+
+            <!-- 一、判断题 -->
+            <section class="section-card" id="type1">
+    <h2>一、判断题通关库 <span class="badge-nav">真题完整题干版</span></h2>
+    <div class="tip-box"><strong>说明：</strong>本区完整写出合工大软件工程试卷与 2026 随堂测试中的全部判断题原题，不再只写考点摘要。</div>
+    <div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">合工大试卷</span>1. </div>
+    <div class="question-stem">有了对项目目标的大概了解，便足以开始编写程序，有关细节以后再慢慢了解。（ ）</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>错。需求不清就编码是软件危机的重要成因，必须先完成问题定义、可行性研究和需求分析。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">合工大试卷</span>2. </div>
+    <div class="question-stem">向一个已经延晚的项目追加开发人员，可能使它完成的更晚。（ ）</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>对。新成员培训和沟通成本会进一步拖慢项目，即 Brooks 法则。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">合工大试卷</span>3. </div>
+    <div class="question-stem">在进行需求分析时同时考虑维护问题。（ ）</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>对。维护成本高，需求、设计、编码各阶段都应为可维护性做准备。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">合工大试卷</span>4. </div>
+    <div class="question-stem">如果两个模块之间没有直接关系，它们之间的联系完全是通过主模块的控制和调用来实现的，这就是非直接耦合。这种耦合的模块独立性最弱。（ ）</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>错。非直接耦合是最弱耦合，模块独立性最强。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">合工大试卷</span>5. </div>
+    <div class="question-stem">模块的作用范围包括它本身及其所有的从属模块。（ ）</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>错。这是控制范围的含义；作用范围是受该模块内部判定影响的模块集合。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">合工大试卷</span>6. </div>
+    <div class="question-stem">如果一个程序只有一个入口和一个出口，则称这个程序是结构化的。（ ）</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>错。单入口单出口只是必要特征，还应由顺序、选择、循环等结构化控制构成。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">合工大试卷</span>7. </div>
+    <div class="question-stem">单元测试能发现约 80% 的软件缺陷。（ ）</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>错。不能机械说单元测试发现 80%；课件强调代码审查、单元测试、集成测试等多种手段互补。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">合工大试卷</span>8. </div>
+    <div class="question-stem">验收测试是由最终用户来实施的。（ ）</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>对。验收/确认测试以用户需求为依据，通常由用户或用户代表实施。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">合工大试卷</span>9. </div>
+    <div class="question-stem">软件测试中，判定覆盖不一定包含条件覆盖，条件覆盖也不一定包含判定覆盖。（ ）</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>对。判定结果真假覆盖与每个条件真假覆盖并不互相包含。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">合工大试卷</span>10. </div>
+    <div class="question-stem">软件重用也叫再用或复用，是指同一事物不作修改或稍加改动就多次重复使用。（ ）</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>对。软件复用包括代码、设计结果、分析结果等不同层次。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">2026随堂测试</span>1. </div>
+    <div class="question-stem">面向对象设计过程中，可增加冗余关联以提高访问速度。（ ）</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>对。设计阶段可为效率增加适度冗余关联，但要权衡一致性维护成本。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">2026随堂测试</span>2. </div>
+    <div class="question-stem">集成测试中生成的测试用例可能会被测试多次。（ ）</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>对。集成测试和回归测试中测试用例可能被反复执行。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">2026随堂测试</span>3. </div>
+    <div class="question-stem">总体设计最主要的任务是利用状态图的控制规格说明完成过程设计。（ ）</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>错。总体设计的主要任务是设计软件结构；过程设计属于详细设计。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">2026随堂测试</span>4. </div>
+    <div class="question-stem">封装是指将类的所有属性和方法都设置为私有，不允许外部访问。（ ）</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>错。封装是隐藏内部实现并通过公共服务接口访问，不是全部私有化。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">2026随堂测试</span>5. </div>
+    <div class="question-stem">增量模型适用于需求非常明确且稳定，对交付时间要求不高的项目。（ ）</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>错。需求明确稳定更适合瀑布模型；增量模型强调分批较早交付。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">2026随堂测试</span>6. </div>
+    <div class="question-stem">面向对象分析阶段定义的服务主要源自于从事件导出的操作。（ ）</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>对。状态图中的事件会导出对象需要提供的操作，同时还要结合常规行为、DFD 处理框和继承。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">2026随堂测试</span>7. </div>
+    <div class="question-stem">盒图适用于描述复杂递归的算法，比流程图更简洁直观。（ ）</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>对。N-S 盒图限制任意跳转，适合结构化表达复杂嵌套或递归算法。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">2026随堂测试</span>8. </div>
+    <div class="question-stem">数据流图是复查需求分析结果的好工具。（ ）</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>对。DFD 能直观检查数据流、加工、存储和系统边界。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">2026随堂测试</span>9. </div>
+    <div class="question-stem">基于使用的面向对象测试方法，应优先检测客户类。（ ）</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>错。基于使用的测试先测几乎不使用服务器类的独立类，再逐层测试依赖类。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">2026随堂测试</span>10. </div>
+    <div class="question-stem">非关键路径上的任务延迟不会影响项目的最终交付时间。（ ）</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>错。只有未超过松弛时间时不影响；超过松弛时间仍会影响总工期。</div>
+  </div>
+  </section>
+
+            <!-- 二、选择题 -->
+            <section class="section-card" id="type2">
+    <h2>二、选择题通关库 <span class="badge-nav">真题完整题干版</span></h2>
+    <div class="tip-box"><strong>说明：</strong>所有选择题均完整保留题干和选项，尤其保留代码题、场景题和规则题的完整条件。</div>
+    <div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">合工大试卷</span>1. </div>
+    <div class="question-stem">软件生命周期中所花费用最多的阶段是（ ）。</div>
+    <ol type="A" class="question-options"><li>详细设计</li><li>软件编码</li><li>软件测试</li><li>软件维护</li></ol>
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>D。软件维护持续时间最长、代价最大。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">合工大试卷</span>2. </div>
+    <div class="question-stem">下列哪个模型没有采用迭代的思想（ ）。</div>
+    <ol type="A" class="question-options"><li>瀑布模型</li><li>渐增模型</li><li>螺旋模型</li><li>RUP 模型</li></ol>
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>A。瀑布模型是典型线性顺序模型。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">合工大试卷</span>3. </div>
+    <div class="question-stem">许多软件开发失败的主要原因是（ ）。</div>
+    <ol type="A" class="question-options"><li>软件的复杂性不断增加</li><li>忽略了软件需求分析的重要性</li><li>无法证明软件的正确性</li><li>选用了非主流的编程语言</li></ol>
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>B。需求错误会导致后期大量返工。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">合工大试卷</span>4. </div>
+    <div class="question-stem">总体设计阶段的结果是（ ）。</div>
+    <ol type="A" class="question-options"><li>模块</li><li>模块结构图</li><li>模块的算法</li><li>数据流图</li></ol>
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>B。总体设计产物核心是模块结构图或软件结构。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">合工大试卷</span>5. </div>
+    <div class="question-stem">信息隐蔽概念与（ ）这一概念直接的相关。</div>
+    <ol type="A" class="question-options"><li>模块的独立性</li><li>模块类型的划分</li><li>软件结构定义</li><li>软件生命周期</li></ol>
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>A。信息隐藏用于降低模块间依赖，提高模块独立性。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">合工大试卷</span>6. </div>
+    <div class="question-stem">程序的三种基本控制结构是（ ）。</div>
+    <ol type="A" class="question-options"><li>过程、子程序和分程序</li><li>顺序、选择和重复</li><li>递归、迭代和回溯</li><li>调用、返回和转移</li></ol>
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>B。结构化程序设计的三种基本控制结构是顺序、选择、重复/循环。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">合工大试卷</span>7. </div>
+    <div class="question-stem">PDL 是指（ ）。</div>
+    <ol type="A" class="question-options"><li>伪码</li><li>高级程序设计语言</li><li>汇编语言</li><li>描述性文档</li></ol>
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>A。PDL 是过程设计语言，也称伪码。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">合工大试卷</span>8. </div>
+    <div class="question-stem">在面向对象建模中，主题划分提供了一种在更高抽象层次上描述系统的手段。表示主题划分的建模图形是（ ）。</div>
+    <ol type="A" class="question-options"><li>Package diagrams（包图）</li><li>Deployment diagrams（配置图）</li><li>Sequence diagrams（顺序图）</li><li>Collaboration diagrams（合作图）</li></ol>
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>A。主题或包划分常用包图表示。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">合工大试卷</span>9. </div>
+    <div class="question-stem">软件成分重用不包括（ ）。</div>
+    <ol type="A" class="question-options"><li>代码重用</li><li>设计结果重用</li><li>方法标准重用</li><li>分析结果重用</li></ol>
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>C。软件成分重用通常指分析、设计、代码等软件制品复用。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">合工大试卷</span>10. </div>
+    <div class="question-stem">若有一个计算类型的程序，它的输入量只有一个 X，其范围是[-1.0, 1.0]，现从输入的角度考虑一组测试用例：-1.001, -1.0, 1.0, 1.001。设计这组测试用例的方法是（ ）。</div>
+    <ol type="A" class="question-options"><li>条件覆盖法</li><li>等价分类法</li><li>边界值分析法</li><li>错误推测法</li></ol>
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>C。选取刚小于、等于、刚大于边界值，属于边界值分析。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">2026随堂测试</span>1. </div>
+    <div class="question-stem">华为公司的智能运维技术利用生成式 AI 构建基于角色的 AI 智能体，对运维角色和作业场景赋能，提升运维效率和准确性，属于（ ）维护。</div>
+    <ol type="A" class="question-options"><li>改正性</li><li>适应性</li><li>改善性</li><li>预防性</li></ol>
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>D。按课件维护分类，该场景属于主动提升未来运维质量和可靠性的预防性维护。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">2026随堂测试</span>2. </div>
+    <div class="question-stem">以下关于软件结构设计原则的说法，错误的是（ ）。</div>
+    <ol type="A" class="question-options"><li>高内聚模块内部各成分之间联系紧密，功能单一</li><li>低耦合意味着模块间依赖程度低，修改一个模块不易影响其他模块</li><li>采用信息隐藏原则是为了避免模块间过度依赖，提高模块独立性</li><li>为提高软件执行效率，应尽量增加模块间的直接调用关系以减少中间环节</li></ol>
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>D。直接调用关系增多会提高耦合，不符合结构设计原则。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">2026随堂测试</span>3. </div>
+    <div class="question-stem">在一个复杂的游戏引擎系统中，Scene 类用于管理游戏场景，GameObject 类是所有游戏对象（如角色、道具、建筑）的基类。每个 GameObject 实例必须归属于唯一的 Scene 实例，且 GameObject 内部包含多个子组件（如 Transform 组件用于位置变换、Renderer 组件用于渲染），这些子组件不能脱离对应的 GameObject 独立存在。当 Scene 实例被切换或销毁时，其包含的所有 GameObject 实例及其子组件都必须同时销毁，此外，不同 Scene 实例之间的 GameObject 实例不可复用。此时，Scene 与 GameObject、GameObject 与子组件之间最合适的关系分别是（ ）。</div>
+    <ol type="A" class="question-options"><li>依赖关系、组合关系</li><li>组合关系、组合关系</li><li>组合关系、聚合关系</li><li>依赖关系、聚合关系</li></ol>
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>B。题干说明生命周期强绑定且不可复用，均为组合关系。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">2026随堂测试</span>4. </div>
+    <div class="question-stem">敏捷开发过程最适合以下哪种系统？（ ）</div>
+    <ol type="A" class="question-options"><li>一个大型的企业资源规划系统</li><li>一款面向青少年的社交类手机游戏</li><li>一个航空航天领域的任务控制系统</li><li>一个政府部门的电子政务系统</li></ol>
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>B。该类系统需求变化快、迭代频繁、风险相对可控。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">2026随堂测试</span>5. </div>
+    <div class="question-stem">UML 作为建模语言，其主要应用场景不包括（ ）。</div>
+    <ol type="A" class="question-options"><li>需求分析阶段描述系统功能</li><li>设计阶段定义系统架构</li><li>实现阶段编写面向对象程序代码</li><li>维护阶段支持文档更新</li></ol>
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>C。UML 是建模语言，不是程序设计语言。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">2026随堂测试</span>6. </div>
+    <div class="question-stem">以下内容共有（ ）项属于数据字典的核心组成：① 数据存储的逻辑结构与区分策略；② 数据传输的加密算法与选择策略；③ 数据采集设备的型号与参数规格；④ 数据操作的用户界面与交互流程。</div>
+    <ol type="A" class="question-options"><li>1</li><li>2</li><li>3</li><li>4</li></ol>
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>A。只有①属于数据字典核心说明范围。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">2026随堂测试</span>7. </div>
+    <div class="question-stem">已知一段 Java 代码用于处理用户登录验证，代码如下：<br>public class LoginValidator {<br>  public boolean validateLogin(String username, String password, boolean isAdmin, int attempts) {<br>    if ((username.length() &gt; 3 &amp;&amp; username.length() &lt; 10) &amp;&amp; (password.length() &gt;= 6) &amp;&amp; ((isAdmin &amp;&amp; attempts &lt; 5) || (!isAdmin &amp;&amp; attempts &lt; 3))) {<br>      return true;<br>    } else {<br>      return false;<br>    }<br>  }<br>}<br>以下测试用例设计能满足对应覆盖准则的是（ ）。</div>
+    <ol type="A" class="question-options"><li>语句覆盖：username="test", password="123456", isAdmin=true, attempts=4</li><li>判定覆盖：用例1：username="abc", password="12345", isAdmin=true, attempts=6；用例2：username="foobar", password="123456", isAdmin=false, attempts=2</li><li>条件覆盖：用例1：username="test", password="12345", isAdmin=true, attempts=6；用例2：username="foob", password="1234567", isAdmin=false, attempts=2</li><li>路径覆盖：用例1：username="test", password="123456", isAdmin=true, attempts=4；用例2：username="abc", password="12345", isAdmin=false, attempts=3；用例3：username="foobar", password="1234567", isAdmin=true, attempts=6；用例4：username="a", password="123456", isAdmin=false, attempts=2</li></ol>
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>B。两个用例分别使整体判定为假和真，满足判定覆盖。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">2026随堂测试</span>8. </div>
+    <div class="question-stem">在软件项目开发过程中，项目经理发现需求变更频繁，导致进度延误和成本超支。以下哪种管理策略最适合解决该问题？（ ）</div>
+    <ol type="A" class="question-options"><li>加强需求变更控制，建立严格的变更审批流程，评估变更对项目的影响</li><li>采用敏捷开发模式，允许需求随时变更，通过频繁迭代快速响应变化</li><li>增加开发团队成员数量，通过人力投入来弥补需求变更带来的进度损失</li><li>减少测试环节，缩短项目周期，优先保证项目按时交付</li></ol>
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>A。需求变更必须受控，先评估影响再批准。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">2026随堂测试</span>9. </div>
+    <div class="question-stem">某公司开发电商系统，需要设计“商品”、“订单”、“用户”等类。以下关于类设计的做法，最符合面向对象设计原则的是（ ）。</div>
+    <ol type="A" class="question-options"><li>设计“用户”时，提供专门的方法修改用户信息</li><li>将“商品库存查询”、“订单支付”、“用户登录”功能都封装在“商品”类中，以减少类的数量</li><li>设计“商品”类时，将商品名称、价格等属性设置为公有，方便其他类直接访问和修改</li><li>定义“订单”类继承“商品”类，因为订单中包含商品信息</li></ol>
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>A。通过公有方法操作私有数据，符合封装和职责划分。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">2026随堂测试</span>10. </div>
+    <div class="question-stem">火车票购票系统的车票折扣规则如下：儿童票（年龄小于 12 岁）且身高低于 1.2 米为全价票的 2.5 折，身高在 1.2 米（含）至 1.5 米之间为 5 折；非儿童票在旅游淡季（11 月至次年 3 月）打 8 折，其他月份为全价票。若要清晰表达该规则，则（ ）。</div>
+    <ol type="A" class="question-options"><li>判定树和判定表都可以，但判定树的执行效率更高</li><li>判定树和判定表均不适用，应使用流程图表达</li><li>判定树比判定表更适合，因为能直观展示所有条件组合情况</li><li>判定表比判定树更适合，因为能更简洁地列出所有条件组合与对应动作</li></ol>
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>D。多条件组合与动作映射适合判定表。</div>
+  </div>
+  </section>
+
+            <!-- 三、填空题 -->
+            <section class="section-card" id="type3">
+    <h2>三、填空题通关库 <span class="badge-nav">真题完整题干版</span></h2>
+    <div class="tip-box"><strong>说明：</strong>所有填空题均完整保留题干。个别无标准答案公开的空，答案区会标明“参考”并提醒以教师口径为准。</div>
+    <div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">合工大试卷</span>1. </div>
+    <div class="question-stem">软件工程方法学的三个基本要素是指：方法、（ ）、（ ）。</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>工具；过程。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">合工大试卷</span>2. </div>
+    <div class="question-stem">面向对象软件工程通常采用（ ）模型实现软件生命周期的各个阶段。</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>喷泉模型。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">合工大试卷</span>3. </div>
+    <div class="question-stem">可行性研究从技术可行性、经济可行性、（ ）三方面进行分析。</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>操作可行性。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">合工大试卷</span>4. </div>
+    <div class="question-stem">需求分析需要建立的三类模型：数据模型、功能模型、（ ）。</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>行为模型。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">合工大试卷</span>5. </div>
+    <div class="question-stem">结构化分析方法的分析策略是（ ）。</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>自顶向下，逐步求精。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">合工大试卷</span>6. </div>
+    <div class="question-stem">从模块内外的联系来看，结构化设计的要求是（ ）。</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>高内聚、低耦合。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">合工大试卷</span>7. </div>
+    <div class="question-stem">（ ）根据输入数据的类型在若干动作序列中选择合适的操作执行，形成事务流。</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>事务中心。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">合工大试卷</span>8. </div>
+    <div class="question-stem">单元测试集中对用源代码实现的每一个程序单元进行测试，（ ）和详细设计说明书是与其相关的文档。</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>源程序清单或源代码。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">合工大试卷</span>9. </div>
+    <div class="question-stem">依据抽象程度的不同通常将对象模型在五个层次上进行抽象：（ ）、类与对象层、结构层、属性层、服务层。</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>主题层。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">2026随堂测试</span>1. </div>
+    <div class="question-stem">若系统具备根据客户请求类型（如查询、修改、删除）分别进行处理的特点，在构建其数据流模型时，应选用（ ）型数据流图。</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>事务型。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">2026随堂测试</span>2. </div>
+    <div class="question-stem">面向对象测试的最小单元是（ ）。</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>类。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">2026随堂测试</span>3. </div>
+    <div class="question-stem">软件配置管理过程中，标志着软件开发某一阶段工作结束，后续对其修改需遵循严格变更控制流程的特定稳定版本被称为（ ）。</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>基线。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">2026随堂测试</span>4. </div>
+    <div class="question-stem">对象间交互图的箭头所表示的交互关系，在实际编程实现中对应（ ）的传递过程。</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>消息。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">2026随堂测试</span>5. </div>
+    <div class="question-stem">税务申报系统中，从用户提交材料、系统校验数据、人工复核到最终反馈结果的业务逻辑，常通过（ ）进行直观展示。</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>业务流程图。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">2026随堂测试</span>6. </div>
+    <div class="question-stem">集成测试前期，为构建可运行的测试环境，对那些还未完全开发好的被调用模块，使用（ ）程序作为替代。</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>桩程序。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">2026随堂测试</span>7. </div>
+    <div class="question-stem">构建一个音乐播放系统，定义“play”接口，不同音乐格式类（MP3、WAV 等）实现该接口呈现不同播放方式，且播放功能可反复使用，这是（ ）重用的体现。</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>参考：多态/接口重用；若按教师给定答案，以课堂口径为准。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">2026随堂测试</span>8. </div>
+    <div class="question-stem">Jackson 方法的核心是根据数据结构的层次关系，建立与之对应的（ ），从而实现程序模块的合理划分。</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>程序结构。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">2026随堂测试</span>9. </div>
+    <div class="question-stem">（ ）模型是一种面向对象的软件开发模型，具有迭代无间隙性的特点，开发过程各阶段相互重叠、连续演进。</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>喷泉模型。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">2026随堂测试</span>10. </div>
+    <div class="question-stem">数据流图的基本元素里，通过特定算法或规则改变数据内容和形式的操作模块，统称为（ ）。</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>处理或加工。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">2026随堂测试</span>11. </div>
+    <div class="question-stem">OOA 过程中，通过对现实世界实体的抽象，将其特征转化为类的（ ），如“航班”类的“航班号”和“起飞时间”等。</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>属性。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">2026随堂测试</span>12. </div>
+    <div class="question-stem">当软件适配新的数据库版本，数据存储结构和访问方式改变，为避免开发和运维人员误解，需对数据库设计文档、SQL 操作说明进行（ ）。</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>文档维护或文档更新。</div>
+  </div>
+  </section>
+
+            <!-- 四、名词解释 -->
+            <section class="section-card" id="type4">
+                <h2>四、名词解释通关库 <span class="badge-nav">严格依重要度降序排列，按每章 PPT 本章小结补充</span></h2>
+<div class="tip-box"><strong>真题名词解释全收录：</strong>以下 9 个来自 2026 随堂测试和合工大试卷，后续仍保留按本章小结扩展的名词库。</div><div class="question-item">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">2026随堂测试</span>真题名词 1. Beta 测试</div>
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>Beta 测试是在软件交付前由多个最终用户在实际使用环境中进行的确认测试。开发者通常不在现场，用户记录问题并反馈给开发团队。</div>
+  </div>
+<div class="question-item">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">2026随堂测试</span>真题名词 2. OOA 的五个层次</div>
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>OOA 对象模型通常包括主题层、类与对象层、结构层、属性层和服务层，用于从系统划分到对象服务逐步建立分析模型。</div>
+  </div>
+<div class="question-item">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">2026随堂测试</span>真题名词 3. 模块耦合</div>
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>模块耦合是模块之间互连和依赖程度的度量。耦合越低，模块独立性越好，系统越易维护；内容耦合最差，数据耦合较好。</div>
+  </div>
+<div class="question-item">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">2026随堂测试</span>真题名词 4. 甘特图</div>
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>甘特图是用条形表示任务起止时间、持续时间和进度安排的项目管理工具，直观易懂，但表达复杂依赖和关键路径能力较弱。</div>
+  </div>
+<div class="question-item">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">合工大试卷</span>真题名词 5. 软件工程</div>
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>软件工程是指导软件开发和维护的工程学科，使用工程化原则、方法、工具和过程提高软件质量、生产率和可维护性。</div>
+  </div>
+<div class="question-item">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">合工大试卷</span>真题名词 6. 数据字典</div>
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>数据字典是对 DFD 中数据流、数据存储、数据项、加工等进行精确定义的信息集合。</div>
+  </div>
+<div class="question-item">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">合工大试卷</span>真题名词 7. 需求分析</div>
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>需求分析是软件定义时期最后阶段，基本任务是准确回答系统必须做什么，并形成 SRS。</div>
+  </div>
+<div class="question-item">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">合工大试卷</span>真题名词 8. 路径覆盖</div>
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>路径覆盖是白盒测试逻辑覆盖标准之一，要求测试用例覆盖程序中所有可能执行路径；覆盖能力强，但路径数可能很大。</div>
+  </div>
+<div class="question-item">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">合工大试卷</span>真题名词 9. UML</div>
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>UML 是统一建模语言，是 OMG 批准的面向对象标准建模语言，可用类图、状态图、交互图、用例图等描述系统。</div>
+  </div>
+                <p class="exam-tip">本部分依据 1-13 章 PPT 末尾“本章小结”逐章补充：过程模型、可行性研究、需求模型、形式化技术、总体设计、详细设计、测试、维护、面向对象分析/设计/实现与项目管理。</p>
+
+                <div class="question-item">
+                    <div class="question-title">
+                        <span class="importance-tag tag-high"> 最重要</span>
+                        1. 软件危机
+                    </div>
+                    <div class="answer-block">
+                        <strong>标准踩分点：</strong><br>
+                        软件危机是软件开发和维护过程中出现的一系列严重问题，表现为成本进度估计不准、质量差、用户不满意、文档缺乏、难维护等。其原因既有软件逻辑复杂、不可见等自身特点，也有重编码轻需求、轻文档、轻维护等方法问题。
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">
+                        <span class="importance-tag tag-high"> 最重要</span>
+                        2. 软件工程
+                    </div>
+                    <div class="answer-block">
+                        <strong>标准踩分点：</strong><br>
+                        软件工程是指导软件开发和维护的工程学科，采用工程化原则、方法、工具和过程来组织软件活动，目标是以较低成本开发出满足功能、性能、进度和维护要求的软件。
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">
+                        <span class="importance-tag tag-medium"> 较重要</span>
+                        3. 软件工程方法学
+                    </div>
+                    <div class="answer-block">
+                        <strong>标准踩分点：</strong><br>
+                        软件工程方法学是软件开发和维护的一整套技术方法、工具和过程。方法解决“怎么做”，工具提供自动或半自动支持，过程规定活动顺序和管理框架。
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">
+                        <span class="importance-tag tag-medium"> 较重要</span>
+                        4. RUP
+                    </div>
+                    <div class="answer-block">
+                        <strong>标准踩分点：</strong><br>
+                        RUP 即 Rational 统一过程，是一种迭代式、用例驱动、以体系结构为中心的软件过程，强调需求管理、构件体系结构、质量验证和 4+1 视图。
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">
+                        <span class="importance-tag tag-medium"> 较重要</span>
+                        5. 敏捷过程
+                    </div>
+                    <div class="answer-block">
+                        <strong>标准踩分点：</strong><br>
+                        敏捷过程强调快速响应变化、持续交付可运行软件、客户合作和团队交互。其核心价值包括个体和交互胜过过程和工具，可以工作的软件胜过面面俱到的文档。
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">
+                        <span class="importance-tag tag-high"> 最重要</span>
+                        6. 可行性研究
+                    </div>
+                    <div class="answer-block">
+                        <strong>标准踩分点：</strong><br>
+                        可行性研究是在正式开发前，用较小代价判断问题是否值得解决的活动。它通常从技术、经济、操作等方面评价候选方案，并形成继续或停止项目的依据。
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">
+                        <span class="importance-tag tag-medium"> 较重要</span>
+                        7. 系统流程图
+                    </div>
+                    <div class="answer-block">
+                        <strong>标准踩分点：</strong><br>
+                        系统流程图是描述物理系统的图形工具，用来表示信息由哪些人员、设备、介质和处理步骤完成流动与加工，重点在物理实现。
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">
+                        <span class="importance-tag tag-high"> 最重要</span>
+                        8. 数据流图 DFD
+                    </div>
+                    <div class="answer-block">
+                        <strong>标准踩分点：</strong><br>
+                        数据流图是描述系统逻辑模型的图形工具，用外部实体、加工、数据流和数据存储表示数据在系统中的流动和变换，不描述物理设备。
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">
+                        <span class="importance-tag tag-high"> 最重要</span>
+                        9. 数据字典
+                    </div>
+                    <div class="answer-block">
+                        <strong>标准踩分点：</strong><br>
+                        数据字典是对 DFD 中的数据流、数据存储、数据项、加工等进行精确定义的信息集合，用于弥补 DFD 图形表达不够精确的缺点。
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">
+                        <span class="importance-tag tag-medium"> 较重要</span>
+                        10. 成本/效益分析
+                    </div>
+                    <div class="answer-block">
+                        <strong>标准踩分点：</strong><br>
+                        成本/效益分析是在可行性研究中比较开发、运行和维护成本与未来收益的方法，常涉及货币时间价值、投资回收期、纯收入和投资回收率。
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">
+                        <span class="importance-tag tag-high"> 最重要</span>
+                        11. 需求分析
+                    </div>
+                    <div class="answer-block">
+                        <strong>标准踩分点：</strong><br>
+                        需求分析是软件定义时期的最后阶段，基本任务是准确回答“系统必须做什么”，并建立数据模型、功能模型和行为模型。
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">
+                        <span class="importance-tag tag-high"> 最重要</span>
+                        12. 软件需求规格说明书 SRS
+                    </div>
+                    <div class="answer-block">
+                        <strong>标准踩分点：</strong><br>
+                        SRS 是需求分析阶段形成的正式文档，描述软件功能、性能、接口、约束、出错处理等需求，是设计、测试、验收和维护的依据。
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">
+                        <span class="importance-tag tag-medium"> 较重要</span>
+                        13. 数据模型
+                    </div>
+                    <div class="answer-block">
+                        <strong>标准踩分点：</strong><br>
+                        数据模型描述系统的信息域，包括数据对象、属性及对象之间的联系，常用 E-R 图表示。
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">
+                        <span class="importance-tag tag-medium"> 较重要</span>
+                        14. 功能模型
+                    </div>
+                    <div class="answer-block">
+                        <strong>标准踩分点：</strong><br>
+                        功能模型描述软件应完成的功能及数据如何被加工和变换，结构化分析中常用 DFD 表示。
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">
+                        <span class="importance-tag tag-medium"> 较重要</span>
+                        15. 行为模型
+                    </div>
+                    <div class="answer-block">
+                        <strong>标准踩分点：</strong><br>
+                        行为模型描述系统对外部事件的响应以及状态变化，常用状态转换图表示。
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">
+                        <span class="importance-tag tag-medium"> 较重要</span>
+                        16. 形式化说明技术
+                    </div>
+                    <div class="answer-block">
+                        <strong>标准踩分点：</strong><br>
+                        形式化说明技术用数学符号和严格语义描述软件规格说明，优点是减少二义性、便于验证，缺点是学习和沟通成本较高。
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">
+                        <span class="importance-tag tag-medium"> 较重要</span>
+                        17. 有穷状态机 FSM
+                    </div>
+                    <div class="answer-block">
+                        <strong>标准踩分点：</strong><br>
+                        有穷状态机用有限个状态、输入、状态转换和输出描述系统行为，适合状态有限且控制逻辑明确的系统。
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">
+                        <span class="importance-tag tag-medium"> 较重要</span>
+                        18. Petri 网
+                    </div>
+                    <div class="answer-block">
+                        <strong>标准踩分点：</strong><br>
+                        Petri 网是描述并发、同步、冲突和资源竞争的形式化工具，由位置、变迁、有向弧和标记组成。
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">
+                        <span class="importance-tag tag-low"> 一般重要</span>
+                        19. Z 语言
+                    </div>
+                    <div class="answer-block">
+                        <strong>标准踩分点：</strong><br>
+                        Z 语言是基于集合论和谓词逻辑的形式化规格说明语言，可精确定义系统状态、约束和操作，有助于发现规格说明错误。
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">
+                        <span class="importance-tag tag-high"> 最重要</span>
+                        20. 总体设计
+                    </div>
+                    <div class="answer-block">
+                        <strong>标准踩分点：</strong><br>
+                        总体设计由系统设计和结构设计组成，核心任务是确定软件总体结构、模块划分、模块接口和模块调用关系。
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">
+                        <span class="importance-tag tag-high"> 最重要</span>
+                        21. 模块独立性
+                    </div>
+                    <div class="answer-block">
+                        <strong>标准踩分点：</strong><br>
+                        模块独立性是衡量软件结构质量的重要原则，指模块相对独立完成特定功能且与其他模块联系尽量少，通常由内聚和耦合衡量。
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">
+                        <span class="importance-tag tag-high"> 最重要</span>
+                        22. 内聚
+                    </div>
+                    <div class="answer-block">
+                        <strong>标准踩分点：</strong><br>
+                        内聚是模块内部各成分联系紧密程度的度量。内聚越高，模块职责越集中，越易理解、测试和维护，功能内聚最理想。
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">
+                        <span class="importance-tag tag-high"> 最重要</span>
+                        23. 耦合
+                    </div>
+                    <div class="answer-block">
+                        <strong>标准踩分点：</strong><br>
+                        耦合是模块之间相互连接和依赖程度的度量。耦合越低，模块间影响越小，越利于维护；内容耦合最差。
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">
+                        <span class="importance-tag tag-medium"> 较重要</span>
+                        24. 结构图
+                    </div>
+                    <div class="answer-block">
+                        <strong>标准踩分点：</strong><br>
+                        结构图是总体设计中描绘软件结构的工具，用模块、调用关系和接口信息表示软件由哪些模块组成以及模块之间怎样联系。
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">
+                        <span class="importance-tag tag-medium"> 较重要</span>
+                        25. 变换分析
+                    </div>
+                    <div class="answer-block">
+                        <strong>标准踩分点：</strong><br>
+                        变换分析是面向数据流的设计方法，适用于具有明显输入、变换中心和输出的数据流图，可将其映射为软件结构。
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">
+                        <span class="importance-tag tag-medium"> 较重要</span>
+                        26. 详细设计
+                    </div>
+                    <div class="answer-block">
+                        <strong>标准踩分点：</strong><br>
+                        详细设计是在总体设计之后，对模块算法、数据结构、接口、控制逻辑和人机界面等进行精确设计，使结果能够直接指导编码。
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">
+                        <span class="importance-tag tag-medium"> 较重要</span>
+                        27. 结构程序设计
+                    </div>
+                    <div class="answer-block">
+                        <strong>标准踩分点：</strong><br>
+                        结构程序设计以顺序、选择、循环三种基本控制结构为基础，避免任意转移，使程序逻辑清晰、易读、易测试。
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">
+                        <span class="importance-tag tag-medium"> 较重要</span>
+                        28. Jackson 方法
+                    </div>
+                    <div class="answer-block">
+                        <strong>标准踩分点：</strong><br>
+                        Jackson 方法是面向数据结构的设计方法，根据输入输出数据结构建立相应程序结构，适合数据具有清楚层次结构的问题。
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">
+                        <span class="importance-tag tag-high"> 最重要</span>
+                        29. 环形复杂度
+                    </div>
+                    <div class="answer-block">
+                        <strong>标准踩分点：</strong><br>
+                        环形复杂度又称 McCabe 复杂度，是度量程序控制结构复杂程度的指标，可用 V(G)=E-N+2 或判定节点数加 1 计算。
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">
+                        <span class="importance-tag tag-low"> 一般重要</span>
+                        30. Halstead 方法
+                    </div>
+                    <div class="answer-block">
+                        <strong>标准踩分点：</strong><br>
+                        Halstead 方法根据程序中运算符和操作数的种类及出现次数度量程序复杂程度，可用于预测程序长度和潜在错误数。
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">
+                        <span class="importance-tag tag-high"> 最重要</span>
+                        31. 软件测试
+                    </div>
+                    <div class="answer-block">
+                        <strong>标准踩分点：</strong><br>
+                        软件测试是为了发现错误而执行程序或审查软件制品的过程。测试不能证明程序没有错误，只能尽可能发现错误。
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">
+                        <span class="importance-tag tag-medium"> 较重要</span>
+                        32. 白盒测试
+                    </div>
+                    <div class="answer-block">
+                        <strong>标准踩分点：</strong><br>
+                        白盒测试根据程序内部逻辑结构设计测试用例，主要技术包括逻辑覆盖和控制结构测试。
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">
+                        <span class="importance-tag tag-medium"> 较重要</span>
+                        33. 黑盒测试
+                    </div>
+                    <div class="answer-block">
+                        <strong>标准踩分点：</strong><br>
+                        黑盒测试不考虑程序内部结构，根据需求规格说明和输入输出关系设计测试用例，常用等价划分、边界值分析和错误推测。
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">
+                        <span class="importance-tag tag-medium"> 较重要</span>
+                        34. 集成测试
+                    </div>
+                    <div class="answer-block">
+                        <strong>标准踩分点：</strong><br>
+                        集成测试是在单元测试后逐步组装模块并测试模块接口和协作关系的过程，常使用桩程序和驱动程序。
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">
+                        <span class="importance-tag tag-high"> 最重要</span>
+                        35. 调试
+                    </div>
+                    <div class="answer-block">
+                        <strong>标准踩分点：</strong><br>
+                        调试是在测试发现错误之后定位错误原因并改正错误的活动。测试负责发现错误，调试负责诊断和修正错误。
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">
+                        <span class="importance-tag tag-medium"> 较重要</span>
+                        36. 软件可靠性
+                    </div>
+                    <div class="answer-block">
+                        <strong>标准踩分点：</strong><br>
+                        软件可靠性是软件在规定条件和规定时间内不发生失效的概率，程序中潜藏错误数直接影响软件可靠性。
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">
+                        <span class="importance-tag tag-high"> 最重要</span>
+                        37. 软件维护
+                    </div>
+                    <div class="answer-block">
+                        <strong>标准踩分点：</strong><br>
+                        软件维护是软件交付后为改正错误、适应环境、满足新需求或提高可维护性而修改软件的活动，是生命周期中持续时间最长、代价最大的阶段之一。
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">
+                        <span class="importance-tag tag-high"> 最重要</span>
+                        38. 改正性维护
+                    </div>
+                    <div class="answer-block">
+                        <strong>标准踩分点：</strong><br>
+                        改正性维护是为诊断和修正运行中暴露的软件错误而进行的维护。
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">
+                        <span class="importance-tag tag-high"> 最重要</span>
+                        39. 适应性维护
+                    </div>
+                    <div class="answer-block">
+                        <strong>标准踩分点：</strong><br>
+                        适应性维护是为了使软件适应外部环境变化而进行的修改，如适配新操作系统、新数据库或新政策。
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">
+                        <span class="importance-tag tag-high"> 最重要</span>
+                        40. 完善性维护
+                    </div>
+                    <div class="answer-block">
+                        <strong>标准踩分点：</strong><br>
+                        完善性维护是为了满足用户新需求、扩充功能或改善性能而进行的维护，通常在维护工作中占比最大。
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">
+                        <span class="importance-tag tag-high"> 最重要</span>
+                        41. 预防性维护
+                    </div>
+                    <div class="answer-block">
+                        <strong>标准踩分点：</strong><br>
+                        预防性维护是为了提高未来可维护性和可靠性而主动进行的修改，如重构、文档重构和结构优化。
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">
+                        <span class="importance-tag tag-medium"> 较重要</span>
+                        42. 软件再工程
+                    </div>
+                    <div class="answer-block">
+                        <strong>标准踩分点：</strong><br>
+                        软件再工程是对现有软件进行分析、重构和改造以改善质量和可维护性的过程，包括逆向工程、代码重构、数据重构和正向工程等。
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">
+                        <span class="importance-tag tag-high"> 最重要</span>
+                        43. 对象
+                    </div>
+                    <div class="answer-block">
+                        <strong>标准踩分点：</strong><br>
+                        对象是具有状态、行为和标识的实体，把数据和操作封装在一起，并通过消息与其他对象协作。
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">
+                        <span class="importance-tag tag-high"> 最重要</span>
+                        44. 类
+                    </div>
+                    <div class="answer-block">
+                        <strong>标准踩分点：</strong><br>
+                        类是对具有相同属性和行为的一组对象的抽象定义，对象是类的实例。
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">
+                        <span class="importance-tag tag-high"> 最重要</span>
+                        45. 封装
+                    </div>
+                    <div class="answer-block">
+                        <strong>标准踩分点：</strong><br>
+                        封装是把数据及其操作结合起来并隐藏内部实现细节的机制，同时通过必要的公有服务接口对外提供功能。
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">
+                        <span class="importance-tag tag-high"> 最重要</span>
+                        46. 继承
+                    </div>
+                    <div class="answer-block">
+                        <strong>标准踩分点：</strong><br>
+                        继承是子类自动共享父类属性和行为并可扩展或修改的机制，支持类层次组织和增量重用。
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">
+                        <span class="importance-tag tag-high"> 最重要</span>
+                        47. 多态
+                    </div>
+                    <div class="answer-block">
+                        <strong>标准踩分点：</strong><br>
+                        多态是同一消息发送给不同对象时可产生不同响应的能力，通常与动态绑定结合，提高系统可扩展性。
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">
+                        <span class="importance-tag tag-medium"> 较重要</span>
+                        48. UML
+                    </div>
+                    <div class="answer-block">
+                        <strong>标准踩分点：</strong><br>
+                        UML 是统一建模语言，是 OMG 批准的面向对象标准建模语言，可用类图、状态图、交互图、用例图等描述系统。
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">
+                        <span class="importance-tag tag-high"> 最重要</span>
+                        49. 面向对象分析 OOA
+                    </div>
+                    <div class="answer-block">
+                        <strong>标准踩分点：</strong><br>
+                        OOA 是用面向对象观点分析问题域的方法，关键是识别对象、类及其关系，建立对象模型，并辅以动态模型和功能模型。
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">
+                        <span class="importance-tag tag-high"> 最重要</span>
+                        50. OOA 的五个层次
+                    </div>
+                    <div class="answer-block">
+                        <strong>标准踩分点：</strong><br>
+                        OOA 对象模型通常包括主题层、类与对象层、结构层、属性层和服务层，用于从高层划分到对象服务逐步建立模型。
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">
+                        <span class="importance-tag tag-high"> 最重要</span>
+                        51. 对象模型
+                    </div>
+                    <div class="answer-block">
+                        <strong>标准踩分点：</strong><br>
+                        对象模型描述系统静态结构，包括类、对象、属性、服务和类间关系，是面向对象分析中最基本、最核心、最重要的模型。
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">
+                        <span class="importance-tag tag-high"> 最重要</span>
+                        52. 聚合
+                    </div>
+                    <div class="answer-block">
+                        <strong>标准踩分点：</strong><br>
+                        聚合是弱整体-部分关系，表示整体由部分组成，但部分可以脱离整体独立存在。
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">
+                        <span class="importance-tag tag-high"> 最重要</span>
+                        53. 组合
+                    </div>
+                    <div class="answer-block">
+                        <strong>标准踩分点：</strong><br>
+                        组合是强整体-部分关系，部分对象生命周期依附于整体，整体销毁时部分通常也随之销毁。
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">
+                        <span class="importance-tag tag-medium"> 较重要</span>
+                        54. 面向对象设计 OOD
+                    </div>
+                    <div class="answer-block">
+                        <strong>标准踩分点：</strong><br>
+                        OOD 在 OOA 模型基础上加入实现细节，设计问题域、人机交互、任务管理和数据管理等子系统，使模型可实现。
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">
+                        <span class="importance-tag tag-medium"> 较重要</span>
+                        55. 软件重用
+                    </div>
+                    <div class="answer-block">
+                        <strong>标准踩分点：</strong><br>
+                        软件重用是在开发中重复使用已有软件制品、设计知识或构件，以提高质量和效率。面向对象中的类、继承和构件有利于重用。
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">
+                        <span class="importance-tag tag-medium"> 较重要</span>
+                        56. 委托
+                    </div>
+                    <div class="answer-block">
+                        <strong>标准踩分点：</strong><br>
+                        委托是一个对象把部分职责交给另一个对象完成的设计技术，可作为继承之外的行为共享和复用方式。
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">
+                        <span class="importance-tag tag-medium"> 较重要</span>
+                        57. 面向对象实现
+                    </div>
+                    <div class="answer-block">
+                        <strong>标准踩分点：</strong><br>
+                        面向对象实现是把面向对象设计结果转化为面向对象程序的过程，包括选择语言、实现类与对象协作并进行测试。
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">
+                        <span class="importance-tag tag-high"> 最重要</span>
+                        58. 类测试
+                    </div>
+                    <div class="answer-block">
+                        <strong>标准踩分点：</strong><br>
+                        类测试是面向对象测试中的基本测试活动，测试焦点从传统模块转向对象类，关注类的状态、服务序列、继承影响和异常处理。
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">
+                        <span class="importance-tag tag-medium"> 较重要</span>
+                        59. 随机测试
+                    </div>
+                    <div class="answer-block">
+                        <strong>标准踩分点：</strong><br>
+                        随机测试通过随机生成或选择对象操作序列来测试类或对象协作行为，用于发现特定状态组合下的问题。
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">
+                        <span class="importance-tag tag-medium"> 较重要</span>
+                        60. 划分测试
+                    </div>
+                    <div class="answer-block">
+                        <strong>标准踩分点：</strong><br>
+                        划分测试将输入、状态或操作序列划分为若干等价类别，并从每类中选代表性用例以提高测试效率。
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">
+                        <span class="importance-tag tag-medium"> 较重要</span>
+                        61. 基于故障的测试
+                    </div>
+                    <div class="answer-block">
+                        <strong>标准踩分点：</strong><br>
+                        基于故障的测试根据可能出现的典型故障或错误模式设计测试用例，目标是有针对性地暴露缺陷。
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">
+                        <span class="importance-tag tag-high"> 最重要</span>
+                        62. 软件项目管理
+                    </div>
+                    <div class="answer-block">
+                        <strong>标准踩分点：</strong><br>
+                        软件项目管理是为使项目按质量、成本和进度目标完成而进行的计划、组织、估算、控制和协调活动。
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">
+                        <span class="importance-tag tag-medium"> 较重要</span>
+                        63. 软件质量保证 SQA
+                    </div>
+                    <div class="answer-block">
+                        <strong>标准踩分点：</strong><br>
+                        SQA 是在软件过程每一步进行的质量保证活动，通过标准、评审、审计、测试和度量确保过程和产品符合要求。
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">
+                        <span class="importance-tag tag-high"> 最重要</span>
+                        64. 软件配置管理 SCM
+                    </div>
+                    <div class="answer-block">
+                        <strong>标准踩分点：</strong><br>
+                        SCM 是在软件生命周期内管理变化的一组活动，用于标识、控制、审计和报告软件配置项及其变更。
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">
+                        <span class="importance-tag tag-high"> 最重要</span>
+                        65. 基线
+                    </div>
+                    <div class="answer-block">
+                        <strong>标准踩分点：</strong><br>
+                        基线是配置管理中经正式评审确认的稳定版本，标志某阶段工作结束。基线建立后修改必须经过严格变更控制。
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">
+                        <span class="importance-tag tag-medium"> 较重要</span>
+                        66. PERT 图
+                    </div>
+                    <div class="answer-block">
+                        <strong>标准踩分点：</strong><br>
+                        PERT 图是用网络结构表示任务依赖和持续时间的进度计划工具，可用于分析关键路径、松弛时间和项目工期。
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">
+                        <span class="importance-tag tag-medium"> 较重要</span>
+                        67. 能力成熟度模型 CMM
+                    </div>
+                    <div class="answer-block">
+                        <strong>标准踩分点：</strong><br>
+                        CMM 是评价和改进软件组织过程能力的模型，用成熟度等级描述软件过程的规范化和可管理程度。
+                    </div>
+                </div>
+            </section>
+
+            <!-- 五、简答题 -->
+                        <!-- 五、简答题 -->
+            <section class="section-card" id="type5">
+    <h2>五、简答题满分模板 <span class="badge-nav">完整真题 + 本章小结重写</span></h2>
+    <div class="tip-box"><strong>说明：</strong>凡来自试卷或随堂测试的简答题均写出完整题干；后半部分按每章 PPT“本章小结”重写复习型简答模板。</div>
+    <div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">合工大试卷</span>1. </div>
+    <div class="question-stem">软件生存周期可以划分为几个阶段？每个阶段的主要任务是什么？</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>可按 8 个阶段答：问题定义明确要解决的问题；可行性研究判断是否值得做；需求分析回答系统必须做什么并形成 SRS；总体设计确定软件结构；详细设计设计模块算法和数据结构；编码和单元测试实现并测试模块；集成与验收测试验证系统；运行维护进行改正、适应、完善和预防性修改。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">合工大试卷</span>2. </div>
+    <div class="question-stem">试比较 Rational 统一过程和敏捷过程。</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>RUP 是迭代式、用例驱动、以体系结构为中心的过程，重视需求管理、架构视图、阶段化管理和文档；敏捷过程重视个体交互、可运行软件、客户合作和响应变化，适合需求变化快、交付周期短的项目。二者都承认迭代，但 RUP 更重过程和架构，敏捷更重快速反馈和适应变化。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">合工大试卷</span>3. </div>
+    <div class="question-stem">什么是软件维护？软件维护可以分为哪几类？</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>软件维护是软件交付后，为改正错误、适应环境变化、满足新需求或提高未来可维护性而修改软件的活动。分为改正性维护、适应性维护、完善性维护和预防性维护。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">合工大试卷</span>4. </div>
+    <div class="question-stem">从思维特点，方法特点，适用范围，对面向对象方法与结构化方法的比较分析。</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>结构化方法以功能分解和数据流为主线，适合数据处理流程清楚、功能分解明确的系统；面向对象方法以对象、类、消息为主线，更接近人类认识客观世界的方式，分析、设计、实现概念一致，适合复杂、变化多、需要复用和维护的系统。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">课堂测试2</span>1. </div>
+    <div class="question-stem">某在线教育平台需要紧急上线一个“直播答疑”功能，要求两周内可用。你会选择哪种软件过程模型？说明理由，并指出该模型在本场景中可能面临的风险。（5分）</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>优先选增量模型，也可结合快速原型。理由是先交付直播答疑的核心可用增量，后续再扩展回放、互动、统计等功能；风险是总体架构若设计不足，后续增量集成困难，短周期也可能压缩测试造成质量问题。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">课堂测试2</span>2. </div>
+    <div class="question-stem">假如你要为一家连锁便利店开发一套“智能补货系统”，你会在需求获取阶段采用哪些方式？重点获取哪些方面的需求？（5分）</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>方式包括访谈店长与仓管、现场观察补货流程、分析销售库存历史数据、问卷调查、原型演示和联合需求讨论。重点获取商品、库存、销量、供应周期、缺货预警、补货规则、权限、性能、接口、异常处理和报表需求。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">课堂测试2</span>3. </div>
+    <div class="question-stem">某公司拟开发一个面向老年人的健康管理 App，请分析你在选择编程语言和开发框架时会考虑哪些准则？为什么？（5分）</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>考虑目标平台、开发效率、性能与稳定性、可维护性、生态成熟度、无障碍支持、安全隐私、团队熟悉度和长期维护成本。老年人场景还要强调界面清晰、响应稳定、离线容错、数据安全和适配多机型。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">课堂测试2</span>4. </div>
+    <div class="question-stem">白盒测试和黑盒测试有什么区别？各自常用的测试方法有哪些？在软件测试过程中两者应如何配合？（5分）</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>白盒测试根据程序内部逻辑设计用例，常用语句/判定/条件/路径覆盖和基本路径测试；黑盒测试根据规格说明设计用例，常用等价类划分、边界值分析、错误推测、因果图。二者互补：黑盒保证功能符合需求，白盒补充内部路径和逻辑缺陷。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">课堂测试2</span>5. </div>
+    <div class="question-stem">某政府部门委托开发一套电子政务系统，包含填写审批表单、上传附件（.doc/.docx/.pdf）功能，验收前需要进行验收测试。请说明验收测试的目的是什么？通常由谁来完成？并设计正常、边界、异常场景的输入数据。（5分）</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>目的：确认系统满足 SRS 和用户业务要求，决定能否交付。执行者：用户或用户代表主导，开发方配合。正常场景：合法表单和 doc/docx/pdf 附件成功提交；边界场景：最大附件大小、最长字段、临界日期；异常场景：缺必填项、非法格式、超大文件、病毒文件、网络中断。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">课堂测试2</span>6. </div>
+    <div class="question-stem">如果你负责开发一个校园快递代取平台，你认为系统设计的难点在哪里？你会使用大语言模型辅助开展哪些工作？请举例说明。（5分）</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>难点包括身份认证、订单匹配、隐私保护、支付与退款、骑手调度、异常件处理、评价风控和高峰性能。LLM 可辅助需求访谈提纲、用户故事、接口草案、测试用例、异常场景枚举、客服问答和文档生成，但关键安全与业务规则仍需人工审查。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 重点</span><span class="code-style">第1章</span></div>
+    <div class="question-stem">软件工程学概述的简答重点。</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>答软件由程序、数据、文档组成；软件危机表现和原因；软件工程目标与方法学三要素；9 种过程模型尤其瀑布、原型、增量、螺旋、喷泉、RUP、CBSE、敏捷、微软过程的特点与适用。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 重点</span><span class="code-style">第2章</span></div>
+    <div class="question-stem">可行性研究的简答重点。</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>答可行性研究必要性和过程；技术、经济、操作可行性；系统流程图描述物理系统、DFD 描述逻辑系统；数据字典概念、用途、组成；成本/效益分析包括投资回收期等。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 重点</span><span class="code-style">第3章</span></div>
+    <div class="question-stem">需求分析的简答重点。</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>答需求分析重要性和获取方法；建立数据模型、功能模型、行为模型；E-R 图、DFD、状态图的对应关系；需求验证要求正确、一致、完整、可验证、可追踪。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 重点</span><span class="code-style">第4章</span></div>
+    <div class="question-stem">形式化说明技术的简答重点。</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>答形式化技术优缺点；FSM 的状态、输入、转换、输出；Petri 网的位置、变迁、标记、激发规则；Z 语言基于集合论和谓词逻辑，规格精确但学习成本高。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 重点</span><span class="code-style">第5章</span></div>
+    <div class="question-stem">总体设计的简答重点。</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>答总体设计包括系统设计和结构设计；模块独立原理最重要，高内聚低耦合；启发式规则、层次图和结构图；由 DFD 映射为软件结构的变换分析和事务分析。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 重点</span><span class="code-style">第6章</span></div>
+    <div class="question-stem">详细设计的简答重点。</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>答结构程序设计是逻辑基础；过程设计是主要工作；人机界面和数据设计要重视；可用 Jackson 方法进行面向数据结构设计；用 McCabe 环形复杂度定量度量程序复杂程度。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 重点</span><span class="code-style">第7章</span></div>
+    <div class="question-stem">实现与测试的简答重点。</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>答实现包括编码和测试；高级语言优点；测试阶段至少包括单元、集成、验收；测试包括人工审查和计算机运行；白盒用逻辑覆盖/控制结构，黑盒用等价划分/边界值/错误推测；调试负责改错；可靠性与潜藏错误数相关。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 重点</span><span class="code-style">第8章</span></div>
+    <div class="question-stem">维护的简答重点。</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>答维护是最后且最长、代价最大的阶段；四类维护；可理解性、可测试性、可修改性、可移植性、可重用性影响可维护性；文档决定维护质量；预防性维护实质上是软件再工程。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 重点</span><span class="code-style">第9章</span></div>
+    <div class="question-stem">面向对象方法学引论的简答重点。</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>答 OO 范型优于结构化范型的原因；对象、类、继承、封装、多态；对象模型、动态模型、功能模型，其中对象模型最核心；UML 用类图、状态图、交互图、用例图建模。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 重点</span><span class="code-style">第10章</span></div>
+    <div class="question-stem">面向对象分析的简答重点。</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>答 OOA 由对象模型、动态模型、功能模型组成；关键是识别问题域对象及关系并建立对象模型；五层为主题层、类与对象层、结构层、属性层、服务层；模型需用户和领域专家确认，原型有助交流。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 重点</span><span class="code-style">第11章</span></div>
+    <div class="question-stem">面向对象设计的简答重点。</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>答 OOD 准则和启发式规则；软件重用尤其类构件重用；求解空间四大部分：问题域、人机交互、任务管理、数据管理；设计类服务和关联实现策略；根据质量目标进行优化。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 重点</span><span class="code-style">第12章</span></div>
+    <div class="question-stem">面向对象实现的简答重点。</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>答选择合适 OO 语言；良好程序设计风格重要；OO 测试焦点从传统模块移向对象类；完成程序设计后进行类的单元测试、集成测试、确认测试，方法包括随机测试、划分测试、基于故障测试。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 重点</span><span class="code-style">第13章</span></div>
+    <div class="question-stem">软件项目管理的简答重点。</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>答软件工程是技术与管理结合；项目管理始于计划和规模估算；进度表用于监督和控制；SQA 贯穿过程；SCM 管理整个生命周期变化；CMM 是软件过程改进策略。</div>
+  </div>
+  </section>
+
+                    <!-- 六、看图解释题 -->
+            <section class="section-card" id="type6">
+    <h2>六、看图解释题通关库 <span class="badge-nav">完整原题题干版</span></h2>
+    <div class="tip-box"><strong>说明：</strong>本区把原作图题、设计题、应用题转成看图解释题，但完整保留题干。原卷含图片的题目会明确注明“图片以原卷为准”。</div>
+    <div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">2026随堂测试</span>1. </div>
+    <div class="question-stem">健身房计划开发会员管理系统，需实现以下功能：<br>① 会员管理：支持会员注册、信息修改；管理员可对会员信息进行查看、编辑、删除等操作；<br>② 课程管理：管理员负责课程的添加、修改、删除，课程信息包含名称、类型、教练、时间、容量等；<br>③ 课程服务：会员可浏览并报名课程，系统会检查资格与剩余名额；课程开始前后，会员可签到，管理员也能手动记录签到状态，系统对未签到会员发送提醒；<br>④ 数据统计：系统统计会员活跃度、课程报名情况等数据，并生成报表供管理员查看。<br>请根据以上描述绘制该健身房会员管理系统的一层数据流图表示。（15分）</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>看图解释时说明外部实体为会员、管理员；核心加工可分为会员管理、课程管理、课程报名/签到、数据统计；数据存储包括会员信息、课程信息、报名签到记录、统计报表；数据流包括注册/修改信息、课程维护请求、报名签到信息、统计查询与报表输出。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">2026随堂测试</span>2. </div>
+    <div class="question-stem">某快递公司开发了一套物流管理系统，核心功能如下：<br>① 订单创建：支持填写收件人手机号（11 位数字，以 13/15/17/18/19 开头）；填写包裹重量（单位：kg），范围为 0.1-50kg，精确到小数点后一位；填写包裹体积（单位：cm³），长宽高数值范围为 1-100cm，体积上限为 1000000cm³（1m³）；<br>② 运费计算：首重 1kg 内 10 元，续重每 0.5kg 加收 3 元；体积重量优先：若体积重量（长×宽×高÷6000）＞实际重量，则按体积重量计费；<br>③ 物流查询：支持通过快递单号（12-18 位数字或字母组合）查询物流状态；<br>④ 异常件处理：超时未揽收（超过 24 小时）自动标记为异常件；超长件（单边长度＞100cm）需人工审核。<br>根据黑盒测试的等价划分和边界值分析方法，写出至少 14 个测试不同功能的测试用例，每个测试用例的格式如下：[用例编号，测试项，前置条件，输入数据，预期结果]，有些测试用例的前置条件可为空。（8分）</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>按功能拆成手机号、重量、体积、体积重量、运费、快递单号、异常件。覆盖有效类与无效类：合法手机号、非法开头、位数不足；重量 0.1、50、0、50.1；长宽高 1、100、101；体积重量大于实际重量；单号 12/18 位与非法字符；超时 24 小时边界；单边长度大于 100 人工审核。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">2026随堂测试</span>3. </div>
+    <div class="question-stem">某团队计划开发一个小型企业官网，项目分为前端开发、后端开发两个阶段。前端开发工作量为 20 人·天，后端开发工作量为 15 人·天。团队现有成员 6 人，且需在 7 天内完成项目。假设每人每天工作效率相同，为满足工期要求，如何分配两个阶段的人数（两个阶段的人员分配无交叠）？请列出具体人数安排及各阶段完成时间。（5分）</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>总人数 6，前端 20 人天、后端 15 人天，7 天内完成且阶段人员无交叠。需前端人数不少于 ceil(20/7)=3，后端人数不少于 ceil(15/7)=3，因此分配前端 3 人、后端 3 人；前端约 6.67 天完成，后端 5 天完成。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">2026随堂测试</span>4. </div>
+    <div class="question-stem">某程序流程图如下图所示，请转换成问题分析图（PAD 图）。（9分）<br>说明：原卷此题包含流程图图片，HTML 中无法还原原图片，请以原卷图片为准；这里保留完整文字题干。</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>看图解释时先识别顺序、选择、循环三类结构；再按 PAD 自左向右或自上而下展开；每个判定写成条件分支，每个循环写明循环条件和循环体；避免流程图任意跳转，突出结构化嵌套关系。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">2026随堂测试</span>5. </div>
+    <div class="question-stem">在线订餐系统的基本业务流程如下：普通用户选择菜品提交订单后，系统生成订单并等待商家确认；商家确认后，系统分配订单给配送员；配送员接单并更新状态，直至订单完成，用户可对订单进行评价。请绘制出包含普通用户、订餐系统、商家、配送员和订单对象等 5 个对象之间的 UML 序列图。（9分）</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>对象包括普通用户、订餐系统、商家、配送员、订单。消息顺序：用户选择菜品并提交订单；系统创建订单并等待商家确认；商家确认；系统分配配送员；配送员接单并更新状态；订单完成；用户评价；系统更新订单评价。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">课堂测试2</span>1. </div>
+    <div class="question-stem">根据下面的伪代码，画出对应的 NS 图（盒图）和 PAD 图。（15分）<br>void processOrders() {<br>  i = 1;<br>  while (i &lt;= 20) {<br>    输入订单金额 amount;<br>    if (amount &lt; 0)<br>      输出"金额无效";<br>    else if (amount &gt;= 500)<br>      输出"享受免邮";<br>    else<br>      输出"需支付邮费10元";<br>    i = i + 1;<br>  }<br>  输出"订单处理完毕";<br>}</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>解释为：初始化 i=1；while i&lt;=20 循环；循环内输入 amount；if amount&lt;0 输出金额无效，else if amount&gt;=500 输出享受免邮，否则输出需支付邮费10元；i=i+1；循环后输出订单处理完毕。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">课堂测试2</span>2. </div>
+    <div class="question-stem">某电商平台会员等级折扣规则如下，请绘制折扣的判定树和判定表。（15分）<br>普通会员：订单金额满 200 元享 9 折，不满则不折扣；<br>银卡会员：订单金额满 150 元享 8.5 折，不满享 9.5 折；<br>金卡会员：订单金额满 100 元享 8 折，不满享 9 折；<br>钻石会员：无论金额多少均享 7.5 折。</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>条件为会员等级和订单金额。普通会员金额&gt;=200 打 9 折，否则不折扣；银卡&gt;=150 打 8.5 折，否则 9.5 折；金卡&gt;=100 打 8 折，否则 9 折；钻石会员无条件 7.5 折。判定表按等级与金额条件列出动作即可。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">课堂测试2</span>3. </div>
+    <div class="question-stem">某共享充电宝租借平台需对充电宝设备的全生命周期进行状态管理。一个充电宝从出厂入库到最终报废，会经历以下典型状态及场景：<br>a) 空闲：充电宝在机柜卡槽中，电量充足，可供用户租借。<br>b) 租借中：用户扫码后，机柜正在弹出充电宝，但用户尚未取出。<br>c) 使用中：用户已取出充电宝，正在给手机充电。<br>d) 归还中：用户将充电宝插入任意机柜卡槽，系统正在检测设备状态和计费。<br>e) 故障：系统自检发现充电宝硬件异常（如无法充电、接口损坏、通讯异常等）。<br>f) 报废：充电宝多次维修无效或达到使用寿命上限，做报废处理。<br>主要转换场景：<br>a) 用户扫码租借，充电宝从“空闲”进入“租借中”，短暂停留后用户取出，进入“使用中”。<br>b) 用户使用完毕，插入机柜归还，系统检测正常后回到“空闲”。<br>c) 系统定期自检或归还检测时发现异常，进入“故障”状态；维修完成后恢复“空闲”。<br>d) 多次故障或达到使用寿命，从“故障”进入“报废”状态。<br>请用状态转换图描述共享充电宝从“空闲”到“租借中”“使用中”“归还中”“故障”“报废”等状态及其转换条件。（10分）</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>状态包括空闲、租借中、使用中、归还中、故障、报废。转换：空闲经扫码租借到租借中，用户取出到使用中；归还插入到归还中，检测正常回空闲；自检或归还检测异常到故障；维修完成回空闲；多次故障或寿命到达从故障到报废。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">课堂测试2</span>4. </div>
+    <div class="question-stem">某医院门诊挂号系统实现患者从挂号到取药的全流程管理。主要功能包括：<br>a) 患者注册：患者提交姓名、身份证号、手机号等信息注册账号，系统生成就诊卡号。<br>b) 预约挂号：患者选择科室、医生、日期和时段进行挂号，系统生成挂号单，扣减号源。<br>c) 就诊：医生调取患者信息进行问诊，开具处方（包含药品名称、数量、用法用量）。<br>d) 缴费：患者凭处方缴费，系统生成缴费凭证，更新处方状态为“已缴费”。<br>e) 取药：药剂师核对处方和缴费状态后发药，系统更新处方状态为“已取药”，扣减库存。<br>请完成数据字典设计，定义至少 6 个数据元素（包含：编号、名称、类型/长度、取值范围/含义、简要说明）和至少 4 个数据流（包含：名称、简述、组成、来源、去向）。（10分）</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>数据元素至少包括患者编号、姓名、身份证号、手机号、就诊卡号、科室编号、医生编号、处方编号、药品编号、库存数量等；数据流至少包括注册信息、挂号请求、处方信息、缴费凭证、取药请求，写明组成、来源和去向。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">课堂测试2</span>5. </div>
+    <div class="question-stem">某高校计划开发一套在线考试系统，需求描述如下：<br>教师端功能：教师登录系统后，可创建考试（设置考试名称、开始时间、考试时长、总分值等），为考试添加题目（支持单选题、多选题、判断题、简答题四种题型），设置每题分值和参考答案。考试结束后，系统自动对客观题（单选、多选、判断）进行评阅，教师可在线批阅简答题并给出分数。教师还可查看考试成绩统计，包括平均分、最高分、最低分、各分数段人数分布等。<br>学生端功能：学生登录系统后，可查看当前可参加的考试列表，点击进入考试。考试界面显示倒计时，学生逐题作答，可标记不确定的题目以便回头检查。系统在考试时间结束时自动提交试卷（若学生提前完成也可手动提交）。提交后，客观题分数即时显示，简答题分数等教师批阅后公布。学生可在成绩公布后查看自己的得分和答题详情。<br>（1）绘制系统的 UML 类图，标注每个类的主要属性和方法，标注类之间的关联关系、重数和关系名称。（10分）<br>（2）绘制“学生参加考试并提交试卷”的 UML 顺序图，展示从进入考试到提交试卷的完整消息交互。（10分）</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>类图可含教师、学生、考试、题目、试卷、作答记录、成绩统计等类，标注属性、方法、关联和重数。顺序图消息为学生登录、查看考试、进入考试、加载题目、作答/标记、提交试卷、系统客观题评分、保存答案、显示客观题分数/等待简答批阅。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">合工大试卷</span>1. </div>
+    <div class="question-stem">画出图形用户界面（GUI）的状态转换图。该界面有一个主菜单和一个带有文件打开命令的文件菜单，在每个菜单上都有一条退出命令。假设每次只有一个文件能够打开。（4分）</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>状态可包括主菜单、文件菜单、文件已打开、退出。事件包括打开文件菜单、执行文件打开、关闭/返回主菜单、退出。约束是每次只有一个文件打开，因此打开新文件前应保持或替换唯一文件状态。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">合工大试卷</span>2. </div>
+    <div class="question-stem">某电器集团公司下属的厂包括技术科、生产科等基层单位。现在想建立一个计算机辅助企业管理系统，其中，生产科的任务是：（1）根据销售公司转来的内部合同（产品型号、规格、数量、交获日期）制定车间月生产计划。（2）根据车间实际生产日报表、周报表调整月生产计划。（3）以月生产计划为依据，制定产品设计（结构、工艺）及产品组装月计划。（4）将产品的组装计划传达到各科，将组装月计划分解为周计划，下达给车间。技术科的任务是：（1）根据生产科转来的组装计划进行产品结构设计，产生产品装配图给生产科，产生外购需求计划给供应科，并产生产品自制物料清单。（2）根据组装计划进行产品工艺设计，根据产品自制物料清单产生工艺流程图给零件厂。请设计出以上系统中生产科的软件结构图（4分）和技术科处理的软件结构图（4分）。</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>生产科结构：接收内部合同、制定月生产计划、根据日报/周报调整计划、制定产品设计及组装月计划、分解周计划并下达车间。技术科结构：接收组装计划、产品结构设计、输出装配图、生成外购需求计划、生成自制物料清单、工艺设计、输出工艺流程图。</div>
+  </div>
+<div class="question-item full-question">
+    <div class="question-title"><span class="importance-tag tag-high"> 真题</span><span class="code-style">合工大试卷</span>3. </div>
+    <div class="question-stem">根据下面 PDL 描述的求平均值算法，试用基本路径方法进行软件测试（18分）：①试画出它的程序图、N-S 图和 PAD 图（要求按照程序中附加的标号画）；②计算该结构的 McCabe 环路复杂性度量；③为完成基本路径测试，求它的一组独立路径；④为每个独立路径设计测试用例。<br>PROCEDURE Average; /*计算 100 个以内的有效数（规定值域之内）的平均值；有效数的总和；有效数的个数。*/<br>INTERFACE RETURNS average, total.input, total.valid;<br>INTERFACE ACCEPTS value, minimum, maximum;<br>TYPE value[1,100] IS SCALAR ARRAY;<br>TYPE average, total.input, total.valid, value, minimum, maximum IS SCALAR ARRAY;<br>TYPE i IS INTEGER;<br>1: i=1; total.input=total.valid=0; sum=0;<br>2: DO WHILE value[i] &lt;&gt; -999<br>3: AND total.input &lt; 100<br>4: total.input = total.input + 1;<br>5: IF value[i] &gt;= minimum<br>6: AND value[i] &lt;= maximum<br>7: THEN total.valid = total.valid + 1; sum = sum + value[i];<br>8: ENDIF i = i + 1;<br>9: ENDDO<br>10: IF total.valid &gt; 0<br>11: THEN average = sum / total.valid;<br>12: ELSE average = -999<br>13: ENDIF<br>END average</div>
+    
+    <div class="answer-block"><strong>参考答案/踩分点：</strong><br>先由 PDL 得到控制流：while 复合条件、if 有效值范围、结束后 if total.valid&gt;0。环形复杂度按判定节点数加 1 估算。独立路径应覆盖无输入直接结束、输入无效值、输入有效值、达到最大输入数、total.valid 为 0 与大于 0 等情况，并分别设计 value/min/max 测试数据。</div>
+  </div>
+  </section>
+
+        </main>
+    </div>
+
+    <script>
+        // 平滑滚动
+        document.querySelectorAll('.type-links a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        function toggleTheme() {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            if (currentTheme === 'dark') {
+                document.documentElement.setAttribute('data-theme', 'light');
+            } else {
+                document.documentElement.setAttribute('data-theme', 'dark');
+            }
+        }
+
+        function filterContent() {
+            const query = document.getElementById('search').value.toLowerCase();
+            const cards = document.getElementsByClassName('question-item');
+            
+            for (let card of cards) {
+                const text = card.innerText.toLowerCase();
+                if (text.includes(query)) {
+                    card.style.display = "block";
+                } else {
+                    card.style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+</html>
