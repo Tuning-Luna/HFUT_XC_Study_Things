@@ -1,0 +1,125 @@
+-- 创建数据库
+CREATE DATABASE teaching_manage;
+
+ --  打开数据库
+ USE teaching_manage;
+ 
+ -- 创建学生表：student
+   CREATE TABLE student 
+   (	sno CHAR(6)  COMMENT '学生编号', 
+	sname VARCHAR(20) NOT NULL COMMENT '学生姓名', 
+	dept VARCHAR(20)  COMMENT '专业名', 
+	sex CHAR(1) COMMENT '性别', 
+	birthday DATE COMMENT '出生日期', 
+	totalcredit  DECIMAL(4,1) DEFAULT 0 COMMENT '总学分', 
+	remarks VARCHAR(100) COMMENT '备注',
+	create_time DATETIME DEFAULT NOW() COMMENT '创建时间',
+	update_time DATETIME COMMENT '修改时间', 
+	is_deleted TINYINT DEFAULT 0 COMMENT '是否有效',
+	CONSTRAINT pk_student_sno PRIMARY KEY(sno)
+   ) ;
+
+INSERT INTO student(sno,sname,dept,sex,birthday,totalcredit,remarks,create_time,update_time,is_deleted)  VALUES('001101','王林','计算机','男','90-01-01',50,NULL,NOW(),NULL,0),
+('001102','程明','计算机','男','90-02-01',50,NULL,NOW(),NULL,0),
+('001103','王燕','计算机','女','90-01-03',50,NULL,NOW(),NULL,0),
+ ('001104','韦严平','计算机','男','90-01-04',50,NULL,NOW(),NULL,0),
+('001106','李方方','计算机','男','91-01-05',50,NULL,NOW(),NULL,0),
+ ('001107','李明','计算机','男','93-06-06',54,'提前修完《数据结构》，并获学分',NOW(),NULL,0),
+ ('001108','林一帆','计算机','男','91-07-10',52,'已提前修完一门课程',NOW(),NULL,0),
+('001109','张强民','计算机','男','92-08-01',50,NULL,NOW(),NULL,0),
+('001110','张蔚','计算机','女','94-01-22',50,'三好生',NOW(),NULL,0),
+ ('001111','赵琳','计算机','女','95-10-01',50,NULL,NOW(),NULL,0),
+ ('001113','严红','计算机','女','94-01-01',48,'有一门课不及格，待补考',NOW(),NULL,0),
+('001201','王敏','通信工程','男','92-04-23',42,NULL,NOW(),NULL,0),
+ ('001202','王林','通信工程','男','95-01-01',40,'有一门课不及格，待补考',NOW(),NULL,0),
+ ('001203','王玉民','通信工程','男','92-12-01',42,NULL,NOW(),NULL,0),
+('001204','马琳琳','通信工程','女','90-01-22',42,NULL,NOW(),NULL,0),
+ ('001206','李计','通信工程','男','95-01-01',42,NULL,NOW(),NULL,0),
+ ('001210','李红庆','通信工程','男','93-01-01',44,'已提前修完一门课，并获得学分',NOW(),NULL,0),
+ ('001216','孙祥欣','通信工程','男','90-11-11',42,NULL,NOW(),NULL,0),
+ ('001218','孙研','通信工程','男','92-01-01',42,NULL,NOW(),NULL,0),
+ ('001221','刘燕敏','通信工程','女','92-01-01',42,NULL,NOW(),NULL,0),
+('001241','罗林琳','通信工程','女','90-03-01',50,'转专业学习',NOW(),NULL,0);
+
+-- 创建课程表：course
+
+  CREATE TABLE course 
+   (	cno CHAR(3)  COMMENT '课程编号', 
+	cname VARCHAR(30) NOT NULL COMMENT '课程名称', 
+	term TINYINT COMMENT '开课学期' , 
+	ctime TINYINT UNSIGNED COMMENT '课时', 
+	credit DECIMAL(3,1) COMMENT '学分',
+	create_time DATETIME DEFAULT NOW() COMMENT '创建时间',
+	update_time DATETIME COMMENT '修改时间', 
+	is_deleted TINYINT DEFAULT 0 COMMENT '是否有效',
+	CONSTRAINT pk_course_cno PRIMARY KEY(cno)
+   ) ;
+INSERT INTO course VALUES ('101','计算机基础','1',80,5,NOW(),NULL,0);
+INSERT INTO course VALUES ('102','程序设计与语言','2',64,4,NOW(),NULL,0);
+INSERT INTO course VALUES ('206','离散数学','4',64,4,NOW(),NULL,0);
+INSERT INTO course VALUES ('208','数据结构','4',64,4,NOW(),NULL,0);
+INSERT INTO course VALUES ('209','操作系统','6',64,4,NOW(),NULL,0);
+INSERT INTO course VALUES ('210','计算机原理','7',64,4,NOW(),NULL,0);
+INSERT INTO course VALUES ('212','数据库原理','7',56,3.5,NOW(),NULL,0);
+INSERT INTO course VALUES ('301','计算机网络','7',56,3.5,NOW(),NULL,0);
+INSERT INTO course VALUES ('302','软件工程','7',48,3,NOW(),NULL,0);
+
+-- 创建成绩表：score
+
+CREATE TABLE score 
+   (	score_id INT UNSIGNED  AUTO_INCREMENT COMMENT '成绩表id',
+        sno CHAR(6) COMMENT '学生编号，外键', 
+	cno CHAR(3) COMMENT '课程编号，外键', 
+	grade DECIMAL(4,1) COMMENT '成绩',
+	create_time DATETIME DEFAULT NOW() COMMENT '创建时间',
+	update_time DATETIME COMMENT '修改时间', 
+	 CONSTRAINT pk_score_id PRIMARY KEY(score_id),
+         CONSTRAINT fk_score_sno FOREIGN KEY(sno) REFERENCES student(sno),
+         CONSTRAINT fk_score_cno FOREIGN KEY(cno) REFERENCES course(cno)       
+   );
+
+INSERT INTO score VALUES (NULL,'001101','101',80,NOW(),NULL);
+INSERT INTO score VALUES (NULL,'001101','102',78,NOW(),NULL);
+INSERT INTO score VALUES (NULL,'001101','206',76,NOW(),NULL);
+INSERT INTO score VALUES (NULL,'001102','102',78,NOW(),NULL);
+INSERT INTO score VALUES (NULL,'001102','206',78,NOW(),NULL);
+INSERT INTO score VALUES (NULL,'001103','101',62,NOW(),NULL);
+INSERT INTO score VALUES (NULL,'001103','102',70,NOW(),NULL);
+INSERT INTO score VALUES (NULL,'001103','206',81,NOW(),NULL);
+INSERT INTO score VALUES (NULL,'001104','101',90,NOW(),NULL);
+INSERT INTO score VALUES (NULL,'001104','102',84,NOW(),NULL);
+INSERT INTO score VALUES (NULL,'001104','206',65,NOW(),NULL);
+INSERT INTO score VALUES (NULL,'001106','101',71,NOW(),NULL);
+INSERT INTO score VALUES (NULL,'001106','102',71,NOW(),NULL);
+INSERT INTO score VALUES (NULL,'001106','206',80,NOW(),NULL);
+INSERT INTO score VALUES (NULL,'001107','101',78,NOW(),NULL);
+INSERT INTO score VALUES (NULL,'001107','102',80,NOW(),NULL);
+INSERT INTO score VALUES (NULL,'001107','206',87,NOW(),NULL);
+INSERT INTO score VALUES (NULL,'001108','101',85,NOW(),NULL);
+INSERT INTO score VALUES (NULL,'001108','102',64,NOW(),NULL);
+INSERT INTO score VALUES (NULL,'001108','206',87,NOW(),NULL);
+INSERT INTO score VALUES (NULL,'001109','101',66,NOW(),NULL);
+INSERT INTO score VALUES (NULL,'001109','102',85,NOW(),NULL);
+INSERT INTO score VALUES (NULL,'001109','206',70,NOW(),NULL);
+INSERT INTO score VALUES (NULL,'001110','101',95,NOW(),NULL);
+INSERT INTO score VALUES (NULL,'001110','102',90,NOW(),NULL);
+INSERT INTO score VALUES (NULL,'001110','206',89,NOW(),NULL);
+INSERT INTO score VALUES (NULL,'001111','101',91,NOW(),NULL);
+INSERT INTO score VALUES (NULL,'001111','102',70,NOW(),NULL);
+INSERT INTO score VALUES (NULL,'001111','206',76,NOW(),NULL);
+INSERT INTO score VALUES (NULL,'001113','101',63,NOW(),NULL);
+INSERT INTO score VALUES (NULL,'001113','102',79,NOW(),NULL);
+INSERT INTO score VALUES (NULL,'001113','206',60,NOW(),NULL);
+INSERT INTO score VALUES (NULL,'001201','101',46,NOW(),NULL);
+INSERT INTO score VALUES (NULL,'001202','101',65,NOW(),NULL);
+INSERT INTO score VALUES (NULL,'001203','101',87,NOW(),NULL);
+INSERT INTO score VALUES (NULL,'001204','101',91,NOW(),NULL);
+INSERT INTO score VALUES (NULL,'001210','101',76,NOW(),NULL);
+INSERT INTO score VALUES (NULL,'001216','101',81,NOW(),NULL);
+INSERT INTO score VALUES (NULL,'001218','101',82,NOW(),NULL);
+INSERT INTO score VALUES (NULL,'001221','101',76,NOW(),NULL);
+INSERT INTO score VALUES (NULL,'001241','101',90,NOW(),NULL);
+
+
+
+
