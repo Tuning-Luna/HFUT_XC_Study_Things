@@ -110,6 +110,7 @@
 |    操作系统     |   PPT（按章 + 按课两套 23 份），Linux 内核实验（3 组报告含本人/他人），章节作业，复习资料（含 70 张概念图），课堂测试，课设（C 代码），真题（6 份）   |
 |   计算机网络    |   PPT（原版 + 2024 新版两套 15 份），实验（Wireshark 抓包 + 组网），期末真题（10 份），笔记（3 份），考试范围，课设（多方向可选）   |
 | 计算机应用项目实训课 |     无人机项目课程：waypoints 路径文件，无人机系统答辩 PPT，坦克/目标识别图片，实训文档（组装、烧录、ROS 路径规划、图像/语音识别）     |
+|    数据库系统     |   PPT（学习通 2026 版 + openGauss 学生版 + 2022 章节版三套 80+ 份），教材（王珊数据库系统概论第 5 版 + 习题解析），实验（学习通 MySQL 版 14 个 SQL 成品 + 华为云 openGauss 实验 14 个含指导书），期末真题（2015-2024 共 5 份）+ 复习笔记（含问答思考题整理），课设（智能排课系统 SpringBoot + Vue 全栈源码）   |
 
 <a  href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&duration=10000&pause=1000&width=435&lines=%E6%9C%AA%E5%AE%8C%E5%BE%85%E7%BB%AD......" alt="Typing SVG" /></a>
 
