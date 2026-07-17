@@ -159,36 +159,3 @@ mkdocs serve
 2. 格式：`- 课程名: 【年级】课程名.md`
 3. 注意保持年级内的课程顺序
 
-### 第四步：重新生成本地预览（可选）
-
-在仓库根目录运行：
-```bash
-python gen-md.py                    # 为所有课程重新生成 docs/*.md
-cp README.md ./docs/index.md        # 首页同步
-cp -r assets ./docs/assets          # 静态资源
-mkdocs serve                        # 本地预览 http://127.0.0.1:8000
-```
-
-### 第五步：提交并推送
-
-```bash
-git add .
-git commit -m "添加 XXX 课程资料（XXX 新增内容说明）"
-git push
-```
-
-推送至 `main` 后，GitHub Actions CI 会自动执行：
-1. 安装 Python + MkDocs
-2. 运行 `gen-md.py` 生成文档页面
-3. 执行 `mkdocs gh-deploy --force` 发布到 `gh-pages` 分支
-4. 网站（https://tuning-luna.github.io/HFUT_XC_Study_Things）会在几分钟内更新
-
-### 新增内容的特别提醒
-
-| 场景 | 注意事项 |
-|------|----------|
-| **新增课程目录** | 必须更新 `mkdocs.yml` 的 `nav:`；运行 `gen-md.py`；更新根目录 `README.md` 总表 |
-| **往已有课程加文件** | 只需 `git push`，CI 会自动重新生成网站文件列表 |
-| **新增 Zips 压缩包** | 注意仓库单文件限制（GitHub 建议 <50MB，硬限制 100MB） |
-| **删除或重命名文件** | 网站会自动反映删除，但不会删除已缓存的旧页面；如要彻底清理需先 `git rm` 再推送 |
-| **新增课程时顺便写 README** | 课程 `README.md` 的内容会自动出现在网站对应页面的文件列表上方，包含教师、考试形式、备考建议等信息 |
