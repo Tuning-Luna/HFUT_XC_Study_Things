@@ -9,6 +9,7 @@
   <a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things/commits"><img src="https://img.shields.io/github/last-commit/Tuning-Luna/HFUT_XC_Study_Things?style=flat-square" alt="GitHub last commit"></a>
   <a href="LICENSE-ORIGINAL"><img src="https://img.shields.io/badge/License-CC_BY--NC--SA_4.0-orange.svg?style=flat-square" alt="License: CC BY-NC-SA 4.0"></a>
   <a href="https://github.com/Tuning-Luna/HFUT_XC_Study_Things"><img src="https://img.shields.io/github/repo-size/Tuning-Luna/HFUT_XC_Study_Things?style=flat-square" alt="Repo size"></a>
+  <a href="https://tuning-luna.github.io/HFUT_XC_Study_Things"><img src="https://img.shields.io/badge/%F0%9F%94%97%20%E5%9C%A8%E7%BA%BF%E6%B5%8F%E8%A7%88-GitHub%20Pages-blue?style=flat-square" alt="在线浏览"></a>
 </p>
 
 <p align="center">
