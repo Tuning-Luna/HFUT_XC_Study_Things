@@ -105,14 +105,14 @@
 
 |                             项目                             |   所属课程   |           技术栈            |                           仓库概况                           |
 | :----------------------------------------------------------: | :----------: | :-------------------------: | :----------------------------------------------------------: |
-| [题库管理系统](https://github.com/Tuning-Luna/question-bank-management-system) |  数据库系统  |     Vue3+Express+MySQL      | 前后端分离的题库管理系统，含 init.sql 初始化脚本、数据库设计文档、答辩讲解文档与课设实验报告 |
-| [电影推荐系统](https://github.com/Tuning-Luna/movie-recommender) |   机器学习   |           Python            | 基于用户协同过滤的电影推荐系统，含数据预处理、模型训练、评分/相似度等多张可视化图与课程报告 |
-| [课堂答题系统](https://github.com/Tuning-Luna/class-quiz-system) |   程序设计   |        C++（控制台）        | 支持试题录入、修改、随机抽题测试、自动判题计分、错题查看，纯控制台程序无外部依赖 |
-|      [简易链表](https://github.com/Tuning-Luna/my-list)      |   数据结构   |             C++             | 类封装的单链表实现，头结点存储链表长度，提供插入/删除/翻转/排序/查找等 19 个接口 |
-|     [双向队列](https://github.com/Tuning-Luna/my-deque)      | 程序设计基础 |             C++             | 基于数组分段存储的 Deque 容器，支持正/逆向迭代器、随机访问下标、insert/erase 等完整顺序容器接口 |
-| [通讯录管理系统](https://github.com/Tuning-Luna/address-book-manage-system) | 程序课程设计 |        C++（控制台）        | 控制台通讯录管理系统，支持联系人的添加、显示、查找、修改、删除与清空 |
-|     [栈的实现](https://github.com/Tuning-Luna/my-stack)      |   数据结构   |             C++             | 数组与链表两种方式实现栈，提供 push/pop/top/size/empty/clear 等标准操作，含满栈/空栈提示 |
-| [在线留言板](https://github.com/Tuning-Luna/react-message-board) |  计算机网络  | React 19+Express+SpringBoot | 前后端分离留言板，支持发布留言、搜索、点赞、按时间/热度排序、分页，管理员可回复/删除并邮件通知 |
+| [题库管理系统](https://github.com/Tuning-Luna/question-bank-management-system) |  数据库系统  |     Vue3+Express+MySQL      | 前后端分离的题库管理系统；内含 init.sql 初始化脚本、数据库设计文档、答辩讲解文档与课设实验报告。 |
+| [电影推荐系统](https://github.com/Tuning-Luna/movie-recommender) |   机器学习   |           Python            | 基于用户协同过滤的电影推荐系统；包含数据预处理、模型训练、评分/相似度等多张可视化图与课程报告。 |
+| [课堂答题系统](https://github.com/Tuning-Luna/class-quiz-system) |   程序设计   |        C++（控制台）        | 支持试题录入/修改、随机抽题测试、自动判题计分、错题查看；纯控制台程序，无外部依赖。 |
+|      [简易链表](https://github.com/Tuning-Luna/my-list)      |   数据结构   |             C++             | 类封装的单链表实现，头结点存储链表长度；提供插入/删除/翻转/排序/查找等 19 个接口。 |
+|     [双向队列](https://github.com/Tuning-Luna/my-deque)      | 程序设计基础 |             C++             | 基于数组分段存储的 Deque 容器；支持正/逆向迭代器、随机访问下标、insert/erase 等完整顺序容器接口。 |
+| [通讯录管理系统](https://github.com/Tuning-Luna/address-book-manage-system) | 程序课程设计 |        C++（控制台）        | 控制台通讯录管理系统；支持联系人的添加、显示、查找、修改、删除与清空。 |
+|     [栈的实现](https://github.com/Tuning-Luna/my-stack)      |   数据结构   |             C++             | 数组与链表两种方式实现栈；提供 push/pop/top/size/empty/clear 等标准操作，并含满栈/空栈提示。 |
+| [在线留言板](https://github.com/Tuning-Luna/react-message-board) |  计算机网络  | React 19+Express+SpringBoot | 前后端分离留言板；支持发布留言、搜索、点赞、按时间/热度排序、分页，管理员可回复/删除并邮件通知。 |
 
 > [!TIP]
 >
