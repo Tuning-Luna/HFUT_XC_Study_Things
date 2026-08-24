@@ -183,7 +183,7 @@ git clone https://github.com/Tuning-Luna/HFUT_XC_Study_Things.git
 
 # 支持与帮助
 
-对于本仓库学习资料有疑问的，可以通过在本仓库提 [issue](https://github.com/Tuning-Luna/HFUT_XC_Study_Things/issues/new) 联系我，看到了就会回复
+如果你对本仓库的学习资料有疑问，欢迎通过 [issue](https://github.com/Tuning-Luna/HFUT_XC_Study_Things/issues/new) 联系我，看到后就会尽快回复。
 
 如果你想整理**自己专业的课程资料仓库**，但不知如何下手（仓库结构、资料整理、README 编写、GitHub 使用等），也欢迎在 GitHub 上联系我，很乐意提供帮助 ❤️
 
