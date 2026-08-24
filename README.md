@@ -140,7 +140,8 @@
 git clone https://github.com/Tuning-Luna/HFUT_XC_Study_Things.git
 ```
 
-~~不推荐，因为仓库体积太大~~
+> [!NOTE]
+> 仓库体积较大，`git clone` 完整下载会比较慢，通常推荐使用下方的方式三按需下载。
 
 ## 方式三：按需下载
 
