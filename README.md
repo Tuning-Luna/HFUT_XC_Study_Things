@@ -37,7 +37,6 @@
   - [原创内容](#原创内容)
   - [第三方资料](#第三方资料)
 - [支持与帮助](#支持与帮助)
-- [Images](#images)
 
 # 资料目录
 
@@ -187,15 +186,3 @@ git clone https://github.com/Tuning-Luna/HFUT_XC_Study_Things.git
 如果你对本仓库的学习资料有疑问，欢迎通过 [issue](https://github.com/Tuning-Luna/HFUT_XC_Study_Things/issues/new) 联系我，看到后就会尽快回复。
 
 如果你想整理**自己专业的课程资料仓库**，但不知如何下手（仓库结构、资料整理、README 编写、GitHub 使用等），也欢迎在 GitHub 上联系我，很乐意提供帮助 ❤️
-
-# Images
-
-<p align="center">
-  <img src="./assets/img1.webp" width="45%">
-  <img src="./assets/img2.webp" width="45%">
-</p>
-
-<p align="center">
-  <img src="./assets/img3.webp" width="45%">
-  <img src="./assets/img4.webp" width="45%">
-</p>
