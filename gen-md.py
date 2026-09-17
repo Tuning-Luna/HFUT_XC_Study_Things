@@ -1,5 +1,6 @@
 # encoding: utf-8
 import os
+from urllib.parse import quote
 
 # 排除目录
 EXCLUDE_DIRS = {
@@ -46,7 +47,8 @@ def list_files(course: str):
         for f in files:
             if f not in README_MD:
                 rel_path = f"{root}/{f}".replace("\\", "/")
-                filelist_texts += f"{subindent}- [{f}]({BIN_URL_PREFIX}/{rel_path})\n"
+                # URL 编码（保留 / 分隔符），避免空格/中文/特殊字符导致链接失效
+                filelist_texts += f"{subindent}- [{f}]({BIN_URL_PREFIX}/{quote(rel_path, safe='/')})\n"
 
     return filelist_texts, readme_path
 
