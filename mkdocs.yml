@@ -12,9 +12,7 @@ theme:
   language: zh
   logo: assets/hfut.png
   favicon: assets/hfut.png
-  font:
-    text: Noto Sans SC
-    code: JetBrains Mono
+  font: false
   palette:
     - scheme: default
       primary: indigo
@@ -45,6 +43,25 @@ theme:
     - header.autohide
     - palette.toggle
 
+markdown_extensions:
+  - admonition                # 提示框语法支持
+  - pymdownx.details          # 支持折叠块（比原生 <details> 样式好看得多）
+  - pymdownx.superfences      # 支持代码块嵌套、Mermaid 流程图
+  - pymdownx.highlight:       # 代码语法高亮
+      anchor_linenums: true
+  - pymdownx.inlinehilite     # 行内代码高亮
+  - pymdownx.tabbed:          # 内容选项卡切换（适合放不同年份试卷/代码）
+      alternate_style: true
+  - pymdownx.tasklist:        # 支持 - [x] 任务列表
+      custom_checkbox: true
+  - pymdownx.arithmatex:      # 数学公式支持（高数、线代、机器学习必备）
+      generic: true
+  - tables                    # 表格增强
+  - attr_list                 # 允许给图片/按钮加 CSS 属性
+  - md_in_html                # 允许在 HTML 标签（如居中 p 标签、details）里写 Markdown
+  - toc:
+      permalink: true         # 标题旁显示锚点链接符号
+
 plugins:
   - search:
       lang: zh
@@ -54,7 +71,6 @@ plugins:
   - git-revision-date-localized:
       enable_creation_date: true
       type: date
-  - offline
 
 nav:
   - 首页: index.md
