@@ -19,7 +19,7 @@
 
 
 > [!IMPORTANT]
-> 本仓库所提供的内容仅作为学习与技术交流参考，不构成任何形式的保证或承诺。作者已尽力确保内容的准确性与完整性，但不对其中可能存在的错误、遗漏或不适用情况承担责任。使用者应自行评估并承担使用相关内容所产生的风险。
+> **本仓库内容仅供学习与技术交流参考，不作任何保证或承诺。作者已尽力确保准确完整，但不对错误、遗漏或适用性承担责任。请勿直接照抄，使用者应自行评估并承担相关风险**。
 
 # 目录
 
@@ -44,13 +44,25 @@
 
 ## 公共课
 
+<details>
+
+<summary>点击展开</summary>
+
+
 |  课程名称  |              包含内容              |
 | :--------: | :--------------------------------: |
 |    英语    |  教材 / 真题（四级/六级/模拟）   |
 |  思政教材  |  2023 版教材六门 · 形势与政策   |
 | 题库及答案 |  题库（形策 / 思法 / 劳动 / 国安） |
 
+</details>
+
+
 ## 大一
+
+<details>
+
+<summary>点击展开</summary>
 
 |      课程名称      |        包含内容        |
 | :----------------: | :--------------------: |
@@ -62,7 +74,13 @@
 |      大学物理      |   PPT / 教材 / 真题     |
 |    程序设计基础    |   PPT / 实验 / 课设     |
 
+</details>
+
 ## 大二
+
+<details>
+
+<summary>点击展开</summary>
 
 |     课程名称     |            包含内容            |
 | :--------------: | :----------------------------: |
@@ -82,7 +100,13 @@
 |  计算机组成原理  |   PPT / 教材 / 实验 / 真题      |
 |     科研训练     |  项目代码 / 报告 / PPT / 论文   |
 
+</details>
+
 ## 大三
+
+<details>
+
+<summary>点击展开</summary>
 
 |       课程名称       |              包含内容              |
 | :------------------: | :--------------------------------: |
@@ -100,10 +124,16 @@
 | 计算机应用项目实训课 | 无人机项目 / 实训文档 / 答辩 PPT   |
 |      数据库系统      |  PPT / 教材 / 实验 / 真题 / 课设  |
 
+</details>
+
 ## 独立课程项目
 
 由于部分课程设计和实践项目规模较大，因此独立创建仓库进行维护。
 点击下方链接即可访问对应项目：
+
+<details>
+
+<summary>点击展开</summary>
 
 |                             项目                             |   所属课程   |           技术栈            |                           仓库概况                           |
 | :----------------------------------------------------------: | :----------: | :-------------------------: | :----------------------------------------------------------: |
@@ -115,6 +145,9 @@
 | [通讯录管理系统](https://github.com/Tuning-Luna/address-book-manage-system) | 程序课程设计 |        C++（控制台）        | 控制台通讯录管理系统；支持联系人的添加、显示、查找、修改、删除与清空。 |
 |     [栈的实现](https://github.com/Tuning-Luna/my-stack)      |   数据结构   |             C++             | 数组与链表两种方式实现栈；提供 push/pop/top/size/empty/clear 等标准操作，并含满栈/空栈提示。 |
 | [在线留言板](https://github.com/Tuning-Luna/react-message-board) |  计算机网络  | React 19+Express+SpringBoot | 前后端分离留言板；支持发布留言、搜索、点赞、按时间/热度排序、分页，管理员可回复/删除并邮件通知。 |
+
+</details>
+
 
 > [!TIP]
 >
@@ -130,7 +163,7 @@
 
 [**https://tuning-luna.github.io/HFUT_XC_Study_Things**](https://tuning-luna.github.io/HFUT_XC_Study_Things)
 
-仓库与网站内容**完全同步**，在线找到所需文件后直接下载即可。
+仓库与网站内容**完全同步**，在线找到所需文件后直接点击下载即可。
 
 ## 方式二：完整克隆
 
@@ -139,7 +172,7 @@
 **前置条件**：确保电脑已安装 [Git](https://git-scm.com/downloads)
 
 ```bash
-git clone https://github.com/Tuning-Luna/HFUT_XC_Study_Things.git
+git clone --depth=1 https://github.com/Tuning-Luna/HFUT_XC_Study_Things.git
 ```
 
 > [!NOTE]
@@ -185,6 +218,7 @@ git clone https://github.com/Tuning-Luna/HFUT_XC_Study_Things.git
 
 # 支持与帮助
 
-如果你对本仓库的学习资料有疑问，欢迎通过 [issue](https://github.com/Tuning-Luna/HFUT_XC_Study_Things/issues/new) 联系我，看到后就会尽快回复。
+如果你对本仓库的学习资料有疑问，欢迎通过 [Issue](https://github.com/Tuning-Luna/HFUT_XC_Study_Things/issues/new) 联系我，看到后就会尽快回复。
 
 如果你想整理**自己专业的课程资料仓库**，但不知如何下手（仓库结构、资料整理、README 编写、GitHub 使用等），也欢迎在 GitHub 上联系我，很乐意提供帮助 ❤️
+
