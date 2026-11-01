@@ -15,6 +15,7 @@ EXCLUDE_DIRS = {
     ".codegraph",
     ".claude",
     ".omo",
+    ".zcode",
 }
 
 # README 文件名集合
