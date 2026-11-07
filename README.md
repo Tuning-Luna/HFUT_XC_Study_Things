@@ -146,7 +146,7 @@
 
 ## 方式二：网盘下载
 
-资料已同步至 [Google Drive](https://drive.google.com/drive/folders/17jCfPVi3KtS4WV6AilBEJACm69VIHWJ8?usp=sharing)，支持在线预览与批量下载。
+资料已同步至 [Google Drive](https://drive.google.com/drive/folders/17jCfPVi3KtS4WV6AilBEJACm69VIHWJ8?usp=sharing) 和 [夸克网盘](https://pan.quark.cn/s/34baba6e248a)，支持在线预览与批量下载。
 
 ## 方式三：按需下载
 
@@ -185,7 +185,6 @@ git clone --depth=1 https://github.com/Tuning-Luna/HFUT_XC_Study_Things.git
 
 这些资料的版权归属原作者、出版社及相关的学长学姐，**不附带任何开源协议**，仅供学习与研究用途，不授予任何复制、传播、修改或再分发权利。
 
----
 
 > [!CAUTION]
 > 若内容涉及侵权（如引用来源未标注等），请通过 Issue 告知，我将及时处理。
