@@ -40,7 +40,7 @@
 
 # 资料目录
 
-下表为各课程资料**速览**；需要查看每门课程的**详细内容清单**，见 [详细资料目录](https://github.com/Tuning-Luna/HFUT_XC_Study_Things/blob/main/详细资料目录.md)。
+下表为各课程资料**速览**；需要查看每门课程的**详细内容清单**，见 [详细资料目录](https://github.com/Tuning-Luna/HFUT_XC_Study_Things/blob/main/assets/详细资料目录.md)。
 
 ## 公共课
 

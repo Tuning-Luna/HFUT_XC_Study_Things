@@ -2,9 +2,10 @@ site_name: HFUT-XC 计算机科学与技术资料汇总
 site_description: 合肥工业大学宣城校区计算机科学与技术课程资料汇总，涵盖大一至大三全部课程PPT、实验、真题、教材、笔记代码
 site_author: Tuning-Luna
 site_url: https://tuning-luna.github.io/HFUT_XC_Study_Things
-copyright: Copyright &copy; 2026 Tuning-Luna &mdash; 学生原创内容采用 CC BY-NC-SA 4.0 协议
+copyright: Copyright © 2026 Tuning-Luna — 学生原创内容采用 CC BY-NC-SA 4.0 协议
 
 repo_url: https://github.com/Tuning-Luna/HFUT_XC_Study_Things
+repo_name: Tuning-Luna/HFUT_XC_Study_Things
 edit_uri: ""
 
 theme:
@@ -14,63 +15,48 @@ theme:
   favicon: assets/hfut.png
   font: false
   palette:
-    - scheme: default
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
       primary: indigo
       accent: indigo
-      media: "(prefers-color-scheme: light)"
       toggle:
         icon: material/brightness-7
         name: 切换至深色模式
-    - scheme: slate
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
       primary: teal
       accent: teal
-      media: "(prefers-color-scheme: dark)"
       toggle:
         icon: material/brightness-4
         name: 切换至浅色模式
   features:
-    - navigation.tabs
-    - navigation.tabs.sticky
-    - navigation.tracking
-    - navigation.path
-    - navigation.top
-    - navigation.footer
-    - navigation.expand
-    - navigation.instant
+    - navigation.tabs           # 顶栏显示年级分类
+    - navigation.tabs.sticky    # 顶栏吸顶常驻
+    - navigation.tracking       # 地址栏随滚动自动更新锚点
+    - navigation.path           # 页面上方显示面包屑路径
+    - navigation.top            # 一键返回顶部按钮
+    - navigation.footer         # 底部显示上一门/下一门课程切换
+    - navigation.instant        # 启用 SPA 无刷新秒开体验
     - navigation.instant.prefetch
     - navigation.instant.progress
-    - toc.follow
-    - header.autohide
-    - palette.toggle
+    - toc.follow                # 右侧目录随滚动自动高亮
+    - header.autohide           # 向下滚动时自动隐藏顶栏
+    - search.suggest            # 搜索输入时提供补全建议
+    - search.highlight          # 搜索结果点击后高亮关键词
+    - content.code.copy         # 为首页 git clone 命令提供一键复制按钮
 
 markdown_extensions:
-  - admonition                # 提示框语法支持
-  - pymdownx.details          # 支持折叠块（比原生 <details> 样式好看得多）
-  - pymdownx.superfences      # 支持代码块嵌套、Mermaid 流程图
-  - pymdownx.highlight:       # 代码语法高亮
-      anchor_linenums: true
-  - pymdownx.inlinehilite     # 行内代码高亮
-  - pymdownx.tabbed:          # 内容选项卡切换（适合放不同年份试卷/代码）
-      alternate_style: true
-  - pymdownx.tasklist:        # 支持 - [x] 任务列表
-      custom_checkbox: true
-  - pymdownx.arithmatex:      # 数学公式支持（高数、线代、机器学习必备）
-      generic: true
-  - tables                    # 表格增强
-  - attr_list                 # 允许给图片/按钮加 CSS 属性
-  - md_in_html                # 允许在 HTML 标签（如居中 p 标签、details）里写 Markdown
+  - admonition                  # 支持 !!! warning 免责声明提示框
+  - pymdownx.details            # 支持 ??? 可折叠提示框
+  - tables                      # 支持首页独立课程项目表格
+  - attr_list                   # 支持首页 .grid .cards 卡片网格布局
+  - md_in_html                  # 支持在 HTML 容器内解析 Markdown
   - toc:
-      permalink: true         # 标题旁显示锚点链接符号
+      permalink: true           # 标题旁显示锚点符号
 
 plugins:
   - search:
       lang: zh
-  - tags
-  - meta
-  - glightbox
-  - git-revision-date-localized:
-      enable_creation_date: true
-      type: date
 
 nav:
   - 首页: index.md

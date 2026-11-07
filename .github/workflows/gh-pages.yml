@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 0     # gh-deploy/ghp-import 有时需要完整历史
+          # fetch-depth: 0     默认使用浅克隆
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -31,7 +31,7 @@ jobs:
         run: |
           mkdir -p docs
           python gen-md.py
-          cp README.md ./docs/index.md
+          cp assets/home.md ./docs/index.md
           if [ -d assets ]; then cp -r assets ./docs/assets; fi
 
       - name: Configure git identity
