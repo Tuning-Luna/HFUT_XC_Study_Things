@@ -5,8 +5,6 @@ hide:
 
 # 🎓 HFUT XC Study Things
 
-![工业报国](https://github.com/Tuning-Luna/HFUT_XC_Study_Things/blob/main/assets/img3.webp)
-
 **合肥工业大学宣城校区 · 计算机科学与技术（CS）本科四年完整学习资料库**
 
 [![GitHub stars](https://img.shields.io/github/stars/Tuning-Luna/HFUT_XC_Study_Things?style=flat-square)](https://github.com/Tuning-Luna/HFUT_XC_Study_Things/stargazers)

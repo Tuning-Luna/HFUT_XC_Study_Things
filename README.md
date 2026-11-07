@@ -21,29 +21,19 @@
 > [!IMPORTANT]
 > **本仓库内容仅供学习与技术交流参考，不作任何保证或承诺。作者已尽力确保准确完整，但不对错误、遗漏或适用性承担责任。请勿直接照抄，使用者应自行评估并承担相关风险**。
 
-# 目录
+<p align="center">
+[资料目录](#资料目录) · [使用方式](#使用方式) · [许可与免责](#许可与免责) · [支持与帮助](#支持与帮助)
+</p>
 
-- [资料目录](#资料目录)
-  - [公共课](#公共课)
-  - [大一](#大一)
-  - [大二](#大二)
-  - [大三](#大三)
-  - [独立课程项目](#独立课程项目)
-- [使用方式](#使用方式)
-  - [方式一：在线浏览](#方式一：在线浏览)
-  - [方式二：完整克隆](#方式二：完整克隆)
-  - [方式三：按需下载](#方式三：按需下载)
-- [许可与免责](#许可与免责)
-  - [原创内容](#原创内容)
-  - [第三方资料](#第三方资料)
-- [支持与帮助](#支持与帮助)
 
 # 资料目录
 
-下表为各课程资料**速览**；需要查看每门课程的**详细内容清单**，见 [详细资料目录](https://github.com/Tuning-Luna/HFUT_XC_Study_Things/blob/main/assets/详细资料目录.md)。
+下表为各课程资料速览，[这里是详细资料目录](https://github.com/Tuning-Luna/HFUT_XC_Study_Things/blob/main/assets/详细资料目录.md)。
 
 ## 公共课
 
+<details>
+<summary>点击展开</summary>
 
 |  课程名称  |              包含内容              |
 | :--------: | :--------------------------------: |
@@ -51,8 +41,13 @@
 |  思政教材  |  2023 版教材六门 · 形势与政策   |
 | 题库及答案 |  题库（形策 / 思法 / 劳动 / 国安） |
 
+</details>
+
 
 ## 大一
+
+<details>
+<summary>点击展开</summary>
 
 |      课程名称      |        包含内容        |
 | :----------------: | :--------------------: |
@@ -64,7 +59,12 @@
 |      大学物理      |   PPT / 教材 / 真题     |
 |    程序设计基础    |   PPT / 实验 / 课设     |
 
+</details>
+
 ## 大二
+
+<details>
+<summary>点击展开</summary>
 
 |     课程名称     |            包含内容            |
 | :--------------: | :----------------------------: |
@@ -84,7 +84,12 @@
 |  计算机组成原理  |   PPT / 教材 / 实验 / 真题      |
 |     科研训练     |  项目代码 / 报告 / PPT / 论文   |
 
+</details>
+
 ## 大三
+
+<details>
+<summary>点击展开</summary>
 
 |       课程名称       |              包含内容              |
 | :------------------: | :--------------------------------: |
@@ -102,10 +107,15 @@
 | 计算机应用项目实训课 | 无人机项目 / 实训文档 / 答辩 PPT   |
 |      数据库系统      |  PPT / 教材 / 实验 / 真题 / 课设  |
 
+</details>
+
 ## 独立课程项目
 
 由于部分课程设计和实践项目规模较大，因此独立创建仓库进行维护。
 点击下方链接即可访问对应项目：
+
+<details>
+<summary>点击展开</summary>
 
 |                             项目                             |   所属课程   |           技术栈            |                           仓库概况                           |
 | :----------------------------------------------------------: | :----------: | :-------------------------: | :----------------------------------------------------------: |
@@ -118,6 +128,7 @@
 |     [栈的实现](https://github.com/Tuning-Luna/my-stack)      |   数据结构   |             C++             | 数组与链表两种方式实现栈；提供 push/pop/top/size/empty/clear 等标准操作，并含满栈/空栈提示。 |
 | [在线留言板](https://github.com/Tuning-Luna/react-message-board) |  计算机网络  | React 19+Express+SpringBoot | 前后端分离留言板；支持发布留言、搜索、点赞、按时间/热度排序、分页，管理员可回复/删除并邮件通知。 |
 
+</details>
 
 > [!TIP]
 >
@@ -127,45 +138,38 @@
 
 # 使用方式
 
-## 方式一：在线浏览
+## 方式一：在线浏览（推荐）
 
-无需下载，直接访问在线网站查看全部资料：
+内容与仓库实时同步，支持直接检索与点击下载：
 
-[**https://tuning-luna.github.io/HFUT_XC_Study_Things**](https://tuning-luna.github.io/HFUT_XC_Study_Things)
+[https://tuning-luna.github.io/HFUT_XC_Study_Things](https://tuning-luna.github.io/HFUT_XC_Study_Things)
 
-仓库与网站内容**完全同步**，在线找到所需文件后直接点击下载即可。
+## 方式二：网盘下载
 
-## 方式二：完整克隆
-
-需要下载全部资料到本地时使用。
-
-**前置条件**：确保电脑已安装 [Git](https://git-scm.com/downloads)
-
-```bash
-git clone --depth=1 https://github.com/Tuning-Luna/HFUT_XC_Study_Things.git
-```
-
-> [!NOTE]
-> 仓库体积较大，`git clone` 完整下载会比较慢，通常推荐使用下方的方式三按需下载。
+资料已同步至 [Google Drive](https://drive.google.com/drive/folders/17jCfPVi3KtS4WV6AilBEJACm69VIHWJ8?usp=sharing)，支持在线预览与批量下载。
 
 ## 方式三：按需下载
 
-如果你只需要部分文件，推荐使用以下工具：
+仅需仓库中的部分文件或文件夹时使用：
 
-### GitZip 插件（Chrome / Edge）
+- **GitZip 插件**：安装 [GitZip for GitHub](https://chromewebstore.google.com/detail/gitzip-for-github/ffabmkklhbepgcgfonabamgnfafbdlkn) 浏览器扩展，在仓库页勾选目录即可打包下载。
+- **DownGit**：将目标文件夹链接粘贴至 [DownGit](https://minhaskamal.github.io/DownGit) 即可单独打包下载。
+- **单文件下载**：在 GitHub 打开文件后直接点击右上角 `Raw` 保存。
 
-1. 安装 [GitZip for GitHub](https://chromewebstore.google.com/detail/gitzip-for-github/ffabmkklhbepgcgfonabamgnfafbdlkn)
-2. 安装后打开本仓库 GitHub 页面，文件/文件夹前会出现复选框
-3. 勾选你需要的文件，点击下载按钮即可
+## 方式四：完整克隆
 
-### 其他替代方案
+适合需要将全部资料拉取到本地时使用（需预装 [Git](https://git-scm.com/downloads)）：
 
-- **DownGit**：访问 [https://minhaskamal.github.io/DownGit](https://minhaskamal.github.io/DownGit)，粘贴仓库中某个文件夹的链接即可单独下载
-- **GitHub RAW 直链**：单个小文件可直接点击 `Raw` 按钮保存
+```bash
+git clone --depth=1 [https://github.com/Tuning-Luna/HFUT_XC_Study_Things.git](https://github.com/Tuning-Luna/HFUT_XC_Study_Things.git)
+```
+
+> [!NOTE]
+> 仓库体积较大，完整克隆耗时较长，日常查阅优先推荐使用前三种方式
 
 # 许可与免责
 
-### 原创内容
+## 原创内容
 
 包括但不限于：**作业答案、实验报告、课程设计、笔记、项目代码、复习资料、真题解答**等由 Tuning-Luna 原创整理的内容。
 
@@ -175,7 +179,7 @@ git clone --depth=1 https://github.com/Tuning-Luna/HFUT_XC_Study_Things.git
 - ✅ **要求**：**署名**原作者（Tuning-Luna），**以相同协议**分享衍生作品
 - ❌ **禁止**：用于商业目的，包括直接销售或以盈利为主要目的的使用
 
-### 第三方资料
+## 第三方资料
 
 包括但不限于：**教材、PPT、试卷原题、第三方引用内容，笔记，复习大纲**等。
 
