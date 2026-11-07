@@ -5,7 +5,7 @@ hide:
 
 # 🎓 HFUT XC Study Things
 
-<img src="./img3.webp" alt="工业报国" style="zoom:67%;" />
+![工业报国](https://github.com/Tuning-Luna/HFUT_XC_Study_Things/blob/main/assets/img3.webp)
 
 **合肥工业大学宣城校区 · 计算机科学与技术（CS）本科四年完整学习资料库**
 
@@ -63,20 +63,3 @@ hide:
 | **[栈的实现](https://github.com/Tuning-Luna/my-stack)** | 数据结构 | `C++` | 数组与链表两种方式实现栈；提供 push/pop/top/size/empty/clear 等标准操作及满栈/空栈提示。 |
 
 ---
-
-## 📦 批量下载指南
-
-本站专为**在线快速检索与单文件直链下载**设计。如果你需要打包下载整门课程或克隆全部资料，请结合 GitHub 仓库使用以下方式：
-
-### 方式一：按需打包单个文件夹（推荐）
-
-1. **GitZip 浏览器插件（Chrome / Edge）**
-   安装 [GitZip for GitHub](https://chromewebstore.google.com/detail/gitzip-for-github/ffabmkklhbepgcgfonabamgnfafbdlkn) 扩展，打开 [本仓库 GitHub 页面](https://github.com/Tuning-Luna/HFUT_XC_Study_Things)，直接勾选目标课程文件夹即可一键打包下载。
-2. **DownGit 网页工具**
-   复制 GitHub 仓库中某个课程文件夹的链接，粘贴至 [DownGit](https://minhaskamal.github.io/DownGit) 即可单独下载该目录的压缩包。
-
-### 方式二：完整克隆到本地
-
-
-```bash
-git clone --depth=1 https://github.com/Tuning-Luna/HFUT_XC_Study_Things.git
