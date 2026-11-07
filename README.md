@@ -13,8 +13,10 @@
 </p>
 
 <p align="center">
+
   📚 实验 / 课设 / 作业 / 真题 / PPT / 笔记 / 项目代码<br>
   🗂 大一 → 大四 &nbsp;|&nbsp; 🧑‍💻 持续更新中
+  
 </p>
 
 
@@ -22,7 +24,9 @@
 > **本仓库内容仅供学习与技术交流参考，不作任何保证或承诺。作者已尽力确保准确完整，但不对错误、遗漏或适用性承担责任。请勿直接照抄，使用者应自行评估并承担相关风险**。
 
 <p align="center">
+
 [资料目录](#资料目录) · [使用方式](#使用方式) · [许可与免责](#许可与免责) · [支持与帮助](#支持与帮助)
+
 </p>
 
 
@@ -161,7 +165,7 @@
 适合需要将全部资料拉取到本地时使用（需预装 [Git](https://git-scm.com/downloads)）：
 
 ```bash
-git clone --depth=1 [https://github.com/Tuning-Luna/HFUT_XC_Study_Things.git](https://github.com/Tuning-Luna/HFUT_XC_Study_Things.git)
+git clone --depth=1 https://github.com/Tuning-Luna/HFUT_XC_Study_Things.git
 ```
 
 > [!NOTE]
